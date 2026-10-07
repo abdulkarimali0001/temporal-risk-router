@@ -1,12 +1,12 @@
 """Search step: look a question up on Wikipedia (free, no API key).
 
-Used when the router decides "search the web first".
-    python -m src.web_search "first Kenyan woman PhD"
+Used when the router decides to search first.
+    python -m src.search "first Kenyan woman PhD"
 
 Note: Wikipedia is good for facts the AI never learned (incomplete knowledge)
 and for things that change slowly (who leads a company). It does NOT have
 real-time data such as prices or weather; those need a live web search
-(e.g. Claude's web search tool, see src/answer.py).
+(e.g. Claude's web search tool, see src/claude_answer.py).
 
 Results are cached in results/search_cache.json so demos work offline.
 """

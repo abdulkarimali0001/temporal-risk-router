@@ -1,31 +1,57 @@
-"""Live demo: type any question and see how Version 1 and Version 2 sort it.
+"""Demo of the full pipeline.
 
-Run from the project folder:
-    python -m src.demo
-
-Type a question and press Enter. Type q to quit.
+    python -m src.demo            # run the demo questions -> results/demo_output.txt
+    python -m src.demo --ask      # type your own questions (q to quit)
 """
-from src import router_rules
-from src.router_ml import train
+from __future__ import annotations
 
-NAMES = {"LOW": "LOW   -> answer from memory",
-         "AMBIGUOUS": "MAYBE -> answer + warning",
-         "HIGH": "HIGH  -> search the web first"}
+import sys
+from pathlib import Path
+
+from src import llm, pipeline, time_check
+
+ROOT = Path(__file__).resolve().parent.parent
+OUTPUT = ROOT / "results" / "demo_output.txt"
+
+DEMO_QUESTIONS = [
+    "What is the capital of Australia?",
+    "Who developed the theory of relativity?",
+    "What is the tuition fee for the Smart Computing department?",
+    "Who was the first Kenyan woman to earn a PhD?",
+    "Who wrote the Swahili novel Kufa Kuzikana?",
+    "Who designed the Sebeolsik Hangul keyboard layout?",
+    "Who is the CEO of Naver?",
+    "Who is the prime minister of Japan?",
+    "What is the price of Bitcoin?",
+]
 
 
-def main():
-    print("Training Version 2 on the 150 practice questions...")
-    model = train()
-    print("Ready! Try: 'Who runs Samsung?'  'What is photosynthesis?'  'What is the tuition fee?'\n")
+def run_demo(model):
+    header = f"DEMO - AI backend: {llm.backend()}, model: {llm.model_name()}"
+    blocks = [header, "=" * len(header)]
+    OUTPUT.parent.mkdir(exist_ok=True)
+    for i, q in enumerate(DEMO_QUESTIONS, 1):
+        print(f"[{i}/{len(DEMO_QUESTIONS)}] {q}", flush=True)
+        try:
+            block = pipeline.show(pipeline.ask(q, model))
+        except Exception as e:  # one failing question should not stop the demo
+            block = f"Q: {q}\n   ERROR: {type(e).__name__}: {e}"
+        print(block + "\n", flush=True)
+        blocks.append(block)
+        OUTPUT.write_text("\n\n".join(blocks) + "\n", encoding="utf-8")  # save as we go
+    print(f"Saved: {OUTPUT.relative_to(ROOT)}")
+
+
+def interactive(model):
+    print("Type a question and press Enter (q to quit).\n")
     while True:
-        question = input("Your question (q to quit): ").strip()
-        if question.lower() in {"q", "quit", "exit"}:
+        q = input("Question: ").strip()
+        if q.lower() in {"q", "quit", "exit"}:
             break
-        if not question:
-            continue
-        print(f"  Version 1: {NAMES[router_rules.route(question)]}")
-        print(f"  Version 2: {NAMES[model.predict([question])[0]]}\n")
+        if q:
+            print(pipeline.show(pipeline.ask(q, model)) + "\n")
 
 
 if __name__ == "__main__":
-    main()
+    model = time_check.load()
+    interactive(model) if "--ask" in sys.argv else run_demo(model)

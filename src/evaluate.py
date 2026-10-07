@@ -1,106 +1,108 @@
-"""Evaluate Router v1 (rules) and Router v2 (ML).
+"""Evaluation.
 
-Two tests:
-  1. 5-fold cross-validation on data/questions.csv (v2 never sees the test fold)
-  2. A held-out set, data/unseen_test.csv, that neither router was built on
+Part 1 - Check 1 (does the answer change?) on questions it was not trained on
+         (data/time_check_test.csv). Compared with a simple keyword baseline.
+Part 2 - The router (both checks) on data/router_test.csv, 45 questions:
+           stable_common  never changes, AI should know it   -> should NOT search
+           stable_rare    never changes, AI may not know it   -> should search (incomplete)
+           changing       answer changes over time            -> should search (outdated)
+         Each check is also scored on its own, to show what each contributes.
 
-Metrics:
-  - accuracy        : share of questions put in the right band
-  - HIGH recall     : share of truly HIGH-risk questions sent to search
-                      (the most important number: a miss = an outdated answer)
-  - searches        : share of all questions that trigger a web search (cost)
+    python -m src.evaluate
 
-Run:   python -m src.evaluate
-Output: printed tables + results/report.md + results/predictions_unseen.csv
+Writes results/evaluation_report.md and results/router_decisions.csv.
+Part 2 needs the language model (AI_BACKEND in .env) unless its answers are cached.
 """
+from __future__ import annotations
+
 from pathlib import Path
 
 import pandas as pd
 from sklearn.metrics import confusion_matrix
-from sklearn.model_selection import StratifiedKFold, cross_val_predict
 
-from src import router_rules
-from src.router_ml import build_pipeline
+from src import keyword_baseline, llm, router, time_check
 
 ROOT = Path(__file__).resolve().parent.parent
 LABELS = ["LOW", "AMBIGUOUS", "HIGH"]
+TYPE_NAMES = {"stable_common": "Stable, well known", "stable_rare": "Stable, rare (incomplete)",
+              "changing": "Changes over time (outdated)"}
 
 
-def metrics(y_true, y_pred) -> dict:
-    y_true, y_pred = list(y_true), list(y_pred)
-    n = len(y_true)
-    high = [p for t, p in zip(y_true, y_pred) if t == "HIGH"]
-    return {
-        "accuracy": sum(t == p for t, p in zip(y_true, y_pred)) / n,
-        "high_recall": sum(p == "HIGH" for p in high) / len(high),
-        "high_caught": f"{sum(p == 'HIGH' for p in high)}/{len(high)}",
-        "searches": sum(p == "HIGH" for p in y_pred) / n,
-    }
+def check1_metrics(truth, pred) -> dict:
+    truth, pred = list(truth), list(pred)
+    high = [p for t, p in zip(truth, pred) if t == "HIGH"]
+    return {"right": sum(t == p for t, p in zip(truth, pred)), "n": len(truth),
+            "high_caught": sum(p == "HIGH" for p in high), "high_n": len(high),
+            "searches": sum(p == "HIGH" for p in pred)}
 
 
-def confusion_md(y_true, y_pred) -> str:
-    cm = confusion_matrix(y_true, y_pred, labels=LABELS)
-    lines = ["| true \\ predicted | " + " | ".join(LABELS) + " |",
-             "|---|" + "---|" * len(LABELS)]
-    for label, row in zip(LABELS, cm):
-        lines.append(f"| {label} | " + " | ".join(str(x) for x in row) + " |")
-    return "\n".join(lines)
+def confusion_md(truth, pred) -> list[str]:
+    cm = confusion_matrix(truth, pred, labels=LABELS)
+    rows = ["| true \\ predicted | " + " | ".join(LABELS) + " |", "|---|" + "---|" * 3]
+    rows += [f"| {lab} | " + " | ".join(map(str, r)) + " |" for lab, r in zip(LABELS, cm)]
+    return rows
 
 
-def row(name, m) -> str:
-    return (f"| {name} | {m['accuracy']:.0%} | {m['high_caught']} ({m['high_recall']:.0%}) "
-            f"| {m['searches']:.0%} |")
+def part1(model) -> list[str]:
+    test = pd.read_csv(ROOT / "data" / "time_check_test.csv")
+    preds = {"Keyword baseline": [keyword_baseline.route(q) for q in test["question"]],
+             "Time check (ML)": list(model.predict(test["question"]))}
+    out = ["## Part 1 - Check 1: does the answer change?", "",
+           f"{len(test)} questions not used for training.", "",
+           "| Method | Right group | HIGH caught | Searches |", "|---|---|---|---|"]
+    for name, p in preds.items():
+        m = check1_metrics(test["label"], p)
+        out.append(f"| {name} | {m['right']}/{m['n']} ({m['right'] / m['n']:.0%}) "
+                   f"| {m['high_caught']}/{m['high_n']} | {m['searches']} |")
+    out += ["", "Confusion matrix (time check):", ""] + confusion_md(test["label"], preds["Time check (ML)"])
+    print("\n".join(out) + "\n")
+    return out
+
+
+def part2(model) -> list[str]:
+    test = pd.read_csv(ROOT / "data" / "router_test.csv")
+    rows = []
+    for i, q in enumerate(test["question"], 1):
+        print(f"\r  checking question {i}/{len(test)} ...", end="", flush=True)
+        r = router.route(q, model=model)
+        rows.append({"group": r["group"], "knows": r["knows"], "agreement": r["agreement"],
+                     "answers": " | ".join(r["answers"]),
+                     "search_time_check_only": r["group"] == "HIGH",
+                     "search_knowledge_check_only": r["knows"] is False,
+                     "search_router": r["action"] == "search"})
+    print()
+    res = pd.concat([test, pd.DataFrame(rows)], axis=1)
+    res.to_csv(ROOT / "results" / "router_decisions.csv", index=False)
+
+    cols = {"Time check only": "search_time_check_only",
+            "Knowledge check only": "search_knowledge_check_only",
+            "Router (both checks)": "search_router"}
+    need = res["should_search"] == "yes"
+    out = ["## Part 2 - Router: when should the AI search?", "",
+           f"{len(res)} questions, {len(res) // 3} of each type. "
+           f"AI backend: {llm.backend()}, model: {llm.model_name()}.", "",
+           "Questions sent to search, by type:", "",
+           "| Question type | Should search? | " + " | ".join(cols) + " |",
+           "|---|---|" + "---|" * len(cols)]
+    for t, name in TYPE_NAMES.items():
+        part = res[res["type"] == t]
+        should = "no" if t == "stable_common" else "yes"
+        out.append(f"| {name} | {should} | " +
+                   " | ".join(f"{int(part[c].sum())}/{len(part)}" for c in cols.values()) + " |")
+    out.append("| **Right decisions** | | " + " | ".join(
+        f"**{int((res[c] == need).sum())}/{len(res)} ({(res[c] == need).mean():.0%})**"
+        for c in cols.values()) + " |")
+    out.append("| Total searches | | " + " | ".join(str(int(res[c].sum())) for c in cols.values()) + " |")
+    print("\n".join(out))
+    return out
 
 
 def main():
-    train = pd.read_csv(ROOT / "data" / "questions.csv")
-    unseen = pd.read_csv(ROOT / "data" / "unseen_test.csv")
-
-    # --- Test 1: cross-validation on the main set ---
-    v1_cv = train["question"].map(router_rules.route)
-    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
-    v2_cv = cross_val_predict(build_pipeline(), train["question"], train["label"], cv=cv)
-
-    # --- Test 2: held-out unseen questions ---
-    v1_un = unseen["question"].map(router_rules.route)
-    v2_model = build_pipeline().fit(train["question"], train["label"])
-    v2_un = v2_model.predict(unseen["question"])
-
-    baselines_un = {
-        "Never search": ["LOW"] * len(unseen),
-        "Always search": ["HIGH"] * len(unseen),
-    }
-
-    header = "| Router | Accuracy | HIGH caught (recall) | Searches |\n|---|---|---|---|"
-    report = [
-        "# Temporal-Risk Router — evaluation report", "",
-        f"Main set: {len(train)} questions · Unseen set: {len(unseen)} questions", "",
-        "## Test 1 — 5-fold cross-validation (main set)", "", header,
-        row("v1 rules*", metrics(train["label"], v1_cv)),
-        row("v2 ML", metrics(train["label"], v2_cv)), "",
-        "*v1's keywords were written while looking at these questions, so this score is optimistic.", "",
-        "## Test 2 — unseen questions", "", header,
-    ]
-    for name, preds in baselines_un.items():
-        report.append(row(name, metrics(unseen["label"], preds)))
-    report += [row("v1 rules", metrics(unseen["label"], v1_un)),
-               row("v2 ML", metrics(unseen["label"], v2_un)), "",
-               "### v1 confusion matrix (unseen)", "", confusion_md(unseen["label"], v1_un), "",
-               "### v2 confusion matrix (unseen)", "", confusion_md(unseen["label"], v2_un), "",
-               "## Misses on unseen questions", "",
-               "| Question | True | v1 | v2 |", "|---|---|---|---|"]
-    for q, t, a, b in zip(unseen["question"], unseen["label"], v1_un, v2_un):
-        if a != t or b != t:
-            report.append(f"| {q} | {t} | {a} | {b} |")
-
-    text = "\n".join(report)
-    print(text)
-    out = ROOT / "results"
-    out.mkdir(exist_ok=True)
-    (out / "report.md").write_text(text + "\n", encoding="utf-8")
-    pd.DataFrame({"question": unseen["question"], "true": unseen["label"],
-                  "v1": v1_un, "v2": v2_un}).to_csv(out / "predictions_unseen.csv", index=False)
-    print(f"\nSaved results/report.md and results/predictions_unseen.csv")
+    model = time_check.load()
+    report = ["# Evaluation report", ""] + part1(model) + [""] + part2(model)
+    (ROOT / "results").mkdir(exist_ok=True)
+    (ROOT / "results" / "evaluation_report.md").write_text("\n".join(report) + "\n", encoding="utf-8")
+    print("\nSaved: results/evaluation_report.md and results/router_decisions.csv")
 
 
 if __name__ == "__main__":
