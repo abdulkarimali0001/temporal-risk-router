@@ -1,0 +1,31 @@
+id,question,label,category
+1,What is the formula for kinetic energy?,LOW,science
+2,Who discovered penicillin?,LOW,history
+3,What is a hash table?,LOW,computing
+4,What is the capital of Japan?,LOW,geography
+5,What does the Korean word saranghae mean?,LOW,language
+6,How does a decision tree split data?,LOW,computing
+7,When did the Berlin Wall fall?,LOW,history
+8,What is the square root of 144?,LOW,math
+9,What is an atom?,LOW,science
+10,What is object-oriented programming?,LOW,computing
+11,What is the dormitory fee at Kyungdong University?,AMBIGUOUS,education
+12,What are the entry requirements for a master's degree in Korea?,AMBIGUOUS,education
+13,Which GPUs are good for training models?,AMBIGUOUS,technology
+14,What are the working hour limits for international students?,AMBIGUOUS,law
+15,How much does a KTX ticket from Gangneung to Seoul cost?,AMBIGUOUS,travel
+16,What does LG Energy Solution make?,AMBIGUOUS,business
+17,What is the passing score for TOPIK level 4?,AMBIGUOUS,education
+18,Which banks let foreigners open accounts in Korea?,AMBIGUOUS,finance
+19,What benefits do Samsung engineers get?,AMBIGUOUS,careers
+20,What is the unemployment rate in Korea?,AMBIGUOUS,economics
+21,Who is the CEO of Naver?,HIGH,business
+22,What is the temperature in Gangneung today?,HIGH,weather
+23,Who manages Kakao these days?,HIGH,business
+24,Is Kakao hiring AI engineers?,HIGH,careers
+25,What is the yen to won rate?,HIGH,finance
+26,When is the Samsung GSAT this fall?,HIGH,careers
+27,What was announced at the latest Apple event?,HIGH,technology
+28,Who won yesterday's Champions League match?,HIGH,sports
+29,Has the Kyungdong University fall festival been cancelled?,HIGH,education
+30,Which team tops the Premier League table?,HIGH,sports

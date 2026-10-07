@@ -1,0 +1,27 @@
+Recomputed from the saved Ollama answers after fixing number matching ("Twelve" = "12").
+==========================================================================
+ WEEK 3 RESULTS - Two-Signal Router (Group 4)
+==========================================================================
+ Question type               Should search?  Version 2        Version 3
+ ------------------------------------------------------------------------
+ Stable, well known          no              1/15 searched    1/15 searched
+ Stable, rare (incomplete)   yes             4/15 searched    15/15 searched
+ Changes (outdated)          yes             15/15 searched   15/15 searched
+ ------------------------------------------------------------------------
+ Total searches                              20               31
+ Version 2: right decision for 33/45 questions (73%)
+ Version 3: right decision for 44/45 questions (98%)
+
+ Rare facts the AI was UNSURE about (caught by Signal 2):
+   - In what year was the Sokcho lighthouse first built?
+       tries: I don't know. | I don't know. | I don't know.
+   - Who wrote the Swahili novel Kufa Kuzikana?
+       tries: I don't know. | I don't know. | I don't know.
+   - What was the model name of the first radio made by Goldstar?
+       tries: I don't know. | I don't know. | I don't know.
+   - Which small river flows through the centre of Gangneung?
+       tries: Geumjeongcheon. | Danggol River flows through the centre of Gangneung. | Kwane, Seomjingang and Gyongangang rivers also flow through
+   - What is the Swahili word for semiconductor?
+       tries: Semonokoloni | I don't know. | I don't know.
+==========================================================================
+ Saved: results/week3_results.csv

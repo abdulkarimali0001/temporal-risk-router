@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+results/*.joblib
+.DS_Store
+results/full_system_log.txt
+results/full_system_demo_partial.txt
+results/full_system_demo_run2.txt
+results/full_system_demo_run3.txt
+results/router_v2_old.joblib

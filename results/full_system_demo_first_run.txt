@@ -1,0 +1,84 @@
+FULL SYSTEM DEMO - Group 4 (AI backend: ollama), model: llama3.1:8b
+
+===================================================================
+
+Q: What is the capital of Australia?
+   Check 1 (changes?): LOW   Check 2 (AI knows?): knows it
+   Decision: answer from memory
+   Answer: The capital of Australia is Canberra.
+
+Q: Who developed the theory of relativity?
+   Check 1 (changes?): HIGH   Check 2 (AI knows?): skipped
+   Decision: search the web first
+   Searched Wikipedia for: "Albert Einstein theory of relativity"
+   Answer: [1]
+   Sources:
+   [1] Theory of relativity - https://en.wikipedia.org/wiki/Theory_of_relativity (retrieved 2026-10-07)
+   [2] The Meaning of Relativity - https://en.wikipedia.org/wiki/The_Meaning_of_Relativity (retrieved 2026-10-07)
+   [3] General relativity - https://en.wikipedia.org/wiki/General_relativity (retrieved 2026-10-07)
+
+Q: What is the tuition fee for the Smart Computing department?
+   Check 1 (changes?): MAYBE   Check 2 (AI knows?): unsure
+   Decision: search the web first
+   Searched Wikipedia for: "Smart Computing department tuition fees"
+   Answer: I could not find this in the sources I searched, so I won't guess.
+   Pages checked (answer not in them):
+   [1] Technische Hochschule OWL - https://en.wikipedia.org/wiki/Technische_Hochschule_OWL (retrieved 2026-10-07)
+   [2] Maastricht University - https://en.wikipedia.org/wiki/Maastricht_University (retrieved 2026-10-07)
+   [3] Massachusetts Institute of Technology - https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology (retrieved 2026-10-07)
+
+Q: Who was the first Kenyan woman to earn a PhD?
+   Check 1 (changes?): LOW   Check 2 (AI knows?): unsure
+   Decision: search the web first
+   Searched Wikipedia for: "First Kenyan woman PhD holder"
+   Answer: [2] Wangarĩ Maathai was the first woman in East and Central Africa to become a Doctor of Philosophy, receiving her Ph.D. from the University of Nairobi in Nairobi, Kenya.
+   Sources:
+   [1] Machakos County - https://en.wikipedia.org/wiki/Machakos_County (retrieved 2026-10-07)
+   [2] Wangarĩ Maathai - https://en.wikipedia.org/wiki/Wangar%C4%A9_Maathai (retrieved 2026-10-07)
+   [3] List of the first women holders of political offices in Europe - https://en.wikipedia.org/wiki/List_of_the_first_women_holders_of_political_offices_in_Europe (retrieved 2026-10-07)
+
+Q: Who wrote the Swahili novel Kufa Kuzikana?
+   Check 1 (changes?): LOW   Check 2 (AI knows?): unsure
+   Decision: search the web first
+   Searched Wikipedia for: "Author of Kufa Kuzikana"
+   Answer: I could not find this in the sources I searched, so I won't guess.
+   Pages checked (answer not in them):
+   [1] Ken Walibora - https://en.wikipedia.org/wiki/Ken_Walibora (retrieved 2026-10-07)
+
+Q: Who designed the Sebeolsik Hangul keyboard layout?
+   Check 1 (changes?): HIGH   Check 2 (AI knows?): skipped
+   Decision: search the web first
+   Searched Wikipedia for: "Sebeolsik Hangul keyboard layout designer"
+   Answer: I could not find this in the sources I searched, so I won't guess.
+   Pages checked (answer not in them):
+   [1] Keyboard layout - https://en.wikipedia.org/wiki/Keyboard_layout (retrieved 2026-10-07)
+
+Q: Who is the CEO of Naver?
+   Check 1 (changes?): HIGH   Check 2 (AI knows?): skipped
+   Decision: search the web first
+   Searched Wikipedia for: "Naver CEO current status"
+   Answer: I could not find this in the sources I searched, so I won't guess.
+   Pages checked (answer not in them):
+   [1] Wonderful World (South Korean TV series) - https://en.wikipedia.org/wiki/Wonderful_World_(South_Korean_TV_series) (retrieved 2026-10-07)
+   [2] Line Manga - https://en.wikipedia.org/wiki/Line_Manga (retrieved 2026-10-07)
+   [3] List of prime ministers of South Korea - https://en.wikipedia.org/wiki/List_of_prime_ministers_of_South_Korea (retrieved 2026-10-07)
+
+Q: Who is the prime minister of Japan?
+   Check 1 (changes?): HIGH   Check 2 (AI knows?): skipped
+   Decision: search the web first
+   Searched Wikipedia for: "Current Prime Minister of Japan"
+   Answer: The prime minister of Japan is Sanae Takaichi. [1]
+   Sources:
+   [1] Prime Minister of Japan - https://en.wikipedia.org/wiki/Prime_Minister_of_Japan (retrieved 2026-10-07)
+   [2] List of current prime ministers by date of assumption of office - https://en.wikipedia.org/wiki/List_of_current_prime_ministers_by_date_of_assumption_of_office (retrieved 2026-10-07)
+   [3] List of spouses of prime ministers of Japan - https://en.wikipedia.org/wiki/List_of_spouses_of_prime_ministers_of_Japan (retrieved 2026-10-07)
+
+Q: What is the price of Bitcoin?
+   Check 1 (changes?): HIGH   Check 2 (AI knows?): skipped
+   Decision: search the web first
+   Searched Wikipedia for: "Current Bitcoin market value"
+   Answer: I could not find this in the sources I searched, so I won't guess.
+   Pages checked (answer not in them):
+   [1] History of bitcoin - https://en.wikipedia.org/wiki/History_of_bitcoin (retrieved 2026-10-07)
+   [2] Silk Road (marketplace) - https://en.wikipedia.org/wiki/Silk_Road_(marketplace) (retrieved 2026-10-07)
+   [3] Economics of bitcoin - https://en.wikipedia.org/wiki/Economics_of_bitcoin (retrieved 2026-10-07)

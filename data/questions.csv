@@ -1,0 +1,151 @@
+id,question,label,category
+1,What is the derivative of x squared?,LOW,math
+2,How many sides does a hexagon have?,LOW,math
+3,What is the Pythagorean theorem?,LOW,math
+4,What is 15 percent of 200?,LOW,math
+5,What is a prime number?,LOW,math
+6,How do you calculate the area of a circle?,LOW,math
+7,What is the integral of 1/x?,LOW,math
+8,When did the Korean War begin?,LOW,history
+9,Who wrote Romeo and Juliet?,LOW,history
+10,When did World War II end?,LOW,history
+11,Who was the first person to walk on the moon?,LOW,history
+12,When did Kenya gain independence?,LOW,history
+13,What was the Joseon dynasty?,LOW,history
+14,Who invented the telephone?,LOW,history
+15,What is photosynthesis?,LOW,science
+16,What is the boiling point of water at sea level?,LOW,science
+17,What is Newton's second law?,LOW,science
+18,What is DNA made of?,LOW,science
+19,Why is the sky blue?,LOW,science
+20,What is the speed of light?,LOW,science
+21,How many bones are in the adult human body?,LOW,science
+22,Explain how a binary search works.,LOW,computing
+23,What does SQL stand for?,LOW,computing
+24,What is the difference between a list and a tuple in Python?,LOW,computing
+25,What is overfitting in machine learning?,LOW,computing
+26,How does gradient descent work?,LOW,computing
+27,What is a linked list?,LOW,computing
+28,What is the time complexity of quicksort?,LOW,computing
+29,What is a neural network?,LOW,computing
+30,What does TF-IDF measure?,LOW,computing
+31,What is the capital of Kenya?,LOW,geography
+32,What is the longest river in Africa?,LOW,geography
+33,Which ocean is the largest?,LOW,geography
+34,What province is Sokcho in?,LOW,geography
+35,What is the highest mountain in South Korea?,LOW,geography
+36,Translate thank you into Korean.,LOW,language
+37,What does the Swahili word jambo mean?,LOW,language
+38,How many letters are in the Korean alphabet?,LOW,language
+39,What is the past tense of run?,LOW,language
+40,What is a haiku?,LOW,literature
+41,Who painted the Mona Lisa?,LOW,art
+42,What is the chemical symbol for gold?,LOW,science
+43,How many players are on a soccer team?,LOW,sports
+44,What are the rules of chess castling?,LOW,sports
+45,What is supply and demand?,LOW,economics
+46,What is compound interest?,LOW,economics
+47,What is a semiconductor?,LOW,technology
+48,How does a transistor work?,LOW,technology
+49,What is the difference between RAM and ROM?,LOW,technology
+50,What is retrieval-augmented generation?,LOW,computing
+51,What are the admission requirements for Kyungdong University international students?,AMBIGUOUS,education
+52,What is the tuition fee for the Smart Computing department?,AMBIGUOUS,education
+53,What does the TOPIK exam cover?,AMBIGUOUS,education
+54,What is the class schedule for the fall semester?,AMBIGUOUS,education
+55,Which scholarships are available for foreign students in Korea?,AMBIGUOUS,education
+56,How many credits do I need to graduate?,AMBIGUOUS,education
+57,What documents are needed for a GKS scholarship application?,AMBIGUOUS,education
+58,What courses are in the AI curriculum at Kyungdong University?,AMBIGUOUS,education
+59,How is the TOPIK test scored?,AMBIGUOUS,education
+60,What GPA is required to keep a scholarship?,AMBIGUOUS,education
+61,Which version of Unity supports this feature?,AMBIGUOUS,technology
+62,What features does the Galaxy S series have?,AMBIGUOUS,technology
+63,Which programming languages are most popular?,AMBIGUOUS,technology
+64,What is the best laptop for machine learning students?,AMBIGUOUS,shopping
+65,Which smartphone has the best camera?,AMBIGUOUS,shopping
+66,How much does a Samsung Galaxy phone cost?,AMBIGUOUS,shopping
+67,What are the visa rules for students working part-time in Korea?,AMBIGUOUS,law
+68,What does Korea's AI Basic Act require from companies?,AMBIGUOUS,law
+69,What is the minimum wage in South Korea?,AMBIGUOUS,law
+70,How long can a D-2 visa holder work per week?,AMBIGUOUS,law
+71,What are the GDPR rules for AI training data?,AMBIGUOUS,law
+72,What are the tax rules for freelancers in Korea?,AMBIGUOUS,law
+73,Which companies make HBM memory chips?,AMBIGUOUS,business
+74,What products does SK hynix sell?,AMBIGUOUS,business
+75,What does Samsung's semiconductor division do?,AMBIGUOUS,business
+76,How many employees does Samsung have?,AMBIGUOUS,business
+77,Which companies are leaders in AI chips?,AMBIGUOUS,business
+78,What is the market share of Android in Korea?,AMBIGUOUS,business
+79,What is the population of Sokcho?,AMBIGUOUS,geography
+80,How much is a bus ticket from Sokcho to Seoul?,AMBIGUOUS,travel
+81,What are the opening hours of Seoraksan National Park?,AMBIGUOUS,travel
+82,What is the bus schedule from Sokcho to Seoul?,AMBIGUOUS,travel
+83,What is the average rent for a studio in Seoul?,AMBIGUOUS,economics
+84,What is the inflation rate in Kenya?,AMBIGUOUS,economics
+85,What is Korea's GDP?,AMBIGUOUS,economics
+86,What models does Anthropic offer?,AMBIGUOUS,technology
+87,What is the context window of Claude?,AMBIGUOUS,technology
+88,How much does the Claude API cost per token?,AMBIGUOUS,technology
+89,Which Python libraries are used for deep learning?,AMBIGUOUS,computing
+90,What are the system requirements for Unity?,AMBIGUOUS,technology
+91,What are the rules for the SK hynix internship program?,AMBIGUOUS,careers
+92,What skills does Samsung look for in new engineers?,AMBIGUOUS,careers
+93,What is the GSAT test format for Samsung?,AMBIGUOUS,careers
+94,What is the average salary of a software engineer in Korea?,AMBIGUOUS,careers
+95,How do I apply for an alien registration card?,AMBIGUOUS,law
+96,What vaccines are required to travel to Kenya?,AMBIGUOUS,travel
+97,What is the policy for late homework submission?,AMBIGUOUS,education
+98,Which universities rank highest in Korea?,AMBIGUOUS,education
+99,What streaming services are available in Korea?,AMBIGUOUS,entertainment
+100,How many members does BTS have?,AMBIGUOUS,entertainment
+101,Who is the current CEO of Anthropic?,HIGH,business
+102,What is the price of Bitcoin today?,HIGH,finance
+103,What is the weather in Sokcho now?,HIGH,weather
+104,What is the 2026 TOPIK registration deadline?,HIGH,education
+105,What is the latest Claude model?,HIGH,technology
+106,What is the won to dollar exchange rate?,HIGH,finance
+107,Who won the most recent World Cup?,HIGH,sports
+108,Who runs Samsung Electronics?,HIGH,business
+109,Is SK hynix hiring new graduates?,HIGH,careers
+110,Who is the president of South Korea?,HIGH,politics
+111,What is the newest version of Python?,HIGH,technology
+112,What is Samsung's stock price?,HIGH,finance
+113,Who leads SK Group?,HIGH,business
+114,When is the next TOPIK exam?,HIGH,education
+115,What happened in the news this morning?,HIGH,news
+116,Is it going to rain in Seoul tomorrow?,HIGH,weather
+117,What is the Kenyan shilling worth in won?,HIGH,finance
+118,Who is the prime minister of Kenya?,HIGH,politics
+119,What was the score of last night's KBO game?,HIGH,sports
+120,Who is leading the K League this season?,HIGH,sports
+121,When does the Samsung recruitment period open?,HIGH,careers
+122,Are Samsung applications open?,HIGH,careers
+123,What jobs is SK hynix advertising?,HIGH,careers
+124,What is the application deadline for the GKS scholarship this year?,HIGH,education
+125,When does registration for next semester close?,HIGH,education
+126,What did OpenAI announce this week?,HIGH,technology
+127,Which iPhone was released most recently?,HIGH,technology
+128,What is the newest Unity release?,HIGH,technology
+129,How much does gold cost per ounce right now?,HIGH,finance
+130,What is the Korean base interest rate?,HIGH,finance
+131,Who heads Anthropic?,HIGH,business
+132,Who is in charge of SK hynix?,HIGH,business
+133,Is the Claude API down?,HIGH,technology
+134,Are flights from Yangyang airport delayed?,HIGH,travel
+135,What is the air quality in Seoul?,HIGH,weather
+136,Who is the US president?,HIGH,politics
+137,What are the trending topics on YouTube Korea?,HIGH,entertainment
+138,Which movie is number one at the Korean box office?,HIGH,entertainment
+139,Has Korea's AI Basic Act come into force?,HIGH,law
+140,Did the minimum wage change for next year?,HIGH,law
+141,Who won the last election in Kenya?,HIGH,politics
+142,Is the Seoraksan trail open after the storm?,HIGH,travel
+143,What is the traffic like on the road to Seoul?,HIGH,travel
+144,How many people follow KoreanAlly on YouTube?,HIGH,entertainment
+145,What is Nvidia's market value?,HIGH,finance
+146,Which model tops the LLM leaderboard?,HIGH,technology
+147,What is the best-selling phone this month?,HIGH,technology
+148,Who is the chairman of Samsung?,HIGH,business
+149,What new features did ChatGPT get?,HIGH,technology
+150,Is the TOPIK test center in Sokcho still open?,HIGH,education

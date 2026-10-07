@@ -1,0 +1,46 @@
+id,question,type,should_search
+1,What is the capital of Australia?,stable_common,no
+2,Who wrote Hamlet?,stable_common,no
+3,What is the boiling point of water at sea level in Celsius?,stable_common,no
+4,What is the chemical symbol for iron?,stable_common,no
+5,How many legs does a spider have?,stable_common,no
+6,What does CPU stand for?,stable_common,no
+7,Who painted The Starry Night?,stable_common,no
+8,What is the largest ocean on Earth?,stable_common,no
+9,In what year did World War II end?,stable_common,no
+10,What is the square root of 144?,stable_common,no
+11,What language is spoken in Brazil?,stable_common,no
+12,What planet is known as the Red Planet?,stable_common,no
+13,What is H2O commonly called?,stable_common,no
+14,Who developed the theory of relativity?,stable_common,no
+15,What is the capital of South Korea?,stable_common,no
+16,Who was the founding president of Kyungdong University?,stable_rare,yes
+17,In what year was the Sokcho lighthouse first built?,stable_rare,yes
+18,Who wrote the Swahili novel Kufa Kuzikana?,stable_rare,yes
+19,What was the model name of the first radio made by Goldstar?,stable_rare,yes
+20,Which small river flows through the centre of Gangneung?,stable_rare,yes
+21,Who designed the Sebeolsik Hangul keyboard layout?,stable_rare,yes
+22,What is the Swahili word for semiconductor?,stable_rare,yes
+23,Who designed the Sokcho Expo Tower?,stable_rare,yes
+24,What is the height in metres of Ulsanbawi rock in Seoraksan?,stable_rare,yes
+25,In what year was Sinheungsa temple in Seoraksan first founded?,stable_rare,yes
+26,What traditional song is the melody of the Kenyan national anthem based on?,stable_rare,yes
+27,Who was the first Kenyan woman to earn a PhD?,stable_rare,yes
+28,What is the Korean name of the red snow crab caught near Sokcho?,stable_rare,yes
+29,Which Kyungdong University campus is located in Goseong?,stable_rare,yes
+30,What was the first transistor produced in South Korea called?,stable_rare,yes
+31,Who is the CEO of Naver?,changing,yes
+32,What is the euro to won exchange rate?,changing,yes
+33,Who manages Kakao these days?,changing,yes
+34,What is the newest iPhone?,changing,yes
+35,Who is the president of Kenya?,changing,yes
+36,When does TOPIK registration open next?,changing,yes
+37,Who leads SK hynix?,changing,yes
+38,What is the latest version of Python?,changing,yes
+39,Which team won the last KBO Korean Series?,changing,yes
+40,Is Samsung hiring new graduates?,changing,yes
+41,What is the price of Bitcoin?,changing,yes
+42,Who is the chairman of Samsung Electronics?,changing,yes
+43,What is the weather in Sokcho?,changing,yes
+44,Which AI model is currently the most popular?,changing,yes
+45,Who is the prime minister of Japan?,changing,yes
