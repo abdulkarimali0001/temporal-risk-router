@@ -1,0 +1,201 @@
+id,source,question,type,fact_type,popularity,correct_answers,version
+fqa-326,FreshQA,Who was the first elected female Governor of Massachusetts?,stable_freshqa,never-changing,,Maura Healey|Maura Tracy Healey,2026-04-21
+fqa-259,FreshQA,Who wrote the book titled Orientalism?,stable_freshqa,never-changing,,Edward W. Saïd|Edward W. Said|Edward Said,2026-04-21
+fqa-248,FreshQA,What city was connected with the earliest cases of COVID-19?,stable_freshqa,never-changing,,"Wuhan|Wuhan, China|Huanan Seafood Wholesale Market|Huanan Market|China",2026-04-21
+fqa-339,FreshQA,Who was the first African American woman to appear on a quarter in the United States?,stable_freshqa,never-changing,,Maya Angelou,2026-04-21
+fqa-280,FreshQA,Which team won the 2021 FIFA Club World Cup?,stable_freshqa,never-changing,,Chelsea|Chelsea Football Club|Chelsea F.C.,2026-04-21
+fqa-276,FreshQA,What city was Emily Dickinson born in?,stable_freshqa,never-changing,,"Amherst, Massachusetts|Amherst, MA|United States|Amherst",2026-04-21
+fqa-273,FreshQA,Who is the creator of Super Smash Bros.?,stable_freshqa,never-changing,,Masahiro Sakurai|Sakurai|Sakurai-san,2026-04-21
+fqa-262,FreshQA,"In Greek mythology, what is the name of Menelaus' wife?",stable_freshqa,never-changing,,Helen of Troy|Helen|Helena|Helen of Sparta,2026-04-21
+fqa-366,FreshQA,What killed the King of Soccer?,stable_freshqa,never-changing,,"multiple organ failure, a complication of colon cancer|colon cancer|cancer",2026-04-21
+fqa-258,FreshQA,What year did Intel go public?,stable_freshqa,never-changing,,"1971|Oct 13, 1971|October 13, 1971|13 Oct 1971|13 October 1971|10/13/1971|10-13-1971|13/10/1971|13-10-1971|1971/10/13",2026-04-21
+fqa-331,FreshQA,Who was the first player to score a goal at five FIFA Men's World Cup tournaments?,stable_freshqa,never-changing,,Cristiano Ronaldo|Ronaldo|CR7|Cristiano Ronaldo dos Santos Aveiro GOIH ComM,2026-04-21
+fqa-361,FreshQA,How old was Roger Federer when he retired from tennis?,stable_freshqa,never-changing,,41|41 years old,2026-04-21
+fqa-314,FreshQA,Which countries border the largest lake on Earth?,stable_freshqa,never-changing,,"Kazakhstan, Turkmenistan, Iran, Azerbaijan, and Russia|Russia, Iran, Azerbaijan, Kazakhstan, and Turkmenistan|Iran, Russia, Azerbaijan, Turkmenistan, and Kazakhstan|Iran, Azerbaijan, Kazakhstan, Turkmenistan, and Russia|Kazakhstan, Iran, Azerbaijan, Russia, and Turkmenistan|Russian Federation",2026-04-21
+fqa-256,FreshQA,What class of beer is top-fermenting?,stable_freshqa,never-changing,,ales|ale,2026-04-21
+fqa-320,FreshQA,Whom did Magnus Carlsen accuse of cheating in chess in 2022?,stable_freshqa,never-changing,,Hans Niemann|Hans Moke Niemann|grandmaster Hans Moke Niemann,2026-04-21
+fqa-299,FreshQA,Which company developed Overwatch?,stable_freshqa,never-changing,,Blizzard Entertainment|Blizzard,2026-04-21
+fqa-249,FreshQA,What country has the most similar flag to that of Romania?,stable_freshqa,never-changing,,Chad|Republic of Chad,2026-04-21
+fqa-367,FreshQA,How many years did it take for the population of the world to reach 8 billion from 7 billion?,stable_freshqa,never-changing,,10 years,2026-04-21
+fqa-356,FreshQA,When was the bass player of Miles Davis's first quintet born?,stable_freshqa,never-changing,,"1935|Apr 22, 1935|April 22, 1935|22 Apr 1935|22 April 1935|04/22/1935|04-22-1935|22/04/1935|22-04-1935|1935/04/22",2026-04-21
+fqa-272,FreshQA,When did David Bowie die?,stable_freshqa,never-changing,,"2016|Jan 10, 2016|January 10, 2016|10 Jan 2016|10 January 2016|01/10/2016|01-10-2016|10/01/2016|10-01-2016|2016/01/10",2026-04-21
+fqa-274,FreshQA,On what date was Lunar New Year 2023?,stable_freshqa,never-changing,,"Jan 22, 2023|January 22, 2023|22 Jan 2023|22 January 2023|01/22/2023|01-22-2023|22/01/2023|22-01-2023|2023/01/22|2023-01-22",2026-04-21
+fqa-309,FreshQA,What country is Kiwifruit native to?,stable_freshqa,never-changing,,China|mainland China|central and eastern China,2026-04-21
+fqa-322,FreshQA,When did Elon Musk officially become Twitter's owner?,stable_freshqa,never-changing,,"Oct 27, 2022|October 27, 2022|27 Oct 2022|27 October 2022|10/27/2022|10-27-2022|27/10/2022|27-10-2022|2022/10/27|2022-10-27",2026-04-21
+fqa-352,FreshQA,Which province borders Shanghai to the north?,stable_freshqa,never-changing,,Jiangsu|Jiangsu province,2026-04-21
+fqa-316,FreshQA,"On what month, day, and year was the Declaration of Independence signed?",stable_freshqa,never-changing,,"August 2, 1776. It is not July 4, 1776, which is when it was published.|Aug 2, 1776|August 2, 1776|2 Aug 1776|2 August 1776|08/02/1776|08-02-1776|02/08/1776|02-08-1776|1776/08/02",2026-04-21
+fqa-270,FreshQA,Which Polish president died in a plane crash near Smolensk?,stable_freshqa,never-changing,,Lech Kaczyński|Lech Kaczynski|President Lech Kaczyński|President Kaczyński|Kaczyński|Kaczynski,2026-04-21
+fqa-336,FreshQA,What was the first episode of The Simpsons to have all female creative leads?,stable_freshqa,never-changing,,You Won't Believe What This Episode Is About – Act Three Will Shock You!|the 14th episode of the 33rd season|Episode 14 Season 33,2026-04-21
+fqa-328,FreshQA,"Who won the 2022 Nobel Prize in Chemistry from University of Copenhagen, Denmark?",stable_freshqa,never-changing,,Morten Meldal|Morten Peter Meldal|Morten Peter Meldal,2026-04-21
+fqa-334,FreshQA,How many Chinese paddlefish are left in the wild?,stable_freshqa,never-changing,,zero|none|Chinese paddlefish was declared extinct by the International Union for Conservation of Nature in 2022.,2026-04-21
+fqa-357,FreshQA,What organization handles the equivalent of the Nobel prize for computer science?,stable_freshqa,never-changing,,Association for Computing Machinery (ACM),2026-04-21
+fqa-298,FreshQA,When did Blackpink make their debut?,stable_freshqa,never-changing,,"2016|Aug 8, 2016|August 8, 2016|8 Aug 2016|8 August 2016|08/8/2016|08-8-2016|8/08/2016|8-08-2016|2016/08/8",2026-04-21
+fqa-363,FreshQA,In what city did the first successful heart transplant from a pig to a human patient take place?,stable_freshqa,never-changing,,"Baltimore|Baltimore, Maryland|Baltimore, MD|Baltimore, Maryland, United States|Baltimore, MD, USA",2026-04-21
+fqa-302,FreshQA,What state of Germany is the University of Konstanz located in?,stable_freshqa,never-changing,,Baden-Württemberg,2026-04-21
+fqa-355,FreshQA,After which country did Marie Curie name the first element that she discovered?,stable_freshqa,never-changing,,Poland,2026-04-21
+fqa-365,FreshQA,How old was Queen Elizabeth II when she died?,stable_freshqa,never-changing,,96 years old|96,2026-04-21
+fqa-245,FreshQA,What was the first animal to orbit the Earth?,stable_freshqa,never-changing,,Laika,2026-04-21
+fqa-265,FreshQA,What are the starter pokemon available in Pokemon Diamond?,stable_freshqa,never-changing,,"Turtwig, Chimchar, and Piplup|Turtwig, Piplup, and Chimchar|Chimchar, Turtwig, and Piplup|Chimchar, Piplup, and Turtwig|Piplup, Turtwig, and Chimchar|Piplup, Chimchar, and Turtwig",2026-04-21
+fqa-354,FreshQA,What is the main character's name in the last novel Jane Austen published while alive?,stable_freshqa,never-changing,,Emma|Emma Woodhouse,2026-04-21
+fqa-288,FreshQA,Where is Gil Evans from?,stable_freshqa,never-changing,,"Toronto, Canada|Toronto|Toronto, Ontario, Canada|Ontario, Canada|Canada",2026-04-21
+fqa-335,FreshQA,Which university did Taylor Swift receive her honorary Doctor of Fine Arts degree from?,stable_freshqa,never-changing,,New York University,2026-04-21
+fqa-143,FreshQA,How many games are there in the Ace Attorney main series?,changing,slow-changing,,6|six,2026-04-21
+fqa-151,FreshQA,What is the most populous city in Chile?,changing,slow-changing,,"Santiago|Santiago de Chile|Santiago, Chile",2026-04-21
+fqa-221,FreshQA,What is the total height of the tallest building in the world?,changing,slow-changing,,"829.8 m|2,722 ft",2026-04-21
+fqa-167,FreshQA,Who is the current Prime Minister of Japan?,changing,slow-changing,,Sanae Takaichi,2026-04-21
+fqa-137,FreshQA,How many books has Shoshana Zuboff published?,changing,slow-changing,,3|three,2026-04-21
+fqa-135,FreshQA,What U.S. state has the highest gross domestic product?,changing,slow-changing,,California,2026-04-21
+fqa-172,FreshQA,Is there a total solar eclipse in the continental US this year?,changing,slow-changing,,No,2026-04-21
+fqa-136,FreshQA,How many English translations of Les Miserables are there?,changing,slow-changing,,8|eight,2026-04-21
+fqa-169,FreshQA,Who is the most recent player to win both the PDC World Youth Championship and the PDC World Darts Championship?,changing,slow-changing,,Luke Littler,2026-04-21
+fqa-232,FreshQA,How many federal crimes has the most recent former president of the United States been convicted of?,changing,slow-changing,,"Joe Biden, the most recent former president of the United States, hasn't been convicted of any federal crimes.|0|zero|none",2026-04-21
+fqa-168,FreshQA,What is the second highest-grossing Kannada movie of all time?,changing,slow-changing,,Kantara: Chapter 1,2026-04-21
+fqa-201,FreshQA,What is the largest lottery jackpot for a single ticket in history?,changing,slow-changing,,$2.04 billion Powerball jackpot|$2.04 billion,2026-04-21
+fqa-157,FreshQA,How many books has Colleen Hoover published?,changing,slow-changing,,27 books,2026-04-21
+fqa-227,FreshQA,"How many publicly traded American companies have, at any point, had a market capitalization in excess of $4 trillion?",changing,slow-changing,,4|four,2026-04-21
+fqa-129,FreshQA,How much does parking cost at the Big E?,changing,slow-changing,,$10|10 USD,2026-04-21
+fqa-217,FreshQA,Who is the oldest Brazilian president at the time of inauguration?,changing,slow-changing,,Luiz Inácio Lula da Silva|Luiz Inácio da Silva|Lula,2026-04-21
+fqa-182,FreshQA,How much does Costco Executive membership cost annually?,changing,slow-changing,,$130,2026-04-21
+fqa-192,FreshQA,Who is the chancellor of UMass Amherst?,changing,slow-changing,,Javier Reyes,2026-04-21
+fqa-139,FreshQA,How many member nations exist in the United Nations?,changing,slow-changing,,193|193 members|193 member states|193 sovereign states,2026-04-21
+fqa-238,FreshQA,How many times has The Pokémon World Championships been held in Asia?,changing,slow-changing,,one,2026-04-21
+fqa-134,FreshQA,What is the best-selling video game franchise of all time?,changing,slow-changing,,Mario,2026-04-21
+fqa-194,FreshQA,What is the most recently released Studio Ghibli film?,changing,slow-changing,,The Boy and the Heron,2026-04-21
+fqa-161,FreshQA,How many core UMass NLP faculty are currently primarily affiliated with the lab and have been there for more than five years?,changing,slow-changing,,2|two,2026-04-21
+fqa-204,FreshQA,Which country has been invading Ukraine?,changing,slow-changing,,Russia,2026-04-21
+fqa-203,FreshQA,Who was the most recent woman to become President of Peru?,changing,slow-changing,,Dina Boluarte|Dina Ercilia Boluarte Zegarra,2026-04-21
+fqa-170,FreshQA,"What is the most recent award that Yann LeCun, Geoffrey Hinton, and Yoshua Bengio received together?",changing,slow-changing,,Queen Elizabeth Prize for Engineering (2025),2026-04-21
+fqa-197,FreshQA,What is Croatia's current national currency?,changing,slow-changing,,Euro,2026-04-21
+fqa-148,FreshQA,Which is the second largest language edition of Wikipedia according to article count?,changing,slow-changing,,Cebuano,2026-04-21
+fqa-214,FreshQA,What is Amazon Prime Video's most watched premiere ever?,changing,slow-changing,,The Lord of the Rings: The Rings of Power|The Rings of Power,2026-04-21
+fqa-132,FreshQA,How many grand slams does Rafael Nadal have?,changing,slow-changing,,22|twenty-two,2026-04-21
+fqa-230,FreshQA,How many public health emergency of international concern declarations have been made by WHO in the last 5 years?,changing,slow-changing,,2|two,2026-04-21
+fqa-208,FreshQA,Who is the LA county sheriff?,changing,slow-changing,,Robert Luna|Robert G. Luna|Sheriff Robert Luna|Sheriff Robert G. Luna,2026-04-21
+fqa-153,FreshQA,Which is the most recently launched NASA space telescope that observes in the visible and near-infrared?,changing,slow-changing,,Pandora,2026-04-21
+fqa-222,FreshQA,The UN Secretary general is from which country?,changing,slow-changing,,Portugal|Timor-Leste|Portugal and Timor-Leste,2026-04-21
+fqa-224,FreshQA,Which country has President Joe Biden visited the most during his presidency so far?,changing,slow-changing,,United Kingdom,2026-04-21
+fqa-212,FreshQA,Where was the world's oldest DNA found?,changing,slow-changing,,Greenland,2026-04-21
+fqa-237,FreshQA,Which was the first country to detect a case of mpox in the most recent outbreak?,changing,slow-changing,,DR Congo|Democratic Republic of the Congo,2026-04-21
+fqa-225,FreshQA,What is the seating capacity of the largest stadium by capacity in the world?,changing,slow-changing,,"132,000|132K",2026-04-21
+fqa-159,FreshQA,"How many children does Elon Musk have, including his deceased child?",changing,slow-changing,,14|fourteen|at least 14|at least fourteen,2026-04-21
+fqa-228,FreshQA,How many presidents has Peru had in the last 5 years?,changing,slow-changing,,4|four,2026-04-21
+fqa-463,FreshQA,Do the Toronto Raptors have a winning record in the latest NBA season?,changing,fast-changing,,Yes,2026-04-21
+fqa-411,FreshQA,What date was the State of the Union Address delivered in the previous calendar year?,changing,fast-changing,,"Mar 4, 2025|March 4, 2025|4 Mar 2025|4 March 2025|03/4/2025|03-4-2025|4/03/2025|4-03-2025|2025/03/4|2025-03-4",2026-04-21
+fqa-464,FreshQA,Is the average regular gasoline price in Massachusetts under $3.70 a gallon?,changing,fast-changing,,No,2026-04-21
+fqa-415,FreshQA,What is the title of Stephen King's most recent novel?,changing,fast-changing,,The End Times,2026-04-21
+fqa-396,FreshQA,What were this year's Coachella festival dates?,changing,fast-changing,,April 10–12 and April 17-19,2026-04-21
+fqa-455,FreshQA,What is the latest United States jurisdiction to legalize the recreational use of cannabis?,changing,fast-changing,,Ohio,2026-04-21
+fqa-404,FreshQA,Which broadcast network was this year's Super Bowl broadcaster?,changing,fast-changing,,NBC and Peacock|Peacock and NBC,2026-04-21
+fqa-459,FreshQA,How many goals did Bukayo Saka score in the most recent match between Arsenal and Liverpool?,changing,fast-changing,,0|zero,2026-04-21
+fqa-489,FreshQA,How far did the United States representative go at the last Miss World?,changing,fast-changing,,Top 20,2026-04-21
+fqa-457,FreshQA,What's the latest game released by Puppet Combo on Steam?,changing,fast-changing,,Stay out of the House,2026-04-21
+fqa-452,FreshQA,Is Apple's stock price above $170 per share?,changing,fast-changing,,Yes,2026-04-21
+fqa-379,FreshQA,How many citations does Geoffrey Hinton have according to Google Scholar?,changing,fast-changing,,1029825|one million,2026-04-21
+fqa-447,FreshQA,The longest winning streak in the last season of the Premier League consisted of how many matches?,changing,fast-changing,,6|6 matches,2026-04-21
+fqa-451,FreshQA,Who is the number 1 ranked female tennis player in the world?,changing,fast-changing,,Aryna Sabalenka|Aryna Siarhiejeŭna Sabalenka,2026-04-21
+fqa-391,FreshQA,On what date did the Patriots last play the Miami Dolphins?,changing,fast-changing,,"Jan 4, 2026|January 4, 2026|4 Jan 2026|4 January 2026|01/4/2026|01-4-2026|4/01/2026|4-01-2026|2026/01/4|2026-01-4",2026-04-21
+fqa-438,FreshQA,Who won the latest Ballon D'or?,changing,fast-changing,,Dembélé|Ousmane Dembélé|Masour Ousmane Dembélé,2026-04-21
+fqa-499,FreshQA,How many LauncherOne's flights have successfully reached the Low Earth orbit?,changing,fast-changing,,4|four,2026-04-21
+fqa-401,FreshQA,What date is mother's day in the United States this year?,changing,fast-changing,,"Sunday, May 10|May 10, 2026|May 10, 2026|10 May 2026|10 May 2026|05/10/2026|05-10-2026|10/05/2026|10-05-2026|2026/05/10",2026-04-21
+fqa-390,FreshQA,Who is the current ATP top-ranked men's singles tennis player?,changing,fast-changing,,Jannik Sinner,2026-04-21
+fqa-429,FreshQA,What is the release name of the latest version of the macOS operating system?,changing,fast-changing,,Tahoe|macOS 26 Tahoe,2026-04-21
+fqa-418,FreshQA,On what date in North America did the most recent Microsoft's Patch Tuesday come out?,changing,fast-changing,,"Apr 14, 2026|April 14, 2026|14 Apr 2026|14 April 2026|04/14/2026|04-14-2026|14/04/2026|14-04-2026|2026/04/14|2026-04-14",2026-04-21
+fqa-493,FreshQA,Who are the latest champions of the North America's oldest professional sports trophy?,changing,fast-changing,,Florida Panthers (EC),2026-04-21
+fqa-486,FreshQA,What country does the most recent Time Magazine's Entertainer of the Year come from?,changing,fast-changing,,the USA|USA|the United States|United States|U.S.|the U.S.|the US,2026-04-21
+fqa-458,FreshQA,How many countries has President Donald Trump visited during his current presidency?,changing,fast-changing,,"14|President Donald Trump has made 9 international trips to 14 countries during his second presidency, which began on January 20, 2025.",2026-04-21
+fqa-441,FreshQA,Where will the upcoming International Mathematical Olympiad (IMO) be hosted?,changing,fast-changing,,"Shanghai|Shanghai, China|China",2026-04-21
+fqa-398,FreshQA,When did this year's Passover start?,changing,fast-changing,,"April 1|Apr 1, 2026|April 1, 2026|1 Apr 2026|1 April 2026|04/1/2026|04-1-2026|1/04/2026|1-04-2026|2026/04/1",2026-04-21
+fqa-490,FreshQA,How old is David Beckham's daughter?,changing,fast-changing,,14|14 years|14 years old|fourteen,2026-04-21
+fqa-498,FreshQA,Who posted the most-liked TikTok video?,changing,fast-changing,,Bella Poarch,2026-04-21
+fqa-468,FreshQA,How old is David Beckham's oldest son?,changing,fast-changing,,27 years old|27,2026-04-21
+fqa-469,FreshQA,When will the largest marathon in the world start this year?,changing,fast-changing,,"Nov 1, 2026|November 1, 2026|1 Nov 2026|1 November 2026|11/1/2026|11-1-2026|1/11/2026|1-11-2026|2026/11/1|2026-11-1",2026-04-21
+fqa-377,FreshQA,What is the latest highest-grossing movie of the week at the Box office?,changing,fast-changing,,The Super Mario Galaxy Movie,2026-04-21
+fqa-399,FreshQA,Who were the finalists in the US Open women's singles last year?,changing,fast-changing,,Aryna Sabalenka and Amanda Anisimova|Amanda Anisimova and Aryna Sabalenka,2026-04-21
+fqa-374,FreshQA,Who was the winner of The Voice US this year?,changing,fast-changing,,Alexia Jayy,2026-04-21
+fqa-410,FreshQA,What was the host stadium of this year's Super Bowl?,changing,fast-changing,,Levi's Stadium,2026-04-21
+fqa-421,FreshQA,How many countries have recognized same-sex marriage?,changing,fast-changing,,38 countries|38,2026-04-21
+fqa-478,FreshQA,How old is the world's oldest verified living person?,changing,fast-changing,,116 years old|116,2026-04-21
+fqa-378,FreshQA,How many tornadoes have been confirmed by Enhanced Fujita rating in the United States so far this year?,changing,fast-changing,,"1,429|There have been 1,429 confirmed tornadoes in the United States.",2026-04-21
+fqa-397,FreshQA,When is this year's Black Friday?,changing,fast-changing,,"November 27|Nov 27, 2026|November 27, 2026|27 Nov 2026|27 November 2026|11/27/2026|11-27-2026|27/11/2026|27-11-2026|2026/11/27",2026-04-21
+fqa-442,FreshQA,Which game won the Spiel des Jahres award most recently?,changing,fast-changing,,Bomb Busters,2026-04-21
+fqa-466,FreshQA,How long has it been since the Eiffel Tower's inauguration?,changing,fast-changing,,137|137 years|more than 137 years,2026-04-21
+pop-1335873,PopQA,Who is the father of Tyler Ritter?,stable_common,father,15584,John Ritter|Jonathan Southworth Ritter,PopQA test
+pop-6453369,PopQA,In what city was Belly born?,stable_common,place of birth,14138,Jenin,PopQA test
+pop-3202083,PopQA,Who was the director of La Haine?,stable_common,director,22813,Mathieu Kassovitz|Matthieu Kassovitz,PopQA test
+pop-6284807,PopQA,Who was the director of The Hurricane?,stable_common,director,14419,Norman Jewison,PopQA test
+pop-1534505,PopQA,Who was the director of Pulse?,stable_common,director,33779,Kiyoshi Kurosawa,PopQA test
+pop-2000195,PopQA,Who is the father of Şehzade Bayezid?,stable_common,father,18110,Suleiman the Magnificent|Suleiman I|Suleiman the Lawgiver|Suleiman bin Selim Khan|Kanuni|Sultan Süleyman|Süleyman Muhtesem|Süleyman the Magnificent|Soliman|Sulaymān|Süleyman I|Sultan of the Turks Süleyman I|Sultan of the Turks Kanunî Süleyman|Sultan of the Turks Solyman I|Sultan of the Turks Solimano I|Soliman le Magnifique|Sultan of the Turks Kanunî|Solimano il Magnifico|Muhibbî|Sultan of the Turks Soliman I|Sultan of the Turks Kanuni|Muhibbi,PopQA test
+pop-6166697,PopQA,Who is the father of James VI and I?,stable_common,father,151391,"Henry Stuart, Lord Darnley|Henry Stuart|Lord Darnley",PopQA test
+pop-715797,PopQA,What is the capital of Minnesota?,stable_common,capital,257506,"Saint Paul|St. Paul|Saint Paul, Minnesota|St. Paul, Minnesota|St Paul|St Paul, Minnesota",PopQA test
+pop-2839774,PopQA,Who is the father of Hera?,stable_common,father,75520,Cronus|Kronos,PopQA test
+pop-2920105,PopQA,What is the capital of Cantabria?,stable_common,capital,13716,"Santander|Santander, Spain",PopQA test
+pop-2254982,PopQA,What is the capital of Chile?,stable_common,capital,156803,"Santiago|Santiago de Chile|Santiago, Chile",PopQA test
+pop-1789490,PopQA,In what city was Annie Oakley born?,stable_common,place of birth,45680,"Darke County|Darke County, Ohio",PopQA test
+pop-5316162,PopQA,In what city was Robert Kraft born?,stable_common,place of birth,85312,"Brookline|Brookline, Massachusetts",PopQA test
+pop-1585746,PopQA,Who is the father of Horae?,stable_common,father,10127,Zeus,PopQA test
+pop-719786,PopQA,Who was the director of Attarintiki Daredi?,stable_common,director,15817,Trivikram Srinivas|Akella Naga Srinivasa Sarma|Akella Naga Srinivasa Sharma,PopQA test
+pop-5602826,PopQA,Who was the director of House?,stable_common,director,28642,Steve Miner,PopQA test
+pop-4394181,PopQA,What is the capital of East Timor?,stable_common,capital,90624,Dili|City of Dili,PopQA test
+pop-1581906,PopQA,What is the capital of Yukon?,stable_common,capital,52709,"Whitehorse|Whitehorse, Yukon",PopQA test
+pop-6499110,PopQA,What is the capital of Mexico?,stable_common,capital,367408,"Mexico City|Mexico D.F.|Ciudad de México|City of Mexico|Mexico City, Mexico|CDMX|Mexico",PopQA test
+pop-4322033,PopQA,Who was the director of Memories?,stable_common,director,12387,Katsuhiro Otomo|Katsuhiro Ōtomo|Tensai Okamura,PopQA test
+pop-1537651,PopQA,What is the capital of New Brunswick?,stable_common,capital,57884,Fredericton,PopQA test
+pop-1941761,PopQA,What is the capital of Netherlands Antilles?,stable_common,capital,24207,Willemstad|Williamtown|Willemtown,PopQA test
+pop-3731616,PopQA,Who was the director of Christopher?,stable_common,director,14903,"Tim Van Patten|Timothy Van Patten|Van Patten|Timothy ""Tim"" Van Patten",PopQA test
+pop-1635532,PopQA,What is the capital of Bourbon Restoration?,stable_common,capital,31469,"Paris|City of Light|Paris, France",PopQA test
+pop-289051,PopQA,Who was the director of Gotti?,stable_common,director,12846,Robert Harmon,PopQA test
+pop-5308304,PopQA,In what city was Wang Yaping born?,stable_common,place of birth,18810,Yantai|Chefoo|Zhifu|Chi-Fu,PopQA test
+pop-2155468,PopQA,Who is the father of Michael Jackson?,stable_common,father,753723,Joe Jackson|Joseph Walter Jackson,PopQA test
+pop-1993670,PopQA,What is the capital of Northern Ireland?,stable_common,capital,172209,"Belfast|Béal Feirste|Beal Feirste|Belfast, Ireland",PopQA test
+pop-1482020,PopQA,Who was the director of Iron Man?,stable_common,director,104680,Jon Favreau|Jonathan Favreau|Jonathan Kolia Favreau,PopQA test
+pop-761251,PopQA,What is the capital of Kansas?,stable_common,capital,222834,"Topeka|Topeka, Kansas|Topeka (Kansas)",PopQA test
+pop-2069076,PopQA,Who is the father of Melora Hardin?,stable_common,father,215189,Jerry Hardin,PopQA test
+pop-2904226,PopQA,What is the capital of Minas Gerais?,stable_common,capital,19835,Belo Horizonte,PopQA test
+pop-244122,PopQA,Who was the director of The Changeling?,stable_common,director,28865,Peter Medak,PopQA test
+pop-1259497,PopQA,What is the capital of Quebec?,stable_common,capital,142909,Quebec City|Quebec|Ville de Québec|Québec|City of Québec|City of Quebec|Ville de Quebec|3rd Summit of the Americas,PopQA test
+pop-2036135,PopQA,What is the capital of Uzbekistan?,stable_common,capital,156653,Tashkent,PopQA test
+pop-1518377,PopQA,Who was the director of The Collection?,stable_common,director,18393,Marcus Dunstan,PopQA test
+pop-4117727,PopQA,Who is the father of Sydney Chaplin?,stable_common,father,12953,Charlie Chaplin|Charles Spencer Chaplin|Charles Chaplin|Sir Charles Spencer Chaplin,PopQA test
+pop-6423457,PopQA,In what country is Malay?,stable_common,country,47480,Indonesia|Republic of Indonesia|id|ID|INA|IDN,PopQA test
+pop-2967643,PopQA,What is the capital of Australia?,stable_common,capital,713574,Canberra,PopQA test
+pop-3146871,PopQA,In what country is Rong?,stable_common,country,10212,Norway|Kingdom of Norway|Norge|Norvège‏|NO|NOR|no|Noreg|Norwegen‏|🇳🇴,PopQA test
+pop-6041173,PopQA,In what city was Tsugumi Higasayama born?,stable_rare,place of birth,95,Saitama Prefecture|Saitama-ken,PopQA test
+pop-6020401,PopQA,In what city was Tony Shields born?,stable_rare,place of birth,73,Strabane|Straban|An Srath Bán|An Srath Ban,PopQA test
+pop-1246668,PopQA,In what country is Villalcampo?,stable_rare,country,93,Spain|España|Kingdom of Spain|ES|ESP,PopQA test
+pop-1354085,PopQA,Who was the director of The Photo?,stable_rare,director,71,Hossein Shahabi,PopQA test
+pop-15917,PopQA,In what city was Emil Marschalk von Ostheim born?,stable_rare,place of birth,57,Bamberg|Town of Bamberg,PopQA test
+pop-1445881,PopQA,In what country is Pierce?,stable_rare,country,80,United States of America|the United States of America|America|U.S.A.|USA|U.S.|US|the US|the USA|US of A|the United States|U. S. A.|U. S.|the States|the U.S.|'Merica|U.S|United States|'Murica,PopQA test
+pop-3324967,PopQA,In what city was Andrea di Alessandro born?,stable_rare,place of birth,86,Brescia|Lioness of Italy,PopQA test
+pop-1509856,PopQA,Who was the director of The Sea?,stable_rare,director,100,Wanda Jakubowska,PopQA test
+pop-748060,PopQA,In what city was Masaru Inada born?,stable_rare,place of birth,40,Sapporo,PopQA test
+pop-5968395,PopQA,"Who is the father of Theobald Butler, 1st Viscount Butler of Tulleophelim?",stable_rare,father,100,Sir Edmund Butler of Cloughgrenan|Sir Edmund Butler,PopQA test
+pop-564506,PopQA,In what city was Robert Crannell Minor born?,stable_rare,place of birth,95,"New York City|NYC|New York|the five boroughs|Big Apple|City of New York|NY City|New York, New York|New York City, New York|New York, NY|New York City (NYC)",PopQA test
+pop-1427860,PopQA,In what city was John Edgerton born?,stable_rare,place of birth,78,"Johnston County|Johnston County, North Carolina",PopQA test
+pop-1596119,PopQA,What is the capital of Gmina Andrespol?,stable_rare,capital,52,Andrespol,PopQA test
+pop-2603928,PopQA,In what city was Anders Orvin born?,stable_rare,place of birth,50,Hattfjelldal,PopQA test
+pop-1496612,PopQA,In what city was Leobardo Soto born?,stable_rare,place of birth,50,Puebla|Free and Sovereign State of Puebla|Estado de Puebla,PopQA test
+pop-780748,PopQA,Who was the composer of One More Time?,stable_rare,composer,75,James LaBrie|Kevin James LaBrie|00219295358 IPI,PopQA test
+pop-4118504,PopQA,In what city was Florence Marie Harsant born?,stable_rare,place of birth,27,New Plymouth,PopQA test
+pop-714110,PopQA,In what city was Giovanni Speranza born?,stable_rare,place of birth,68,Gießen|Giessen,PopQA test
+pop-1081675,PopQA,In what country is Chalhuacocha?,stable_rare,country,22,Peru|pe|Republic of Peru|República del Perú|🇵🇪|Republica del Peru,PopQA test
+pop-2276352,PopQA,In what city was Aarno Maliniemi born?,stable_rare,place of birth,40,Oulu|Uleåborg|Uleaborg,PopQA test
+pop-1582998,PopQA,In what country is Panaitoliko?,stable_rare,country,77,Greece|Hellenic Republic|Hellas|gr|el|🇬🇷|Greek Republic|GRE|Ellada|Greek,PopQA test
+pop-3974677,PopQA,Who is the father of Theodelap of Spoleto?,stable_rare,father,87,Faroald I of Spoleto,PopQA test
+pop-5245724,PopQA,In what city was Robert Zawada born?,stable_rare,place of birth,44,Jedlnia-Letnisko,PopQA test
+pop-4465229,PopQA,In what country is Eslamabad-e Mashayekh?,stable_rare,country,22,Iran|Islamic Republic of Iran|Persia|ir|Islamic Rep. Iran|🇮🇷,PopQA test
+pop-5707753,PopQA,In what city was Scott McCuaig born?,stable_rare,place of birth,52,"Surrey|Surrey, British Columbia",PopQA test
+pop-3356649,PopQA,In what city was Anton Lui born?,stable_rare,place of birth,33,Rabaul,PopQA test
+pop-3734310,PopQA,In what city was Christos Mitsis born?,stable_rare,place of birth,72,Marousi,PopQA test
+pop-6450718,PopQA,In what city was Ricardo Sánchez born?,stable_rare,place of birth,81,"Guadalajara|Guadalajara, Jalisco|Guadalajara, Jalisco, Mexico|Guadalajara, Mexico|Guadalajara, México",PopQA test
+pop-288315,PopQA,Who is the father of Hans Holtedahl?,stable_rare,father,51,Olaf Holtedahl,PopQA test
+pop-4408940,PopQA,In what country is Toronto Northwest?,stable_rare,country,86,Canada|Dominion of Canada|British North America|CAN|CA|ca|can|Can.,PopQA test
+pop-251876,PopQA,In what city was John Keating born?,stable_rare,place of birth,87,"Hobart|Hobart Town|Hobarton|Hobart, Tasmania|Hobart, Tas.",PopQA test
+pop-4192425,PopQA,In what city was Gary Freear born?,stable_rare,place of birth,38,King's Lynn|Lynn|Bishop's Lynn,PopQA test
+pop-3746560,PopQA,In what city was Clarence Beck born?,stable_rare,place of birth,65,"Harrisburg|Capital of Pennsylvania|Harrisburg, Pennsylvania",PopQA test
+pop-3510203,PopQA,In what city was Billy Carlson born?,stable_rare,place of birth,81,"San Diego|San Diego, California|SD|America's Finest City|Sandi|the birthplace of California",PopQA test
+pop-1567459,PopQA,In what city was Nina Dittrich born?,stable_rare,place of birth,93,"Vienna|Wien|Vienna, Austria|W",PopQA test
+pop-4286548,PopQA,In what city was Gregorio Selser born?,stable_rare,place of birth,55,Buenos Aires|Buenos Ayres|Autonomous City of Buenos Aires|CABA|Ciudad Autónoma de Buenos Aires,PopQA test
+pop-6323407,PopQA,In what city was Hansi Niese born?,stable_rare,place of birth,93,"Vienna|Wien|Vienna, Austria|W",PopQA test
+pop-5987762,PopQA,Who was the director of Those Who Love?,stable_rare,director,72,Manning Haynes|Horace Manning Haynes,PopQA test
+pop-1900573,PopQA,What is the capital of Gmina Czorsztyn?,stable_rare,capital,85,Maniowy,PopQA test
+pop-2925773,PopQA,Who was the director of Son contento?,stable_rare,director,73,Maurizio Ponzi,PopQA test

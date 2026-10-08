@@ -4,3 +4,5 @@ __pycache__/
 results/*.joblib
 results/*.log
 .DS_Store
+data/raw/
+results/page_cache.json

@@ -82,9 +82,12 @@ def _save_cache(cache: dict):
 
 def check(question: str) -> dict:
     """Ask the model SAMPLES times and decide whether it knows the answer."""
-    backend = llm.backend()
+    backend, model = llm.backend(), llm.model_name()
     cache = _load_cache()
-    key = f"{backend}::{question}"
+    key = f"{backend}::{model}::{question}"
+    old_key = f"{backend}::{question}"   # older cache entries (all made with llama3.1:8b)
+    if key not in cache and old_key in cache and model == "llama3.1:8b":
+        key = old_key
     if key not in cache:
         cache[key] = [llm.generate(PROMPT.format(q=question), temperature=1.0, max_tokens=40)
                       for _ in range(SAMPLES)]

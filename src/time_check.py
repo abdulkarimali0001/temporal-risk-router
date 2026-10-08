@@ -25,6 +25,9 @@ from sklearn.pipeline import FeatureUnion, Pipeline
 
 ROOT = Path(__file__).resolve().parent.parent
 TRAIN_DATA = ROOT / "data" / "time_check_train.csv"
+# Extra outside training data, created by src/benchmarks.py: FreshQA questions labelled by how
+# fast their answer changes, plus stable PopQA questions - none of them in the benchmark test set
+EXTRA_DATA = ROOT / "data" / "time_check_extra.csv"
 MODEL_PATH = ROOT / "results" / "time_check_model.joblib"
 LABELS = ["LOW", "AMBIGUOUS", "HIGH"]
 
@@ -40,16 +43,26 @@ def build_pipeline() -> Pipeline:
     return Pipeline([("features", features), ("clf", clf)])
 
 
-def train(data_path: Path = TRAIN_DATA) -> Pipeline:
-    df = pd.read_csv(data_path)
-    model = build_pipeline().fit(df["question"], df["label"])
+def training_files() -> list[Path]:
+    return [p for p in (TRAIN_DATA, EXTRA_DATA) if p.exists()]
+
+
+OWN_WEIGHT = 3   # our own hand-labelled questions count 3x the outside data
+
+
+def train() -> Pipeline:
+    frames = [pd.read_csv(p) for p in training_files()]
+    df = pd.concat(frames, ignore_index=True)
+    weights = [OWN_WEIGHT] * len(frames[0]) + [1] * (len(df) - len(frames[0]))
+    model = build_pipeline().fit(df["question"], df["label"], clf__sample_weight=weights)
     MODEL_PATH.parent.mkdir(exist_ok=True)
     joblib.dump(model, MODEL_PATH)
     return model
 
 
 def load() -> Pipeline:
-    if MODEL_PATH.exists():
+    newest_data = max(p.stat().st_mtime for p in training_files())
+    if MODEL_PATH.exists() and MODEL_PATH.stat().st_mtime >= newest_data:
         try:
             return joblib.load(MODEL_PATH)
         except Exception:  # saved with another scikit-learn version: retrain
@@ -64,7 +77,7 @@ def classify(question: str, model: Pipeline | None = None) -> str:
 
 if __name__ == "__main__":
     m = train()
-    print(f"Trained on {TRAIN_DATA.name}, saved to {MODEL_PATH.relative_to(ROOT)}")
+    print(f"Trained on {', '.join(p.name for p in training_files())}, saved to {MODEL_PATH.relative_to(ROOT)}")
     for q in ["Who runs Samsung Electronics?", "What is photosynthesis?",
               "Is Naver hiring?", "What is the dorm fee?"]:
         print(f"{classify(q, m):<10} {q}")

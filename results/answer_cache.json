@@ -1,0 +1,308 @@
+{
+ "ollama::llama3.1:8b::memory::What is the capital of Australia?": "The capital of Australia is Canberra.",
+ "ollama::llama3.1:8b::search::What is the capital of Australia?": {
+  "answer": "Canberra, the capital city of Australia, is situated within the territory and is the territory's primate city. [1]",
+  "query": "Capital of Australia Wikipedia",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Australian_Capital_Territory",
+   "https://en.wikipedia.org/wiki/Capital_punishment_in_Australia",
+   "https://en.wikipedia.org/wiki/List_of_judges_of_the_Supreme_Court_of_the_Australian_Capital_Territory"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who wrote Hamlet?": "William Shakespeare wrote Hamlet.",
+ "ollama::llama3.1:8b::search::Who wrote Hamlet?": {
+  "answer": "William Shakespeare wrote Hamlet, as stated in [2] and [3].",
+  "query": "Author of Hamlet play",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ur-Hamlet",
+   "https://en.wikipedia.org/wiki/Hamlet",
+   "https://en.wikipedia.org/wiki/Characters_in_Hamlet"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the boiling point of water at sea level in Celsius?": "The boiling point of water at sea level is 100°C.",
+ "ollama::llama3.1:8b::search::What is the boiling point of water at sea level in Celsius?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "boiling point water sea level celsius",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Celsius",
+   "https://en.wikipedia.org/wiki/Anders_Celsius",
+   "https://en.wikipedia.org/wiki/Boiling_water_reactor"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the chemical symbol for iron?": "The chemical symbol for iron is Fe.",
+ "ollama::llama3.1:8b::search::What is the chemical symbol for iron?": {
+  "answer": "The chemical symbol for iron is Fe [3].",
+  "query": "Chemical symbol for iron",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chemical_symbol",
+   "https://en.wikipedia.org/wiki/Alchemical_symbol",
+   "https://en.wikipedia.org/wiki/Iron_(disambiguation)"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::How many legs does a spider have?": "A spider has 8 legs.",
+ "ollama::llama3.1:8b::search::How many legs does a spider have?": {
+  "answer": "Spiders have eight limbs. [3]",
+  "query": "Spider leg anatomy Wikipedia",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pholcus_phalangioides",
+   "https://en.wikipedia.org/wiki/Sea_spider",
+   "https://en.wikipedia.org/wiki/Spider"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What does CPU stand for?": "CPU stands for Central Processing Unit. It's the primary component of a computer that performs most instructions that the computer software directs it to execute.",
+ "ollama::llama3.1:8b::search::What does CPU stand for?": {
+  "answer": "Central Processing Unit [1]",
+  "query": "cpu stand",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Motherboard",
+   "https://en.wikipedia.org/wiki/Process_Lasso",
+   "https://en.wikipedia.org/wiki/Qualcomm_Snapdragon"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who painted The Starry Night?": "The Starry Night was painted by Vincent van Gogh.",
+ "ollama::llama3.1:8b::search::Who painted The Starry Night?": {
+  "answer": "Vincent van Gogh painted The Starry Night. [1]",
+  "query": "Artist behind The Starry Night",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Starry_Night",
+   "https://en.wikipedia.org/wiki/Night",
+   "https://en.wikipedia.org/wiki/Starry_Night_(Chris_August_song)"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the largest ocean on Earth?": "The largest ocean on Earth is the Pacific Ocean, covering an area of approximately 155.6 million square kilometers. It accounts for approximately 46% of the Earth's total ocean area.",
+ "ollama::llama3.1:8b::search::What is the largest ocean on Earth?": {
+  "answer": "The Pacific Ocean is the largest and deepest of Earth's five oceanic divisions. [1]",
+  "query": "Largest ocean on Earth",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Pacific_Ocean",
+   "https://en.wikipedia.org/wiki/Ocean",
+   "https://en.wikipedia.org/wiki/Earth"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::In what year did World War II end?": "World War II ended in 1945. The war in Europe officially ended on May 8, 1945, and the war in the Pacific ended on August 15, 1945.",
+ "ollama::llama3.1:8b::search::In what year did World War II end?": {
+  "answer": "World War II ended in 1945. [1] and [2]",
+  "query": "End of World War II",
+  "sources": [
+   "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Europe",
+   "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia",
+   "https://en.wikipedia.org/wiki/End_of_World_War_II"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the square root of 144?": "The square root of 144 is 12.",
+ "ollama::llama3.1:8b::search::What is the square root of 144?": {
+  "answer": "The square root of 144 is 12. [1]",
+  "query": "Square root of 144",
+  "sources": [
+   "https://en.wikipedia.org/wiki/New_Jerusalem",
+   "https://en.wikipedia.org/wiki/Square_foot",
+   "https://en.wikipedia.org/wiki/Penrose_method"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What language is spoken in Brazil?": "The official language spoken in Brazil is Portuguese. It is the most widely spoken language in the country.",
+ "ollama::llama3.1:8b::search::What language is spoken in Brazil?": {
+  "answer": "Portuguese is the official and national language of Brazil, being widely spoken by nearly all of its population. [1]",
+  "query": "Official language of Brazil",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Languages_of_Brazil",
+   "https://en.wikipedia.org/wiki/List_of_official_languages_by_country_and_territory",
+   "https://en.wikipedia.org/wiki/Official_languages_of_the_United_Nations"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What planet is known as the Red Planet?": "The planet known as the Red Planet is Mars.",
+ "ollama::llama3.1:8b::search::What planet is known as the Red Planet?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "planet known as red planet",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Planet_Nine",
+   "https://en.wikipedia.org/wiki/Mercury_(planet)",
+   "https://en.wikipedia.org/wiki/War_for_the_Planet_of_the_Apes"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is H2O commonly called?": "H2O is commonly called water.",
+ "ollama::llama3.1:8b::search::What is H2O commonly called?": {
+  "answer": "Water is commonly called the \"universal solvent\" [2].",
+  "query": "h2o commonly called",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Electrolysis_of_water",
+   "https://en.wikipedia.org/wiki/Water",
+   "https://en.wikipedia.org/wiki/Oxidizing_agent"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who developed the theory of relativity?": "Albert Einstein developed the theory of relativity, which includes both special relativity and general relativity.",
+ "ollama::llama3.1:8b::search::Who developed the theory of relativity?": {
+  "answer": "Albert Einstein developed the theory of relativity. [1]",
+  "query": "Albert Einstein theory of relativity",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Theory_of_relativity",
+   "https://en.wikipedia.org/wiki/The_Meaning_of_Relativity",
+   "https://en.wikipedia.org/wiki/General_relativity"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the capital of South Korea?": "The capital of South Korea is Seoul.",
+ "ollama::llama3.1:8b::search::What is the capital of South Korea?": {
+  "answer": "Seoul is the capital of South Korea [1].",
+  "query": "Capital of South Korea",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Seoul",
+   "https://en.wikipedia.org/wiki/Capital_punishment_in_South_Korea",
+   "https://en.wikipedia.org/wiki/Capital_of_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who wrote the Swahili novel Kufa Kuzikana?": "The Swahili novel \"Kufa Kuzikana\" was written by Muhajir.",
+ "ollama::llama3.1:8b::search::Who wrote the Swahili novel Kufa Kuzikana?": {
+  "answer": "Ken Walibora wrote the Swahili novel Kufa Kuzikana. [1]",
+  "query": "Author of Kufa Kuzikana",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ken_Walibora"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who was the first Kenyan woman to earn a PhD?": "The first Kenyan woman to earn a PhD was Wangari Maathai, who received her doctorate in veterinary anatomy from the University of Nairobi in 1971.",
+ "ollama::llama3.1:8b::search::Who was the first Kenyan woman to earn a PhD?": {
+  "answer": "Wangarĩ Maathai was the first Eastern African woman to receive a Ph.D., her doctorate in veterinary anatomy, from the University College of Nairobi, which became the University of Nairobi the following year. [2]",
+  "query": "First Kenyan woman PhD holder",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Machakos_County",
+   "https://en.wikipedia.org/wiki/Wangar%C4%A9_Maathai",
+   "https://en.wikipedia.org/wiki/Sarah_Aba-Afari"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who designed the Sebeolsik Hangul keyboard layout?": "I don't have information on who designed the Sebeolsik Hangul keyboard layout.",
+ "ollama::llama3.1:8b::search::Who designed the Sebeolsik Hangul keyboard layout?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "designed sebeolsik hangul keyboard layout",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Keyboard_layout",
+   "https://en.wikipedia.org/wiki/Korean_language_and_computers",
+   "https://en.wikipedia.org/wiki/History_of_Hangul"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What was the model name of the first radio made by Goldstar?": "I don't have information on the first radio made by Goldstar.",
+ "ollama::llama3.1:8b::search::What was the model name of the first radio made by Goldstar?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "model name first radio made goldstar",
+  "sources": [
+   "https://en.wikipedia.org/wiki/3DO",
+   "https://en.wikipedia.org/wiki/Emerson_Radio",
+   "https://en.wikipedia.org/wiki/Zenith_Electronics"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Which small river flows through the centre of Gangneung?": "The small river that flows through the centre of Gangneung is the Gyeonggang River.",
+ "ollama::llama3.1:8b::search::Which small river flows through the centre of Gangneung?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "small river flows through centre gangneung",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Park_Jeong-ja_(actress)",
+   "https://en.wikipedia.org/wiki/Irkutsk",
+   "https://en.wikipedia.org/wiki/2024_Noto_earthquake"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the height in metres of Ulsanbawi rock in Seoraksan?": "I'm not aware of any information about a rock called Ulsanbawi in Seoraksan.",
+ "ollama::llama3.1:8b::search::What is the height in metres of Ulsanbawi rock in Seoraksan?": {
+  "answer": "Ulsanbawi is 873 meters above sea level [1].",
+  "query": "Ulsanbawi rock Seoraksan height",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ulsanbawi",
+   "https://en.wikipedia.org/wiki/Scenic_Sites_(South_Korea)"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::In what year was Sinheungsa temple in Seoraksan first founded?": "Sinheungsa temple in Seoraksan was first founded in 652 AD.",
+ "ollama::llama3.1:8b::search::In what year was Sinheungsa temple in Seoraksan first founded?": {
+  "answer": "652 [1]",
+  "query": "Sinheungsa temple Seoraksan founding year",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ulsanbawi",
+   "https://en.wikipedia.org/wiki/Gangwon_Province,_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What traditional song is the melody of the Kenyan national anthem based on?": "The melody of the Kenyan national anthem is based on the traditional song \"Ee Mungu Nguvu Yetu\", which is a Swahili hymn.",
+ "ollama::llama3.1:8b::search::What traditional song is the melody of the Kenyan national anthem based on?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "traditional song melody kenyan national anthem based",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Libert%C3%A9_(anthem)",
+   "https://en.wikipedia.org/wiki/The_Internationale",
+   "https://en.wikipedia.org/wiki/Music_of_Sudan"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::What is the Korean name of the red snow crab caught near Sokcho?": "The Korean name for the red snow crab is \"chunhae\" (, ).",
+ "ollama::llama3.1:8b::search::What is the Korean name of the red snow crab caught near Sokcho?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "Korean name red snow crab",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Yeongdeok_Snow_Crab_Street",
+   "https://en.wikipedia.org/wiki/Chionoecetes_opilio",
+   "https://en.wikipedia.org/wiki/Red-crowned_crane"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who is the CEO of Naver?": "The CEO of Naver is Lee Hae-joon.",
+ "ollama::llama3.1:8b::search::Who is the CEO of Naver?": {
+  "answer": "Han Seong-sook was the CEO of Naver Corporation from 2017 to 2021 [2].",
+  "query": "ceo naver",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Naver_Corporation",
+   "https://en.wikipedia.org/wiki/Han_Seong-sook",
+   "https://en.wikipedia.org/wiki/CEO-dol_Mart"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who manages Kakao these days?": "Kakao is a South Korean company, and its management is led by Lee Jae-uk, who serves as the CEO.",
+ "ollama::llama3.1:8b::search::Who manages Kakao these days?": {
+  "answer": "Kakao is managed by Kakao Entertainment, a subsidiary of Kakao, which was established in 2021 after the merger of KakaoPage and Kakao M. [2]",
+  "query": "Kakao Corporation management team",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kakao_Webtoon",
+   "https://en.wikipedia.org/wiki/Kakao_Entertainment",
+   "https://en.wikipedia.org/wiki/SM_Entertainment"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who leads SK hynix?": "The CEO of SK hynix is Lee Seok-hee.",
+ "ollama::llama3.1:8b::search::Who leads SK hynix?": {
+  "answer": "Chey Tae-won has been chairman of SK Hynix since 2012 [2].",
+  "query": "SK Hynix leadership team",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Micron_Technology",
+   "https://en.wikipedia.org/wiki/Chey_Tae-won",
+   "https://en.wikipedia.org/wiki/SiFive"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who is the president of Kenya?": "The current President of Kenya is William Ruto. He took office on September 13, 2022.",
+ "ollama::llama3.1:8b::search::Who is the president of Kenya?": {
+  "answer": "The current president of Kenya is William Ruto, who has been in office since 13 September 2022. [1]",
+  "query": "President of Kenya current",
+  "sources": [
+   "https://en.wikipedia.org/wiki/President_of_Kenya",
+   "https://en.wikipedia.org/wiki/Deputy_President_of_Kenya",
+   "https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Kenya"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who is the chairman of Samsung Electronics?": "The chairman of Samsung Electronics is Lee Jae-yong.",
+ "ollama::llama3.1:8b::search::Who is the chairman of Samsung Electronics?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "chairman samsung electronics",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Samsung",
+   "https://en.wikipedia.org/wiki/Samsung_Town",
+   "https://en.wikipedia.org/wiki/Samsung_Electronics"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Who is the prime minister of Japan?": "The current Prime Minister of Japan is Fumio Kishida. He has been in office since October 2021.",
+ "ollama::llama3.1:8b::search::Who is the prime minister of Japan?": {
+  "answer": "The current prime minister of Japan is Sanae Takaichi. [2]",
+  "query": "Current Prime Minister of Japan",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_Japan",
+   "https://en.wikipedia.org/wiki/List_of_current_prime_ministers_by_date_of_assumption_of_office",
+   "https://en.wikipedia.org/wiki/List_of_spouses_of_prime_ministers_of_Japan"
+  ]
+ },
+ "ollama::llama3.1:8b::memory::Which team won the last KBO Korean Series?": "I'm not aware of the most recent KBO Korean Series winner.",
+ "ollama::llama3.1:8b::search::Which team won the last KBO Korean Series?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "team won last kbo korean series",
+  "sources": [
+   "https://en.wikipedia.org/wiki/KBO_League",
+   "https://en.wikipedia.org/wiki/2026_KBO_League_season",
+   "https://en.wikipedia.org/wiki/Korean_Series"
+  ]
+ }
+}

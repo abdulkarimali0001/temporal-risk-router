@@ -1,0 +1,631 @@
+question,label,category
+What is the name of the first animal to land on the moon?,AMBIGUOUS,freshqa
+What is the name of Leonardo DiCaprio's third child?,AMBIGUOUS,freshqa
+What year did the first human land on Mars?,AMBIGUOUS,freshqa
+What was the name of the Zodiac killer?,AMBIGUOUS,freshqa
+Why are all quickly verifiable problems also quickly solvable?,AMBIGUOUS,freshqa
+In what year did bodybuilding become an Olympic sport?,AMBIGUOUS,freshqa
+When did Meta move its headquarters to Austin?,AMBIGUOUS,freshqa
+When was the chapter of alpha Kappa Delta Phi established at American University?,AMBIGUOUS,freshqa
+When did Frontier purchase Spirit Airlines?,AMBIGUOUS,freshqa
+When was the permanent cure for cancer developed?,AMBIGUOUS,freshqa
+When was Dartmouth Law School founded?,AMBIGUOUS,freshqa
+When was League of Legends 2 released?,AMBIGUOUS,freshqa
+In what year did Hikaru Nakamura become the World Chess Champion?,AMBIGUOUS,freshqa
+When did American Express open its 25th Centurion Lounge?,AMBIGUOUS,freshqa
+In what year was the Element 120 first synthesized?,AMBIGUOUS,freshqa
+When did Jamie Oliver earn his first Michelin Star?,AMBIGUOUS,freshqa
+When did the UK adopt the Euro?,AMBIGUOUS,freshqa
+When was the second time that Joe Biden visited Vietnam during his presidency?,AMBIGUOUS,freshqa
+How much did Elon Musk buy Activision Blizzard for?,AMBIGUOUS,freshqa
+When was COVID-19 declared endemic by the World Health Organization?,AMBIGUOUS,freshqa
+In what three consecutive years did Drake top Spotify's list of most-streamed artists?,AMBIGUOUS,freshqa
+When did Tesla Model Z come out?,AMBIGUOUS,freshqa
+Which vaccine completely eradicated COVID-19 worldwide?,AMBIGUOUS,freshqa
+How much did Elon Musk acquire Instagram for?,AMBIGUOUS,freshqa
+How much did Mark Zuckerberg acquire Twitter for?,AMBIGUOUS,freshqa
+What movie did Clint Eastwood win a Best Actor Academy Award for?,AMBIGUOUS,freshqa
+When did Willie Nelson pass away?,AMBIGUOUS,freshqa
+How many times has Jeremy Corbyn served as Prime Minister of the UK?,AMBIGUOUS,freshqa
+What year did Chris Paul win his second NBA championship?,AMBIGUOUS,freshqa
+When did King Charles strip Prince Harry's title as the Duke of Sussex?,AMBIGUOUS,freshqa
+When did Yann LeCun join Google?,AMBIGUOUS,freshqa
+When was the eighth book of the Percy Jackson & the Olympians series released?,AMBIGUOUS,freshqa
+In what month of 2023 was the PlayStation 6 (PS6) released worldwide?,AMBIGUOUS,freshqa
+When did the population of United States reach 8 billion?,AMBIGUOUS,freshqa
+What was the first year in which Harry Maguire won the Ballon d'Or?,AMBIGUOUS,freshqa
+In what year did Papa John's go out of business?,AMBIGUOUS,freshqa
+What year did the film Metropolis enter the public domain in Germany?,AMBIGUOUS,freshqa
+How many executive orders has Hillary Clinton enacted?,AMBIGUOUS,freshqa
+Who was the first female president of the United States?,AMBIGUOUS,freshqa
+In what year did Argentina win their fifth FIFA World Cup title?,AMBIGUOUS,freshqa
+Who is the 9th American to win the Miss World crown?,AMBIGUOUS,freshqa
+When did Lionel Messi win his second FIFA World Cup?,AMBIGUOUS,freshqa
+Where will the FIFA World Cup be hosted next year?,AMBIGUOUS,freshqa
+By how many seats do Democrats currently control the United States Senate?,AMBIGUOUS,freshqa
+Who is the X Corp.'s CEO?,AMBIGUOUS,freshqa
+How long has Elon Musk been X Corp.'s CEO?,AMBIGUOUS,freshqa
+How many years has Edward Snowden been living in Cuba?,AMBIGUOUS,freshqa
+How long has Kenya used a two-party system of government?,AMBIGUOUS,freshqa
+Which cryptocurrency has a higher market cap than Bitcoin?,AMBIGUOUS,freshqa
+How long has Taylor Swift been a UNICEF Goodwill Ambassador?,AMBIGUOUS,freshqa
+How long ago did Covid-19 first break 1 billion infections?,AMBIGUOUS,freshqa
+How long has Elon Musk been married to his current spouse?,AMBIGUOUS,freshqa
+How long has Puerto Rico been an independent country?,AMBIGUOUS,freshqa
+When did the biggest city in the United States host the Olympics Games?,AMBIGUOUS,freshqa
+What is the current age of the first Brazilian president to be elected to a fourth term?,AMBIGUOUS,freshqa
+Who are the six living former New Zealand prime ministers?,AMBIGUOUS,freshqa
+What two federal crimes has the most recent former President of the United States been convicted of?,AMBIGUOUS,freshqa
+How many years has the current Protestant majority in Northern Ireland lasted?,AMBIGUOUS,freshqa
+By how many votes did the incumbent President defeat his challenger in the latest Brazilian election?,AMBIGUOUS,freshqa
+When did Joe Biden announce his second presidential campaign in 2023?,LOW,freshqa
+Who won the FIFA Ballon d'Or last year?,LOW,freshqa
+Will there be 29 days in February in the leap year of 2500?,LOW,freshqa
+How many home runs did Benjamin Ruth hit in the MLB?,LOW,freshqa
+When did Lance Armstrong land on the moon?,LOW,freshqa
+On what date did the 1944 German spelling reform go into effect in schools across the country?,LOW,freshqa
+How many times have the New York Jets lost to the Chicago Bulls?,LOW,freshqa
+How many members of parliament in Yugoslavia are women?,LOW,freshqa
+When was the iPhone 9 released?,LOW,freshqa
+When did cannabis become legal in the United States?,LOW,freshqa
+How many home runs has Real Madrid scored?,LOW,freshqa
+When did Rick Riordan first release the Harry Potter series?,LOW,freshqa
+When did California secede from the United States?,LOW,freshqa
+When did Epic Gaming first release Minecraft?,LOW,freshqa
+Which antibiotics are most effective against the flu?,LOW,freshqa
+When will IKEA celebrate its fiftieth anniversary?,LOW,freshqa
+In what year was Andrew Johnson elected as President of the United States?,LOW,freshqa
+When did Meta buy YouTube?,LOW,freshqa
+When did Jeff Bezos sell Amazon?,LOW,freshqa
+In which year did New York join the Confederacy?,LOW,freshqa
+When is the Megalodon expected to go extinct?,LOW,freshqa
+When did the Great Wall of China collapse?,LOW,freshqa
+In what year did the Tenth Crusade begin?,LOW,freshqa
+When was the last time the Fields Medal was awarded to five mathematicians in the same year?,LOW,freshqa
+What date this year will Walt Disney Animation Studios' 60th animated film be released?,LOW,freshqa
+Which natural wonder in the United States is part of the New 7 Wonders of Nature?,LOW,freshqa
+In which Russian city were the 2022 Winter Olympics held?,LOW,freshqa
+In what three North American countries will the 2026 FIFA's Women World Cup take place?,LOW,freshqa
+How much did Da Vinci's Salvator Mundi sell for at the 2017 Sotheby's auction?,LOW,freshqa
+How many rebounds per game did Lebron James average in college?,LOW,freshqa
+A chemical reaction between lead and what other element produces gold as a byproduct?,LOW,freshqa
+Which party won the 2022 elections held in Afghanistan?,LOW,freshqa
+By how much is 3 bigger than 4?,LOW,freshqa
+What date in 2026 did BTS release its 11th studio album?,LOW,freshqa
+Alphabet's market capitalization reached its highest-ever recorded value during what month in 2025?,LOW,freshqa
+"How many minutes after Damar Hamlin suffered cardiac arrest on the field did the Bills vs. Bengals game on January 2, 2023 resume play?",LOW,freshqa
+"Due to falling electricity prices in January 2023, the Pakistani government pushed back the mandated closing time of shopping malls from 9:30pm to what time of day?",LOW,freshqa
+Which Republican was elected Speaker of the House in January 2023 on the ninth ballot?,LOW,freshqa
+"In January 2023, the NHC revised the fatality data of Hurricane Katrina, increasing the reported death toll from 1,800 to what number?",LOW,freshqa
+On what date has Microsoft scheduled the release of the next security updates to address multiple vulnerabilities in Windows 7?,LOW,freshqa
+"What movie, along with Avatar: The Way of Water, won the most awards of the night with three wins at the 80th Golden Globe Awards?",LOW,freshqa
+When will The Ellen DeGeneres Show kick off Season 21?,LOW,freshqa
+How far did Russia go in the FIFA World Cup 2022?,LOW,freshqa
+When did the 2021 Children's & Family Emmy Awards take place?,LOW,freshqa
+When did Joe Biden visit Russia as president of the United States?,LOW,freshqa
+What hospital is Pele currently staying in to receive cancer treatment?,LOW,freshqa
+How many people were injured in Indonesia as a result of Hurricane Ian?,LOW,freshqa
+In what month of 2021 was ChatGPT launched?,LOW,freshqa
+What is the name of the movie that Keegan-Michael Key directed in 2022?,LOW,freshqa
+When did Google release ChatGPT?,LOW,freshqa
+Which Bangkok hotel is Sri Lanka's deposed former president Gotabaya Rajapaksa currently residing at during his self-imposed exile from his home country?,LOW,freshqa
+What percentage did Apple's stock price crater the day after reporting disappointing earnings results in the fourth quarter of 2022?,LOW,freshqa
+What shoe company signed Kanye West to a new multibillion dollar celebrity endorsement deal in October 2022?,LOW,freshqa
+In which round did Novak Djokovic lose at the 2022 Australian Open?,LOW,freshqa
+"Since Novak Djokovic has been banned from entering Australia for three years, who was the betting favorite to win the men's side of the 2023 Australian Open before the tournament started?",LOW,freshqa
+For how many minutes did Tom Cruise hold his breath underwater on the set of Mission Impossible: Rogue Nation to set the current world record for holding one's breath underwater while filming?,LOW,freshqa
+When is Peruvian President Pedro Castillo scheduled to visit Chile this year?,LOW,freshqa
+How long has Harry Styles been a member of One Direction?,LOW,freshqa
+What is the smallest cube number which can be expressed as the sum of two different positive cube numbers in two different ways?,LOW,freshqa
+"What was the text of Donald Trump's first Tweet in 2022, made after his unbanning from Twitter by Elon Musk?",LOW,freshqa
+How many days are left until the next season of Atlanta airs?,LOW,freshqa
+How much longer will Brittney Griner spend in the Russian prison?,LOW,freshqa
+By how many basis points did the Federal Reserve cut interest rates from August to December 2022?,LOW,freshqa
+Who did Luke Humphries beat to win this year's PDC World Darts Championship?,HIGH,freshqa
+What does Elon Musk use to refer to his position as X Corp.'s chairman and CTO in his current Twitter/X bio?,HIGH,freshqa
+How many children does Leonardo DiCaprio have?,AMBIGUOUS,freshqa
+How many humans have landed on Mars?,AMBIGUOUS,freshqa
+How many UC schools are there in the United States?,AMBIGUOUS,freshqa
+Who is the highest-paid coach per season ever on the American television series The Voice?,AMBIGUOUS,freshqa
+Who is the CEO of Google?,AMBIGUOUS,freshqa
+What is the top-ranked university in the US according to the US News Ranking?,AMBIGUOUS,freshqa
+What's the world record time for running a mile?,AMBIGUOUS,freshqa
+Who is the current German chancellor?,AMBIGUOUS,freshqa
+Who holds the world's record for fastest rap in a number one single?,AMBIGUOUS,freshqa
+Which is the oldest still-running university in the world?,AMBIGUOUS,freshqa
+What is the best-selling jazz album of all time?,AMBIGUOUS,freshqa
+Who holds record for highest goals scored in international football for Malaysia?,AMBIGUOUS,freshqa
+Where is Tesla's headquarters?,AMBIGUOUS,freshqa
+The longest unbeaten streak of all time in the Premier League is how many matches?,AMBIGUOUS,freshqa
+Which language has the third largest population by total number of speakers?,AMBIGUOUS,freshqa
+What is the name of the worldwide highest grossing Bollywood movie?,AMBIGUOUS,freshqa
+Which K-Pop artist has the most followers on Instagram?,AMBIGUOUS,freshqa
+Can women attend universities in Afghanistan?,AMBIGUOUS,freshqa
+What was the shortest war in history?,AMBIGUOUS,freshqa
+How many member states are there in the Eurozone?,AMBIGUOUS,freshqa
+What country became the latest country to adopt the Euro?,AMBIGUOUS,freshqa
+How many vehicle models does Tesla offer?,AMBIGUOUS,freshqa
+What was the Weeknd's last studio album titled?,AMBIGUOUS,freshqa
+How many seats are there in the German Bundestag?,AMBIGUOUS,freshqa
+How many LA metro rail stations are there?,AMBIGUOUS,freshqa
+How many properties are there in the latest list of World Heritage in danger?,AMBIGUOUS,freshqa
+Who won the biggest single-tournament payday in tennis history?,AMBIGUOUS,freshqa
+What's the largest stadium by capacity in the world?,AMBIGUOUS,freshqa
+What is the title of Taylor Swift's most recent studio album?,AMBIGUOUS,freshqa
+What month and year did Bitcoin reach its peak value?,AMBIGUOUS,freshqa
+Who is the President of the United States?,AMBIGUOUS,freshqa
+What's the latest major version of the .NET?,AMBIGUOUS,freshqa
+How many asteroids have been discovered before impacting Earth?,AMBIGUOUS,freshqa
+Which country is the most recent member state of the Schengen Area?,AMBIGUOUS,freshqa
+What is Greg Egan's latest novel?,AMBIGUOUS,freshqa
+Who is the current Prime Minister of the United Kingdom?,AMBIGUOUS,freshqa
+Who is the most recent former Prime Minister of the United Kingdom?,AMBIGUOUS,freshqa
+Who is the highest-paid athlete in the world?,AMBIGUOUS,freshqa
+What is the most recent outbreak declared as a public health emergency of international concern by WHO?,AMBIGUOUS,freshqa
+What is the name of the world's fastest supercomputer?,AMBIGUOUS,freshqa
+On what date did Kendrick Lamar release his most recent studio album?,AMBIGUOUS,freshqa
+Where were the Summer Olympics held most recently?,AMBIGUOUS,freshqa
+In which year was the last UEFA European Championship was held?,AMBIGUOUS,freshqa
+When is the next leap year?,AMBIGUOUS,freshqa
+When did Mark Cuban sell the Mavericks?,AMBIGUOUS,freshqa
+How many food allergens with mandatory labeling are there in the United States?,AMBIGUOUS,freshqa
+Who has the most followers on Twitter?,AMBIGUOUS,freshqa
+How many seasons of the Mandalorian have been released?,AMBIGUOUS,freshqa
+Who is the U.S. representative for New York's 12th congressional district?,AMBIGUOUS,freshqa
+What is Cristiano Ronaldo's current club?,AMBIGUOUS,freshqa
+Which country is currently at the top rank at the FIBA Men's World Ranking?,AMBIGUOUS,freshqa
+Who is the current leader of al-Qaeda?,AMBIGUOUS,freshqa
+Tom Brady holds the NFL's single-season record for completions by successfully throwing how many passes?,AMBIGUOUS,freshqa
+Which country won the latest World Pastry Cup?,AMBIGUOUS,freshqa
+How many World Series titles have the Houston Astros won?,AMBIGUOUS,freshqa
+Who is the English monarch?,AMBIGUOUS,freshqa
+What club does Lewandowski play for?,AMBIGUOUS,freshqa
+Who was the last person to buy Twitter?,AMBIGUOUS,freshqa
+How many Women's Rugby World Cup titles has New Zealand won?,AMBIGUOUS,freshqa
+How many total Nazca geoglyphs have been discovered so far?,AMBIGUOUS,freshqa
+What is the most expensive page of a comic book ever sold at auction?,AMBIGUOUS,freshqa
+Which team holds the record for largest deficit overcome to win an NFL game?,AMBIGUOUS,freshqa
+What is the name of Indonesia's future capital city?,AMBIGUOUS,freshqa
+When will be the next common year starting on Saturday?,AMBIGUOUS,freshqa
+Who is the most recent female recipient of the Fields Medal?,AMBIGUOUS,freshqa
+How many FIFA World Cups has Argentina won?,AMBIGUOUS,freshqa
+Which is the most recent team to advance to consecutive FIFA World Cup finals?,AMBIGUOUS,freshqa
+Which actress' husband is a partial owner of Mint Mobile?,AMBIGUOUS,freshqa
+How many presidents of the United States have lost reelection?,AMBIGUOUS,freshqa
+How many flights of the Space Launch System have been successfully launched?,AMBIGUOUS,freshqa
+In what country was the current World's Strongest Man born?,AMBIGUOUS,freshqa
+Who is the spouse of the President of the United States?,AMBIGUOUS,freshqa
+Who is the vice-chancellor of the largest university by enrollment in the world?,AMBIGUOUS,freshqa
+Do Tesla and X Corp. have the same CEO?,AMBIGUOUS,freshqa
+In what city was the person currently acting as the U.S. speaker of house born?,AMBIGUOUS,freshqa
+Who has the most liked post on Instagram?,AMBIGUOUS,freshqa
+When was the most recent eruption of the world's largest active volcano?,AMBIGUOUS,freshqa
+How many active players have won at least five ATP Finals singles titles?,AMBIGUOUS,freshqa
+Who directed the most films in the top 15 highest-grossing films of all time?,AMBIGUOUS,freshqa
+Who bought the most expensive 20th century artwork sold in a public sale?,AMBIGUOUS,freshqa
+What is the best ever result by an African team at a FIFA World Cup?,AMBIGUOUS,freshqa
+What is the largest model size of GPT-3?,LOW,freshqa
+Which country has a red flag with one yellow star?,LOW,freshqa
+What state is known as the Aloha State?,LOW,freshqa
+In what year will Google celebrate its 30th birthday?,LOW,freshqa
+Where did Jeff Dean get his Ph.D. from?,LOW,freshqa
+What is the largest mammal in the world?,LOW,freshqa
+What is the tallest mountain in Alaska?,LOW,freshqa
+What breed of dog was Queen Elizabeth II of England famous for keeping?,LOW,freshqa
+Which country won the 2017 Eurovision Song Contest?,LOW,freshqa
+Sandstones are categorized into what type of sedimentary rocks?,LOW,freshqa
+"Did Queen Elizabeth II visit Rhode Island, USA?",LOW,freshqa
+Who won the 2020 Formula 1 world driver's championship?,LOW,freshqa
+What was the real name of the Unabomber?,LOW,freshqa
+Where did the first atomic bomb test take place in the United States?,LOW,freshqa
+How many lungs do slugs have?,LOW,freshqa
+On what date did the Berlin Wall fall?,LOW,freshqa
+On what date did Elvis Presley die?,LOW,freshqa
+What year did Japan bomb Pearl Harbor?,LOW,freshqa
+"Is Sunderland, MA to the north or south of Amherst, MA?",LOW,freshqa
+Who wrote Between the World and Me?,LOW,freshqa
+Who founded Amazon?,LOW,freshqa
+What is the capital of the commonwealth of Massachusetts?,LOW,freshqa
+During the recording of which Beatles album did Ringo Starr temporarily quit the band?,LOW,freshqa
+In what city is the Louvre Museum?,LOW,freshqa
+In what month and year did the Tulip mania bubble collapse?,LOW,freshqa
+Which character arrives late to the titular banquet in Plato's Symposium?,LOW,freshqa
+What was the kanji of the year in 2021?,LOW,freshqa
+The 1939 German invasion of Poland began soon after Germany signed a non-aggression pact with what other nation?,LOW,freshqa
+What was the real name of the author George Eliot?,LOW,freshqa
+Who is the director of the movie The Room?,LOW,freshqa
+How many years did the Hundred Years' War last?,LOW,freshqa
+On which side do people stand on the escalator in Tokyo?,LOW,freshqa
+In which month does the Japanese school year start?,LOW,freshqa
+Who was the first football player to score one hundred international goals?,LOW,freshqa
+In which municipality did Typhoon Haiyan make its first eye landfall?,LOW,freshqa
+"What time of day on August 15, 1947 did India become an independent nation?",LOW,freshqa
+Where was Emily Joanna Carey born?,LOW,freshqa
+"Along with streptococcus thermophilus, what other bacteria is used to make Bulgarian yogurt?",LOW,freshqa
+What is the heaviest reptile in the world?,LOW,freshqa
+Who first proposed the idea that all matter exhibits wave-particle duality?,LOW,freshqa
+What film starred Brad Pitt's first leading role?,LOW,freshqa
+What was the date of Led Zeppelin's last UK concert?,LOW,freshqa
+Which countries will host FIFA World Cup 2026?,LOW,freshqa
+How many property cards are in Monopoly Deal's dark blue set?,LOW,freshqa
+In what year was the UMass Outing Club founded?,LOW,freshqa
+How many players are on a basketball court at once including both teams?,LOW,freshqa
+What two things did Benjamin Franklin claim to be certain in this world?,LOW,freshqa
+When did the Chinese Tang Dynasty end?,LOW,freshqa
+Which mountain is at the north end of the Appalachian Trail?,LOW,freshqa
+Which city does Disco Elysium take place in?,LOW,freshqa
+Who is Elrond's father in J. R. R. Tolkien's Middle Earth stories?,LOW,freshqa
+Who was the first American president to defeat an incumbent president in a presidential election?,LOW,freshqa
+"Who is currently holding the copyright to the short-story collection ""The Case-Book of Sherlock Holmes"" in the United States?",LOW,freshqa
+Which famous soccer player of Brazil passed away in 2022?,LOW,freshqa
+How many public payphones are left in New York City?,LOW,freshqa
+Who killed the former Japanese Prime Minister Shinzo Abe?,LOW,freshqa
+What was the first operational image taken by the James Webb Space Telescope?,LOW,freshqa
+Who revealed to the public the first operational image taken by NASA's James Webb Space Telescope at the White House?,LOW,freshqa
+On what date did Queen Elizabeth II of England die?,LOW,freshqa
+Who wrote the best novelette of the 2022 Hugo Awards?,LOW,freshqa
+Who was the first player to win more than one FIFA World Cup Golden Ball?,LOW,freshqa
+When was the Day of Eight Billion?,LOW,freshqa
+Who was the first female president of Slovenia?,LOW,freshqa
+What episode of The Simpsons marked the first time a deaf actor was cast on the show?,LOW,freshqa
+What was the first film franchise to gross $28 billion?,LOW,freshqa
+How old was the youngest passenger on board the Titanic?,LOW,freshqa
+Which country will host the most matches at the FIFA World Cup 2026?,LOW,freshqa
+Who is the last player to win the Ballon D'or before the Messi–Ronaldo dominance of the award?,LOW,freshqa
+Who was the only student author of the paper that introduced the LSTM neural network architecture?,LOW,freshqa
+What's the capital of the largest state in America?,LOW,freshqa
+Which city was the capital of California the year it became a state?,LOW,freshqa
+Where is the 8th president of the United States buried?,LOW,freshqa
+"Where was the author of the book ""A Game of Thrones"" born?",LOW,freshqa
+Who was the emperor of China when the American Revolutionary War ended?,LOW,freshqa
+When did Naughty Dog release its first game on the PS1?,LOW,freshqa
+The town that Sigmund Freud was born in is currently called by what name?,LOW,freshqa
+Along what tectonic plate boundary were yeti crabs first discovered?,LOW,freshqa
+Where was the primary designer of AlexNet born?,LOW,freshqa
+Who is the highest-earning woman in music on the Forbes' Celebrity 100 list in 2020?,LOW,freshqa
+How many athletes are there in the top 10 of the Forbes' Celebrity 100 list in 2020?,LOW,freshqa
+Has Virginia Woolf's novel about the Ramsay family entered the public domain in the United States?,LOW,freshqa
+What is the name of the 2022 Atlantic hurricane season's first major hurricane?,LOW,freshqa
+Which football player has a personal logo with the same initials as those in King Charles III’s Royal cypher?,LOW,freshqa
+In what city did the first rail line entirely run by hydrogen-powered trains debut?,LOW,freshqa
+Did Emeritus Benedict XVI and Queen Elizabeth II die in the same year?,LOW,freshqa
+What was the most-viewed music video in the first 24 hours on YouTube?,HIGH,freshqa
+"According to the WHO’s latest reported 28-day figures, which country had the second-highest number of COVID-19 cases per 100,000 population?",HIGH,freshqa
+"According to the WHO’s latest reported 28-day figures, which country had the second-highest number of COVID-19 cases?",HIGH,freshqa
+Who is the latest winner of the Formula 1 world championship?,HIGH,freshqa
+How many exoplanets have been discovered?,HIGH,freshqa
+How many goals has Erling Haaland scored in the UEFA Champion League?,HIGH,freshqa
+What date was the last time it rained in New York City?,HIGH,freshqa
+What is the current best-selling children's book on Amazon?,HIGH,freshqa
+What is the current most popular Wikipedia article of the Week?,HIGH,freshqa
+How much does the Netflix standard plan without ads cost in the US?,HIGH,freshqa
+Who is the current No. 1 on the Billboard Artist 100?,HIGH,freshqa
+What's the most popular film on Letterboxd this week?,HIGH,freshqa
+What is Geoff Hinton’s h-index?,HIGH,freshqa
+Who is the most recent NBA player to score 60 or more points in a single game?,HIGH,freshqa
+Who is the latest winner of The Voice US?,HIGH,freshqa
+When was Coldplay's last concert?,HIGH,freshqa
+What is the most recent country that President Donald Trump visited during his second presidency?,HIGH,freshqa
+Who won the latest Grammy Award for Best Jazz Performance?,HIGH,freshqa
+Who won the most recent Super Bowl?,HIGH,freshqa
+Where will NeurIPS be located this year?,HIGH,freshqa
+How many papers (including both long and short papers) were accepted into the main conference of ACL last year?,HIGH,freshqa
+What date is father's day in the United States this year?,HIGH,freshqa
+Where is EMNLP this year?,HIGH,freshqa
+What was the highest-grossing film in the United States last year?,HIGH,freshqa
+What Berber year corresponds to the present year?,HIGH,freshqa
+When was this year's Ramadan?,HIGH,freshqa
+What date is Thanksgiving this year?,HIGH,freshqa
+What date is this year's Labor day?,HIGH,freshqa
+What won the latest Academy Award for Best Animated Feature?,HIGH,freshqa
+Which movie won the latest Academy Award for Best Picture?,HIGH,freshqa
+How many novels has Stephen King published?,HIGH,freshqa
+What season is it in the northern hemisphere?,HIGH,freshqa
+When is the next U.S. federal holiday?,HIGH,freshqa
+The upcoming Microsoft's Patch Tuesday will come out on what date in North America?,HIGH,freshqa
+Who was the winner of American Idol this year?,HIGH,freshqa
+Who is the starting running back for the San Francisco 49ers?,HIGH,freshqa
+What is the base price of the new Tesla Model Y Premium All-Wheel Drive?,HIGH,freshqa
+What is the latest version of Android?,HIGH,freshqa
+Who is the richest man on earth?,HIGH,freshqa
+Which team is at the top of the latest Premier League season?,HIGH,freshqa
+Is Arsenal on the top of the latest Premier League standings?,HIGH,freshqa
+Who was the most recent incumbent president worldwide who ran for re-election but was not reelected?,HIGH,freshqa
+Who is the latest MotoGP World Riders' Champion?,HIGH,freshqa
+Who won the latest Nobel Prize in Literature?,HIGH,freshqa
+Who won the most recent Time Magazine's Athlete of the Year?,HIGH,freshqa
+What is the next Walt Disney Animation Studios film?,HIGH,freshqa
+What is the most recent Walt Disney Animation Studios's animated film?,HIGH,freshqa
+What video game won the most recent Game Award for Game of the Year?,HIGH,freshqa
+When did the latest NFL season begin?,HIGH,freshqa
+How many undergraduate students enrolled in Reed College in the most recent fall semester?,HIGH,freshqa
+Which drama series won the most recent Primetime Emmy Award for Outstanding Drama Series?,HIGH,freshqa
+Where was the most recent IJCAI conference held?,HIGH,freshqa
+How old is President Donald Trump?,HIGH,freshqa
+What book won the latest Nebula award for Best Novel?,HIGH,freshqa
+Who won the latest NBA championship?,HIGH,freshqa
+How many goals did Kylian Mbappé score in the UEFA Champion League last season?,HIGH,freshqa
+Who is the latest winner of American Idol?,HIGH,freshqa
+Who was the guest of honor at the most recent state dinner hosted by the President of the United States?,HIGH,freshqa
+What album holds the record for the most Spotify streams reached in a single day?,HIGH,freshqa
+What is the name of the most recent episode of The Lord of the Rings: The Rings of Power?,HIGH,freshqa
+How much does the new Apple HomePod cost?,HIGH,freshqa
+What is the youngest age eligible for COVID-19 vaccination in the United States?,HIGH,freshqa
+How many times has a player scored 60 or more points in a single game in NBA history?,HIGH,freshqa
+What's the current Tomatometer score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?,HIGH,freshqa
+What's the current audience score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?,HIGH,freshqa
+How many years ago did John Paul II die?,HIGH,freshqa
+How old is the most-followed user on TikTok?,HIGH,freshqa
+Which author had the most bestselling novels in the United States last year according to Publishers Weekly?,HIGH,freshqa
+Who posted the most-liked Instagram post last year?,HIGH,freshqa
+"In what month and year was the price of Bitcoin last above $40,000?",HIGH,freshqa
+How many novels has Stephen King published under his real name?,HIGH,freshqa
+What is Brad Pitt's most recent movie as an actor?,HIGH,freshqa
+How long has Mauna Loa been a dormant volcano since its most recent eruption?,HIGH,freshqa
+How many Southeast Asian countries has President Donald Trump visited during his current presidency?,HIGH,freshqa
+Is Tesla's stock price above $250 a share?,HIGH,freshqa
+In what country was the current Miss World born?,HIGH,freshqa
+How many years it has been since the last Major League Baseball perfect game?,HIGH,freshqa
+How old is the richest person in the world?,HIGH,freshqa
+What country does the Wimbledon women's champion play for?,HIGH,freshqa
+In how many years will Netflix celebrate its thirtieth anniversary?,HIGH,freshqa
+In what country was the most recent winner of the Nobel Prize for Literature born?,HIGH,freshqa
+"Who are the current champions of the NBA, NHL, and MLB?",HIGH,freshqa
+How old is the latest American Nobel laureate in Physics?,HIGH,freshqa
+What is the current age of the oldest person to sail solo across the Pacific Ocean?,HIGH,freshqa
+How many American companies were there in the Fortune Global 500 list last year?,HIGH,freshqa
+How old is the current Miss Universe?,HIGH,freshqa
+In which country was the richest woman in the world born?,HIGH,freshqa
+In what country was the most recent individual recipient of Time Person of the Year born?,HIGH,freshqa
+Is one US dollar worth more than 82 Indian rupees?,HIGH,freshqa
+Is the platinum price to palladium price ratio currently above 0.7?,HIGH,freshqa
+Who is the current Canadian president?,AMBIGUOUS,freshqa
+In what year did Russia finish disposing of all of its nuclear weapons?,AMBIGUOUS,freshqa
+When did Taylor Swift win her first Golden Globe?,AMBIGUOUS,freshqa
+When did Denmark adopt the euro as its currency?,AMBIGUOUS,freshqa
+When did OpenAI release GPT-5.5?,AMBIGUOUS,freshqa
+What role did Eddie Murphy win an Oscar for?,AMBIGUOUS,freshqa
+What year was Election Day in the United States made into a federal holiday?,AMBIGUOUS,freshqa
+When did the Pokemon Franchise celebrate its thirtieth anniversary?,AMBIGUOUS,freshqa
+Where was the funeral for Pope Leo XIV held?,AMBIGUOUS,freshqa
+Canada currently requires arriving travelers to provide proof of COVID vaccination via what app?,AMBIGUOUS,freshqa
+Who is the only female recipient of the Fields Medal?,AMBIGUOUS,freshqa
+How long has abortion been illegal in the United States?,AMBIGUOUS,freshqa
+How many days after Sam Bankman-Fried was extradited to the United States did he plead guilty to federal fraud charges?,AMBIGUOUS,freshqa
+What city hosted the Summer Olympics in 1940?,LOW,freshqa
+What dedicated graphics processing unit does the M1 Macbook Air have?,LOW,freshqa
+When did Mark Zuckerberg graduate from college?,LOW,freshqa
+How many humans have been killed by dinosaurs?,LOW,freshqa
+What is the name of Venus' smallest moon?,LOW,freshqa
+"In 2021, which astronomer successfully lobbied the IAU to change Pluto's planetary classification from ""dwarf planet"" back to ""planet""?",LOW,freshqa
+How many days are left until the 2022 FIFA World Cup begins?,LOW,freshqa
+What is Daddy Yankee's next studio album?,LOW,freshqa
+In what month of this year will Netflix celebrate its twenty-fifth anniversary?,LOW,freshqa
+In what month of 2022 was the inflation in the United States at its lowest rate since 1982?,LOW,freshqa
+How many days are left until the coronation of Charles III and his wife?,LOW,freshqa
+"After anti-COVID measures were further increased in December 2022 to help support China's ""zero COVID"" policy, by how many days was the quarantine time for international travelers to China extended?",LOW,freshqa
+What team does LeBron James play for?,AMBIGUOUS,freshqa
+What is the largest passenger airplane?,AMBIGUOUS,freshqa
+Where is the deepest place on Earth?,AMBIGUOUS,freshqa
+Which language has the third largest population by number of native speakers?,AMBIGUOUS,freshqa
+When did the United States last win the FIFA Women's World Cup?,AMBIGUOUS,freshqa
+Which team is the most recent team to win back-to-back FIFA World Cups?,AMBIGUOUS,freshqa
+Which GitHub repo has the most stars?,AMBIGUOUS,freshqa
+What is the hottest year on record?,AMBIGUOUS,freshqa
+Which club does Angel Di Maria play for?,AMBIGUOUS,freshqa
+What is the minimum hourly wage in Tokyo right now?,AMBIGUOUS,freshqa
+Who is the current Jeopardy! host?,AMBIGUOUS,freshqa
+Who holds the record for most hundreds in one day international men's cricket?,AMBIGUOUS,freshqa
+Is London Marilyn Hilton Reum the name of Paris Hilton's daughter?,AMBIGUOUS,freshqa
+What is the minimum hourly wage in Massachusetts right now?,AMBIGUOUS,freshqa
+What was the largest acquisition deal of a tech company in history?,AMBIGUOUS,freshqa
+Who is the shortest-serving Prime Minister in the history of the United Kingdom?,AMBIGUOUS,freshqa
+What is the largest armed conflict in Europe since World War II?,AMBIGUOUS,freshqa
+Will Will Smith attend the next Academy Awards show?,AMBIGUOUS,freshqa
+How many people from Princeton University have won the Fields Medal?,AMBIGUOUS,freshqa
+How old is the oldest planet known to have life on it?,AMBIGUOUS,freshqa
+"Who is the star of the international series ""It's me or the dog"" married to?",AMBIGUOUS,freshqa
+How much did the most expensive movie ever made cost?,AMBIGUOUS,freshqa
+Who was the first spouse of the current President of the United States?,AMBIGUOUS,freshqa
+Who is the latest French player to win the Ballon d'Or?,AMBIGUOUS,freshqa
+How many public health emergency of international concern declarations have been made by WHO between 2009 and now?,AMBIGUOUS,freshqa
+Who is the owner of the account that has the second most-liked Instagram post?,AMBIGUOUS,freshqa
+How many cyclists have won all three of women's cycling Grand Tours equivalents?,AMBIGUOUS,freshqa
+What is the title of the first film about the Titanic disaster?,LOW,freshqa
+How many fantasy novels are there in the Harry Potter series?,LOW,freshqa
+Who created Internet Relay Chat?,LOW,freshqa
+Who invented the Perceptron?,LOW,freshqa
+What is the capital of Costa Rica?,LOW,freshqa
+When did Leo Szilard invent the nuclear chain reaction?,LOW,freshqa
+Who is the founder of Boeing?,LOW,freshqa
+Who painted The Starry Night?,LOW,freshqa
+What is the name of the main character in Great Expectations?,LOW,freshqa
+What airbase is currently the headquarters of United States Forces Japan?,LOW,freshqa
+What was the name of the university where Meta was founded?,LOW,freshqa
+Who played piano in Miles Davis' first quintet?,LOW,freshqa
+What is the brightest star in the sky?,LOW,freshqa
+Who directed the movie Jaws?,LOW,freshqa
+How many Premier League goals has Paul Scholes scored in his senior career?,LOW,freshqa
+What is the city flower of Shanghai?,LOW,freshqa
+Is the Great Pyramid of Giza one of the New 7 Wonders of the World?,LOW,freshqa
+"Which state in the U.S. had the highest death rate of COVID-19 per 100,000 total population in 2023?",LOW,freshqa
+Who was the first woman to gain 300 million followers on Instagram?,LOW,freshqa
+What date was The Lord of the Rings: The Rings of Power (Season 1) premiered on?,LOW,freshqa
+What city was the first ever to host both the Summer Olympics and Winter Olympics?,LOW,freshqa
+How many episodes of The Lord of the Rings: The Rings of Power season 1 have been released?,LOW,freshqa
+What killed the student inventor of the Perceptron?,LOW,freshqa
+Which member of The Beatles was born first?,LOW,freshqa
+Who was the emperor of China when Sweet Dew incident happened?,LOW,freshqa
+How many people have been on the International Space Station?,HIGH,freshqa
+How many people are there in the world?,HIGH,freshqa
+"According to the WHO’s latest reported 28-day figures, which country had the highest number of COVID-19 deaths, excluding the United States?",HIGH,freshqa
+What won the latest Academy Award for Best Animated Short Film?,HIGH,freshqa
+When is the next Lunar New Year?,HIGH,freshqa
+When will this year's Rosh Hashanah start?,HIGH,freshqa
+What is the next Columbia Pictures film?,HIGH,freshqa
+When is the next full moon?,HIGH,freshqa
+What month is it?,HIGH,freshqa
+What is King Gizzard’s most recent studio album?,HIGH,freshqa
+What is the name of the most recent hurricane that affected the Southeastern United States?,HIGH,freshqa
+What institution won the most recent ACM-ICPC World Finals?,HIGH,freshqa
+Who won the most recent season of America's Got Talent?,HIGH,freshqa
+Which comedy series won the most recent Primetime Emmy Award for Outstanding Comedy Series?,HIGH,freshqa
+What is the host city of the upcoming International Olympiad in Informatics (IOI)?,HIGH,freshqa
+What is the most recent movie in the Marvel Cinematic Universe?,HIGH,freshqa
+How many official goals has Erling Haaland scored for his current club?,HIGH,freshqa
+What was max temperature this month in the most populated US city?,HIGH,freshqa
+How many accounts have exceeded 100 million followers on Instagram?,HIGH,freshqa
+Is the current water level of Lake Powell above 3550 feet?,HIGH,freshqa
+What is the most powerful processor on the latest iPhone models?,HIGH,freshqa
+When was the most recent winner of the Tour de France born?,HIGH,freshqa
+What is the current age of the oldest singles champion of The ATP Finals?,HIGH,freshqa
+Who is the father of Arjun Sarja?,LOW,popqa
+Who was the composer of Hamilton?,LOW,popqa
+Who was the director of Halloween?,LOW,popqa
+In what city was Kristian Outinen born?,LOW,popqa
+What genre is Richie Hawtin?,LOW,popqa
+Who was the director of High Risk?,LOW,popqa
+In what country is Istedgade?,LOW,popqa
+In what city was Lloyd Ultan born?,LOW,popqa
+Who was the composer of Heavy?,LOW,popqa
+Who was the composer of The Artist?,LOW,popqa
+What genre is Fire?,LOW,popqa
+Who was the director of Shame?,LOW,popqa
+In what country is Tapay District?,LOW,popqa
+What is the capital of Takamatsu Domain?,LOW,popqa
+What genre is Asian School Girls?,LOW,popqa
+Who was the director of The Verdict?,LOW,popqa
+Who was the director of Rocky?,LOW,popqa
+In what country is Roybon?,LOW,popqa
+In what city was Róbert Fazekas born?,LOW,popqa
+In what city was Reinhard Jirgl born?,LOW,popqa
+Who was the director of College?,LOW,popqa
+In what city was Doc Parker born?,LOW,popqa
+Who was the director of Chi?,LOW,popqa
+In what city was Juan Luis Guerra born?,LOW,popqa
+In what country is Camden?,LOW,popqa
+In what city was Stone born?,LOW,popqa
+What genre is Hollow?,LOW,popqa
+In what city was Maarten van Severen born?,LOW,popqa
+What is the capital of Littoral?,LOW,popqa
+In what city was Valdemar III of Denmark born?,LOW,popqa
+What genre is Champaign?,LOW,popqa
+What genre is Geist?,LOW,popqa
+In what country is Brilliant?,LOW,popqa
+Who was the director of Funk?,LOW,popqa
+What genre is Still Life?,LOW,popqa
+Who was the composer of La bella dormente nel bosco?,LOW,popqa
+What genre is Windir?,LOW,popqa
+Who is the father of Máel Snechtai of Moray?,LOW,popqa
+Who was the director of Crossing the Bridge?,LOW,popqa
+In what country is Bell?,LOW,popqa
+What is the capital of County Cork?,LOW,popqa
+Who was the director of London?,LOW,popqa
+Who was the composer of Echoes?,LOW,popqa
+In what city was Pete Larson born?,LOW,popqa
+What genre is As One?,LOW,popqa
+In what city was Jiang Mianheng born?,LOW,popqa
+What genre is Viva la vida or Death and All His Friends?,LOW,popqa
+Who was the director of Public Toilet?,LOW,popqa
+What genre is Tweet?,LOW,popqa
+In what city was Yaroslav Rybakov born?,LOW,popqa
+In what city was Emily Hood Westacott born?,LOW,popqa
+In what city was Lisa Miller born?,LOW,popqa
+What is the capital of Pulaski County?,LOW,popqa
+Who was the composer of The Favor?,LOW,popqa
+Who was the director of Hell on Wheels?,LOW,popqa
+Who was the director of Legion?,LOW,popqa
+"Who is the father of Prince Ferdinand, Duke of Alençon?",LOW,popqa
+Who was the director of Invasion?,LOW,popqa
+What genre is Space Battleship Yamato?,LOW,popqa
+In what city was Jadranka Šešelj born?,LOW,popqa
+Who was the composer of Arkansas?,LOW,popqa
+In what city was Nelson Vargas born?,LOW,popqa
+Who was the director of Within?,LOW,popqa
+In what city was Zara Turner born?,LOW,popqa
+In what city was Joel Johnson born?,LOW,popqa
+In what city was William Jack born?,LOW,popqa
+In what city was Amoene van Haersolte born?,LOW,popqa
+Who was the director of Fantastic Four?,LOW,popqa
+In what country is Story?,LOW,popqa
+Who was the director of Unnatural Selection?,LOW,popqa
+In what city was Thomas D. Schall born?,LOW,popqa
+Who was the composer of Good Morning?,LOW,popqa
+Who was the director of After Hours?,LOW,popqa
+Who was the director of Friends?,LOW,popqa
+Who was the director of Lovers?,LOW,popqa
+Who was the director of Jud Süß?,LOW,popqa
+Who was the director of The Chief?,LOW,popqa
+In what city was Jaime de Angulo born?,LOW,popqa
+Who was the director of Oliver's Story?,LOW,popqa
+What is the capital of Texas?,LOW,popqa
+Who is the father of Princess Maria Pia of Savoy?,LOW,popqa
+What genre is The Anthology?,LOW,popqa
+In what city was Beniamino Di Giacomo born?,LOW,popqa
+Who was the composer of The Bolt?,LOW,popqa
+In what city was Ge You born?,LOW,popqa
+In what country is Oborín?,LOW,popqa
+In what city was Edgar Manas born?,LOW,popqa
+In what country is Bashkir?,LOW,popqa
+What is the capital of Calhoun County?,LOW,popqa
+Who was the director of A Promise?,LOW,popqa
+Who is the father of Thor?,LOW,popqa
+Who was the director of The Attic?,LOW,popqa
+In what city was Nay Myo Thant born?,LOW,popqa
+What is the capital of Solomon Islands?,LOW,popqa
+What genre is Music in the Air?,LOW,popqa
+Who was the director of Pitch?,LOW,popqa
+Who was the director of The Car?,LOW,popqa
+What genre is The Crimson Kimono?,LOW,popqa
+What genre is Vault?,LOW,popqa
+What genre is Royal Journey?,LOW,popqa
+Who was the director of Elephant?,LOW,popqa
+In what city was Veselin Vujović born?,LOW,popqa
+Who was the composer of Party?,LOW,popqa
+What genre is Today Is A Beautiful Day?,LOW,popqa
+In what country is Kalateh-ye Safdarabad?,LOW,popqa
+What genre is The Firm?,LOW,popqa
+In what city was Jim born?,LOW,popqa
+Who was the director of The Sisters?,LOW,popqa
+In what city was Edu Nandlal born?,LOW,popqa
+Who was the director of The Easy Way?,LOW,popqa
+In what city was Jorge Betancourt born?,LOW,popqa
+Who was the director of Spirit?,LOW,popqa
+Who was the director of Metroland?,LOW,popqa
+What genre is Toe to Toe?,LOW,popqa
+In what city was Charles Hyder born?,LOW,popqa
+In what city was Ivan Khomukha born?,LOW,popqa
+Who was the director of The Convicted?,LOW,popqa
+What genre is Troll Bends Fir?,LOW,popqa
+Who was the director of Iris and the Lieutenant?,LOW,popqa
+Who was the director of The Stranger?,LOW,popqa
+In what country is Bundesautobahn 100?,LOW,popqa
+Who was the composer of Flirt?,LOW,popqa
+What genre is Angel?,LOW,popqa
+In what city was Gabriella Di Laccio born?,LOW,popqa
+In what country is Ježov?,LOW,popqa
+Who was the director of In Your Hands?,LOW,popqa
+In what city was Roland Wieser born?,LOW,popqa
+In what city was Neil Robinson born?,LOW,popqa
+Who was the director of The Clinic?,LOW,popqa
+Who was the director of The Idea?,LOW,popqa
+Who was the composer of Soldier?,LOW,popqa
+In what country is Arri?,LOW,popqa
+What genre is Gigantic?,LOW,popqa
+What genre is Pepper Dennis?,LOW,popqa
+In what city was Robley Dunglison Evans born?,LOW,popqa
+Who was the composer of You Never Know?,LOW,popqa
+Who was the director of After The Fall?,LOW,popqa
+What genre is Together?,LOW,popqa
+In what city was Bruno Nöckler born?,LOW,popqa
+What is the capital of Maryland?,LOW,popqa
+In what city was Dilson Torres born?,LOW,popqa
+Who is the father of Fahd bin Abdulaziz Al Saud?,LOW,popqa
+Who was the composer of Tholi Valapu?,LOW,popqa
+Who was the director of Live and Learn?,LOW,popqa
+Who was the director of Not Safe for Work?,LOW,popqa
+What genre is Neighbours?,LOW,popqa
+What genre is Kiss?,LOW,popqa
+What genre is Granado Espada?,LOW,popqa
+Who was the director of He?,LOW,popqa
+In what city was Ramón Luis Valcárcel Siso born?,LOW,popqa

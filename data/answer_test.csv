@@ -1,0 +1,32 @@
+id,question,type,correct_answers,source,checked_on
+1,What is the capital of Australia?,stable_common,Canberra,general knowledge,2026-10-07
+2,Who wrote Hamlet?,stable_common,Shakespeare,general knowledge,2026-10-07
+3,What is the boiling point of water at sea level in Celsius?,stable_common,100,general knowledge,2026-10-07
+4,What is the chemical symbol for iron?,stable_common,Fe,general knowledge,2026-10-07
+5,How many legs does a spider have?,stable_common,8|eight,general knowledge,2026-10-07
+6,What does CPU stand for?,stable_common,central processing unit,general knowledge,2026-10-07
+7,Who painted The Starry Night?,stable_common,Van Gogh,general knowledge,2026-10-07
+8,What is the largest ocean on Earth?,stable_common,Pacific,general knowledge,2026-10-07
+9,In what year did World War II end?,stable_common,1945,general knowledge,2026-10-07
+10,What is the square root of 144?,stable_common,12|twelve,general knowledge,2026-10-07
+11,What language is spoken in Brazil?,stable_common,Portuguese,general knowledge,2026-10-07
+12,What planet is known as the Red Planet?,stable_common,Mars,general knowledge,2026-10-07
+13,What is H2O commonly called?,stable_common,water,general knowledge,2026-10-07
+14,Who developed the theory of relativity?,stable_common,Einstein,general knowledge,2026-10-07
+15,What is the capital of South Korea?,stable_common,Seoul,general knowledge,2026-10-07
+16,Who wrote the Swahili novel Kufa Kuzikana?,stable_rare,Walibora,https://en.wikipedia.org/wiki/Ken_Walibora,2026-10-07
+17,Who was the first Kenyan woman to earn a PhD?,stable_rare,Maathai,https://en.wikipedia.org/wiki/Wangar%C4%A9_Maathai,2026-10-07
+18,Who designed the Sebeolsik Hangul keyboard layout?,stable_rare,Gong Byeong|Kong Pyong|Kong Byung|공병우,https://en.wikipedia.org/wiki/Keyboard_layout,2026-10-07
+19,What was the model name of the first radio made by Goldstar?,stable_rare,A-501|A501,https://collections.vam.ac.uk/item/O1728308/goldstar-radio-a-501-radio,2026-10-07
+20,Which small river flows through the centre of Gangneung?,stable_rare,Namdaecheon|Namdae,https://en.wikipedia.org/wiki/Gangneung,2026-10-07
+21,What is the height in metres of Ulsanbawi rock in Seoraksan?,stable_rare,873,https://en.wikipedia.org/wiki/Ulsanbawi,2026-10-07
+22,In what year was Sinheungsa temple in Seoraksan first founded?,stable_rare,652,https://en.wikipedia.org/wiki/Sinheungsa,2026-10-07
+23,What traditional song is the melody of the Kenyan national anthem based on?,stable_rare,Pokomo,https://www.kenyans.co.ke/news/32187-how-national-anthem-came-be,2026-10-07
+24,What is the Korean name of the red snow crab caught near Sokcho?,stable_rare,hongge|hong-ge|홍게|붉은대게|bulgeun daege|bulgeun-daege,general knowledge,2026-10-07
+25,Who is the CEO of Naver?,changing,Choi Soo-yeon|Choi Soo yeon|Soo-yeon Choi|Choi Su-yeon|최수연,https://www.ceomagazine.co.kr/ko-kr/articles/34626,2026-10-07
+26,Who manages Kakao these days?,changing,Chung Shin-a|Jeong Shin-a|Shina Chung|Jung Shin-ah|Chung Shina|정신아,https://www.koreatimes.co.kr/amp/business/tech-science/20260326/kakao-ceo-secures-2nd-term-sets-10-growth-target-on-ai-push,2026-10-07
+27,Who leads SK hynix?,changing,Kwak Noh-jung|Kwak Noh-jeong|Kwak Nohjung|곽노정,https://news.skhynix.com/en/sk-hynix-ceo-kwak-noh-jung-finds-way-forward-for-ai-memory-on-the-ground-at-ces-2026/,2026-10-07
+28,Who is the president of Kenya?,changing,Ruto,https://en.wikipedia.org/wiki/President_of_Kenya,2026-10-07
+29,Who is the chairman of Samsung Electronics?,changing,Lee Jae-yong|Lee Jae-Yong|Jay Y. Lee|Jay Y Lee|이재용,https://en.wikipedia.org/wiki/Lee_Jae-yong_(businessman),2026-10-07
+30,Who is the prime minister of Japan?,changing,Takaichi,https://www.nippon.com/en/japan-data/h02906/takaichi-opts-for-stability-in-first-cabinet-reshuffle.html,2026-10-07
+31,Which team won the last KBO Korean Series?,changing,LG Twins|LG,https://en.wikipedia.org/wiki/2025_Korean_Series,2026-10-07

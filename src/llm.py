@@ -53,7 +53,8 @@ def generate(prompt: str, temperature: float = 0.0, max_tokens: int = 300) -> st
     if backend() == "ollama":
         host = os.getenv("OLLAMA_HOST", OLLAMA_HOST)
         body = json.dumps({"model": ollama_model(), "prompt": prompt, "stream": False,
-                           "options": {"temperature": temperature}}).encode()
+                           "options": {"temperature": temperature,
+                                       "num_ctx": int(os.getenv("OLLAMA_NUM_CTX", "8192"))}}).encode()
         req = urllib.request.Request(f"{host}/api/generate", data=body,
                                      headers={"Content-Type": "application/json"})
         with urllib.request.urlopen(req, timeout=180) as r:

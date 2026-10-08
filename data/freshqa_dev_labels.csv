@@ -1,0 +1,76 @@
+question,label,category
+What team does LeBron James play for?,AMBIGUOUS,freshqa_dev
+What is the largest passenger airplane?,AMBIGUOUS,freshqa_dev
+Where is the deepest place on Earth?,AMBIGUOUS,freshqa_dev
+Which language has the third largest population by number of native speakers?,AMBIGUOUS,freshqa_dev
+When did the United States last win the FIFA Women's World Cup?,AMBIGUOUS,freshqa_dev
+Which team is the most recent team to win back-to-back FIFA World Cups?,AMBIGUOUS,freshqa_dev
+Which GitHub repo has the most stars?,AMBIGUOUS,freshqa_dev
+What is the hottest year on record?,AMBIGUOUS,freshqa_dev
+Which club does Angel Di Maria play for?,AMBIGUOUS,freshqa_dev
+What is the minimum hourly wage in Tokyo right now?,AMBIGUOUS,freshqa_dev
+Who is the current Jeopardy! host?,AMBIGUOUS,freshqa_dev
+Who holds the record for most hundreds in one day international men's cricket?,AMBIGUOUS,freshqa_dev
+Is London Marilyn Hilton Reum the name of Paris Hilton's daughter?,AMBIGUOUS,freshqa_dev
+What is the minimum hourly wage in Massachusetts right now?,AMBIGUOUS,freshqa_dev
+What was the largest acquisition deal of a tech company in history?,AMBIGUOUS,freshqa_dev
+Who is the shortest-serving Prime Minister in the history of the United Kingdom?,AMBIGUOUS,freshqa_dev
+What is the largest armed conflict in Europe since World War II?,AMBIGUOUS,freshqa_dev
+Will Will Smith attend the next Academy Awards show?,AMBIGUOUS,freshqa_dev
+How many people from Princeton University have won the Fields Medal?,AMBIGUOUS,freshqa_dev
+How old is the oldest planet known to have life on it?,AMBIGUOUS,freshqa_dev
+"Who is the star of the international series ""It's me or the dog"" married to?",AMBIGUOUS,freshqa_dev
+How much did the most expensive movie ever made cost?,AMBIGUOUS,freshqa_dev
+Who was the first spouse of the current President of the United States?,AMBIGUOUS,freshqa_dev
+Who is the latest French player to win the Ballon d'Or?,AMBIGUOUS,freshqa_dev
+How many public health emergency of international concern declarations have been made by WHO between 2009 and now?,AMBIGUOUS,freshqa_dev
+Who is the owner of the account that has the second most-liked Instagram post?,AMBIGUOUS,freshqa_dev
+How many cyclists have won all three of women's cycling Grand Tours equivalents?,AMBIGUOUS,freshqa_dev
+What is the title of the first film about the Titanic disaster?,LOW,freshqa_dev
+How many fantasy novels are there in the Harry Potter series?,LOW,freshqa_dev
+Who created Internet Relay Chat?,LOW,freshqa_dev
+Who invented the Perceptron?,LOW,freshqa_dev
+What is the capital of Costa Rica?,LOW,freshqa_dev
+When did Leo Szilard invent the nuclear chain reaction?,LOW,freshqa_dev
+Who is the founder of Boeing?,LOW,freshqa_dev
+Who painted The Starry Night?,LOW,freshqa_dev
+What is the name of the main character in Great Expectations?,LOW,freshqa_dev
+What airbase is currently the headquarters of United States Forces Japan?,LOW,freshqa_dev
+What was the name of the university where Meta was founded?,LOW,freshqa_dev
+Who played piano in Miles Davis' first quintet?,LOW,freshqa_dev
+What is the brightest star in the sky?,LOW,freshqa_dev
+Who directed the movie Jaws?,LOW,freshqa_dev
+How many Premier League goals has Paul Scholes scored in his senior career?,LOW,freshqa_dev
+What is the city flower of Shanghai?,LOW,freshqa_dev
+Is the Great Pyramid of Giza one of the New 7 Wonders of the World?,LOW,freshqa_dev
+"Which state in the U.S. had the highest death rate of COVID-19 per 100,000 total population in 2023?",LOW,freshqa_dev
+Who was the first woman to gain 300 million followers on Instagram?,LOW,freshqa_dev
+What date was The Lord of the Rings: The Rings of Power (Season 1) premiered on?,LOW,freshqa_dev
+What city was the first ever to host both the Summer Olympics and Winter Olympics?,LOW,freshqa_dev
+How many episodes of The Lord of the Rings: The Rings of Power season 1 have been released?,LOW,freshqa_dev
+What killed the student inventor of the Perceptron?,LOW,freshqa_dev
+Which member of The Beatles was born first?,LOW,freshqa_dev
+Who was the emperor of China when Sweet Dew incident happened?,LOW,freshqa_dev
+How many people have been on the International Space Station?,HIGH,freshqa_dev
+How many people are there in the world?,HIGH,freshqa_dev
+"According to the WHO’s latest reported 28-day figures, which country had the highest number of COVID-19 deaths, excluding the United States?",HIGH,freshqa_dev
+What won the latest Academy Award for Best Animated Short Film?,HIGH,freshqa_dev
+When is the next Lunar New Year?,HIGH,freshqa_dev
+When will this year's Rosh Hashanah start?,HIGH,freshqa_dev
+What is the next Columbia Pictures film?,HIGH,freshqa_dev
+When is the next full moon?,HIGH,freshqa_dev
+What month is it?,HIGH,freshqa_dev
+What is King Gizzard’s most recent studio album?,HIGH,freshqa_dev
+What is the name of the most recent hurricane that affected the Southeastern United States?,HIGH,freshqa_dev
+What institution won the most recent ACM-ICPC World Finals?,HIGH,freshqa_dev
+Who won the most recent season of America's Got Talent?,HIGH,freshqa_dev
+Which comedy series won the most recent Primetime Emmy Award for Outstanding Comedy Series?,HIGH,freshqa_dev
+What is the host city of the upcoming International Olympiad in Informatics (IOI)?,HIGH,freshqa_dev
+What is the most recent movie in the Marvel Cinematic Universe?,HIGH,freshqa_dev
+How many official goals has Erling Haaland scored for his current club?,HIGH,freshqa_dev
+What was max temperature this month in the most populated US city?,HIGH,freshqa_dev
+How many accounts have exceeded 100 million followers on Instagram?,HIGH,freshqa_dev
+Is the current water level of Lake Powell above 3550 feet?,HIGH,freshqa_dev
+What is the most powerful processor on the latest iPhone models?,HIGH,freshqa_dev
+When was the most recent winner of the Tour de France born?,HIGH,freshqa_dev
+What is the current age of the oldest singles champion of The ATP Finals?,HIGH,freshqa_dev
