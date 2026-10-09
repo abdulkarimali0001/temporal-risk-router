@@ -1,19 +1,21 @@
 # Experiment: when should the AI search?
 
-Model `llama3.1:8b` · 2026-10-08 · 197/200 questions from public benchmarks (FreshQA 2026-04-21, PopQA)
+Model `llama3.1:8b` · 2026-10-09 · 496/500 questions from public benchmarks (FreshQA 2026-04-21, PopQA)
+
+Search used by the methods below: **Wikipedia + live web**.
 
 ## Main result
 
 | Method | Correct (95% interval) | Wrong | No guess | Searched |
 |---|---|---|---|---|
-| Never search | 41% (34%-47%) | 74 | 43 | 0% |
-| Always search | 48% (42%-55%) | 39 | 63 | 100% |
-| Time check only | 41% (34%-47%) | 65 | 52 | 18% |
-| Self-consistency only | 48% (41%-55%) | 43 | 60 | 68% |
-| Verbal confidence | 49% (42%-56%) | 43 | 57 | 76% |
-| **Router (ours)** | 48% (41%-55%) | 43 | 59 | 70% |
-| **Router + cutoff rule (ours)** | 48% (41%-55%) | 41 | 62 | 80% |
-| Oracle (best possible) | 57% (51%-64%) | 31 | 53 | 59% |
+| Never search | 42% (38%-46%) | 170 | 117 | 0% |
+| Always search | 64% (60%-68%) | 129 | 48 | 100% |
+| Time check only | 46% (41%-50%) | 159 | 111 | 15% |
+| Self-consistency only | 62% (58%-66%) | 143 | 45 | 66% |
+| Verbal confidence | 62% (58%-66%) | 142 | 46 | 74% |
+| **Router (ours)** | 63% (58%-67%) | 140 | 45 | 68% |
+| **Router + cutoff rule (ours)** | 64% (59%-68%) | 134 | 46 | 75% |
+| Oracle (best possible) | 68% (64%-72%) | 116 | 41 | 58% |
 
 ![Accuracy vs. searches](experiment_chart.png)
 
@@ -21,36 +23,36 @@ Model `llama3.1:8b` · 2026-10-08 · 197/200 questions from public benchmarks (F
 
 | Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Oracle (best possible) |
 |---|---|---|---|---|---|---|---|---|---|
-| Stable, famous (PopQA) | 40 | 65% | 68% | 65% | 68% | 70% | 68% | 68% | 75% |
-| Stable, rare (PopQA) - incomplete | 40 | 20% | 38% | 20% | 35% | 38% | 35% | 35% | 38% |
-| Never-changing (FreshQA) | 39 | 77% | 64% | 77% | 74% | 72% | 74% | 64% | 87% |
-| Changing (FreshQA) - outdated | 78 | 21% | 36% | 21% | 31% | 33% | 32% | 36% | 44% |
+| Stable, famous (PopQA) | 130 | 67% | 78% | 67% | 78% | 76% | 78% | 78% | 82% |
+| Stable, rare (PopQA) - incomplete | 129 | 22% | 60% | 22% | 59% | 57% | 59% | 59% | 60% |
+| Never-changing (FreshQA) | 77 | 79% | 87% | 79% | 87% | 86% | 87% | 86% | 95% |
+| Changing (FreshQA) - outdated | 160 | 21% | 46% | 31% | 40% | 43% | 42% | 46% | 51% |
 
 ## Share of questions searched, by type
 
 | Question type | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) |
 |---|---|---|---|---|---|
-| Stable, famous (PopQA) | 0% | 50% | 68% | 50% | 50% |
-| Stable, rare (PopQA) - incomplete | 0% | 88% | 90% | 88% | 88% |
-| Never-changing (FreshQA) | 3% | 41% | 44% | 41% | 64% |
-| Changing (FreshQA) - outdated | 45% | 81% | 90% | 86% | 99% |
+| Stable, famous (PopQA) | 0% | 45% | 64% | 45% | 45% |
+| Stable, rare (PopQA) - incomplete | 0% | 83% | 82% | 83% | 83% |
+| Never-changing (FreshQA) | 3% | 44% | 49% | 45% | 65% |
+| Changing (FreshQA) - outdated | 44% | 79% | 89% | 86% | 97% |
 
-## Search quality: first version vs. improved search
+## Search quality: each version of the search
 
-Accuracy when ALWAYS searching, by question type (improved = full pages with infoboxes and tables, merged queries, BM25 ranking).
+Accuracy when ALWAYS searching (193 questions answered by every version).
 
-| Question type | First search | Improved search |
-|---|---|---|
-| Stable, famous (PopQA) | 75% | 68% |
-| Stable, rare (PopQA) - incomplete | 36% | 38% |
-| Never-changing (FreshQA) | 55% | 66% |
-| Changing (FreshQA) - outdated | 27% | 35% |
-| **All** | **44%** | **48%** |
+| Question type | First search (Wikipedia text) | Improved Wikipedia search | Wikipedia + live web |
+|---|---|---|---|
+| Stable, famous (PopQA) | 75% | 68% | 75% |
+| Stable, rare (PopQA) - incomplete | 37% | 39% | 68% |
+| Never-changing (FreshQA) | 55% | 66% | 79% |
+| Changing (FreshQA) - outdated | 27% | 35% | 47% |
+| **All** | 45% | 49% | 63% |
 
 ## Check 1 on FreshQA (outside data, not used for training)
 
-- Right group (never/slow/fast = LOW/MAYBE/HIGH): 73/117 (62%)
-- Fast-changing questions caught as HIGH: 24/39
+- Right group (never/slow/fast = LOW/MAYBE/HIGH): 143/237 (60%)
+- Fast-changing questions caught as HIGH: 49/80
 
 ## Is the difference real? (paired McNemar test)
 
@@ -58,13 +60,13 @@ For each pair: questions only the router got right vs. only the other method got
 
 | Router vs. | Only router right | Only other right | p-value |
 |---|---|---|---|
-| Never search | 27 | 12 | 0.024 * |
-| Always search | 6 | 6 | 1.000 |
-| Time check only | 22 | 7 | 0.008 * |
-| Self-consistency only | 1 | 0 | 1.000 |
-| Verbal confidence | 4 | 6 | 0.754 |
+| Never search | 123 | 16 | 0.000 * |
+| Always search | 4 | 7 | 0.549 |
+| Time check only | 102 | 12 | 0.000 * |
+| Self-consistency only | 11 | 3 | 0.057 |
+| Verbal confidence | 14 | 6 | 0.115 |
 
-(Compared using: Router (ours).)
+(Compared using: Router + cutoff rule (ours).)
 
 ## Cutoff rule
 

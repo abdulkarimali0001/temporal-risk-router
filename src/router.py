@@ -17,7 +17,7 @@ Try it:
 """
 from __future__ import annotations
 
-from src import knowledge_check, time_check
+from src import knowledge_check, language, time_check
 
 ACTIONS = {"answer": "answer from memory",
            "warn": "answer + recency warning",
@@ -37,7 +37,8 @@ def decide(group: str, knows: bool | None) -> tuple[str, str]:
 
 
 def route(question: str, model=None) -> dict:
-    group = time_check.classify(question, model)
+    # Check 1 was trained on English questions: classify the English translation
+    group = time_check.classify(language.to_english(question), model)
     if group == "HIGH":
         # No need to check the AI's knowledge: we search anyway.
         knowledge = {"knows": None, "agreement": None, "answers": []}

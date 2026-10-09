@@ -34,7 +34,8 @@ AGREEMENT_NEEDED = 0.6     # share of answer pairs that must match to count as "
 PROMPT = ("Answer the question in at most 8 words. No explanation. "
           "If you do not know, reply exactly: I don't know.\n\nQuestion: {q}")
 
-IDK = re.compile(r"\b(i don'?t know|not sure|unknown|cannot (determine|answer)|no information)\b", re.I)
+IDK = re.compile(r"\b(i don'?t know|not sure|unknown|cannot (determine|answer)|no information)\b"
+                 r"|모르|알 수 없|정보가 없|확실하지 않", re.I)
 
 NUMBER_WORDS = {w: str(i) for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve thirteen "

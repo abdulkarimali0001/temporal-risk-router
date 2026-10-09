@@ -304,5 +304,1994 @@
    "https://en.wikipedia.org/wiki/2026_KBO_League_season",
    "https://en.wikipedia.org/wiki/Korean_Series"
   ]
+ },
+ "ollama::llama3.1:8b::ko-memory::대한민국의 수도는 어디인가요?": "대한민국의 수도는 서울입니다. 서울은 1948년 8월 15일부터 대한민국의 수도로 사용되고 있습니다.",
+ "ollama::llama3.1:8b::ko-search-en::대한민국의 수도는 어디인가요?": {
+  "answer": "서울입니다. [3]",
+  "query": "capital south korea (en) / Capital of South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Korean_won",
+   "https://en.wikipedia.org/wiki/Capital_punishment_in_South_Korea",
+   "https://en.wikipedia.org/wiki/Capital_of_Korea",
+   "https://en.wikipedia.org/wiki/Seoul"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::대한민국의 수도는 어디인가요?": {
+  "answer": "서울특별시입니다. [3]",
+  "query": "capital south korea (en) / Capital of South Korea (en) / 대한민국의 수도는 어디인가요? (ko) / 대한민국 수도 (ko) + web",
+  "sources": [
+   "https://www.sejong.go.kr/ac/sub02_05.do",
+   "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002686830",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+   "https://www.greatopen.net/gb/article/8525",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%B3%91%EC%97%AD_%EC%A0%9C%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EB%8F%84%EA%B6%8C_%28%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%29",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9E%84%EC%8B%9C%EC%A0%95%EB%B6%80"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::한글을 창제한 조선의 왕은 누구인가요?": "세종대왕입니다. 그는 1443년 9월 9일 한글을 창제했습니다.",
+ "ollama::llama3.1:8b::ko-search-en::한글을 창제한 조선의 왕은 누구인가요?": {
+  "answer": "세종대왕입니다. [2]",
+  "query": "king joseon created korean alphabet (en) / King of Joseon created Hangul (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Hangul",
+   "https://en.wikipedia.org/wiki/Joseon",
+   "https://en.wikipedia.org/wiki/Sejong_the_Great"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::한글을 창제한 조선의 왕은 누구인가요?": {
+  "answer": "세종대왕입니다. [1]",
+  "query": "king joseon created korean alphabet (en) / King of Joseon created Hangul (en) / 한글 창제자 조선 왕 (ko) / 한글 창제한 조선 왕은 (ko) + web",
+  "sources": [
+   "https://blog.naver.com/weizmann_why/220138170783",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80",
+   "https://namu.wiki/w/%ED%95%9C%EA%B8%80/%EC%97%AD%EC%82%AC",
+   "https://encykorea.aks.ac.kr/Article/E0061508",
+   "https://ko.wikipedia.org/wiki/%EC%A7%91%ED%98%84%EC%A0%84",
+   "https://ko.wikipedia.org/wiki/%EC%9A%A9%EB%B9%84%EC%96%B4%EC%B2%9C%EA%B0%80"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::남한에서 가장 높은 산은 무엇인가요?": "남한에서 가장 높은 산은 백두산입니다. 높이는 2,744m입니다.",
+ "ollama::llama3.1:8b::ko-search-en::남한에서 가장 높은 산은 무엇인가요?": {
+  "answer": "남한에서 가장 높은 산은 1,950 m (6,400 ft) 높이의 한라산입니다. [2]",
+  "query": "highest mountain south korea (en) / Highest mountain in South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jirisan",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_South_Korea",
+   "https://en.wikipedia.org/wiki/Taebaek_Mountains",
+   "https://en.wikipedia.org/wiki/Seoraksan",
+   "https://en.wikipedia.org/wiki/Communist_partisans_in_the_Korean_War"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::남한에서 가장 높은 산은 무엇인가요?": {
+  "answer": "남한에서 가장 높은 산은 한라산입니다. [1]",
+  "query": "highest mountain south korea (en) / Highest mountain in South Korea (en) / 남한에서 가장 높은 산은 무엇인가요? (ko) / 남한 높은 산은 (ko) + web",
+  "sources": [
+   "https://www.newsspace.kr/news/article.html?no=4309",
+   "https://v.daum.net/v/7zryCc2XPq",
+   "https://hikingsong.tistory.com/entry/%EC%9A%B0%EB%A6%AC%EB%82%98%EB%9D%BC%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%EB%86%92%EC%9D%80%EC%82%B0-TOP-20",
+   "https://m.blog.naver.com/hana854/222828622862",
+   "https://sphinfo.com/blog/read/508",
+   "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C%ED%83%80%EC%9B%8C",
+   "https://ko.wikipedia.org/wiki/%EA%B4%91%EA%B5%90%EC%82%B0"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": "이순신 장군이 사용한 거북 모양의 배 이름은 무거와 진무입니다.",
+ "ollama::llama3.1:8b::ko-search-en::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": {
+  "answer": "거북선 [2]",
+  "query": "name turtle-shaped ship used admiral yi sun-sin (en) / Turtle ship Admiral Yi Sun-sin (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Statue_of_Admiral_Yi_Sun-sin",
+   "https://en.wikipedia.org/wiki/Yi_Sun-sin",
+   "https://en.wikipedia.org/wiki/Immortal_Admiral_Yi_Sun-sin",
+   "https://en.wikipedia.org/wiki/Hansan%3A_Rising_Dragon",
+   "https://en.wikipedia.org/wiki/Imjin_War"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": {
+  "answer": "거북선 또는 귀선(龜船, Geobukseon, turtle ship)은 조선 시대의 군함이다. [3]",
+  "query": "name turtle-shaped ship used admiral yi sun-sin (en) / Turtle ship Admiral Yi Sun-sin (en) / 이순신 장군의 거북선 (ko) / 이순신 장군 사용한 거북 모양 배 이름 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EC%82%B0%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EA%B1%B0%EB%B6%81%EC%84%A0",
+   "https://ko.wikipedia.org/wiki/%EA%B1%B0%EB%B6%81%EC%84%A0",
+   "https://namu.wiki/w/%EA%B1%B0%EB%B6%81%EC%84%A0",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%88%9C%EC%8B%A0",
+   "https://encykorea.aks.ac.kr/Article/E0001833"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": "2018년 동계 올림픽은 평창군에서 열렸습니다. 평창군은 강원도에 위치한 지역입니다.",
+ "ollama::llama3.1:8b::ko-search-en::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": {
+  "answer": "평창군입니다. [1]",
+  "query": "pyeongchang county gangwon province south korea (en) / Pyeongchang County South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2018_Winter_Olympics",
+   "https://en.wikipedia.org/wiki/Pyeongchang_Olympic_Stadium",
+   "https://en.wikipedia.org/wiki/Pyeongchang_County",
+   "https://en.wikipedia.org/wiki/2018_Winter_Olympics_closing_ceremony",
+   "https://en.wikipedia.org/wiki/Gangwon_Province%2C_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": {
+  "answer": "평창군과 강릉시, 정선군입니다. [2]",
+  "query": "pyeongchang county gangwon province south korea (en) / Pyeongchang County South Korea (en) / 2018년 동계 올림픽 개최지 (ko) / 2018년 동계 올림픽 열린 한국 지역 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/2018%EB%85%84_%EB%8F%99%EA%B3%84_%EC%98%AC%EB%A6%BC%ED%94%BD",
+   "https://namu.wiki/w/2018%20%ED%8F%89%EC%B0%BD%20%EB%8F%99%EA%B3%84%EC%98%AC%EB%A6%BC%ED%94%BD",
+   "https://ko.wikipedia.org/wiki/2026%EB%85%84_%EB%8F%99%EA%B3%84_%EC%98%AC%EB%A6%BC%ED%94%BD"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::한국 전쟁이 시작된 해는 몇 년인가요?": "한국 전쟁은 1950년에 시작되었습니다. 한국 전쟁은 한국과 북한 사이의 전쟁으로, 1950년 6월 25일부터 1953년 7월 27일까지 지속되었습니다.",
+ "ollama::llama3.1:8b::ko-search-en::한국 전쟁이 시작된 해는 몇 년인가요?": {
+  "answer": "1950년입니다. [1]",
+  "query": "year korean war started year (en) / Start of Korean War (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Korean_War",
+   "https://en.wikipedia.org/wiki/North_Korea",
+   "https://en.wikipedia.org/wiki/Imjin_War",
+   "https://en.wikipedia.org/wiki/Korean_New_Year",
+   "https://en.wikipedia.org/wiki/Five-Year_Plans_of_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::한국 전쟁이 시작된 해는 몇 년인가요?": {
+  "answer": "1950년입니다. [6]",
+  "query": "year korean war started year (en) / Start of Korean War (en) / 한국 전쟁 시작된 해는 몇 년인가요? (ko) / 한국 전쟁 시작된 해는 년인가요 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%A0%9C2%EC%B0%A8_%EC%84%B8%EA%B3%84_%EB%8C%80%EC%A0%84",
+   "https://m.blog.naver.com/cwopenspace/221305894432",
+   "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+   "https://theme.archives.go.kr/next/625/background/overview.do",
+   "https://ko.wikipedia.org/wiki/%EC%9D%BC%EC%A0%9C%EA%B0%95%EC%A0%90%EA%B8%B0",
+   "https://encykorea.aks.ac.kr/Article/E0042143"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::서울을 가로질러 흐르는 강은 무엇인가요?": "서울을 가로질러 흐르는 강은 한강입니다. 한강은 서울을 북쪽에서 남쪽으로 가로지르는 주요 강입니다.",
+ "ollama::llama3.1:8b::ko-search-en::서울을 가로질러 흐르는 강은 무엇인가요?": {
+  "answer": "한강입니다. [1]",
+  "query": "river flows through seoul (en) / River flowing through Seoul (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Han_River_%28Korea%29",
+   "https://en.wikipedia.org/wiki/Subterranean_river",
+   "https://en.wikipedia.org/wiki/Han_River"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::서울을 가로질러 흐르는 강은 무엇인가요?": {
+  "answer": "한강입니다. [4]",
+  "query": "river flows through seoul (en) / River flowing through Seoul (en) / 서울을 가로질러 흐르는 강은 무엇인가요? (ko) / 서울 가로질러 흐르 강은 (ko) + web",
+  "sources": [
+   "https://m.blog.naver.com/tournoteblog/222096276106",
+   "https://ko.wikipedia.org/wiki/%EC%97%90%EB%8D%B4_%EB%8F%99%EC%82%B0",
+   "https://encykorea.aks.ac.kr/Article/E0060950",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EB%8F%84%EA%B6%8C_%28%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%29",
+   "https://namu.wiki/w/%ED%95%9C%EA%B0%95",
+   "https://www.instagram.com/reel/DZrKwISlSqj",
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%88%98%EB%B3%B5_%EC%A0%84%ED%88%AC",
+   "https://ko.wikipedia.org/wiki/%EC%8B%9C%EA%B0%84",
+   "https://ko.wikipedia.org/wiki/%EC%B2%AD%EA%B3%84%EC%B2%9C"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::대한민국의 화폐 단위는 무엇인가요?": "대한민국의 화폐 단위는 원입니다. 1 원은 100전으로 나뉘며, 1,000 원은 1 만 원입니다.",
+ "ollama::llama3.1:8b::ko-search-en::대한민국의 화폐 단위는 무엇인가요?": {
+  "answer": "대한민국의 화폐 단위는 원입니다. [1]",
+  "query": "currency unit south korea (en) / Currency of South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Korean_won",
+   "https://en.wikipedia.org/wiki/South_Korean_won_%281945%E2%80%931953%29",
+   "https://en.wikipedia.org/wiki/Korean_currency",
+   "https://en.wikipedia.org/wiki/South_Korean_hwan"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::대한민국의 화폐 단위는 무엇인가요?": {
+  "answer": "대한민국의 화폐 단위는 원입니다. [2]",
+  "query": "currency unit south korea (en) / Currency of South Korea (en) / 대한민국의 화폐 단위는 무엇인가요? (ko) / 대한민국 화폐 단위 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%ED%99%94%ED%8F%90_%EB%8B%A8%EC%9C%84_%EC%96%B4%EC%9B%90",
+   "https://namu.wiki/w/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EC%9B%90",
+   "https://whatso-ch.tistory.com/627",
+   "https://korean.visitseoul.net/essential-Info-article/%ED%99%94%ED%8F%90/KON000387",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9B%90",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9B%90",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+   "https://ko.wikipedia.org/wiki/%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8",
+   "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A0%95%ED%9D%AC"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::경복궁은 어느 왕조의 궁궐인가요?": "경복궁은 조선 왕조의 궁궐입니다. 조선 왕조의 마지막 왕, 순종이 1910년에 사용한 궁궐입니다.",
+ "ollama::llama3.1:8b::ko-search-en::경복궁은 어느 왕조의 궁궐인가요?": {
+  "answer": "조선 왕조의 궁궐입니다. [1]",
+  "query": "dynasty's palace gyeongbokgung (en) / Gyeongbokgung palace history Wikipedia (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gyeongbokgung",
+   "https://en.wikipedia.org/wiki/Japanese_occupation_of_Gyeongbokgung",
+   "https://en.wikipedia.org/wiki/Changdeokgung"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::경복궁은 어느 왕조의 궁궐인가요?": {
+  "answer": "조선 왕조의 궁궐입니다. [1], [2], [4], [5]",
+  "query": "dynasty's palace gyeongbokgung (en) / Gyeongbokgung palace history Wikipedia (en) / 경복궁은 어느 왕조의 궁궐인가요 (ko) / 경복궁 왕조 궁궐 (ko) + web",
+  "sources": [
+   "https://contents.history.go.kr/mobile/eh/view.do?levelId=eh_r0190_0010&code=eh_age_30",
+   "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B3%B5%EA%B6%81",
+   "https://love.seoul.go.kr/articles/2903",
+   "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=108422",
+   "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B3%B5%EA%B6%81"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::김치는 주로 어떤 채소로 만드나요?": "김치는 주로 양배추로 만드나요. 양배추를 절인 후, 소금과 설탕을 넣어 만듭니다.",
+ "ollama::llama3.1:8b::ko-search-en::김치는 주로 어떤 채소로 만드나요?": {
+  "answer": "김치는 주로 중국 양배추나 한국 무로 만드나요. [1]",
+  "query": "kimchi made mainly vegetable (en) / Main vegetable in kimchi production (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kimchi",
+   "https://en.wikipedia.org/wiki/Banchan"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::김치는 주로 어떤 채소로 만드나요?": {
+  "answer": "배추, 무 등 [2]",
+  "query": "kimchi made mainly vegetable (en) / Main vegetable in kimchi production (en) / 김치 만드는 채소 이름 (ko) / 김치 주로 채소 만드나요 (ko) + web",
+  "sources": [
+   "https://www.reddit.com/r/kimchi/comments/fyl93d/with_what_kind_of_vegetables_can_you_do_kimchi?tl=ko",
+   "https://namu.wiki/w/%EA%B9%80%EC%B9%98",
+   "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B9%98",
+   "https://www.youtube.com/watch?v=hQ3HNmBEPnQ",
+   "https://www.youtube.com/watch?v=SnmzZjGnGyk",
+   "https://www.wikim.re.kr/menu.es?mid=a50203000000",
+   "https://ko.wikipedia.org/wiki/%EB%90%9C%EC%9E%A5"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::설악산 국립공원의 최고봉 이름은 무엇인가요?": "설악산 국립공원의 최고봉은 백운대입니다. 높이는 1,708m입니다.",
+ "ollama::llama3.1:8b::ko-search-en::설악산 국립공원의 최고봉 이름은 무엇인가요?": {
+  "answer": "대청봉입니다. [2]",
+  "query": "name highest peak seoraksan national park (en) / Seoraksan National Park highest peak (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bukhansan_National_Park",
+   "https://en.wikipedia.org/wiki/Seoraksan",
+   "https://en.wikipedia.org/wiki/Ulsanbawi",
+   "https://en.wikipedia.org/wiki/Jirisan"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::설악산 국립공원의 최고봉 이름은 무엇인가요?": {
+  "answer": "대청봉입니다. [1]",
+  "query": "name highest peak seoraksan national park (en) / Seoraksan National Park highest peak (en) / 설악산 국립공원 최고봉 이름 (ko) + web",
+  "sources": [
+   "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=9a2b453f-40c1-42c0-af9d-98c573240b78",
+   "https://namu.wiki/w/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://ko.wikipedia.org/wiki/%ED%8C%94%EA%B3%B5%EC%82%B0",
+   "https://www.youtube.com/watch?v=UHk_3llQek8",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B4%EB%93%B1%EC%82%B0",
+   "https://ko.wikipedia.org/wiki/%EB%B6%81%ED%95%9C%EC%82%B0",
+   "https://en.wikipedia.org/wiki/Bukhansan_National_Park"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::설악산 대청봉의 높이는 몇 미터인가요?": "설악산 대청봉의 높이는 1,708미터입니다.",
+ "ollama::llama3.1:8b::ko-search-en::설악산 대청봉의 높이는 몇 미터인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "height daechongbong seoraksan (en) / Daechongbong Seoraksan mountain height (en)",
+  "sources": []
+ },
+ "ollama::llama3.1:8b::ko-search_v3::설악산 대청봉의 높이는 몇 미터인가요?": {
+  "answer": "1,708m입니다. [2], [3], [4], [7]",
+  "query": "height daechongbong seoraksan (en) / Daechongbong Seoraksan mountain height (en) / 설악산 대청봉 높이 (ko) / 설악산 대청봉 높이 미터 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%95%85%EC%82%B0%EC%9D%98_%EC%A7%80%EC%A7%88",
+   "https://namu.wiki/w/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://yhkang5931.tistory.com/1274",
+   "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=9a2b453f-40c1-42c0-af9d-98c573240b78",
+   "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://www.youtube.com/watch?v=imJdkvu-4Qg",
+   "https://ko.wikipedia.org/wiki/%ED%83%9C%EB%B0%B1%EC%82%B0%EB%A7%A5"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": "강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 2018년입니다.",
+ "ollama::llama3.1:8b::ko-search-en::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": {
+  "answer": "2024년입니다. [2]",
+  "query": "year gangneung danoje registered as unesco intangible cultural heritage humanity year (en) / Gangneung Danoje UNESCO registration year (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gangneung",
+   "https://en.wikipedia.org/wiki/Lists_of_Intangible_Cultural_Heritage_elements"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": {
+  "answer": "2005년입니다. [2], [6], [9]",
+  "query": "year gangneung danoje registered as unesco intangible cultural heritage humanity year (en) / Gangneung Danoje UNESCO registration year (en) / 강릉단오제 유네스코 등재 연도 (ko) / 강릉단오제 유네스코 인류무형문화유산 등재된 해는 년인가요 (ko) + web",
+  "sources": [
+   "https://news.nate.com/view/20250606n08960?mid=n0904",
+   "https://m.khs.go.kr/public/commentary/HtmlPage.do?pg=%2Funesco%2FCulHeritage%2FCulHeritage_03.jsp",
+   "https://m.blog.naver.com/chagov/223129796015",
+   "https://www.cha.go.kr/cop/bbs/selectBoardArticle.do;jsessionid=aDKOh5bCFsI4MG8efQYnfKB6jveTeVgdTA5P1UBR2IoWMknWT8lucEPVD4RO8iaa.cha-was02_servlet_engine1?nttId=59365&bbsId=BBSMSTR_1008&pageUnit=10&searchtitle=tit&searchcont=&searchkey=&searchwriter=&searchWrd=&searchUseYn=&searchCnd=&ctgryLrcls=&ctgryMdcls=&ctgrySmcls=&ntcStartDt=&ntcEndDt=&mn=NS_01_09_01",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B4%ED%98%95%EB%AC%B8%ED%99%94%EC%9C%A0%EC%82%B0_%EB%AA%A9%EB%A1%9D",
+   "https://www.gn.go.kr/dano/contents.do?key=5820",
+   "https://ko.wikipedia.org/wiki/%EC%A4%91%EA%B5%AD%EC%9D%98_%EB%B0%98%ED%95%9C_%EC%A0%95%EC%84%9C",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%98%A4",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89%EB%86%8D%EC%95%85",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89%EC%8B%9C"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": "강릉 경포대 옆에 있는 호수의 이름은 동해호수입니다.",
+ "ollama::llama3.1:8b::ko-search-en::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "name lake located next gyeongpo beach gangneung (en) / Lake near Gyeongpo Beach Gangneung (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gangneung",
+   "https://en.wikipedia.org/wiki/List_of_2_Days_%26_1_Night_episodes"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": {
+  "answer": "경포호입니다. [4]",
+  "query": "name lake located next gyeongpo beach gangneung (en) / Lake near Gyeongpo Beach Gangneung (en) / 강릉 경포대 인근 호수 이름 (ko) / 강릉 경포대 옆에 있는 호수 이름 (ko) + web",
+  "sources": [
+   "https://sangseek.com/communities/23053",
+   "https://umblog66.tistory.com/128",
+   "https://socialcast.tistory.com/entry/%EA%B0%95%EB%A6%89-%EA%B0%80%EB%B3%BC%EB%A7%8C%ED%95%9C%EA%B3%B3-%EA%B2%BD%ED%8F%AC%EB%8C%80-%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%EA%B3%BC-%EA%B2%BD%ED%8F%AC%ED%98%B8",
+   "https://xn--ok0b236bp0a.com/place/7679",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89_%ED%98%B8%ED%95%B4%EC%A0%95",
+   "https://ko.wikipedia.org/wiki/%EA%B2%BD%ED%8F%AC%EB%8C%80",
+   "https://beompick.com/%EA%B0%95%EB%A6%89-%EA%B2%BD%ED%8F%AC%EB%8C%80-%EB%A7%9B%EC%A7%91"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": "속초 엑스포 타워가 있는 석호의 이름은 대청호입니다.",
+ "ollama::llama3.1:8b::ko-search-en::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": {
+  "answer": "석호입니다. [2]",
+  "query": "name lake sokcho expo tower located (en) / Sokcho Expo Tower location lake (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Can_This_Love_Be_Translated%3F",
+   "https://en.wikipedia.org/wiki/List_of_Ferris_wheels"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": {
+  "answer": "청초호입니다. [2]",
+  "query": "name lake sokcho expo tower located (en) / Sokcho Expo Tower location lake (en) / 속초 엑스포 타워 위치 (ko) / 속초 엑스포 타워 있는 석호 이름 (ko) + web",
+  "sources": [
+   "https://m.blog.naver.com/fox7shot/222712491520?rvid=C37DDB9FBB94B50D0E6A0FC3B833223888E9&targetKeyword=%EC%9D%B4%EA%B5%AD%EC%A0%81%EC%9D%B8%ED%92%8D%EA%B2%BD",
+   "https://www.facebook.com/uaboss/posts/%EC%86%8D%EC%B4%88-%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C%EB%8A%94-%EA%B0%95%EC%9B%90%EB%8F%84-%EC%86%8D%EC%B4%88%EC%8B%9C-%EC%B2%AD%EC%B4%88%ED%98%B8-%EC%9C%A0%EC%9B%90%EC%A7%80-%EB%82%B4%EC%97%90-%EC%9C%84%EC%B9%98%ED%95%9C-734m-%EB%86%92%EC%9D%B4%EC%9D%98-%EC%A0%84%EB%A7%9D-%ED%83%80%EC%9B%8C%EC%9D%B4%EB%8B%A41999%EB%85%84-%EA%B0%95%EC%9B%90%EA%B5%AD%EC%A0%9C%EA%B4%80%EA%B4%91%EC%97%91%EC%8A%A4%ED%8F%AC%EB%A5%BC-%EA%B8%B0%EB%85%90%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%84%B8%EC%9B%8C%EC%A1%8C%EC%9C%BC%EB%A9%B0-/36436542509294084",
+   "https://ilsang-memory.tistory.com/entry/%EC%86%8D%EC%B4%88%EC%97%AC%ED%96%89-%EC%B2%AD%EC%B4%88%ED%98%B8-%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90-%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C-%EC%9E%94%EC%9E%94%ED%95%9C-%EC%88%98%EB%B3%80%EA%B8%B8%EC%97%90-%ED%8A%B9%EB%B3%84%ED%95%A8%EC%9D%B4-%EA%B0%80%EB%93%9D%ED%95%9C-%EC%86%8D%EC%B4%88-%EA%B0%80%EB%B3%BC-%EB%A7%8C%ED%95%9C-%EA%B3%B3",
+   "https://ko.wikipedia.org/wiki/%EB%82%A8%EB%8F%99%ED%83%80%EC%9B%8C",
+   "https://ko.wikipedia.org/wiki/%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C",
+   "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=5d091698-5c99-47ee-8d11-96c67ea81b01",
+   "https://ko.wikipedia.org/wiki/%EC%86%8D%EC%B4%88%EC%8B%9C",
+   "https://ko.wikipedia.org/wiki/%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": "율곡 이이의 어머니는 이씨입니다.",
+ "ollama::llama3.1:8b::ko-search-en::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": {
+  "answer": "신사임당 [2]",
+  "query": "mother yulgok yi i born ojukheon gangneung (en) / Yulgok Yi I mother (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Yi_I",
+   "https://en.wikipedia.org/wiki/Shin_Saimdang",
+   "https://en.wikipedia.org/wiki/Ch%C5%8Fng_Mongju"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": {
+  "answer": "신사임당[7]",
+  "query": "mother yulgok yi i born ojukheon gangneung (en) / Yulgok Yi I mother (en) / 율곡 이이 어머니 이름 (ko) / 강릉 오죽헌 태어난 율곡 이이 어머니 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%83%9C%EB%AA%BD",
+   "https://onion02.tistory.com/2617",
+   "https://ncms.nculture.org/local-artist/story/21",
+   "https://blog.naver.com/issim1/223635004172",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9D%B4",
+   "https://www.youtube.com/watch?v=M5tm08isF7k",
+   "https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%82%AC%EC%9E%84%EB%8B%B9",
+   "https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%82%AC%EC%9E%84%EB%8B%B9"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::대한민국 최초의 국립공원은 어디인가요?": "대한민국 최초의 국립공원은 1967년 10월 28일 설립된 주왕산 국립공원입니다.",
+ "ollama::llama3.1:8b::ko-search-en::대한민국 최초의 국립공원은 어디인가요?": {
+  "answer": "대한민국 최초의 국립공원은 경주국립공원입니다. [1]\n\n(Translation: The first national park in South Korea is Gyeongju National Park.)",
+  "query": "first national park south korea (en) / First national park in South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/List_of_national_parks_of_South_Korea",
+   "https://en.wikipedia.org/wiki/South_Korea_national_football_team",
+   "https://en.wikipedia.org/wiki/National_Assembly_%28South_Korea%29"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::대한민국 최초의 국립공원은 어디인가요?": {
+  "answer": "지리산국립공원입니다. [1], [3], [4], [6]",
+  "query": "first national park south korea (en) / First national park in South Korea (en) / 대한민국 최초의 국립공원 (ko) / 대한민국 최초 국립공원 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+   "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=53867",
+   "https://ko.wikipedia.org/wiki/%EC%A7%80%EB%A6%AC%EC%82%B0",
+   "https://encykorea.aks.ac.kr/Article/E0006194",
+   "https://namu.wiki/w/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98%20%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+   "https://blog.naver.com/mountaintv01/222433863125?viewType=pc",
+   "https://ko.wikipedia.org/wiki/%EC%98%90%EB%A1%9C%EC%8A%A4%ED%86%A4_%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::훈민정음 해례본이 발견된 해는 몇 년인가요?": "훈민정음 해례본이 발견된 해는 1976년입니다.",
+ "ollama::llama3.1:8b::ko-search-en::훈민정음 해례본이 발견된 해는 몇 년인가요?": {
+  "answer": "1940년입니다. [4]",
+  "query": "year preface edition hunmin jeongeum discovered year (en) / Discovery of Hunmin Jeongeum preface (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Origin_of_Hangul"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::훈민정음 해례본이 발견된 해는 몇 년인가요?": {
+  "answer": "1940년입니다. [1]",
+  "query": "year preface edition hunmin jeongeum discovered year (en) / Discovery of Hunmin Jeongeum preface (en) / 훈민정음 해례본 발견 연도 (ko) / 훈민정음 해례본 발견된 해는 년인가요 (ko) + web",
+  "sources": [
+   "https://mykoreanavi.com/hunminjeongeum-haeryebon",
+   "https://www.youtube.com/watch?v=PLK6yBSRE_A",
+   "https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C",
+   "https://nam-sh0302.tistory.com/15713850",
+   "https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::강원특별자치도가 출범한 날짜는 언제인가요?": "강원특별자치도가 출범한 날짜는 2026년 10월 8일입니다.",
+ "ollama::llama3.1:8b::ko-search-en::강원특별자치도가 출범한 날짜는 언제인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "date gangwon province established (en) / Gangwon Province establishment date (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chuncheon",
+   "https://en.wikipedia.org/wiki/Autumn_Uprising_of_1946",
+   "https://en.wikipedia.org/wiki/EATOF",
+   "https://en.wikipedia.org/wiki/Yeongdong_Line"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::강원특별자치도가 출범한 날짜는 언제인가요?": {
+  "answer": "2023년 6월 11일입니다. [3]",
+  "query": "date gangwon province established (en) / Gangwon Province establishment date (en) / 강원특별자치도 출범일 (ko) / 강원특별자치도 출범한 날짜 (ko) + web",
+  "sources": [
+   "https://www.m-joongang.com/news/articleView.html?idxno=339840",
+   "https://www.korea.kr/news/reporterView.do?newsId=148916712",
+   "https://www.yna.co.kr/view/AKR20230611005900062",
+   "https://www.youtube.com/watch?v=DSntxtx4I-Y",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84_%EC%86%8C%EB%B0%A9%EB%B3%B8%EB%B6%80",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EA%B2%BD%EC%B0%B0%EC%B2%AD",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90",
+   "https://www.law.go.kr/LSW/lsInfoP.do?lsId=014291&ancYnChk=0"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::국보 제1호였던 문화유산은 무엇인가요?": "국보 제1호는 경주 불국사 삼층전입니다.",
+ "ollama::llama3.1:8b::ko-search-en::국보 제1호였던 문화유산은 무엇인가요?": {
+  "answer": "현무문입니다. [1]",
+  "query": "national treasure no 1 cultural asset (en) / National Treasures of Japan (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cultural_assets_of_North_Korea",
+   "https://en.wikipedia.org/wiki/National_Treasure_%28Japan%29",
+   "https://en.wikipedia.org/wiki/Living_National_Treasure_%28Japan%29"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::국보 제1호였던 문화유산은 무엇인가요?": {
+  "answer": "숭례문입니다. [1], [3], [7]",
+  "query": "national treasure no 1 cultural asset (en) / National Treasures of Japan (en) / 국보 제1호 문화유산 이름 (ko) / 국보 제1호였던 문화유산 (ko) + web",
+  "sources": [
+   "https://www.khan.co.kr/article/202107120600001",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EB%B3%B4",
+   "https://ko.wikipedia.org/wiki/%EC%88%AD%EB%A1%80%EB%AC%B8",
+   "https://blog.naver.com/kdjhmr/223859576249?viewType=pc",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EA%B0%80%EB%AF%BC%EC%86%8D%EB%AC%B8%ED%99%94%EC%9C%A0%EC%82%B0",
+   "https://ko.wikipedia.org/wiki/%ED%95%A9%EC%B2%9C_%ED%95%B4%EC%9D%B8%EC%82%AC_%EB%8C%80%EC%9E%A5%EA%B2%BD%ED%8C%90",
+   "https://namu.wiki/w/%EC%88%AD%EB%A1%80%EB%AC%B8",
+   "https://www.youtube.com/watch?v=gUkMBQGvu8o",
+   "https://imnews.imbc.com/replay/2021/nwdesk/article/6282504_34936.html",
+   "https://ko.wikipedia.org/wiki/%EC%B2%9C%EB%A7%88%EC%B4%9D",
+   "https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 대한민국 대통령은 누구인가요?": "현재 대한민국 대통령은 윤석열입니다. 2022년 5월 10일부터 대통령직을 맡고 있습니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 대한민국 대통령은 누구인가요?": {
+  "answer": "현재 대한민국 대통령은 이재명 대통령입니다. [1]",
+  "query": "current president south korea (en) / Current President of South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/President_of_South_Korea",
+   "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_South_Korea",
+   "https://en.wikipedia.org/wiki/List_of_presidents_of_South_Korea",
+   "https://en.wikipedia.org/wiki/Presidential_state_car_%28South_Korea%29"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 대한민국 대통령은 누구인가요?": {
+  "answer": "현재 대한민국 대통령은 제21대 대통령 이재명이다. [3]",
+  "query": "current president south korea (en) / Current President of South Korea (en) / 현재 대한민국 대통령은 누구인가요? (ko) / 대한민국 대통령 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80%ED%86%B5%EB%A0%B9",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80%ED%86%B5%EB%A0%B9_%EB%AA%A9%EB%A1%9D",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80%ED%86%B5%EB%A0%B9_%EB%AA%A9%EB%A1%9D",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9E%84%EC%8B%9C%EC%A0%95%EB%B6%80",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C20%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 대한민국 국무총리는 누구인가요?": "현재 대한민국 국무총리는 한덕수입니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 대한민국 국무총리는 누구인가요?": {
+  "answer": "현재 대한민국 국무총리는 한성숙입니다. [2]",
+  "query": "current prime minister republic korea (en) / Current Prime Minister of South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Deputy_Prime_Minister_of_South_Korea",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_South_Korea",
+   "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 대한민국 국무총리는 누구인가요?": {
+  "answer": "현재 대한민국 국무총리는 한성숙입니다. [1]",
+  "query": "current prime minister republic korea (en) / Current Prime Minister of South Korea (en) / 현재 대한민국 국무총리 (ko) / 대한민국 국무총리 (ko) + web",
+  "sources": [
+   "https://namu.wiki/w/%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC%EB%B9%84%EC%84%9C%EC%8B%A4",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC%EB%B9%84%EC%84%9C%EC%8B%A4%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC",
+   "https://www.opm.go.kr/opm/prime/greetings.do"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 서울특별시장은 누구인가요?": "2026년 10월 현재 서울특별시장은 오세훈입니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 서울특별시장은 누구인가요?": {
+  "answer": "오세훈입니다. [1]",
+  "query": "current mayor seoul (en) / Current mayor of Seoul (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Seoul",
+   "https://en.wikipedia.org/wiki/2026_South_Korean_local_elections",
+   "https://en.wikipedia.org/wiki/Ji_Sang-wook"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 서울특별시장은 누구인가요?": {
+  "answer": "오세훈입니다. [1][3]",
+  "query": "current mayor seoul (en) / Current mayor of Seoul (en) / 서울특별시장 현재 누구 (ko) / 서울특별시장 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5",
+   "https://www.seoul.go.kr/seoul/mayor.do",
+   "https://namu.wiki/w/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%9B%90%EC%88%9C",
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5_%EC%84%A0%EA%B1%B0",
+   "https://www.businesspost.co.kr/BP?command=article_view&num=429765"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 강원특별자치도지사는 누구인가요?": "현재 강원특별자치도지사는 한정애입니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 강원특별자치도지사는 누구인가요?": {
+  "answer": "강원특별자치도지사는 Woo Sang-ho입니다. [1]",
+  "query": "current governor gangwon province (en) / Current governor of Gangwon Province (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gangwon_Province%2C_South_Korea",
+   "https://en.wikipedia.org/wiki/Gangwon_FC",
+   "https://en.wikipedia.org/wiki/2026_South_Korean_local_elections"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 강원특별자치도지사는 누구인가요?": {
+  "answer": "우상호입니다. [4]",
+  "query": "current governor gangwon province (en) / Current governor of Gangwon Province (en) / 강원특별자치도지사 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84_%EB%B6%80%EC%A7%80%EC%82%AC",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC_%EC%84%A0%EA%B1%B0",
+   "https://www.businesspost.co.kr/BP?command=article_view&num=441358",
+   "https://state.gwd.go.kr/governor-gs",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC",
+   "https://www.youtube.com/watch?v=F0OBkVdBZyc",
+   "https://namu.wiki/w/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC",
+   "https://en.wikipedia.org/wiki/Gangwon_Province%2C_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 속초시장은 누구인가요?": "속초시장은 2026년 현재 이인제입니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 속초시장은 누구인가요?": {
+  "answer": "현재 속초시장은 Shim Woo-jung입니다. [1]",
+  "query": "current mayor sokcho (en) / Sokcho current mayor Wikipedia (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Supreme_Prosecutors%27_Office_of_the_Republic_of_Korea",
+   "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go",
+   "https://en.wikipedia.org/wiki/2024_Noto_earthquake",
+   "https://en.wikipedia.org/wiki/Yonago"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 속초시장은 누구인가요?": {
+  "answer": "이병선입니다. [4]",
+  "query": "current mayor sokcho (en) / Sokcho current mayor Wikipedia (en) / 속초시장 현재 누구 (ko) / 속초시장 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%86%8D%EC%B4%88%EC%8B%9C%EC%9E%A5",
+   "http://news.lghellovision.net/news/articleView.html?idxno=540739",
+   "https://ko.wikipedia.org/wiki/%EC%86%8D%EC%B4%88%EC%8B%9C%EC%9E%A5_%EC%84%A0%EA%B1%B0",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%91%EC%84%A0",
+   "https://www.kwnews.co.kr/article/20260604500087",
+   "https://www.youtube.com/watch?v=oCiiZjAA78s&xstg=CAMSBhUDze3xHw%3D%3D",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%91%EC%84%A0",
+   "https://ko.wikipedia.org/wiki/%EC%A0%95%EC%9D%BC%EA%B6%8C",
+   "https://ko.wikipedia.org/wiki/%EC%A0%9C6%ED%9A%8C_%EC%A0%84%EA%B5%AD%EB%8F%99%EC%8B%9C%EC%A7%80%EB%B0%A9%EC%84%A0%EA%B1%B0",
+   "https://ko.wikipedia.org/wiki/%EB%8B%A4%ED%81%90%EB%A9%98%ED%84%B0%EB%A6%AC_3%EC%9D%BC"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 한국은행 총재는 누구인가요?": "현재 한국은행 총재는 이인제입니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 한국은행 총재는 누구인가요?": {
+  "answer": "현재 한국은행 총재는 신현송 총재입니다. [2]",
+  "query": "current governor bank korea (en) / Current Governor of Bank of Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bank_of_Korea",
+   "https://en.wikipedia.org/wiki/Hyun-Song_Shin",
+   "https://en.wikipedia.org/wiki/Lists_of_governors",
+   "https://en.wikipedia.org/wiki/Bank_of_Japan"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 한국은행 총재는 누구인가요?": {
+  "answer": "신현송 [4]",
+  "query": "current governor bank korea (en) / Current Governor of Bank of Korea (en) / 현재 한국은행 총재는 누구인가요? (ko) / 한국은행 총재 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89_%EC%B4%9D%EC%9E%AC",
+   "https://www.yna.co.kr/view/MYH20260318022500038",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89",
+   "https://namu.wiki/w/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89%20%EC%B4%9D%EC%9E%AC",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89_%EC%B4%9D%EC%9E%AC",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A3%BC%EC%97%B4",
+   "https://www.bok.or.kr/portal/main/contents.do?menuNo=201168",
+   "https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%98%84%EC%86%A1"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::현재 국회의장은 누구인가요?": "현재 국회의장은 김진태입니다.",
+ "ollama::llama3.1:8b::ko-search-en::현재 국회의장은 누구인가요?": {
+  "answer": "조정식입니다. [1]",
+  "query": "current speaker national assembly (en) / Current Speaker of National Assembly (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Speaker_of_the_National_Assembly_%28South_Korea%29",
+   "https://en.wikipedia.org/wiki/List_of_speakers_of_the_National_Assembly_%28Hungary%29",
+   "https://en.wikipedia.org/wiki/National_Assembly_%28Seychelles%29"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::현재 국회의장은 누구인가요?": {
+  "answer": "조정식입니다. [3]",
+  "query": "current speaker national assembly (en) / Current Speaker of National Assembly (en) / 현재 국회의장 이름은? (ko) / 국회의장 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5",
+   "https://encykorea.aks.ac.kr/Article/E0006575",
+   "https://www.facebook.com/natv.go.kr/videos/%EC%A1%B0%EC%A0%95%EC%8B%9D-%EC%8B%A0%EC%9E%84-%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5-%EB%82%B4%EB%85%84-%EA%B0%9C%ED%97%8C-%EC%A0%88%ED%98%B8%EC%9D%98-%EC%8B%9C%EA%B8%B0%EC%A1%B0%EC%A0%95%EC%8B%9D-%EC%8B%A0%EC%9E%84-%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5%EB%82%B4%EB%85%84-%EA%B0%9C%ED%97%8C-%EC%A0%88%ED%98%B8%EC%9D%98-%EC%8B%9C%EA%B8%B0%EF%B8%8F22%EB%8C%80-%EA%B5%AD%ED%9A%8C-%ED%9B%84%EB%B0%98%EA%B8%B0-%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5%EC%97%90-%EC%A1%B0%EC%A0%95%EC%8B%9D-%EC%9D%98%EC%9B%90%EC%9D%84-%EC%84%A0%EC%B6%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4-/2109761473221533",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C%EB%B6%80%EC%9D%98%EC%9E%A5",
+   "https://namu.wiki/w/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5",
+   "https://en.wikipedia.org/wiki/Speaker_of_the_National_Assembly_%28South_Korea%29",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%ED%95%A9%EB%8F%99%EC%B0%B8%EB%AA%A8%EC%9D%98%EC%9E%A5",
+   "https://www.youtube.com/watch?v=zBySW750xI8&xstg=CAMSBhUDzO3xHw%3D%3D"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::삼성전자의 현재 대표이사는 누구인가요?": "삼성전자의 현재 대표이사는 오세혁입니다. 그는 2021년 5월 1일부터 현재까지 대표이사로 재직 중입니다.",
+ "ollama::llama3.1:8b::ko-search-en::삼성전자의 현재 대표이사는 누구인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "current ceo samsung electronics (en) / Current CEO of Samsung (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Samsung_Electronics",
+   "https://en.wikipedia.org/wiki/Samsung_C%26T",
+   "https://en.wikipedia.org/wiki/2025%E2%80%93present_global_memory_supply_shortage",
+   "https://en.wikipedia.org/wiki/Lee_Boo-jin"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::삼성전자의 현재 대표이사는 누구인가요?": {
+  "answer": "노태문입니다. [3]",
+  "query": "current ceo samsung electronics (en) / Current CEO of Samsung (en) / 삼성전자 대표이사 현재 누구 (ko) / 삼성전자 대표이사 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EA%B6%8C%EC%98%A4%ED%98%84_%28%EA%B8%B0%EC%97%85%EC%9D%B8%29",
+   "https://www.samsung.com/sec/about-us/company-info",
+   "https://www.businesspost.co.kr/BP?command=article_view&num=420819",
+   "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1%EA%B7%B8%EB%A3%B9",
+   "https://www.newspim.com/news/view/20260608001047",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9C%A4%EC%9A%B0_%281946%EB%85%84%29",
+   "https://namu.wiki/w/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90",
+   "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::SK하이닉스의 현재 대표이사(CEO)는 누구인가요?": "SK하이닉스의 현재 대표이사는 권영세입니다. 그는 2022년 3월 1일부터 현재까지 CEO로 재직 중입니다.",
+ "ollama::llama3.1:8b::ko-search-en::SK하이닉스의 현재 대표이사(CEO)는 누구인가요?": {
+  "answer": "SK하이닉스의 현재 대표이사(CEO)는 Kwak Noh-Jung입니다. [1]",
+  "query": "current ceo sk hynix (en) / SK Hynix current CEO (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/SK_Hynix",
+   "https://en.wikipedia.org/wiki/SK_Group",
+   "https://en.wikipedia.org/wiki/2025%E2%80%93present_global_memory_supply_shortage"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::SK하이닉스의 현재 대표이사(CEO)는 누구인가요?": {
+  "answer": "SK하이닉스의 현재 대표이사는 곽노정입니다. [1]",
+  "query": "current ceo sk hynix (en) / SK Hynix current CEO (en) / SK하이닉스 CEO 현재 누구 (ko) / sk하이닉스 대표이사 ceo 는 (ko) + web",
+  "sources": [
+   "https://www.businesspost.co.kr/BP?command=article_view&num=408836",
+   "https://namu.wiki/w/%EA%B3%BD%EB%85%B8%EC%A0%95",
+   "https://www.ceomagazine.co.kr/ko-kr/articles/32241",
+   "https://news.skhynix.co.kr/new-ceo-seok-hee-lee-business-manager",
+   "https://www.youtube.com/watch?v=SLb9cRTlUMs",
+   "https://ko.wikipedia.org/wiki/SK%ED%85%94%EB%A0%88%EC%BD%A4",
+   "https://en.wikipedia.org/wiki/SK_Hynix",
+   "https://ko.wikipedia.org/wiki/%EC%B5%9C%ED%83%9C%EC%9B%90_%281960%EB%85%84%29",
+   "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::네이버의 현재 대표이사는 누구인가요?": "네이버의 현재 대표이사는 이재웅입니다.",
+ "ollama::llama3.1:8b::ko-memory::손흥민의 현재 소속팀은 어디인가요?": "현재 손흥민은 Tottenham Hotspur에서 뛰고 있습니다.",
+ "ollama::llama3.1:8b::ko-search-en::손흥민의 현재 소속팀은 어디인가요?": {
+  "answer": "손흥민의 현재 소속팀은 Tottenham Hotspur입니다. [3]",
+  "query": "tottenham hotspur's current position premier league (en) / Tottenham Hotspur Premier League table (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
+   "https://en.wikipedia.org/wiki/Tottenham_Hotspur_Stadium",
+   "https://en.wikipedia.org/wiki/2023%E2%80%9324_Tottenham_Hotspur_F.C._season",
+   "https://en.wikipedia.org/wiki/2026%E2%80%9327_Tottenham_Hotspur_F.C._season"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::손흥민의 현재 소속팀은 어디인가요?": {
+  "answer": "로스앤젤레스 FC입니다. [2]",
+  "query": "tottenham hotspur's current position premier league (en) / Tottenham Hotspur Premier League table (en) / 손흥민 현재 소속팀은 어디인가요 (ko) / 손흥민 소속팀 (ko) + web",
+  "sources": [
+   "https://www.footballist.co.kr/news/articleView.html?idxno=199967",
+   "https://ko.wikipedia.org/wiki/%EC%86%90%ED%9D%A5%EB%AF%BC",
+   "https://ko.wikipedia.org/wiki/%EC%86%90%ED%9D%A5%EB%AF%BC",
+   "https://theseed.io/w/%EC%86%90%ED%9D%A5%EB%AF%BC",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80_%EC%95%8C%EC%A0%9C%EB%A6%AC_%282014%EB%85%84_FIFA_%EC%9B%94%EB%93%9C%EC%BB%B5%29",
+   "https://www.slowlearnernews.org/news/articleView.html?idxno=1656"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::올해 한국의 최저임금(시급)은 얼마인가요?": "2026년 현재 한국의 최저임금은 10,000원입니다.",
+ "ollama::llama3.1:8b::ko-search-en::올해 한국의 최저임금(시급)은 얼마인가요?": {
+  "answer": "2025년 기준으로, 한국의 최저임금은 11달러입니다. [1]",
+  "query": "year's minimum wage hourly wage korea much (en) / Korea minimum wage 2024 (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Minimum_wage",
+   "https://en.wikipedia.org/wiki/Racial_pay_gap_in_the_United_States",
+   "https://en.wikipedia.org/wiki/Wage_slavery",
+   "https://en.wikipedia.org/wiki/Minimum_wage_in_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::올해 한국의 최저임금(시급)은 얼마인가요?": {
+  "answer": "2026년 최저임금은 시급 10,320원입니다. [3]",
+  "query": "year's minimum wage hourly wage korea much (en) / Korea minimum wage 2024 (en) / 올해 한국 최저임금 시급 (ko) / 올해 한국 최저임금 시급 은 (ko) + web",
+  "sources": [
+   "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1492",
+   "https://ko.tradingeconomics.com/south-korea/minimum-wages",
+   "https://www.albamon.com/alba-talk/interests/minimum-wage",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%AC%EC%9D%B8_%EC%A0%95%EB%B6%80_%EC%B5%9C%EC%A0%80%EC%9E%84%EA%B8%88_%EC%9D%B8%EC%83%81_%EB%85%BC%EB%9E%80",
+   "https://www.korea.kr/news/reporterView.do?newsId=148969730",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EC%B5%9C%EC%A0%80%EC%9E%84%EA%B8%88"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::가장 최근 KBO 한국시리즈 우승팀은 어디인가요?": "2026년 10월 8일 현재 가장 최근 KBO 한국시리즈 우승팀은 SK 와이번스입니다.",
+ "ollama::llama3.1:8b::ko-search-en::가장 최근 KBO 한국시리즈 우승팀은 어디인가요?": {
+  "answer": "LG 트윈스입니다. [1]",
+  "query": "most recent kbo korean series champion (en) / KBO Korean Series recent winner (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Korean_Series",
+   "https://en.wikipedia.org/wiki/KBO_League"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::가장 최근 KBO 한국시리즈 우승팀은 어디인가요?": {
+  "answer": "LG 트윈스입니다. [2]",
+  "query": "most recent kbo korean series champion (en) / KBO Korean Series recent winner (en) / 최근 KBO 한국시리즈 우승팀은 어디인가요? (ko) / 최근 kbo 한국시리즈 우승팀 (ko) + web",
+  "sources": [
+   "https://www.instagram.com/reel/DYOKerXv8Q1",
+   "https://namu.wiki/w/KBO%20%ED%95%9C%EA%B5%AD%EC%8B%9C%EB%A6%AC%EC%A6%88",
+   "https://ko.wikipedia.org/wiki/KBO_%ED%95%9C%EA%B5%AD%EC%8B%9C%EB%A6%AC%EC%A6%88",
+   "https://6894nhyu.tistory.com/355",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%ED%99%94_%EC%9D%B4%EA%B8%80%EC%8A%A4",
+   "https://www.yna.co.kr/view/AKR20160921161852007",
+   "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0_%EC%9E%90%EC%9D%B4%EC%96%B8%EC%B8%A0",
+   "https://ko.wikipedia.org/wiki/%EC%96%91%EC%A4%80%ED%98%81",
+   "https://ko.wikipedia.org/wiki/KBO_%EB%A6%AC%EA%B7%B8",
+   "https://en.wikipedia.org/wiki/Korean_Series"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-memory::가장 최근 K리그1 우승팀은 어디인가요?": "2026년 10월 8일 현재 가장 최근 K리그1 우승팀은 FC 서울입니다.",
+ "ollama::llama3.1:8b::ko-search-en::가장 최근 K리그1 우승팀은 어디인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "most recent k league 1 champion (en) / K League 1 recent champions (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/1996_UEFA_Champions_League_final",
+   "https://en.wikipedia.org/wiki/League_of_Legends_Champions_Korea",
+   "https://en.wikipedia.org/wiki/Pohang_Steelers",
+   "https://en.wikipedia.org/wiki/Busan_IPark_in_international_competitions"
+  ]
+ },
+ "ollama::llama3.1:8b::ko-search_v3::가장 최근 K리그1 우승팀은 어디인가요?": {
+  "answer": "전북 현대 모터스입니다. [1], [4], [5]",
+  "query": "most recent k league 1 champion (en) / K League 1 recent champions (en) / 최근 K리그1 우승팀은 어디인가요? (ko) / 최근 k리그1 우승팀 (ko) + web",
+  "sources": [
+   "https://www.instagram.com/p/DK1fMnYyz4w",
+   "https://namu.wiki/w/K%EB%A6%AC%EA%B7%B81",
+   "https://ko.wikipedia.org/wiki/K%EB%A6%AC%EA%B7%B82",
+   "https://ko.wikipedia.org/wiki/K%EB%A6%AC%EA%B7%B81",
+   "https://www.joongang.co.kr/article/25374805",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EC%9B%90_%EC%82%BC%EC%84%B1_%EB%B8%94%EB%A3%A8%EC%9C%99%EC%A6%88"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the capital of Australia?": {
+  "answer": "The capital of Australia is Canberra [1].",
+  "query": "Capital of Australia Wikipedia (en) / capital australia (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Canberra",
+   "https://australia.expedia.com/australian-capital-territory",
+   "https://youtooproject.com/en/blog/australia-en/capital-of-australia-canberra",
+   "https://www.britannica.com/question/What-is-the-capital-of-Australia",
+   "https://en.wikipedia.org/wiki/Capital_punishment_in_Australia",
+   "https://ovolohotels.com/ovolo/blog/sydney-isnt-the-capital-of-australia",
+   "https://en.wikipedia.org/wiki/Australian_Capital_Territory"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who wrote Hamlet?": {
+  "answer": "William Shakespeare [1, 4, 6, 8].",
+  "query": "Author of Hamlet play (en) / wrote hamlet (en) + web",
+  "sources": [
+   "https://svenskateatern.fi/en/quick-guide-to-hamlet-and-shakespeare-become-an-expert-in-five-minutes",
+   "https://en.wikipedia.org/wiki/Hamlet",
+   "https://en.wikipedia.org/wiki/Literary_influence_of_Hamlet",
+   "https://en.wikipedia.org/wiki/William_Shakespeare",
+   "https://www.rsc.org.uk/hamlet/about-the-play/dates-and-sources",
+   "https://kronborg.dk/en/knowledge/who-is-hamlet",
+   "https://en.wikipedia.org/wiki/Hamlet_%281996_film%29",
+   "https://en.wikipedia.org/wiki/Hamlet"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the boiling point of water at sea level in Celsius?": {
+  "answer": "The boiling point of water at sea level is 100 degrees Celsius [1, 2, 3, 5].",
+  "query": "Water boiling point Celsius (en) / boiling point water sea level celsius (en) + web",
+  "sources": [
+   "https://www.ebsco.com/research-starters/science/boiling-points",
+   "https://study.com/academy/lesson/how-to-calculate-boiling-point.html",
+   "https://terpconnect.umd.edu/~wbreslyn/chemistry/pressure/boiling-point.html",
+   "https://en.wikipedia.org/wiki/Celsius",
+   "https://en.wikipedia.org/wiki/Boiling_point",
+   "https://en.wikipedia.org/wiki/Anders_Celsius"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the chemical symbol for iron?": {
+  "answer": "The chemical symbol for iron is Fe [2].",
+  "query": "Chemical symbol for iron (en) / chemical symbol iron (en) + web",
+  "sources": [
+   "https://www.youtube.com/watch?v=txkezUtW2o8",
+   "https://en.wikipedia.org/wiki/Iron_%28disambiguation%29",
+   "https://prochemonline.com/iron",
+   "https://study.com/academy/lesson/video/what-is-iron-ore-lesson-quiz.html",
+   "https://periodic-table.rsc.org/element/26/iron",
+   "https://en.wikipedia.org/wiki/Iron"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::How many legs does a spider have?": {
+  "answer": "Spiders have eight legs. [2]",
+  "query": "Spider leg anatomy Wikipedia (en) / many legs spider have (en) + web",
+  "sources": [
+   "https://www.albatt.com/blogs/2021/1/3/hca0xtv8glwv6g1jnok1ta9tedkta7",
+   "https://en.wikipedia.org/wiki/Spider_anatomy",
+   "https://en.wikipedia.org/wiki/Spider",
+   "https://www.burkemuseum.org/collections-and-research/biology/arachnology-and-entomology/spider-myths/myth-eight-legs-always-means-spider",
+   "https://www.livescience.com/animals/spiders/why-do-spiders-have-8-legs",
+   "https://en.wikipedia.org/wiki/Spider_anatomy",
+   "https://www.youtube.com/watch?v=kbVHvS6xBoA"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What does CPU stand for?": {
+  "answer": "CPU stands for Central Processing Unit [2].",
+  "query": "Meaning of CPU abbreviation (en) / cpu stand (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Central_processing_unit",
+   "https://www.freecodecamp.org/news/what-is-cpu-meaning-definition-and-what-cpu-stands-for",
+   "https://www.ibm.com/think/topics/central-processing-unit",
+   "https://www.howtogeek.com/694869/what-is-a-cpu-and-what-does-it-do",
+   "https://en.wikipedia.org/wiki/FLAGS_register",
+   "https://en.wikipedia.org/wiki/Motherboard",
+   "https://en.wikipedia.org/wiki/Qualcomm_Snapdragon",
+   "https://en.wikipedia.org/wiki/Process_Lasso",
+   "https://www.gigabyte.com/glossary/cpu"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who painted The Starry Night?": {
+  "answer": "Vincent van Gogh painted The Starry Night [4].",
+  "query": "Artist behind The Starry Night (en) / painted starry night (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Starry_Night_Over_the_Rh%C3%B4ne",
+   "https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night",
+   "https://arteveryday.substack.com/p/vincent-van-gogh-the-starry-night",
+   "https://en.wikipedia.org/wiki/The_Starry_Night",
+   "https://en.wikipedia.org/wiki/The_Starry_Night"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the largest ocean on Earth?": {
+  "answer": "The Pacific Ocean is the largest ocean on Earth, covering approximately 63 million square miles and containing more than half of the free water on Earth [1].",
+  "query": "Largest ocean on Earth (en) / largest ocean earth (en) + web",
+  "sources": [
+   "https://oceanservice.noaa.gov/facts/biggestocean.html",
+   "https://en.wikipedia.org/wiki/Pacific_Ocean",
+   "https://www.livescience.com/planet-earth/rivers-oceans/why-is-the-pacific-ocean-so-big",
+   "https://en.wikipedia.org/wiki/Earth",
+   "https://en.wikipedia.org/wiki/Ocean",
+   "https://en.wikipedia.org/wiki/Pacific_Ocean"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::In what year did World War II end?": {
+  "answer": "World War II ended in 1945. [4]",
+  "query": "End of World War II (en) / year world war ii end (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/World_War_II_by_country",
+   "https://en.wikipedia.org/wiki/End_of_World_War_II_in_Asia",
+   "https://en.wikipedia.org/wiki/World_War_II",
+   "https://www.cmohs.org/news-events/history/one-this-day-80-years-ago-the-end-of-wwii-in-europe"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the square root of 144?": {
+  "answer": "The square root of 144 is 12 [3].",
+  "query": "Square root of 144 (en) / square root 144 (en) + web",
+  "sources": [
+   "https://www.cuemath.com/algebra/square-root-of-144",
+   "https://www.youtube.com/watch?v=TvO1p5wSGlY",
+   "https://byjus.com/maths/square-root-of-144",
+   "https://math.stackexchange.com/questions/602773/what-is-the-square-root-of-144",
+   "https://www.youtube.com/watch?v=ORl6bdJW89o"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What language is spoken in Brazil?": {
+  "answer": "Portuguese is the official language of Brazil, as well as its most used [1].",
+  "query": "Official language of Brazil (en) / language spoken brazil (en) + web",
+  "sources": [
+   "https://www.worldatlas.com/articles/what-languages-are-spoken-in-brazil.html",
+   "https://www.eliteasia.co/what-languages-are-spoken-in-brazil",
+   "https://libguides.ius.edu/c.php?g=861971&p=6177780",
+   "https://en.wikipedia.org/wiki/Languages_of_Brazil",
+   "https://en.wikipedia.org/wiki/Brazilian_Portuguese"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What planet is known as the Red Planet?": {
+  "answer": "Mars is known as the Red Planet. [1]",
+  "query": "Planet known as the Red Planet (en) / planet known as red planet (en) + web",
+  "sources": [
+   "https://testbook.com/question-answer/which-planet-is-known-as-the-red-planet--62c2f4a56fce537781f2fd8d",
+   "https://www.jpl.nasa.gov/edu/resources/video/mars-in-a-minute-is-mars-really-red",
+   "https://www.space.com/astronomy/solar-system/mars",
+   "https://en.wikipedia.org/wiki/Mars",
+   "https://en.wikipedia.org/wiki/War_for_the_Planet_of_the_Apes",
+   "https://science.nasa.gov/mars/facts",
+   "https://en.wikipedia.org/wiki/Mercury_%28planet%29"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is H2O commonly called?": {
+  "answer": "H2O is commonly known as Water [1].",
+  "query": "Common name for water (en) / h2o commonly called (en) + web",
+  "sources": [
+   "https://www.facebook.com/groups/751427710421020/posts/1041976448032810",
+   "https://www.youtube.com/watch?v=8tBEGll1Kdo&xstg=CAMSBhUD-7L2Hw%3D%3D",
+   "https://www.chemicalbook.com/article/exploring-the-compound-h2o-water.htm",
+   "https://en.wikipedia.org/wiki/Rust",
+   "https://en.wikipedia.org/wiki/Electrolysis_of_water",
+   "https://en.wikipedia.org/wiki/Water",
+   "https://en.wikipedia.org/wiki/Water",
+   "https://en.wikipedia.org/wiki/Common_name"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who developed the theory of relativity?": {
+  "answer": "Albert Einstein developed the theory of relativity. [1]",
+  "query": "Albert Einstein theory of relativity (en) / developed theory relativity (en) + web",
+  "sources": [
+   "https://www.ebsco.com/research-starters/physics/theory-relativity",
+   "https://en.wikipedia.org/wiki/Theory_of_relativity",
+   "https://en.wikipedia.org/wiki/Theory_of_relativity",
+   "https://en.wikipedia.org/wiki/Special_relativity",
+   "https://www.britannica.com/story/how-albert-einstein-developed-the-theory-of-general-relativity"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the capital of South Korea?": {
+  "answer": "Seoul [1], [2], [4], [5], [6], [7].",
+  "query": "Capital of South Korea (en) / capital south korea (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Capital_of_Korea",
+   "https://clintonwhitehouse4.archives.gov/WH/New/Pacific/seoul.html",
+   "https://en.wikipedia.org/wiki/Capital_punishment_in_South_Korea",
+   "https://www.ebsco.com/research-starters/geography-and-cartography/seoul-south-korea",
+   "https://blog.turkishairlines.com/en/south-korea-the-capital-and-other-cities",
+   "https://en.wikipedia.org/wiki/Seoul",
+   "https://cities.new7wonders.com/wonders/seoul"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who wrote the Swahili novel Kufa Kuzikana?": {
+  "answer": "Ken Walibora wrote the Swahili novel Kufa Kuzikana [4].",
+  "query": "Author of Kufa Kuzikana (en) / wrote swahili novel kufa kuzikana (en) + web",
+  "sources": [
+   "https://talkpal.ai/8-books-to-read-in-swahili-before-you-are-alive",
+   "https://www.goodreads.com/en/book/show/15729359-kufa-kuzikana",
+   "https://www.facebook.com/Africaninkpublishers/posts/ken-walibora-a-voice-for-kiswahili-literatureken-walibora-waliaula-1964652020-wa/1187133920098563",
+   "https://en.wikipedia.org/wiki/Ken_Walibora",
+   "https://www.theelephant.info/reflections/2020/04/23/ken-walibora-the-giant-on-whose-shoulders-i-stood",
+   "https://www.scribd.com/document/945496805/Abstract-57"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who was the first Kenyan woman to earn a PhD?": {
+  "answer": "Florence Oloo [4].",
+  "query": "First Kenyan woman PhD holder (en) / first kenyan woman earn phd (en) + web",
+  "sources": [
+   "https://www.fundsbeeline.com/news/readnews/Kenyan-Scientist-Becomes-First-Black-Woman-to-Earn-Nuclear-Physics-PhD-at-US-University",
+   "https://www.youtube.com/watch?v=tcRn2LkC6LY",
+   "https://www.youtube.com/watch?v=72kGeaDJzvU",
+   "https://en.wikipedia.org/wiki/Florence_Oloo",
+   "https://www.tuko.co.ke/people/family/632601-us-based-kenyan-woman-celebrates-phd-victory-balancing-marriage-motherhood-career",
+   "https://en.wikipedia.org/wiki/Kikuyu_people",
+   "https://en.wikipedia.org/wiki/List_of_women_in_mathematics"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who designed the Sebeolsik Hangul keyboard layout?": {
+  "answer": "Dr. Gong Byeong-u [4].",
+  "query": "Sebeolsik Hangul keyboard layout designer (en) / designed sebeolsik hangul keyboard layout (en) + web",
+  "sources": [
+   "https://www.90daykorean.com/korean-keyboard",
+   "https://www.reddit.com/r/Korean/comments/zo5w19/extra_%E3%85%9C_and_%E3%85%97_keys_in_sebeolsik_final",
+   "https://en.wikipedia.org/wiki/Korean_language_and_computers",
+   "https://en.namu.wiki/w/%EC%84%B8%EB%B2%8C%EC%8B%9D/%EC%9E%90%ED%8C%90%20%EC%A2%85%EB%A5%98",
+   "https://en.wikipedia.org/wiki/History_of_Hangul",
+   "https://en.wikipedia.org/wiki/Keyboard_layout",
+   "https://www.remitly.com/blog/en-nz/technology/korean-keyboards",
+   "https://www.youtube.com/watch?v=6lBxx6-1YTU"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What was the model name of the first radio made by Goldstar?": {
+  "answer": "The model name of the first radio made by Goldstar was the A-501 [3].",
+  "query": "Goldstar first radio model (en) / model name first radio made goldstar (en) + web",
+  "sources": [
+   "https://www.youtube.com/watch?v=lHnLXMVgFXw",
+   "https://en.wikipedia.org/wiki/LG",
+   "https://www.facebook.com/LGGulf/videos/from-koreas-first-radio-to-homes-all-around-the-worldin-1959-lg-developed-koreas/1594075001849157",
+   "https://en.wikipedia.org/wiki/3DO",
+   "https://en.wikipedia.org/wiki/Zenith_Electronics",
+   "https://en.wikipedia.org/wiki/GoldStar",
+   "https://www.fundinguniverse.com/company-histories/goldstar-co-ltd-history",
+   "https://artsandculture.google.com/asset/gold-star-a-501-the-first-radio-assembled-in-korea-gold-star/XAFGiJy6ZGCqYQ?hl=en"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Which small river flows through the centre of Gangneung?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "River flowing through Gangneung (en) / small river flows through centre gangneung (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Han_River_(Korea)",
+   "https://k-scar.com/han-river-estuary",
+   "https://www.facebook.com/groups/nomadictraveler/posts/1457222329057289",
+   "https://en.wikipedia.org/wiki/Park_Jeong-ja_%28actress%29",
+   "https://en.wikipedia.org/wiki/Irkutsk",
+   "https://en.wikipedia.org/wiki/List_of_DoReMi_Market_episodes"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the height in metres of Ulsanbawi rock in Seoraksan?": {
+  "answer": "The height of Ulsanbawi rock in Seoraksan is 874 m [1].",
+  "query": "Ulsanbawi rock Seoraksan height (en) / height metres ulsanbawi rock seoraksan (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ulsanbawi",
+   "https://www.2105hollywoodplace.com/seoraksan-national-park-hiking-ulsanbawi-course-trail",
+   "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=110952",
+   "https://en.wikipedia.org/wiki/Scenic_Sites_%28South_Korea%29",
+   "https://www.tripadvisor.com/Attraction_Review-g317129-d3808309-Reviews-Ulsanbawi_Rock-Sokcho_Gangwon_do.html",
+   "https://www.alltrails.com/trail/south-korea/gangwon/ulsanbawi-trail"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::In what year was Sinheungsa temple in Seoraksan first founded?": {
+  "answer": "652 [1]",
+  "query": "Sinheungsa temple Seoraksan founding year (en) / year sinheungsa temple seoraksan first founded (en) + web",
+  "sources": [
+   "https://www.facebook.com/visitgangwon.en/posts/sinheungsa-temple-seoraksan-nestled-deep-within-seoraksan-national-park-sinheung/1346832530789610",
+   "https://en.wikipedia.org/wiki/Ulsanbawi",
+   "https://en.wikipedia.org/wiki/Sinheungsa",
+   "https://www.tripadvisor.com/Attraction_Review-g317129-d3805406-Reviews-Sinheungsa_Temple-Sokcho_Gangwon_do.html",
+   "https://www.klook.com/en-US/destination/p50178693-sinheungsa-temple",
+   "https://www.nationalgeographic.com/travel/article/hiking-in-seoraksan-national-park-south-korea",
+   "https://en.wikipedia.org/wiki/Gangwon_Province%2C_South_Korea"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What traditional song is the melody of the Kenyan national anthem based on?": {
+  "answer": "The traditional song that the melody of the Kenyan national anthem is based on is a Pokomo lullaby sung by mothers to their children. [1]",
+  "query": "Kenyan national anthem melody origin (en) / traditional song melody kenyan national anthem based (en) + web",
+  "sources": [
+   "https://kenyaembassyparis.fr/national-anthem",
+   "https://www.facebook.com/100057343154113/posts/beutiful-kenyan-anthem-as-always/1622096283045128",
+   "https://en.wikipedia.org/wiki/Libert%C3%A9_%28anthem%29",
+   "https://www.wordforest.org/2016/12/12/provenance-kenyan-national",
+   "https://en.wikipedia.org/wiki/Biladi%2C_Biladi%2C_Biladi",
+   "https://mukuyu.wordpress.com/2024/03/29/kenya-national-anthem",
+   "https://en.wikipedia.org/wiki/National_anthem",
+   "https://en.wikipedia.org/wiki/Ee_Mungu_Nguvu_Yetu"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::What is the Korean name of the red snow crab caught near Sokcho?": {
+  "answer": "The Korean name of the red snow crab caught near Sokcho is \"daege\" [6].",
+  "query": "Korean name red snow crab (en) / korean name red snow crab caught near sokcho (en) + web",
+  "sources": [
+   "https://codecorea.github.io/posts/all-of-the-red-snow-crab-winter-snow-on-the-scab-104",
+   "https://www.facebook.com/strictlydumpling/videos/i-found-south-koreas-freshest-red-snow-crab-buffet/1615266000050462",
+   "https://www.youtube.com/watch?v=5BbPOZkcn6w&xstg=CAMSBhUDze3xHw%3D%3D",
+   "https://www.instagram.com/reel/DdHVt4iFJOT",
+   "https://www.facebook.com/groups/koreatravelguide/posts/2603543356476462",
+   "https://en.wikipedia.org/wiki/Yeongdeok_Snow_Crab_Street",
+   "https://en.wikipedia.org/wiki/Chionoecetes_opilio",
+   "https://en.wikipedia.org/wiki/Red-crowned_crane"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who is the CEO of Naver?": {
+  "answer": "Soo Yeon Choi [1]",
+  "query": "Naver CEO current status (en) / ceo naver (en) + web",
+  "sources": [
+   "https://www.clay.com/dossier/naver-ceo",
+   "https://www.prnewswire.com/news-releases/naver-ceo-choi-soo-yeon-appointed-to-un-global-compact-board-of-directors-strengthening-international-partnerships-for-ai-governance-302559170.html",
+   "https://navercorp.com/en/story/storyDetail?seq=10034258",
+   "https://www.instagram.com/p/DQ5uwWDiJwo",
+   "https://en.wikipedia.org/wiki/Han_Seong-sook",
+   "https://en.wikipedia.org/wiki/Naver_Corporation",
+   "https://en.wikipedia.org/wiki/Naver_Corporation"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who manages Kakao these days?": {
+  "answer": "Chung Shin-a is the current CEO of Kakao, as of 2024 [7].",
+  "query": "Kakao Corporation management team (en) / manages kakao days (en) + web",
+  "sources": [
+   "https://pitchbook.com/profiles/fund/20318-05F",
+   "https://en.wikipedia.org/wiki/Kakao",
+   "https://www.comparably.com/companies/kakao-corp/executive-team",
+   "https://en.wikipedia.org/wiki/Kakao_M",
+   "https://en.wikipedia.org/wiki/SM_Entertainment",
+   "https://en.wikipedia.org/wiki/A_Returner%27s_Magic_Should_Be_Special",
+   "https://en.wikipedia.org/wiki/Kakao",
+   "https://en.wikipedia.org/wiki/Kakao_Entertainment"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who leads SK hynix?": {
+  "answer": "Kwak Noh-jung is the President and CEO of SK hynix [3].",
+  "query": "SK Hynix leadership team (en) / leads sk hynix (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Semiconductor_industry_in_South_Korea",
+   "https://www.skhynix.com/company/UI-FR-CP0301",
+   "https://www.koreawho.com/profile/KwakNohjung",
+   "https://www.linkedin.com/in/juseon-justin-kim-3709195b",
+   "https://builtin.com/company/sk-hynix-america/faq/leadership-management",
+   "https://en.wikipedia.org/wiki/SK_Group"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who is the president of Kenya?": {
+  "answer": "The current president of Kenya is William Ruto, since 13 September 2022 [2].",
+  "query": "President of Kenya current (en) / president kenya (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Deputy_President_of_Kenya",
+   "https://en.wikipedia.org/wiki/President_of_Kenya",
+   "https://en.wikipedia.org/wiki/President_of_Kenya",
+   "https://en.wikipedia.org/wiki/William_Ruto",
+   "https://www.president.go.ke",
+   "https://www.britannica.com/biography/William-Ruto",
+   "https://oceanpanel.org/member/uhuru-kenyatta",
+   "https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Kenya"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who is the chairman of Samsung Electronics?": {
+  "answer": "Lee Jae-yong is the chairman of Samsung Electronics [1].",
+  "query": "Chairman of Samsung Electronics (en) / chairman samsung electronics (en) + web",
+  "sources": [
+   "https://www.koreawho.com/profile/LeeJaeyong",
+   "https://en.wikipedia.org/wiki/Samsung",
+   "https://www.youtube.com/watch?v=KKHoagvrODM",
+   "https://en.wikipedia.org/wiki/Samsung_Electronics",
+   "https://www.bbc.com/news/articles/c9d313g91g4o",
+   "https://www.forbes.com/profile/jay-y-lee",
+   "https://en.wikipedia.org/wiki/Samsung"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Who is the prime minister of Japan?": {
+  "answer": "Sanae Takaichi [1].",
+  "query": "Current Prime Minister of Japan (en) / prime minister japan (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_Japan",
+   "https://www.britannica.com/biography/Sanae-Takaichi",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_Japan",
+   "https://en.wikipedia.org/wiki/List_of_spouses_of_prime_ministers_of_Japan",
+   "https://en.wikipedia.org/wiki/Sanae_Takaichi",
+   "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Japan",
+   "https://www.cfr.org/articles/prime-minister-takaichi-sanae-takes-charge"
+  ]
+ },
+ "ollama::llama3.1:8b::search_v3::Which team won the last KBO Korean Series?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "KBO Korean Series recent winner (en) / team won last kbo korean series (en) + web",
+  "sources": [
+   "https://en.wikipedia.org/wiki/KBO_League",
+   "https://www.baseball-reference.com/bullpen/Korean_Series",
+   "https://en.wikipedia.org/wiki/KBO_League",
+   "https://en.wikipedia.org/wiki/Korean_Series",
+   "https://en.wikipedia.org/wiki/2012_Korea_Professional_Baseball_season",
+   "https://en.wikipedia.org/wiki/2026_KBO_League_season",
+   "https://en.wikipedia.org/wiki/Korean_Series"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::대한민국의 수도는 어디인가요?": "대한민국의 수도는 서울입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::대한민국의 수도는 어디인가요?": {
+  "answer": "대한민국의 수도는 서울입니다. [3]",
+  "query": "capital south korea (en) / Seoul is the capital of South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Korean_won",
+   "https://en.wikipedia.org/wiki/Capital_punishment_in_South_Korea",
+   "https://en.wikipedia.org/wiki/Capital_of_Korea",
+   "https://en.wikipedia.org/wiki/Seoul"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::대한민국의 수도는 어디인가요?": {
+  "answer": "대한민국의 수도는 서울특별시이다. [3]",
+  "query": "capital south korea (en) / Seoul is the capital of South Korea (en) / 대한민국 수도 어디인가요 (ko) / 대한민국 수도 (ko) + web",
+  "sources": [
+   "https://www.sejong.go.kr/ac/sub02_05.do",
+   "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002686830",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+   "https://www.greatopen.net/gb/article/8525",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EB%8F%84%EA%B6%8C_%28%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%29",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9E%84%EC%8B%9C%EC%A0%95%EB%B6%80"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::한글을 창제한 조선의 왕은 누구인가요?": "한글을 창제한 조선의 왕은 세종대왕입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::한글을 창제한 조선의 왕은 누구인가요?": {
+  "answer": "한글을 창제한 조선의 왕은 세종대왕입니다 [2].",
+  "query": "king joseon created korean alphabet (en) / King Sejong (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Joseon",
+   "https://en.wikipedia.org/wiki/Sejong_the_Great",
+   "https://en.wikipedia.org/wiki/King_Sejong_Institute",
+   "https://en.wikipedia.org/wiki/History_of_Korea"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::한글을 창제한 조선의 왕은 누구인가요?": {
+  "answer": "한글을 창제한 조선의 왕은 세종대왕입니다.[1]",
+  "query": "king joseon created korean alphabet (en) / King Sejong (en) / 한글을 만든 조선 왕_QUERY (ko) / 한글 창제한 조선 왕은 (ko) + web",
+  "sources": [
+   "https://blog.naver.com/weizmann_why/220138170783",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80",
+   "https://namu.wiki/w/%ED%95%9C%EA%B8%80/%EC%97%AD%EC%82%AC",
+   "https://encykorea.aks.ac.kr/Article/E0061508"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::남한에서 가장 높은 산은 무엇인가요?": "남한에서 가장 높은 산은 백두산입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::남한에서 가장 높은 산은 무엇인가요?": {
+  "answer": "남한에서 가장 높은 산은 지리산입니다 [1].",
+  "query": "highest mountain south korea (en) / Highest mountain South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jirisan",
+   "https://en.wikipedia.org/wiki/List_of_mountains_in_South_Korea",
+   "https://en.wikipedia.org/wiki/Taebaek_Mountains"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::남한에서 가장 높은 산은 무엇인가요?": {
+  "answer": "남한에서 가장 높은 산은 한라산입니다 [1][2][3][4][5]",
+  "query": "highest mountain south korea (en) / Highest mountain South Korea (en) / 남한 최고산是什么呢，不过直接用韩语查询的话就是： (ko) / 남한 높은 산은 (ko) + web",
+  "sources": [
+   "https://www.newsspace.kr/news/article.html?no=4309",
+   "https://v.daum.net/v/7zryCc2XPq",
+   "https://hikingsong.tistory.com/entry/%EC%9A%B0%EB%A6%AC%EB%82%98%EB%9D%BC%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5-%EB%86%92%EC%9D%80%EC%82%B0-TOP-20",
+   "https://sphinfo.com/blog/read/508",
+   "https://m.blog.naver.com/hana854/222828622862",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": "이순신 장군이 사용한 거북선 중 가장 유명한 이름은 '거북선'이나 '청호'입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": {
+  "answer": "이순신 장군이 사용한 거북 모양의 배는 거북선이라고 합니다.[1]",
+  "query": "name turtle-shaped ship used admiral yi sun-sin (en) / turtle ship name (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Yi_Sun-sin",
+   "https://en.wikipedia.org/wiki/Turtle_ship",
+   "https://en.wikipedia.org/wiki/Hansan%3A_Rising_Dragon",
+   "https://en.wikipedia.org/wiki/Imjin_War",
+   "https://en.wikipedia.org/wiki/Turtle_%28submersible%29",
+   "https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": {
+  "answer": "이순신 장군이 사용한 거북 모양의 배 이름은 거북선 [1][2][3][4]입니다.",
+  "query": "name turtle-shaped ship used admiral yi sun-sin (en) / turtle ship name (en) / 거북선 이름 (ko) / 이순신 장군 사용한 거북 모양 배 이름 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EC%82%B0%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EA%B1%B0%EB%B6%81%EC%84%A0",
+   "https://ko.wikipedia.org/wiki/%EA%B1%B0%EB%B6%81%EC%84%A0",
+   "https://namu.wiki/w/%EA%B1%B0%EB%B6%81%EC%84%A0",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%88%9C%EC%8B%A0",
+   "https://encykorea.aks.ac.kr/Article/E0001833"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": "2018년 동계 올림픽은 한국의 평창에서 열렸습니다.",
+ "ollama::qwen2.5:7b::ko-search-en::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": {
+  "answer": "2018년 동계 올림픽이 열린 한국의 지역은 평창(Pyeongchang)입니다 [5] [6] [4] [2] [1]",
+  "query": "pyeongchang county gangwon province south korea (en) / Pyeongchang County Wikipedia (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2018_Winter_Olympics",
+   "https://en.wikipedia.org/wiki/Pyeongchang_Olympic_Stadium",
+   "https://en.wikipedia.org/wiki/Pyeongchang_County",
+   "https://en.wikipedia.org/wiki/Gangwon_Province%2C_South_Korea",
+   "https://en.wikipedia.org/wiki/Phoenix_Pyeongchang",
+   "https://en.wikipedia.org/wiki/Pyeongchang_station"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": {
+  "answer": "2018년 동계 올림픽은 대한민국의 강원도 평창군과 정선군, 강릉시에서 열렸습니다.[2]",
+  "query": "pyeongchang county gangwon province south korea (en) / Pyeongchang County Wikipedia (en) / 2018 동계 올림픽 개최지 (ko) / 2018년 동계 올림픽 열린 한국 지역 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/2018%EB%85%84_%EB%8F%99%EA%B3%84_%EC%98%AC%EB%A6%BC%ED%94%BD",
+   "https://namu.wiki/w/2018%20%ED%8F%89%EC%B0%BD%20%EB%8F%99%EA%B3%84%EC%98%AC%EB%A6%BC%ED%94%BD",
+   "https://ko.wikipedia.org/wiki/2026%EB%85%84_%EB%8F%99%EA%B3%84_%EC%98%AC%EB%A6%BC%ED%94%BD"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::한국 전쟁이 시작된 해는 몇 년인가요?": "한국 전쟁이 시작된 해는 1950년입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::한국 전쟁이 시작된 해는 몇 년인가요?": {
+  "answer": "한국 전쟁이 시작된 해는 1950년입니다.[1]",
+  "query": "year korean war started year (en) / Korean War start year (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Korean_War",
+   "https://en.wikipedia.org/wiki/Imjin_War",
+   "https://en.wikipedia.org/wiki/Korean_New_Year",
+   "https://en.wikipedia.org/wiki/Five-Year_Plans_of_South_Korea",
+   "https://en.wikipedia.org/wiki/Korea_under_Japanese_rule"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::한국 전쟁이 시작된 해는 몇 년인가요?": {
+  "answer": "한국 전쟁이 시작된 해는 1950년입니다. [4]",
+  "query": "year korean war started year (en) / Korean War start year (en) / 한국 전쟁 시작 년도 (ko) / 한국 전쟁 시작된 해는 년인가요 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%A0%9C2%EC%B0%A8_%EC%84%B8%EA%B3%84_%EB%8C%80%EC%A0%84",
+   "https://m.blog.naver.com/cwopenspace/221305894432",
+   "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+   "https://theme.archives.go.kr/next/625/background/overview.do",
+   "https://encykorea.aks.ac.kr/Article/E0042143"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::서울을 가로질러 흐르는 강은 무엇인가요?": "서울을 가로질러 흐르는 강은 한강입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::서울을 가로질러 흐르는 강은 무엇인가요?": {
+  "answer": "서울을 가로질러 흐르는 강은 한강입니다. [3]",
+  "query": "river flows through seoul (en) / Seoul River Wikipedia (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Namsan_Seoul_Tower",
+   "https://en.wikipedia.org/wiki/Seoul",
+   "https://en.wikipedia.org/wiki/Han_River_%28Korea%29",
+   "https://en.wikipedia.org/wiki/Subterranean_river",
+   "https://en.wikipedia.org/wiki/Han_River"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::서울을 가로질러 흐르는 강은 무엇인가요?": {
+  "answer": "서울을 가로질러 흐르는 강은 한강입니다 [2, 4, 6, 9]",
+  "query": "river flows through seoul (en) / Seoul River Wikipedia (en) / 서울을 가로지르는 강 (ko) / 서울 가로질러 흐르 강은 (ko) + web",
+  "sources": [
+   "https://m.blog.naver.com/tournoteblog/222096276106",
+   "https://encykorea.aks.ac.kr/Article/E0060950",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EB%8F%84%EA%B6%8C_%28%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%29",
+   "https://namu.wiki/w/%ED%95%9C%EA%B0%95",
+   "https://www.instagram.com/reel/DZrKwISlSqj",
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8_%EC%88%98%EB%B3%B5_%EC%A0%84%ED%88%AC",
+   "https://ko.wikipedia.org/wiki/%EC%B2%AD%EA%B3%84%EC%B2%9C",
+   "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A0%95%ED%9D%AC",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B0%95"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::대한민국의 화폐 단위는 무엇인가요?": "대한민국의 화폐 단위는 원입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::대한민국의 화폐 단위는 무엇인가요?": {
+  "answer": "대한민국의 화폐 단위는 원(KRW)입니다. [1]",
+  "query": "currency unit south korea (en) / South Korea currency unit (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/South_Korean_won",
+   "https://en.wikipedia.org/wiki/South_Korean_won_%281945%E2%80%931953%29",
+   "https://en.wikipedia.org/wiki/Korean_currency",
+   "https://en.wikipedia.org/wiki/South_Korean_hwan"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::대한민국의 화폐 단위는 무엇인가요?": {
+  "answer": "대한민국의 화폐 단위는 원(WON)입니다. [4]",
+  "query": "currency unit south korea (en) / South Korea currency unit (en) / 대한민국 화폐 단위 (ko) + web",
+  "sources": [
+   "https://whatso-ch.tistory.com/627",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%ED%99%94%ED%8F%90_%EB%8B%A8%EC%9C%84_%EC%96%B4%EC%9B%90",
+   "https://korean.visitseoul.net/essential-Info-article/%ED%99%94%ED%8F%90/KON000387",
+   "https://namu.wiki/w/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EC%9B%90",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9B%90",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%9B%90",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+   "https://encykorea.aks.ac.kr/Article/E0064947"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::경복궁은 어느 왕조의 궁궐인가요?": "경복궁은 조선 왕조의 궁궐입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::경복궁은 어느 왕조의 궁궐인가요?": {
+  "answer": "경복궁은 조선Dynasty의 궁궐입니다 [1].",
+  "query": "dynasty's palace gyeongbokgung (en) / Gyeongbokgung Palace dynasty (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gyeongbokgung",
+   "https://en.wikipedia.org/wiki/Changdeokgung"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::경복궁은 어느 왕조의 궁궐인가요?": {
+  "answer": "경복궁은 조선 왕조의 궁궐입니다 [1][2][3][4][5].",
+  "query": "dynasty's palace gyeongbokgung (en) / Gyeongbokgung Palace dynasty (en) / 경복궁 왕조 (ko) / 경복궁 왕조 궁궐 (ko) + web",
+  "sources": [
+   "https://contents.history.go.kr/mobile/eh/view.do?levelId=eh_r0190_0010&code=eh_age_30",
+   "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B3%B5%EA%B6%81",
+   "https://love.seoul.go.kr/articles/2903",
+   "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B3%B5%EA%B6%81",
+   "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=108422"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::김치는 주로 어떤 채소로 만드나요?": "김치는 주로 김치를 만드는 브로콜리, 배추, 무 등 채소로 만듭니다.",
+ "ollama::qwen2.5:7b::ko-search-en::김치는 주로 어떤 채소로 만드나요?": {
+  "answer": "김치는 주로 캔파프리카, 대파, 무, 양파, 청경채, 인도산 무 등 다양한 채소로 만듭니다. [4]",
+  "query": "kimchi made mainly vegetable (en) / Kimchi main ingredient (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kimchi",
+   "https://en.wikipedia.org/wiki/Kimchi-buchimgae",
+   "https://en.wikipedia.org/wiki/Banchan",
+   "https://en.wikipedia.org/wiki/Kimchi-jjigae"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::김치는 주로 어떤 채소로 만드나요?": {
+  "answer": "김치는 주로 배추, 무, 고추, 마늘, 생강 등 다양한 채소로 만듭니다 [2, 3, 8]",
+  "query": "kimchi made mainly vegetable (en) / Kimchi main ingredient (en) / 김치 주로 어떤 채소로 만드나요 (ko) / 김치 주로 채소 만드나요 (ko) + web",
+  "sources": [
+   "https://www.reddit.com/r/kimchi/comments/fyl93d/with_what_kind_of_vegetables_can_you_do_kimchi?tl=ko",
+   "https://namu.wiki/w/%EA%B9%80%EC%B9%98",
+   "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B9%98",
+   "https://www.youtube.com/watch?v=hQ3HNmBEPnQ",
+   "https://www.youtube.com/watch?v=SnmzZjGnGyk",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B4",
+   "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B9%98%EC%B0%8C%EA%B0%9C",
+   "https://www.wikim.re.kr/menu.es?mid=a50203000000"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::설악산 국립공원의 최고봉 이름은 무엇인가요?": "설악산 국립공원의 최고봉 이름은 백두산입니다.但实际上，根据您的问题，正确的回答应该是： 설악산 국립공원의 최고봉 이름은 설악산입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::설악산 국립공원의 최고봉 이름은 무엇인가요?": {
+  "answer": "설악산 국립공원의 최고봉 이름은 대청봉입니다 [2].",
+  "query": "name highest peak seoraksan national park (en) / Seoraksan highest peak (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bukhansan_National_Park",
+   "https://en.wikipedia.org/wiki/Seoraksan",
+   "https://en.wikipedia.org/wiki/Ulsanbawi",
+   "https://en.wikipedia.org/wiki/Hallasan",
+   "https://en.wikipedia.org/wiki/Taebaek_Mountains"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::설악산 국립공원의 최고봉 이름은 무엇인가요?": {
+  "answer": "설악산 국립공원의 최고봉 이름은 대청봉입니다 [1] [2]。",
+  "query": "name highest peak seoraksan national park (en) / Seoraksan highest peak (en) / 설악산 국립공원 최고봉 이름 (ko) + web",
+  "sources": [
+   "https://namu.wiki/w/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=9a2b453f-40c1-42c0-af9d-98c573240b78",
+   "https://ko.wikipedia.org/wiki/%ED%8C%94%EA%B3%B5%EC%82%B0",
+   "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://www.youtube.com/watch?v=UHk_3llQek8",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B4%EB%93%B1%EC%82%B0",
+   "https://en.wikipedia.org/wiki/Bukhansan_National_Park",
+   "https://ko.wikipedia.org/wiki/%EB%B6%81%ED%95%9C%EC%82%B0"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::설악산 대청봉의 높이는 몇 미터인가요?": "설악산 대청봉의 높이는 약 1,950미터입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::설악산 대청봉의 높이는 몇 미터인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "height daechongbong seoraksan (en) / Daechongbong height Seoraksan (en)",
+  "sources": []
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::설악산 대청봉의 높이는 몇 미터인가요?": {
+  "answer": "설악산 대청봉의 높이는 1,708m입니다.[4]",
+  "query": "height daechongbong seoraksan (en) / Daechongbong height Seoraksan (en) / 설악산 대청봉 높이 (ko) / 설악산 대청봉 높이 미터 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%95%85%EC%82%B0%EC%9D%98_%EC%A7%80%EC%A7%88",
+   "https://namu.wiki/w/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://yhkang5931.tistory.com/1274",
+   "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=9a2b453f-40c1-42c0-af9d-98c573240b78",
+   "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%95%85%EC%82%B0",
+   "https://www.youtube.com/watch?v=imJdkvu-4Qg",
+   "https://ko.wikipedia.org/wiki/%ED%83%9C%EB%B0%B1%EC%82%B0%EB%A7%A5"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": "강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 2014년입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "year gangneung danoje registered as unesco intangible cultural heritage humanity year (en) / Gangneung Danoje UNESCO Year (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gangneung",
+   "https://en.wikipedia.org/wiki/Lists_of_Intangible_Cultural_Heritage_elements",
+   "https://en.wikipedia.org/wiki/Songkran_%28Thailand%29"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": {
+  "answer": "강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 2005년입니다 [2][3]",
+  "query": "year gangneung danoje registered as unesco intangible cultural heritage humanity year (en) / Gangneung Danoje UNESCO Year (en) / 강릉단오제 등재 년도 (ko) / 강릉단오제 유네스코 인류무형문화유산 등재된 해는 년인가요 (ko) + web",
+  "sources": [
+   "https://news.nate.com/view/20250606n08960?mid=n0904",
+   "https://m.khs.go.kr/public/commentary/HtmlPage.do?pg=%2Funesco%2FCulHeritage%2FCulHeritage_03.jsp",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89_%EB%8B%A8%EC%98%A4%EC%A0%9C",
+   "https://m.blog.naver.com/chagov/223129796015",
+   "https://www.cha.go.kr/cop/bbs/selectBoardArticle.do;jsessionid=aDKOh5bCFsI4MG8efQYnfKB6jveTeVgdTA5P1UBR2IoWMknWT8lucEPVD4RO8iaa.cha-was02_servlet_engine1?nttId=59365&bbsId=BBSMSTR_1008&pageUnit=10&searchtitle=tit&searchcont=&searchkey=&searchwriter=&searchWrd=&searchUseYn=&searchCnd=&ctgryLrcls=&ctgryMdcls=&ctgrySmcls=&ntcStartDt=&ntcEndDt=&mn=NS_01_09_01",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B4%ED%98%95%EB%AC%B8%ED%99%94%EC%9C%A0%EC%82%B0_%EB%AA%A9%EB%A1%9D",
+   "https://www.gn.go.kr/dano/contents.do?key=5820",
+   "https://ko.wikipedia.org/wiki/%EC%A4%91%EA%B5%AD%EC%9D%98_%EB%B0%98%ED%95%9C_%EC%A0%95%EC%84%9C",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89%EB%8B%A8%EC%98%A4%EC%A0%9C%EC%A0%84%EC%88%98%EA%B5%90%EC%9C%A1%EA%B4%80",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89%EB%86%8D%EC%95%85",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89%EC%8B%9C"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": "강릉 경포대 옆에 있는 호수의 이름은 경포호입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": {
+  "answer": "강릉 경포대 옆에 있는 호수의 이름은 경포호입니다. [1]",
+  "query": "name lake located next gyeongpo beach gangneung (en) / Gyeongpo Beach nearby lake name (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gyeongpo_Lake",
+   "https://en.wikipedia.org/wiki/List_of_2_Days_%26_1_Night_episodes",
+   "https://en.wikipedia.org/wiki/Food_festivals_in_South_Korea"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": {
+  "answer": "강릉 경포대 옆에 있는 호수의 이름은 경포호입니다. [3]",
+  "query": "name lake located next gyeongpo beach gangneung (en) / Gyeongpo Beach nearby lake name (en) / 경포대 근처 호수 이름 (ko) / 강릉 경포대 옆에 있는 호수 이름 (ko) + web",
+  "sources": [
+   "https://sangseek.com/communities/23053",
+   "https://umblog66.tistory.com/128",
+   "https://socialcast.tistory.com/entry/%EA%B0%95%EB%A6%89-%EA%B0%80%EB%B3%BC%EB%A7%8C%ED%95%9C%EA%B3%B3-%EA%B2%BD%ED%8F%AC%EB%8C%80-%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%EA%B3%BC-%EA%B2%BD%ED%8F%AC%ED%98%B8",
+   "https://xn--ok0b236bp0a.com/place/7679",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%A6%89_%ED%98%B8%ED%95%B4%EC%A0%95",
+   "https://ko.wikipedia.org/wiki/%EA%B2%BD%ED%8F%AC%EB%8C%80",
+   "https://beompick.com/%EA%B0%95%EB%A6%89-%EA%B2%BD%ED%8F%AC%EB%8C%80-%EB%A7%9B%EC%A7%91"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": "속초 엑스포 타워가 있는 석호의 이름은 속초만입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "name lake sokcho expo tower located (en) / Sokcho Expo Tower lake name (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Can_This_Love_Be_Translated%3F",
+   "https://en.wikipedia.org/wiki/List_of_Ferris_wheels"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": {
+  "answer": "속초 엑스포 타워가 있는 석호의 이름은 청초호입니다 [2].",
+  "query": "name lake sokcho expo tower located (en) / Sokcho Expo Tower lake name (en) / 속초 엑스포 타워 근처 석호 이름 (ko) / 속초 엑스포 타워 있는 석호 이름 (ko) + web",
+  "sources": [
+   "https://m.blog.naver.com/fox7shot/222712491520?rvid=C37DDB9FBB94B50D0E6A0FC3B833223888E9&targetKeyword=%EC%9D%B4%EA%B5%AD%EC%A0%81%EC%9D%B8%ED%92%8D%EA%B2%BD",
+   "https://www.facebook.com/uaboss/posts/%EC%86%8D%EC%B4%88-%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C%EB%8A%94-%EA%B0%95%EC%9B%90%EB%8F%84-%EC%86%8D%EC%B4%88%EC%8B%9C-%EC%B2%AD%EC%B4%88%ED%98%B8-%EC%9C%A0%EC%9B%90%EC%A7%80-%EB%82%B4%EC%97%90-%EC%9C%84%EC%B9%98%ED%95%9C-734m-%EB%86%92%EC%9D%B4%EC%9D%98-%EC%A0%84%EB%A7%9D-%ED%83%80%EC%9B%8C%EC%9D%B4%EB%8B%A41999%EB%85%84-%EA%B0%95%EC%9B%90%EA%B5%AD%EC%A0%9C%EA%B4%80%EA%B4%91%EC%97%91%EC%8A%A4%ED%8F%AC%EB%A5%BC-%EA%B8%B0%EB%85%90%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%84%B8%EC%9B%8C%EC%A1%8C%EC%9C%BC%EB%A9%B0-/36436542509294084",
+   "https://ilsang-memory.tistory.com/entry/%EC%86%8D%EC%B4%88%EC%97%AC%ED%96%89-%EC%B2%AD%EC%B4%88%ED%98%B8-%ED%98%B8%EC%88%98%EA%B3%B5%EC%9B%90-%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C-%EC%9E%94%EC%9E%94%ED%95%9C-%EC%88%98%EB%B3%80%EA%B8%B8%EC%97%90-%ED%8A%B9%EB%B3%84%ED%95%A8%EC%9D%B4-%EA%B0%80%EB%93%9D%ED%95%9C-%EC%86%8D%EC%B4%88-%EA%B0%80%EB%B3%BC-%EB%A7%8C%ED%95%9C-%EA%B3%B3",
+   "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=5d091698-5c99-47ee-8d11-96c67ea81b01",
+   "https://ko.wikipedia.org/wiki/%EC%97%91%EC%8A%A4%ED%8F%AC%ED%83%80%EC%9B%8C",
+   "https://en.wikipedia.org/wiki/Can_This_Love_Be_Translated%3F",
+   "https://en.wikipedia.org/wiki/List_of_Ferris_wheels"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": "율곡 이이의 어머니는 정씨입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "mother yulgok yi i born ojukheon gangneung (en) / Yulgok Yi I mother (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Yi_I",
+   "https://en.wikipedia.org/wiki/Shin_Saimdang",
+   "https://en.wikipedia.org/wiki/Ch%C5%8Fng_Mongju"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": {
+  "answer": "율곡 이이의 어머니는 신사임당입니다 [1] [6].",
+  "query": "mother yulgok yi i born ojukheon gangneung (en) / Yulgok Yi I mother (en) / 강릉 오죽헌 율곡 이이 어머니 (ko) / 강릉 오죽헌 태어난 율곡 이이 어머니 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%83%9C%EB%AA%BD",
+   "https://onion02.tistory.com/2617",
+   "https://ncms.nculture.org/local-artist/story/21",
+   "https://blog.naver.com/issim1/223635004172",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9D%B4",
+   "https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%82%AC%EC%9E%84%EB%8B%B9",
+   "https://www.youtube.com/watch?v=M5tm08isF7k"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::대한민국 최초의 국립공원은 어디인가요?": "대한민국 최초의 국립공원은 백두산国立公园(백두산国立公园在1970年被指定为国营自然保护区，但如果是按照韩国的标准，应该是1970년에 설립된 첫 번째 국립공원인 백두산国立公园).",
+ "ollama::qwen2.5:7b::ko-search-en::대한민국 최초의 국립공원은 어디인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "first national park south korea (en) / First national park in South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/List_of_national_parks_of_South_Korea",
+   "https://en.wikipedia.org/wiki/South_Korea_national_football_team",
+   "https://en.wikipedia.org/wiki/National_Assembly_%28South_Korea%29"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::대한민국 최초의 국립공원은 어디인가요?": {
+  "answer": "대한민국 최초의 국립공원은 지리산국립공원입니다 [2][3][4]",
+  "query": "first national park south korea (en) / First national park in South Korea (en) / 대한민국 최초 국립공원 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+   "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=53867",
+   "https://encykorea.aks.ac.kr/Article/E0006194",
+   "https://namu.wiki/w/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98%20%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+   "https://blog.naver.com/mountaintv01/222433863125?viewType=pc",
+   "https://ko.wikipedia.org/wiki/%EC%98%90%EB%A1%9C%EC%8A%A4%ED%86%A4_%EA%B5%AD%EB%A6%BD%EA%B3%B5%EC%9B%90",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B8%B0%EB%85%90%EC%9D%BC"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::훈민정음 해례본이 발견된 해는 몇 년인가요?": "훈민정음 해례본이 발견된 해는 1446년입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::훈민정음 해례본이 발견된 해는 몇 년인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "year preface edition hunmin jeongeum discovered year (en) / Hunmin Jeongeum preface discovery year (en)",
+  "sources": []
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::훈민정음 해례본이 발견된 해는 몇 년인가요?": {
+  "answer": "훈민정음 해례본이 발견된 해는 1940년입니다 [4][5][7]",
+  "query": "year preface edition hunmin jeongeum discovered year (en) / Hunmin Jeongeum preface discovery year (en) / 훈민정음 해례본 발견 년도 (ko) / 훈민정음 해례본 발견된 해는 년인가요 (ko) + web",
+  "sources": [
+   "https://mykoreanavi.com/hunminjeongeum-haeryebon",
+   "https://www.youtube.com/watch?v=PLK6yBSRE_A",
+   "https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C_%EC%96%B8%ED%95%B4",
+   "https://nam-sh0302.tistory.com/15713850",
+   "https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C",
+   "https://ko.wikipedia.org/wiki/%ED%9B%88%EB%AF%BC%EC%A0%95%EC%9D%8C",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::강원특별자치도가 출범한 날짜는 언제인가요?": "강원특별자치도가 출범한 날짜는 2005년 12월 1일입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::강원특별자치도가 출범한 날짜는 언제인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "date gangwon province established (en) / Gangwon Province establishment date (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chuncheon",
+   "https://en.wikipedia.org/wiki/Autumn_Uprising_of_1946",
+   "https://en.wikipedia.org/wiki/EATOF",
+   "https://en.wikipedia.org/wiki/Yeongdong_Line"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::강원특별자치도가 출범한 날짜는 언제인가요?": {
+  "answer": "강원특별자치도가 출범한 날짜는 2023년 6월 11일입니다.[3]",
+  "query": "date gangwon province established (en) / Gangwon Province establishment date (en) / 강원특별자치도 출범일 (ko) / 강원특별자치도 출범한 날짜 (ko) + web",
+  "sources": [
+   "https://www.m-joongang.com/news/articleView.html?idxno=339840",
+   "https://www.korea.kr/news/reporterView.do?newsId=148916712",
+   "https://www.yna.co.kr/view/AKR20230611005900062",
+   "https://www.youtube.com/watch?v=DSntxtx4I-Y",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84_%EC%86%8C%EB%B0%A9%EB%B3%B8%EB%B6%80",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EA%B2%BD%EC%B0%B0%EC%B2%AD",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90",
+   "https://www.law.go.kr/LSW/lsInfoP.do?lsId=014291&ancYnChk=0"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::국보 제1호였던 문화유산은 무엇인가요?": "국보 제1호는괘위장입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::국보 제1호였던 문화유산은 무엇인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "national treasure no 1 cultural asset (en) / National Treasure No. 1 cultural asset (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Cultural_assets_of_North_Korea",
+   "https://en.wikipedia.org/wiki/National_Treasure_%28Japan%29",
+   "https://en.wikipedia.org/wiki/Living_National_Treasure_%28Japan%29"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::국보 제1호였던 문화유산은 무엇인가요?": {
+  "answer": "국보 제1호였던 문화유산은 숭례문입니다 [1][2][7][9]",
+  "query": "national treasure no 1 cultural asset (en) / National Treasure No. 1 cultural asset (en) / 국보 제1호 문화유산 (ko) / 국보 제1호였던 문화유산 (ko) + web",
+  "sources": [
+   "https://www.khan.co.kr/article/202107120600001",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EB%B3%B4",
+   "https://ko.wikipedia.org/wiki/%EC%88%AD%EB%A1%80%EB%AC%B8",
+   "https://blog.naver.com/kdjhmr/223859576249?viewType=pc",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EA%B0%80%EB%AF%BC%EC%86%8D%EB%AC%B8%ED%99%94%EC%9C%A0%EC%82%B0",
+   "https://ko.wikipedia.org/wiki/%ED%95%A9%EC%B2%9C_%ED%95%B4%EC%9D%B8%EC%82%AC_%EB%8C%80%EC%9E%A5%EA%B2%BD%ED%8C%90",
+   "https://namu.wiki/w/%EC%88%AD%EB%A1%80%EB%AC%B8",
+   "https://www.youtube.com/watch?v=gUkMBQGvu8o",
+   "https://imnews.imbc.com/replay/2021/nwdesk/article/6282504_34936.html",
+   "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%9D%98%EB%B3%B4%EA%B0%90"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 대한민국 대통령은 누구인가요?": "현재 대한민국 대통령은 문재인 대통령입니다. 하지만 이 정보는 2026년 10월 8일 기준으로, 실제 답변과 다를 수 있습니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 대한민국 대통령은 누구인가요?": {
+  "answer": "현재 대한민국 대통령은 이재명입니다 [1].",
+  "query": "current president south korea (en) / Current President South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/President_of_South_Korea",
+   "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_South_Korea",
+   "https://en.wikipedia.org/wiki/List_of_presidents_of_South_Korea"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 대한민국 대통령은 누구인가요?": {
+  "answer": "현재 대한민국 대통령은 제21대 대통령 이재명입니다.[2]",
+  "query": "current president south korea (en) / Current President South Korea (en) / 현재 대한민국 대통령是谁 (ko) / 대한민국 대통령 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80%ED%86%B5%EB%A0%B9",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80%ED%86%B5%EB%A0%B9_%EB%AA%A9%EB%A1%9D",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EB%8C%80%ED%86%B5%EB%A0%B9_%EB%AA%A9%EB%A1%9D",
+   "https://namu.wiki/w/%EC%9D%B4%EC%9E%AC%EB%AA%85",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C20%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 대한민국 국무총리는 누구인가요?": "현재 대한민국 국무총리는 권영진 총리가 맡고 있습니다. 하지만 이 정보는 가상의 답변이며, 실제 날짜에 따라 달라질 수 있으니 참고하시기 바랍니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 대한민국 국무총리는 누구인가요?": {
+  "answer": "현재 대한민국 국무총리는 한성숙입니다 [2].",
+  "query": "current prime minister republic korea (en) / Current Prime Minister of South Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Deputy_Prime_Minister_of_South_Korea",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_South_Korea",
+   "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_South_Korea"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 대한민국 국무총리는 누구인가요?": {
+  "answer": "현재 대한민국 국무총리는 한성숙입니다 [1] [2].",
+  "query": "current prime minister republic korea (en) / Current Prime Minister of South Korea (en) / 현재 대한민국 국무총리是谁 (ko) / 대한민국 국무총리 (ko) + web",
+  "sources": [
+   "https://namu.wiki/w/%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC%EB%B9%84%EC%84%9C%EC%8B%A4",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC%EB%B9%84%EC%84%9C%EC%8B%A4%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%EB%AC%B4%EC%B4%9D%EB%A6%AC",
+   "https://www.opm.go.kr/opm/prime/greetings.do"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 서울특별시장은 누구인가요?": "현재 서울특별시장은 이재명입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 서울특별시장은 누구인가요?": {
+  "answer": "현재 서울특별시장은 오세훈입니다 [1].",
+  "query": "current mayor seoul (en) / Current mayor of Seoul (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Seoul",
+   "https://en.wikipedia.org/wiki/2026_South_Korean_local_elections",
+   "https://en.wikipedia.org/wiki/Ji_Sang-wook"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 서울특별시장은 누구인가요?": {
+  "answer": "현재 서울특별시장은 오세훈입니다.[1][2][4][6][7]",
+  "query": "current mayor seoul (en) / Current mayor of Seoul (en) / 서울특별시장 현재 (ko) / 서울특별시장 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5",
+   "https://www.seoul.go.kr/seoul/mayor.do",
+   "https://namu.wiki/w/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%9B%90%EC%88%9C",
+   "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%9E%A5_%EC%84%A0%EA%B1%B0",
+   "https://www.businesspost.co.kr/BP?command=article_view&num=429765"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 강원특별자치도지사는 누구인가요?": "현재 강원특별자치도지사는 송영길입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 강원특별자치도지사는 누구인가요?": {
+  "answer": "현재 강원특별자치도지사는 우상호입니다 [1].",
+  "query": "current governor gangwon province (en) / Governor of Gangwon Province (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Governor_of_Gangwon_State",
+   "https://en.wikipedia.org/wiki/Gangwon_Province%2C_South_Korea",
+   "https://en.wikipedia.org/wiki/Gangwon_FC",
+   "https://en.wikipedia.org/wiki/2026_South_Korean_local_elections"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 강원특별자치도지사는 누구인가요?": {
+  "answer": "현재 강원특별자치도지사는 우상호입니다.[4][5][6][9]",
+  "query": "current governor gangwon province (en) / Governor of Gangwon Province (en) / 현재 강원특별자치도지사 (ko) / 강원특별자치도지사 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84_%EB%B6%80%EC%A7%80%EC%82%AC",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC_%EC%84%A0%EA%B1%B0",
+   "https://www.businesspost.co.kr/BP?command=article_view&num=441358",
+   "https://state.gwd.go.kr/governor-gs",
+   "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC",
+   "https://www.youtube.com/watch?v=F0OBkVdBZyc",
+   "https://en.wikipedia.org/wiki/Governor_of_Gangwon_State",
+   "https://namu.wiki/w/%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 속초시장은 누구인가요?": "현재 속초시장은 김동준입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 속초시장은 누구인가요?": {
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "query": "current mayor sokcho (en) / Sokcho mayor 2023 (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Supreme_Prosecutors%27_Office_of_the_Republic_of_Korea",
+   "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go",
+   "https://en.wikipedia.org/wiki/Yonago"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 속초시장은 누구인가요?": {
+  "answer": "현재 속초시장은 자유한국당의 이병선 후보가 당선되었습니다 [5].",
+  "query": "current mayor sokcho (en) / Sokcho mayor 2023 (en) / 속초시장 현재 누가ABCDEFG (ko) / 속초시장 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EC%86%8D%EC%B4%88%EC%8B%9C%EC%9E%A5",
+   "http://news.lghellovision.net/news/articleView.html?idxno=540739",
+   "https://ko.wikipedia.org/wiki/%EC%86%8D%EC%B4%88%EC%8B%9C%EC%9E%A5_%EC%84%A0%EA%B1%B0",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%91%EC%84%A0",
+   "https://www.kwnews.co.kr/article/20260604500087",
+   "https://www.youtube.com/watch?v=oCiiZjAA78s&xstg=CAMSBhUDze3xHw%3D%3D",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%91%EC%84%A0",
+   "https://en.wikipedia.org/wiki/Supreme_Prosecutors%27_Office_of_the_Republic_of_Korea",
+   "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go",
+   "https://en.wikipedia.org/wiki/Yonago"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 한국은행 총재는 누구인가요?": "현재 한국은행 총재는 이정현입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 한국은행 총재는 누구인가요?": {
+  "answer": "현재 한국은행 총재는 신현송입니다 [1].",
+  "query": "current governor bank korea (en) / Governor Bank of Korea (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Bank_of_Korea",
+   "https://en.wikipedia.org/wiki/Bank_of_Ch%C5%8Dsen",
+   "https://en.wikipedia.org/wiki/Hyun-Song_Shin",
+   "https://en.wikipedia.org/wiki/Lists_of_governors"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 한국은행 총재는 누구인가요?": {
+  "answer": "현재 한국은행 총재는 신현송입니다 [1] [4] [5] [7].",
+  "query": "current governor bank korea (en) / Governor Bank of Korea (en) / 현재 한국은행 총재는 누구입니까 (ko) / 한국은행 총재 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89_%EC%B4%9D%EC%9E%AC",
+   "https://www.yna.co.kr/view/MYH20260318022500038",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89",
+   "https://namu.wiki/w/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89%20%EC%B4%9D%EC%9E%AC",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%9D%80%ED%96%89_%EC%B4%9D%EC%9E%AC",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A3%BC%EC%97%B4",
+   "https://www.bok.or.kr/portal/main/contents.do?menuNo=201168",
+   "https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%98%84%EC%86%A1"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::현재 국회의장은 누구인가요?": "현재의 국회의장은 안민석입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::현재 국회의장은 누구인가요?": {
+  "answer": "현재 국회의장은 조정식입니다 [1].",
+  "query": "current speaker national assembly (en) / Current Speaker National Assembly (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Speaker_of_the_National_Assembly_%28South_Korea%29",
+   "https://en.wikipedia.org/wiki/List_of_speakers_of_the_National_Assembly_%28Hungary%29",
+   "https://en.wikipedia.org/wiki/National_Assembly_%28Seychelles%29"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::현재 국회의장은 누구인가요?": {
+  "answer": "현재 국회의장은 조정식입니다 [1].",
+  "query": "current speaker national assembly (en) / Current Speaker National Assembly (en) / 현재 국회의장是谁 (ko) / 국회의장 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5",
+   "https://encykorea.aks.ac.kr/Article/E0006575",
+   "https://www.facebook.com/natv.go.kr/videos/%EC%A1%B0%EC%A0%95%EC%8B%9D-%EC%8B%A0%EC%9E%84-%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5-%EB%82%B4%EB%85%84-%EA%B0%9C%ED%97%8C-%EC%A0%88%ED%98%B8%EC%9D%98-%EC%8B%9C%EA%B8%B0%EC%A1%B0%EC%A0%95%EC%8B%9D-%EC%8B%A0%EC%9E%84-%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5%EB%82%B4%EB%85%84-%EA%B0%9C%ED%97%8C-%EC%A0%88%ED%98%B8%EC%9D%98-%EC%8B%9C%EA%B8%B0%EF%B8%8F22%EB%8C%80-%EA%B5%AD%ED%9A%8C-%ED%9B%84%EB%B0%98%EA%B8%B0-%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5%EC%97%90-%EC%A1%B0%EC%A0%95%EC%8B%9D-%EC%9D%98%EC%9B%90%EC%9D%84-%EC%84%A0%EC%B6%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4-/2109761473221533",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C%EB%B6%80%EC%9D%98%EC%9E%A5",
+   "https://namu.wiki/w/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9E%A5",
+   "https://en.wikipedia.org/wiki/Speaker_of_the_National_Assembly_%28South_Korea%29",
+   "https://www.youtube.com/watch?v=zBySW750xI8&xstg=CAMSBhUDzO3xHw%3D%3D"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::삼성전자의 현재 대표이사는 누구인가요?": "삼성전자의 현재 대표이사는 김현석 사장입니다. 하지만 이 정보는 변경될 수 있으므로, 최신 정보를 확인하시기 바랍니다.",
+ "ollama::qwen2.5:7b::ko-search-en::삼성전자의 현재 대표이사는 누구인가요?": {
+  "answer": "삼성전자의 현재 대표이사는 이재용입니다. [4]",
+  "query": "current ceo samsung electronics (en) / Samsung Electronics CEO (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Samsung_Electronics",
+   "https://en.wikipedia.org/wiki/Samsung_Display",
+   "https://en.wikipedia.org/wiki/2025%E2%80%93present_global_memory_supply_shortage",
+   "https://en.wikipedia.org/wiki/Samsung_Experience_Store"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::삼성전자의 현재 대표이사는 누구인가요?": {
+  "answer": "삼성전자의 현재 대표이사는 전영현입니다.[5]",
+  "query": "current ceo samsung electronics (en) / Samsung Electronics CEO (en) / 삼성전자 현재 대표이사 (ko) / 삼성전자 대표이사 (ko) + web",
+  "sources": [
+   "https://ko.wikipedia.org/wiki/%EA%B6%8C%EC%98%A4%ED%98%84_%28%EA%B8%B0%EC%97%85%EC%9D%B8%29",
+   "https://www.samsung.com/sec/about-us/company-info",
+   "https://www.businesspost.co.kr/BP?command=article_view&num=420819",
+   "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9C%A4%EC%9A%B0_%281946%EB%85%84%29",
+   "https://www.newspim.com/news/view/20260608001047",
+   "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EB%A1%9C%EC%A7%80%ED%85%8D",
+   "https://namu.wiki/w/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90",
+   "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::SK하이닉스의 현재 대표이사(CEO)는 누구인가요?": "SK하이닉스의 현재 대표이사는 김석진입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::SK하이닉스의 현재 대표이사(CEO)는 누구인가요?": {
+  "answer": "SK하이닉스의 현재 대표이사(CEO)는 곽노정입니다.[1]",
+  "query": "current ceo sk hynix (en) / SK Hynix CEO (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/SK_Hynix",
+   "https://en.wikipedia.org/wiki/SK_Group",
+   "https://en.wikipedia.org/wiki/2025%E2%80%93present_global_memory_supply_shortage"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::SK하이닉스의 현재 대표이사(CEO)는 누구인가요?": {
+  "answer": "SK하이닉스의 현재 대표이사(CEO)는 곽노정입니다 [1][2][5].",
+  "query": "current ceo sk hynix (en) / SK Hynix CEO (en) / SK하이닉스 현재 CEO (ko) / sk하이닉스 대표이사 ceo 는 (ko) + web",
+  "sources": [
+   "https://www.businesspost.co.kr/BP?command=article_view&num=408836",
+   "https://namu.wiki/w/%EA%B3%BD%EB%85%B8%EC%A0%95",
+   "https://www.ceomagazine.co.kr/ko-kr/articles/32241",
+   "https://news.skhynix.co.kr/new-ceo-seok-hee-lee-business-manager",
+   "https://www.youtube.com/watch?v=SLb9cRTlUMs",
+   "https://ko.wikipedia.org/wiki/SK%ED%85%94%EB%A0%88%EC%BD%A4",
+   "https://ko.wikipedia.org/wiki/%EC%B5%9C%ED%83%9C%EC%9B%90_%281960%EB%85%84%29",
+   "https://en.wikipedia.org/wiki/SK_Hynix",
+   "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%A0_%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::네이버의 현재 대표이사는 누구인가요?": "네이버의 현재 대표이사는 윤정수입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::네이버의 현재 대표이사는 누구인가요?": {
+  "answer": "네이버의 현재 대표이사는 이해진입니다. [1]",
+  "query": "current ceo naver (en) / Naver CEO 2023 (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Naver_Corporation",
+   "https://en.wikipedia.org/wiki/Bloodhounds_%28TV_series%29",
+   "https://en.wikipedia.org/wiki/Webtoon_%28platform%29",
+   "https://en.wikipedia.org/wiki/CEO-dol_Mart"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::손흥민의 현재 소속팀은 어디인가요?": "손흥민의 현재 소속팀은 토트넘 홋스퍼 FC입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::손흥민의 현재 소속팀은 어디인가요?": {
+  "answer": "손흥민의 현재 소속팀은 토트넘 홋스퍼입니다 [3]।",
+  "query": "tottenham hotspur's current position premier league (en) / Tottenham Hotspur Premier League position (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
+   "https://en.wikipedia.org/wiki/Tottenham_Hotspur_Stadium",
+   "https://en.wikipedia.org/wiki/2023%E2%80%9324_Tottenham_Hotspur_F.C._season"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::손흥민의 현재 소속팀은 어디인가요?": {
+  "answer": "손흥민의 현재 소속팀은 로스앤젤레스 FC(LA FC)입니다 [1] [2] [3] [4] [5]。",
+  "query": "tottenham hotspur's current position premier league (en) / Tottenham Hotspur Premier League position (en) / 손흥민 현재 소속팀 (ko) / 손흥민 소속팀 (ko) + web",
+  "sources": [
+   "https://www.footballist.co.kr/news/articleView.html?idxno=199967",
+   "https://ko.wikipedia.org/wiki/%EC%86%90%ED%9D%A5%EB%AF%BC",
+   "https://ko.wikipedia.org/wiki/%EC%86%90%ED%9D%A5%EB%AF%BC",
+   "https://theseed.io/w/%EC%86%90%ED%9D%A5%EB%AF%BC",
+   "https://www.slowlearnernews.org/news/articleView.html?idxno=1656",
+   "https://ko.wikipedia.org/wiki/%ED%99%A9%ED%9D%AC%EC%B0%AC"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::올해 한국의 최저임금(시급)은 얼마인가요?": "2026년 한국의 최저임금은 매일 8,460원입니다.",
+ "ollama::qwen2.5:7b::ko-search-en::올해 한국의 최저임금(시급)은 얼마인가요?": {
+  "answer": "올해 2026년 한국의 최저임금은 7,530 원입니다. [4]",
+  "query": "year's minimum wage hourly wage korea much (en) / Minimum wage Korea 2023 (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Minimum_wage",
+   "https://en.wikipedia.org/wiki/Racial_pay_gap_in_the_United_States",
+   "https://en.wikipedia.org/wiki/Wage_slavery",
+   "https://en.wikipedia.org/wiki/Minimum_wage_in_South_Korea"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::올해 한국의 최저임금(시급)은 얼마인가요?": {
+  "answer": "올해, 즉 2026년 한국의 최저임금(시급)은 10,320원입니다 [2].",
+  "query": "year's minimum wage hourly wage korea much (en) / Minimum wage Korea 2023 (en) / 올해 한국 최저임금 (ko) / 올해 한국 최저임금 시급 은 (ko) + web",
+  "sources": [
+   "https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1492",
+   "https://www.albamon.com/alba-talk/interests/minimum-wage",
+   "https://ko.tradingeconomics.com/south-korea/minimum-wages",
+   "https://www.korea.kr/news/reporterView.do?newsId=148969730",
+   "https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%AC%EC%9D%B8_%EC%A0%95%EB%B6%80_%EC%B5%9C%EC%A0%80%EC%9E%84%EA%B8%88_%EC%9D%B8%EC%83%81_%EB%85%BC%EB%9E%80",
+   "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EC%B5%9C%EC%A0%80%EC%9E%84%EA%B8%88",
+   "https://ko.wikipedia.org/wiki/%EC%B5%9C%EC%A0%80%EC%9E%84%EA%B8%88%EC%9C%84%EC%9B%90%ED%9A%8C"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::가장 최근 KBO 한국시리즈 우승팀은 어디인가요?": "2026년 한국시리즈 우승팀은 아직 결정되지 않았습니다. 최신 정보를 확인하려면 2026년 10월을 기다려보세요.",
+ "ollama::qwen2.5:7b::ko-search-en::가장 최근 KBO 한국시리즈 우승팀은 어디인가요?": {
+  "answer": "가장 최근 KBO 한국시리즈 우승팀은 LG 트윈스입니다 [1].",
+  "query": "most recent kbo korean series champion (en) / KBO Korean Series champion 2023 (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Korean_Series",
+   "https://en.wikipedia.org/wiki/2026_KBO_League_season",
+   "https://en.wikipedia.org/wiki/KBO_League",
+   "https://en.wikipedia.org/wiki/2023_KBO_League_season"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::가장 최근 KBO 한국시리즈 우승팀은 어디인가요?": {
+  "answer": "가장 최근 KBO 한국시리즈 우승팀은 LG 트윈스입니다 [5] [8] [2].",
+  "query": "most recent kbo korean series champion (en) / KBO Korean Series champion 2023 (en) / 가장 최근 KBO 한국시리즈 우승팀 (ko) / 최근 kbo 한국시리즈 우승팀 (ko) + web",
+  "sources": [
+   "https://www.instagram.com/reel/DYOKerXv8Q1",
+   "https://namu.wiki/w/KBO%20%ED%95%9C%EA%B5%AD%EC%8B%9C%EB%A6%AC%EC%A6%88",
+   "https://ko.wikipedia.org/wiki/KBO_%ED%95%9C%EA%B5%AD%EC%8B%9C%EB%A6%AC%EC%A6%88",
+   "https://6894nhyu.tistory.com/355",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%ED%99%94_%EC%9D%B4%EA%B8%80%EC%8A%A4",
+   "https://www.yna.co.kr/view/AKR20160921161852007",
+   "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0_%EC%9E%90%EC%9D%B4%EC%96%B8%EC%B8%A0",
+   "https://ko.wikipedia.org/wiki/KBO_%EB%A6%AC%EA%B7%B8",
+   "https://en.wikipedia.org/wiki/Korean_Series"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-memory::가장 최근 K리그1 우승팀은 어디인가요?": "2026년 10월 8일 현재의 가장 최근 K리그1 우승팀은 2026년 시즌 종료 시점에서 결정될 것입니다. 이전 시즌의 우승 팀은 해당 정보가 주어지지 않았습니다.",
+ "ollama::qwen2.5:7b::ko-search-en::가장 최근 K리그1 우승팀은 어디인가요?": {
+  "answer": "Gen.G가 2026 LCK 시즌에서 우승하여 가장 최근 K리그1 우승팀이기도 합니다.[2]",
+  "query": "most recent k league 1 champion (en) / K League 1 recent champion (en)",
+  "sources": [
+   "https://en.wikipedia.org/wiki/1996_UEFA_Champions_League_final",
+   "https://en.wikipedia.org/wiki/League_of_Legends_Champions_Korea",
+   "https://en.wikipedia.org/wiki/Pohang_Steelers",
+   "https://en.wikipedia.org/wiki/IKF_Europe_Korfball_Champions_League",
+   "https://en.wikipedia.org/wiki/Busan_IPark_in_international_competitions"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::가장 최근 K리그1 우승팀은 어디인가요?": {
+  "answer": "가장 최근 K리그1 우승팀은 전북 현대 모터스입니다 [4] [5].",
+  "query": "most recent k league 1 champion (en) / K League 1 recent champion (en) / 가장 최근 K리그1 우승팀 (ko) / 최근 k리그1 우승팀 (ko) + web",
+  "sources": [
+   "https://namu.wiki/w/K%EB%A6%AC%EA%B7%B81",
+   "https://www.instagram.com/p/DK1fMnYyz4w",
+   "https://ko.wikipedia.org/wiki/K%EB%A6%AC%EA%B7%B82",
+   "https://ko.wikipedia.org/wiki/K%EB%A6%AC%EA%B7%B81",
+   "https://www.joongang.co.kr/article/25374805",
+   "https://ko.wikipedia.org/wiki/%EC%88%98%EC%9B%90_%EC%82%BC%EC%84%B1_%EB%B8%94%EB%A3%A8%EC%9C%99%EC%A6%88",
+   "https://www.kleague.com/record/team.do"
+  ]
+ },
+ "ollama::qwen2.5:7b::ko-search_v3::네이버의 현재 대표이사는 누구인가요?": {
+  "answer": "네이버의 현재 대표이사는 한성숙입니다 [7].",
+  "query": "current ceo naver (en) / 네이버 대표이사 (ko) + web",
+  "sources": [
+   "https://namu.wiki/w/%EC%B5%9C%EC%88%98%EC%97%B0(%EA%B8%B0%EC%97%85%EC%9D%B8)",
+   "https://www.youtube.com/watch?v=uYxK5GWf5q4",
+   "http://topclass.chosun.com/news/articleView.html?idxno=4170",
+   "https://magazine.hankyung.com/business/article/201912104015b",
+   "https://ko.wikipedia.org/wiki/%EC%A0%95%EB%AA%BD%ED%97%8C",
+   "https://ko.wikipedia.org/wiki/%EB%84%A4%EC%9D%B4%EB%B2%84_%28%EA%B8%B0%EC%97%85%29",
+   "https://ko.wikipedia.org/wiki/%ED%95%9C%EC%84%B1%EC%88%99",
+   "https://www.naver.com"
+  ]
  }
 }

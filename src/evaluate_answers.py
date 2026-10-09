@@ -23,7 +23,7 @@ import re
 from collections import Counter
 from datetime import date
 
-from src import llm, pipeline, router, time_check
+from src import llm, pipeline, router, search, time_check
 from src.llm import ROOT
 
 DATA = ROOT / "data" / "answer_test.csv"
@@ -38,7 +38,8 @@ TYPES = {"stable_common": "Stable, well known",
          "changing": "Changes over time (outdated)"}
 NO_GUESS = ["i don't know", "i do not know", "not sure", "could not find", "couldn't find",
             "no information", "not able to", "unable to", "don't have", "do not have",
-            "not aware", "unknown", "i cannot", "i can't"]
+            "not aware", "unknown", "i cannot", "i can't",
+            "모르", "알 수 없", "찾을 수 없", "정보가 없", "확인할 수 없"]
 
 
 # ---------- scoring ----------
@@ -67,9 +68,17 @@ def is_correct(answer: str, aliases: list[str]) -> bool:
         alias = alias.strip()
         if not alias:
             continue
+        if re.fullmatch(r"[\d,.]+", alias):              # numbers: "1,708" = "1708m" = "1708미터"
+            num = alias.replace(",", "")
+            if re.search(rf"(?<![\d.]){re.escape(num)}(?![\d])", answer.replace(",", "")):
+                return True
+            continue
         if f" {_spaced(alias)} " in a_sp:          # whole-word match ("8", "Fe", "LG")
             return True
         if len(_compact(alias)) >= 5 and _compact(alias) in a_cp:  # "Noh-jung" = "Nohjung"
+            return True
+        if re.search(r"[\uac00-\ud7a3]", alias) and len(_compact(alias)) >= 2 \
+                and _compact(alias) in a_cp:                 # Korean: "서울" in "서울입니다"
             return True
         last = _spaced(alias).split()[-1] if _spaced(alias) else ""
         if (_is_name(alias) and len(last) >= 4 and last not in GENERIC
@@ -104,7 +113,7 @@ def _cached(cache: dict, key: str, fn):
 
 def run_one(q: str, model, cache: dict, tag: str) -> dict:
     memory = _cached(cache, f"{tag}::memory::{q}", lambda: pipeline.answer_from_memory(q))
-    searched = _cached(cache, f"{tag}::search::{q}", lambda: _search_record(q))
+    searched = _cached(cache, f"{tag}::{search.version()}::{q}", lambda: _search_record(q))
     route = router.route(q, model=model)
     if route["action"] == "search":
         routed = searched["answer"]

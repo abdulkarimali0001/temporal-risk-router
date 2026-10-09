@@ -199,3 +199,303 @@ pop-6323407,PopQA,In what city was Hansi Niese born?,stable_rare,place of birth,
 pop-5987762,PopQA,Who was the director of Those Who Love?,stable_rare,director,72,Manning Haynes|Horace Manning Haynes,PopQA test
 pop-1900573,PopQA,What is the capital of Gmina Czorsztyn?,stable_rare,capital,85,Maniowy,PopQA test
 pop-2925773,PopQA,Who was the director of Son contento?,stable_rare,director,73,Maurizio Ponzi,PopQA test
+fqa-252,FreshQA,Where did Jeff Dean get his Ph.D. from?,stable_freshqa,never-changing,,University of Washington|The University of Washington|UW|U. of Washington,2026-04-21
+fqa-296,FreshQA,Where was Emily Joanna Carey born?,stable_freshqa,never-changing,,Barnet|The London Borough of Barnet|London|North London,2026-04-21
+fqa-275,FreshQA,"Is Sunderland, MA to the north or south of Amherst, MA?",stable_freshqa,never-changing,,north,2026-04-21
+fqa-329,FreshQA,Who wrote the best novelette of the 2022 Hugo Awards?,stable_freshqa,never-changing,,Suzanne Palmer,2026-04-21
+fqa-311,FreshQA,When did the Chinese Tang Dynasty end?,stable_freshqa,never-changing,,907 AD|907|Tianyou 4,2026-04-21
+fqa-264,FreshQA,What was the real name of the Unabomber?,stable_freshqa,never-changing,,Ted Kacsynzki|Theodore John Kaczynski,2026-04-21
+fqa-327,FreshQA,On what date did Queen Elizabeth II of England die?,stable_freshqa,never-changing,,"Sep 8, 2022|September 8, 2022|8 Sep 2022|8 September 2022|09/8/2022|09-8-2022|8/09/2022|8-09-2022|2022/09/8|2022-09-8",2026-04-21
+fqa-351,FreshQA,Along what tectonic plate boundary were yeti crabs first discovered?,stable_freshqa,never-changing,,Pacific-Antarctic Ridge|Pacific Antarctic Ridge|PAR,2026-04-21
+fqa-337,FreshQA,What episode of The Simpsons marked the first time a deaf actor was cast on the show?,stable_freshqa,never-changing,,The Sound of Bleeding Gums|the 17th episode of the 33rd season|Episode 17 Season 33,2026-04-21
+fqa-250,FreshQA,What state is known as the Aloha State?,stable_freshqa,never-changing,,Hawaii|Hawai'i,2026-04-21
+fqa-340,FreshQA,How old was the youngest passenger on board the Titanic?,stable_freshqa,never-changing,,two months old|nine weeks old|72 days old,2026-04-21
+fqa-323,FreshQA,Who killed the former Japanese Prime Minister Shinzo Abe?,stable_freshqa,never-changing,,Tetsuya Yamagami,2026-04-21
+fqa-360,FreshQA,Has Virginia Woolf's novel about the Ramsay family entered the public domain in the United States?,stable_freshqa,never-changing,,Yes,2026-04-21
+fqa-345,FreshQA,Which city was the capital of California the year it became a state?,stable_freshqa,never-changing,,"San Jose|San José|San Jose, California|San José, California",2026-04-21
+fqa-348,FreshQA,Who was the emperor of China when the American Revolutionary War ended?,stable_freshqa,never-changing,,Qianlong|Qianlong Emperor|Qian Long|Long Qian,2026-04-21
+fqa-315,FreshQA,Who is Elrond's father in J. R. R. Tolkien's Middle Earth stories?,stable_freshqa,never-changing,,Eärendil|Earendil|Eärendil the Blessed|Bright Eärendil,2026-04-21
+fqa-281,FreshQA,During the recording of which Beatles album did Ringo Starr temporarily quit the band?,stable_freshqa,never-changing,,White Album|the White Album sessions|The Beatles,2026-04-21
+fqa-255,FreshQA,What breed of dog was Queen Elizabeth II of England famous for keeping?,stable_freshqa,never-changing,,Corgi|Pembroke Welsh Corgi,2026-04-21
+fqa-266,FreshQA,Where did the first atomic bomb test take place in the United States?,stable_freshqa,never-changing,,"Jornada del Muerto Desert, New Mexico|Alamogordo Bombing Range|New Mexico|Alamogordo Bombing and Gunnery Range|White Sands Proving Ground",2026-04-21
+fqa-268,FreshQA,On what date did the Berlin Wall fall?,stable_freshqa,never-changing,,"Nov 9, 1989|November 9, 1989|9 Nov 1989|9 November 1989|11/9/1989|11-9-1989|9/11/1989|9-11-1989|1989/11/9|1989-11-9",2026-04-21
+fqa-312,FreshQA,Which mountain is at the north end of the Appalachian Trail?,stable_freshqa,never-changing,,"Mount Katahdin|Mt. Katahdin|Katahdin|Mount Katahdin, Baxter Peak",2026-04-21
+fqa-277,FreshQA,Who wrote Between the World and Me?,stable_freshqa,never-changing,,Ta-Nehisi Coates|Coates|Ta-Nehisi Paul Coates,2026-04-21
+fqa-254,FreshQA,What is the tallest mountain in Alaska?,stable_freshqa,never-changing,,Mount Denali|Mount McKinley,2026-04-21
+fqa-261,FreshQA,"Did Queen Elizabeth II visit Rhode Island, USA?",stable_freshqa,never-changing,,Yes,2026-04-21
+fqa-292,FreshQA,In which month does the Japanese school year start?,stable_freshqa,never-changing,,April,2026-04-21
+fqa-319,FreshQA,Which famous soccer player of Brazil passed away in 2022?,stable_freshqa,never-changing,,Pelé|Pele|Edson Arantes do Nascimento,2026-04-21
+fqa-291,FreshQA,On which side do people stand on the escalator in Tokyo?,stable_freshqa,never-changing,,left|left side,2026-04-21
+fqa-257,FreshQA,Which country won the 2017 Eurovision Song Contest?,stable_freshqa,never-changing,,Portugal,2026-04-21
+fqa-313,FreshQA,Which city does Disco Elysium take place in?,stable_freshqa,never-changing,,Revachol,2026-04-21
+fqa-283,FreshQA,In what month and year did the Tulip mania bubble collapse?,stable_freshqa,never-changing,,"February 1637|February, 1637|02/1637|02-1637",2026-04-21
+fqa-300,FreshQA,What is the heaviest reptile in the world?,stable_freshqa,never-changing,,saltwater crocodile|crocodylus porosus,2026-04-21
+fqa-330,FreshQA,Who was the first player to win more than one FIFA World Cup Golden Ball?,stable_freshqa,never-changing,,Lionel Messi,2026-04-21
+fqa-271,FreshQA,What year did Japan bomb Pearl Harbor?,stable_freshqa,never-changing,,1941,2026-04-21
+fqa-368,FreshQA,In what city did the first rail line entirely run by hydrogen-powered trains debut?,stable_freshqa,never-changing,,"Bremervörde|Bremervörde, Lower Saxony, Germany",2026-04-21
+fqa-263,FreshQA,Who won the 2020 Formula 1 world driver's championship?,stable_freshqa,never-changing,,Lewis Hamilton|Hamilton,2026-04-21
+fqa-346,FreshQA,Where is the 8th president of the United States buried?,stable_freshqa,never-changing,,"Kinderhook, NY|Kinderhook, New York|Kinderhook|New York",2026-04-21
+fqa-369,FreshQA,Did Emeritus Benedict XVI and Queen Elizabeth II die in the same year?,stable_freshqa,never-changing,,Yes,2026-04-21
+fqa-251,FreshQA,In what year will Google celebrate its 30th birthday?,stable_freshqa,never-changing,,"2028|Sep 4, 2028|September 4, 2028|4 Sep 2028|4 September 2028|09/4/2028|09-4-2028|4/09/2028|4-09-2028|2028/09/4",2026-04-21
+fqa-297,FreshQA,"Along with streptococcus thermophilus, what other bacteria is used to make Bulgarian yogurt?",stable_freshqa,never-changing,,Lactobacillus bulgaricus|L. bulgaricus|L. d. bulgaricus|Lactobacillus delbrueckii subsp. bulgaricus|Lactobacillus delbrueckii subspecies bulgaricus,2026-04-21
+fqa-347,FreshQA,"Where was the author of the book ""A Game of Thrones"" born?",stable_freshqa,never-changing,,"Bayonne, NJ|Bayonne|New Jersey",2026-04-21
+fqa-160,FreshQA,How many seats are there in the German Bundestag?,changing,slow-changing,,630,2026-04-21
+fqa-133,FreshQA,Who is the current German chancellor?,changing,slow-changing,,Friedrich Merz,2026-04-21
+fqa-156,FreshQA,How many vehicle models does Tesla offer?,changing,slow-changing,,5|five,2026-04-21
+fqa-180,FreshQA,Who is the highest-paid athlete in the world?,changing,slow-changing,,Cristiano Ronaldo|Ronaldo|CR7|Cristiano Ronaldo dos Santos Aveiro,2026-04-21
+fqa-178,FreshQA,Who is the current Prime Minister of the United Kingdom?,changing,slow-changing,,Keir Starmer|Sir Keir Rodney Starmer,2026-04-21
+fqa-140,FreshQA,Which is the oldest still-running university in the world?,changing,slow-changing,,University of Bologna,2026-04-21
+fqa-220,FreshQA,Which is the most recent team to advance to consecutive FIFA World Cup finals?,changing,slow-changing,,France,2026-04-21
+fqa-145,FreshQA,The longest unbeaten streak of all time in the Premier League is how many matches?,changing,slow-changing,,49|forty-nine|49 matches|49 matches by Arsenal FC,2026-04-21
+fqa-243,FreshQA,Who bought the most expensive 20th century artwork sold in a public sale?,changing,slow-changing,,Larry Gagosian|Larry Gagosian bought Andy Warhol's silk-screen painting Sage Blue Shot Marilyn (1964) at Christie's in New York City for $195.04 million,2026-04-21
+fqa-144,FreshQA,Where is Tesla's headquarters?,changing,slow-changing,,"Austin, TX|Austin",2026-04-21
+fqa-209,FreshQA,How many Women's Rugby World Cup titles has New Zealand won?,changing,slow-changing,,six,2026-04-21
+fqa-186,FreshQA,In which year was the last UEFA European Championship was held?,changing,slow-changing,,2024,2026-04-21
+fqa-229,FreshQA,How many flights of the Space Launch System have been successfully launched?,changing,slow-changing,,2|two,2026-04-21
+fqa-223,FreshQA,Which actress' husband is a partial owner of Mint Mobile?,changing,slow-changing,,Blake Lively|Blake Ellender Lively,2026-04-21
+fqa-206,FreshQA,What club does Lewandowski play for?,changing,slow-changing,,Barcelona|FC Barcelona|La Liga club Barcelona,2026-04-21
+fqa-242,FreshQA,Who directed the most films in the top 15 highest-grossing films of all time?,changing,slow-changing,,James Cameron,2026-04-21
+fqa-149,FreshQA,Which K-Pop artist has the most followers on Instagram?,changing,slow-changing,,Lisa (BLACKPINK),2026-04-21
+fqa-141,FreshQA,What is the best-selling jazz album of all time?,changing,slow-changing,,Kind of Blue,2026-04-21
+fqa-195,FreshQA,What is Cristiano Ronaldo's current club?,changing,slow-changing,,Al Nassr|Al Nassr FC,2026-04-21
+fqa-155,FreshQA,What country became the latest country to adopt the Euro?,changing,slow-changing,,Bulgaria,2026-04-21
+fqa-127,FreshQA,Who is the highest-paid coach per season ever on the American television series The Voice?,changing,slow-changing,,Ariana Grande|Ariana Grande-Butera,2026-04-21
+fqa-236,FreshQA,In what city was the person currently acting as the U.S. speaker of house born?,changing,slow-changing,,"Shreveport, Louisiana|Shreveport",2026-04-21
+fqa-241,FreshQA,How many active players have won at least five ATP Finals singles titles?,changing,slow-changing,,1|one,2026-04-21
+fqa-150,FreshQA,Can women attend universities in Afghanistan?,changing,slow-changing,,No,2026-04-21
+fqa-244,FreshQA,What is the best ever result by an African team at a FIFA World Cup?,changing,slow-changing,,fourth-place|one of the four semi-finalists|semi-final,2026-04-21
+fqa-190,FreshQA,Who has the most followers on Twitter?,changing,slow-changing,,Elon Musk|Elon Reeve Musk,2026-04-21
+fqa-142,FreshQA,Who holds record for highest goals scored in international football for Malaysia?,changing,slow-changing,,Mokhtar Dahari|Dahari|Datuk Mohd Mokhtar Dahari,2026-04-21
+fqa-187,FreshQA,When is the next leap year?,changing,slow-changing,,2028,2026-04-21
+fqa-181,FreshQA,What is the most recent outbreak declared as a public health emergency of international concern by WHO?,changing,slow-changing,,Clade I mpox,2026-04-21
+fqa-128,FreshQA,Who is the CEO of Google?,changing,slow-changing,,Sundar Pichai|Pichai Sundararajan,2026-04-21
+fqa-240,FreshQA,When was the most recent eruption of the world's largest active volcano?,changing,slow-changing,,"November 27, 2022 - December 13, 2022|November 27, 2022|December 13, 2022|2022",2026-04-21
+fqa-226,FreshQA,How many presidents of the United States have lost reelection?,changing,slow-changing,,10|ten,2026-04-21
+fqa-234,FreshQA,Who is the vice-chancellor of the largest university by enrollment in the world?,changing,slow-changing,,Uma Kanjilal|Prof. Uma Kanjilal has been appointed as the Acting Vice Chancellor of Indira Gandhi National Open University.,2026-04-21
+fqa-154,FreshQA,How many member states are there in the Eurozone?,changing,slow-changing,,21|twenty-one,2026-04-21
+fqa-174,FreshQA,What's the latest major version of the .NET?,changing,slow-changing,,.NET 10,2026-04-21
+fqa-210,FreshQA,How many total Nazca geoglyphs have been discovered so far?,changing,slow-changing,,358,2026-04-21
+fqa-165,FreshQA,What's the largest stadium by capacity in the world?,changing,slow-changing,,Narendra Modi Stadium,2026-04-21
+fqa-126,FreshQA,How many UC schools are there in the United States?,changing,slow-changing,,10|10 schools|ten|ten schools,2026-04-21
+fqa-173,FreshQA,Who is the President of the United States?,changing,slow-changing,,Donald Trump|Donald John Trump,2026-04-21
+fqa-164,FreshQA,Who won the biggest single-tournament payday in tennis history?,changing,slow-changing,,Jannik Sinner|Sinner,2026-04-21
+fqa-481,FreshQA,How old is the richest person in the world?,changing,fast-changing,,54 years old|54,2026-04-21
+fqa-384,FreshQA,Who is the current No. 1 on the Billboard Artist 100?,changing,fast-changing,,BTS,2026-04-21
+fqa-433,FreshQA,What is the next Walt Disney Animation Studios film?,changing,fast-changing,,Hexed,2026-04-21
+fqa-392,FreshQA,What is the most recent country that President Donald Trump visited during his second presidency?,changing,fast-changing,,Switzerland,2026-04-21
+fqa-487,FreshQA,How old is the latest American Nobel laureate in Physics?,changing,fast-changing,,67 or 68|67|68,2026-04-21
+fqa-385,FreshQA,What's the most popular film on Letterboxd this week?,changing,fast-changing,,The Drama|The Drama (2026) directed by Kristoffer Borgli,2026-04-21
+fqa-395,FreshQA,Where will NeurIPS be located this year?,changing,fast-changing,,"Sydney|Sydney, Austraila|Austraila",2026-04-21
+fqa-476,FreshQA,How many Southeast Asian countries has President Donald Trump visited during his current presidency?,changing,fast-changing,,1,2026-04-21
+fqa-426,FreshQA,Which team is at the top of the latest Premier League season?,changing,fast-changing,,Arsenal|Arsenal F.C.,2026-04-21
+fqa-387,FreshQA,Who is the most recent NBA player to score 60 or more points in a single game?,changing,fast-changing,,Luka Dončić|Luka Doncic,2026-04-21
+fqa-471,FreshQA,Who posted the most-liked Instagram post last year?,changing,fast-changing,,Lionel Messi,2026-04-21
+fqa-445,FreshQA,Who won the latest NBA championship?,changing,fast-changing,,Oklahoma City Thunder,2026-04-21
+fqa-448,FreshQA,Who is the latest winner of American Idol?,changing,fast-changing,,Jamal Roberts,2026-04-21
+fqa-479,FreshQA,In what country was the current Miss World born?,changing,fast-changing,,Thailand,2026-04-21
+fqa-375,FreshQA,How many exoplanets have been discovered?,changing,fast-changing,,"6,160 confirmed exoplanets|6,160",2026-04-21
+fqa-394,FreshQA,Who won the most recent Super Bowl?,changing,fast-changing,,Seattle Seahawks,2026-04-21
+fqa-370,FreshQA,What was the most-viewed music video in the first 24 hours on YouTube?,changing,fast-changing,,BTS (방탄소년단) 'Butter' Official MV|Butter,2026-04-21
+fqa-484,FreshQA,In what country was the most recent winner of the Nobel Prize for Literature born?,changing,fast-changing,,Hungary,2026-04-21
+fqa-389,FreshQA,When was Coldplay's last concert?,changing,fast-changing,,"Apr 17, 2026|April 17, 2026|17 Apr 2026|17 April 2026|04/17/2026|04-17-2026|17/04/2026|17-04-2026|2026/04/17|2026-04-17",2026-04-21
+fqa-494,FreshQA,In which country was the richest woman in the world born?,changing,fast-changing,,the USA|USA|the United States|United States|U.S.|the U.S.|the US,2026-04-21
+fqa-372,FreshQA,"According to the WHO’s latest reported 28-day figures, which country had the second-highest number of COVID-19 cases?",changing,fast-changing,,Greece,2026-04-21
+fqa-431,FreshQA,Who won the latest Nobel Prize in Literature?,changing,fast-changing,,László Krasznahorkai,2026-04-21
+fqa-474,FreshQA,What is Brad Pitt's most recent movie as an actor?,changing,fast-changing,,F1,2026-04-21
+fqa-461,FreshQA,What's the current Tomatometer score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?,changing,fast-changing,,85%|84,2026-04-21
+fqa-419,FreshQA,The upcoming Microsoft's Patch Tuesday will come out on what date in North America?,changing,fast-changing,,"May 12, 2026|May 12, 2026|12 May 2026|12 May 2026|05/12/2026|05-12-2026|12/05/2026|12-05-2026|2026/05/12|2026-05-12",2026-04-21
+fqa-450,FreshQA,What album holds the record for the most Spotify streams reached in a single day?,changing,fast-changing,,The Tortured Poets Department,2026-04-21
+fqa-483,FreshQA,In how many years will Netflix celebrate its thirtieth anniversary?,changing,fast-changing,,more than 1 year,2026-04-21
+fqa-482,FreshQA,What country does the Wimbledon women's champion play for?,changing,fast-changing,,Poland|Republic of Poland,2026-04-21
+fqa-454,FreshQA,How much does the new Apple HomePod cost?,changing,fast-changing,,$299,2026-04-21
+fqa-406,FreshQA,What Berber year corresponds to the present year?,changing,fast-changing,,2976,2026-04-21
+fqa-376,FreshQA,How many goals has Erling Haaland scored in the UEFA Champion League?,changing,fast-changing,,57 goals|57,2026-04-21
+fqa-495,FreshQA,In what country was the most recent individual recipient of Time Person of the Year born?,changing,fast-changing,,the USA|USA|the United States|United States|U.S.|the U.S.|the US,2026-04-21
+fqa-472,FreshQA,"In what month and year was the price of Bitcoin last above $40,000?",changing,fast-changing,,April 2026,2026-04-21
+fqa-453,FreshQA,What is the name of the most recent episode of The Lord of the Rings: The Rings of Power?,changing,fast-changing,,Shadow and Flame,2026-04-21
+fqa-462,FreshQA,What's the current audience score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?,changing,fast-changing,,58%|59,2026-04-21
+fqa-475,FreshQA,How long has Mauna Loa been a dormant volcano since its most recent eruption?,changing,fast-changing,,more than 3 years,2026-04-21
+fqa-467,FreshQA,How old is the most-followed user on TikTok?,changing,fast-changing,,26 years old|26,2026-04-21
+fqa-407,FreshQA,When was this year's Ramadan?,changing,fast-changing,,"Feb 18, 2026 – Mar 19, 2026|February 18, 2026 – March 19, 2026|Feb 18, 2026 – Mar 19, 2026|February 18, 2026 – March 19, 2026",2026-04-21
+fqa-386,FreshQA,What is Geoff Hinton’s h-index?,changing,fast-changing,,190,2026-04-21
+fqa-444,FreshQA,What book won the latest Nebula award for Best Novel?,changing,fast-changing,,Someone You Can Build a Nest In,2026-04-21
+pop-6292999,PopQA,Who was the composer of The Mirror?,stable_common,composer,13565,Eduard Artemyev|Eduard Nikolayevich Artemyev|Edward Artemiev,PopQA test
+pop-6386307,PopQA,What is the capital of Bangladesh?,stable_common,capital,407891,Dhaka|Dacca|Dhaka City,PopQA test
+pop-234486,PopQA,Who was the screenwriter for E.T. the Extra-Terrestrial?,stable_common,screenwriter,97322,Melissa Mathison|Melissa Marie Mathison,PopQA test
+pop-4288607,PopQA,Who is the father of Griffin O'Neal?,stable_common,father,16647,Ryan O'Neal,PopQA test
+pop-58303,PopQA,What is the capital of Somalia?,stable_common,capital,146475,Mogadishu|Xamar|The Seat of the Shah|Hamar|Maqadīshū,PopQA test
+pop-6368219,PopQA,What is the capital of Afghanistan?,stable_common,capital,683050,Kabul|Cabool|Caubul|Kabol|Cabul,PopQA test
+pop-291958,PopQA,Who was the screenwriter for Little Shop of Horrors?,stable_common,screenwriter,109716,Howard Ashman|Howard Elliott Ashman,PopQA test
+pop-3468370,PopQA,Who was the composer of The Host?,stable_common,composer,55711,Lee Byung-woo|Lee Byeong-u|Lee Byeong-woo,PopQA test
+pop-1223422,PopQA,What is Vienna the capital of?,stable_common,capital of,122060,Holy Roman Empire|Holy Roman Empire of the German Nation|First Reich|Reich|Austrian Empire|Austria|Habsburg Monarchy|Habsburg Empire|Austria-Hungary|Austro-Hungarian Empire|Dual Monarchy|Austria Hungary|Austria|Österreich|Republic of Austria|Republik Österreich|AT|at|AUT|🇦🇹|aut|Lower Austria|Niederösterreich,PopQA test
+pop-2064895,PopQA,Who was the producer of Precious?,stable_common,producer,34767,Lee Daniels|Lee Louis Daniels|Oprah Winfrey|Oprah Gail Winfrey|Oprah|Tyler Perry|Emmitt Perry Jr.,PopQA test
+pop-3287222,PopQA,Who was the screenwriter for Amistad?,stable_common,screenwriter,29668,David Franzoni|David Harold Franzoni,PopQA test
+pop-1392065,PopQA,Who was the producer of 2012?,stable_common,producer,65303,Roland Emmerich,PopQA test
+pop-1787935,PopQA,Who is the father of Vision?,stable_common,father,35639,Ultron,PopQA test
+pop-1853198,PopQA,What is the capital of Brussels Capital Region?,stable_common,capital,76663,"City of Brussels|Brussels City|Brussels, Belgium|Bruxelles|Brussel|Stad Brussel|Ville de Bruxelles|02|BXL|Bru|Brussels",PopQA test
+pop-282938,PopQA,What is the capital of Schleswig-Holstein?,stable_common,capital,31758,Kiel,PopQA test
+pop-6298839,PopQA,What is the capital of Oman?,stable_common,capital,265129,Muscat,PopQA test
+pop-1249362,PopQA,What is Stockholm the capital of?,stable_common,capital of,153845,Stockholm County|Stockholms län|Sweden|Kingdom of Sweden|SE|se|SWE|🇸🇪|Stockholm Municipality|City of Stockholm|Stockholms stad|Union between Sweden and Norway|Svensk-norska unionen|Den svensk-norske union|Sweden-Norway,PopQA test
+pop-2370611,PopQA,What is Sydney the capital of?,stable_common,capital of,131219,New South Wales|NSW|N.S.W.,PopQA test
+pop-534816,PopQA,What is the capital of Maryland?,stable_common,capital,256257,"Annapolis|Annapolis, Maryland",PopQA test
+pop-3492074,PopQA,What is Milan the capital of?,stable_common,capital of,110644,Lombardy|Lombardia|province of Milan|Milan province|Milano province|provincia di Milano|Western Roman Empire (395-476 AD)|Roman Empire|Golden Ambrosian Republic|Repubblica Ambrosiana|Aurea Repubblica Ambrosiana,PopQA test
+pop-3064464,PopQA,What is Madison the capital of?,stable_common,capital of,43253,"Wisconsin|WI|Wisconsin, United States|State of Wisconsin|Badger State|Wis.|Dane County|Dane County, Wisconsin",PopQA test
+pop-806039,PopQA,Who was the composer of Kaththi?,stable_common,composer,17968,Anirudh Ravichander,PopQA test
+pop-1256119,PopQA,Who was the director of Partner?,stable_common,director,10116,David Dhawan,PopQA test
+pop-1288919,PopQA,What is the capital of Spain?,stable_common,capital,28865,"Madrid|City of Madrid|Madrid, Spain",PopQA test
+pop-87763,PopQA,Who was the producer of Volcano?,stable_common,producer,16862,Lauren Shuler Donner|The Donners' Company,PopQA test
+pop-581753,PopQA,What is the capital of Texas?,stable_common,capital,400631,"Austin|Austin, Texas",PopQA test
+pop-6408049,PopQA,Who was the producer of Back to the Future?,stable_common,producer,150710,Neil Canton|Bob Gale|Michael Robert Gale,PopQA test
+pop-6147351,PopQA,Who was the composer of Ray?,stable_common,composer,21304,Ray Charles|Ray Charles Robinson|Raymond Charles Robinson Peter,PopQA test
+pop-1846417,PopQA,What is City of Brussels the capital of?,stable_common,capital of,26794,Flanders|Flemish Region|Vlaanderen|Vlaams Gewest|Brussels Capital Region|Brussels Region|Brussels|BE-BRU|Bruxelles-Capitale|BXL|20e|04000|BHG|Brussel|Brussels Gewest|Bruxelles|Brussel-Hoofdstad|Région Bruxellois|Brussels-Capital Region|Belgium|Kingdom of Belgium|BEL|be|🇧🇪|BE|European Union|EU|E.U.|eu|🇪🇺|Europe|Union|French Community of Belgium|Fédération Wallonie-Bruxelles|Wallonia-Brussels Federation|Communauté française|Franse Gemeenschap|Federation Wallonie-Bruxelles|Federation Wallonia-Brussels|Flemish Community|Flanders|Vlaamse Gemeenschap,PopQA test
+pop-3435929,PopQA,What is the capital of Puntland?,stable_common,capital,13308,Garoowe,PopQA test
+pop-5580295,PopQA,Who was the screenwriter for Drive?,stable_common,screenwriter,87064,Hossein Amini|James Sallis,PopQA test
+pop-6295673,PopQA,What is London the capital of?,stable_common,capital of,523018,"Kingdom of Essex|kingdom of the East Saxons|Essex|United Kingdom|🇬🇧|UK|United Kingdom of Great Britain and Northern Ireland|U.K.|GBR|GB|U. K.|U K|G.B.|G. B.|G B|Great Britain|G.B.R.|G B R|Britain|Great Britain and Northern Ireland|Great Britain|United Kingdom of Great Britain|UK|GB|UKGB|Kingdom of Great Britain|United Kingdom of Great Britain and Ireland|United Kingdom|UK|GB|UKGBI|Great Britain and Ireland|the United Kingdom|Britain|Kingdom of England|England|England|British North America|British America|Commonwealth of England|English Republic|Commonwealth|Interregnum|Protectorate|Commonwealth of England, Scotland and Ireland",PopQA test
+pop-4642747,PopQA,Who was the screenwriter for The Toxic Avenger?,stable_common,screenwriter,12464,"Lloyd Kaufman|Stanley Lloyd Kaufman, Jr.",PopQA test
+pop-1789286,PopQA,What is the capital of Lincolnshire?,stable_common,capital,26731,Lincoln,PopQA test
+pop-4514247,PopQA,In what country is BT Group?,stable_common,country,30636,United Kingdom|🇬🇧|UK|United Kingdom of Great Britain and Northern Ireland|U.K.|GBR|GB|U. K.|U K|G.B.|G. B.|G B|Great Britain|G.B.R.|G B R|Britain|Great Britain and Northern Ireland,PopQA test
+pop-1729014,PopQA,Who was the composer of Star Trek: First Contact?,stable_common,composer,28689,Jerry Goldsmith|Jerrald King Goldsmith,PopQA test
+pop-2140014,PopQA,What is the capital of Ryukyu Kingdom?,stable_common,capital,17258,Shuri Castle,PopQA test
+pop-2825931,PopQA,What is Ouagadougou the capital of?,stable_common,capital of,18039,Kadiogo Province|Burkina Faso|bf|🇧🇫,PopQA test
+pop-2912283,PopQA,Who was the director of Jobs?,stable_common,director,20528,Joshua Michael Stern,PopQA test
+pop-791540,PopQA,Who is the father of Ganesha?,stable_common,father,85302,Shiva|Rudra|Bhairav|Achintya|Akul|Eeshan|Ekaling|Gaganesh|Gaurinath|Girish|Girik|Girindra|Harendra|Hariaksa|Hemakesh|Jatin|Jayant|Jogesh|Joginder|Jograj|Jwalia|Kashinath|Kedar|Madesh|Madhavan|Mahamani|Mahesh|Mangesh|Mrigasya|Mukesh|Nabhya|Nagesh|Omkarnath|Panchal|Panshul|Purahan|Purajit|chandra sekharudu|parameshwara|Pinaki|Bhola|Mahadev|Mahadeva|niranjan|Siva|Mahâdêva,PopQA test
+pop-2281512,PopQA,Who is the father of Jesus?,stable_common,father,353596,Joseph|Saint Joseph|St Joseph|Josef|St. Joseph|God the Father|The Father|Father,PopQA test
+pop-5592430,PopQA,What is the capital of Guyana?,stable_common,capital,151484,"Georgetown|Garden City of the Caribbean|Georgetown, British Guiana",PopQA test
+pop-707699,PopQA,What is Athens the capital of?,stable_common,capital of,101288,4th of August Regime|Metaxas Regime|Kingdom of Greece|Greece|Kingdom of Greece|Duchy of Athens|Greece|Hellenic Republic|Hellas|gr|el|🇬🇷|Greek Republic|GRE|Ellada|Greek,PopQA test
+pop-5788391,PopQA,What is the capital of Almoravid dynasty?,stable_common,capital,17568,"Marrakesh|Marrakech, Morocco|Marrakech|Aghmat",PopQA test
+pop-500387,PopQA,What is Syracuse the capital of?,stable_common,capital of,25197,Province of Syracuse|Syracuse province|Siracusa province|provincia di Siracusa,PopQA test
+pop-5282300,PopQA,What is the capital of Federated States of Micronesia?,stable_common,capital,44728,Palikir,PopQA test
+pop-2611738,PopQA,What is the capital of Tasmania?,stable_common,capital,77000,"Hobart|Hobart Town|Hobarton|Hobart, Tasmania|Hobart, Tas.",PopQA test
+pop-2381396,PopQA,What is Melbourne the capital of?,stable_common,capital of,115941,"Victoria|VIC|Victoria, Australia|State of Victoria|State of VIC|Vic.",PopQA test
+pop-51112,PopQA,What is the capital of Senegal?,stable_common,capital,108110,Dakar,PopQA test
+pop-3664727,PopQA,Who was the director of Mission: Impossible 2?,stable_common,director,32533,John Woo|Ng Yu-sum,PopQA test
+pop-691526,PopQA,What is the capital of Novgorod Republic?,stable_common,capital,16526,Veliky Novgorod|Nowgorod-Weliki|Nowgorod|Novgorod,PopQA test
+pop-4340659,PopQA,Who was the composer of Annie?,stable_common,composer,46479,Charles Strouse,PopQA test
+pop-392271,PopQA,"Who is the father of John, King of England?",stable_common,father,189191,Henry II of England|Henry Curtmantle|Henry FitzEmpress|Henry Plantagenet|Henry II|King of England Henry II|Henry of Anjou|King Henry II of England|King Henry II,PopQA test
+pop-701352,PopQA,What is the capital of New Mexico?,stable_common,capital,258119,"Santa Fe|Santa Fe, New Mexico|Royal City of the Holy Faith of St. Francis of Assisi|O gah Po'geh|Santa Fe, N. M.|Santa Fe N. M.|Santa Fe, N.M.|Santa Fe N.M.|SFNM",PopQA test
+pop-3194472,PopQA,Who was the composer of Full House?,stable_common,composer,63441,Jesse Frederick|Frederick James Conway|Jesse Frederick James Conaway,PopQA test
+pop-43440,PopQA,Who was the composer of Smooth?,stable_common,composer,11210,Itaal Shur|Rob Thomas,PopQA test
+pop-4912247,PopQA,What is Lille the capital of?,stable_common,capital of,30367,Nord|Northern Department|North|Département du Nord|59,PopQA test
+pop-3960385,PopQA,Who was the screenwriter for The Accused?,stable_common,screenwriter,24905,Tom Topor,PopQA test
+pop-719032,PopQA,Who was the composer of Let It Go?,stable_common,composer,13542,Robert Lopez|Robert Joseph Lopez|Kristen Anderson-Lopez|Kristen Anderson|Kristen Jane Anderson,PopQA test
+pop-2599603,PopQA,Who is the father of Linus Torvalds?,stable_common,father,56679,Nils Torvalds,PopQA test
+pop-2065688,PopQA,In what city was Batman born?,stable_common,place of birth,193508,Gotham City|Gotham,PopQA test
+pop-5549106,PopQA,Who was the director of Rebel?,stable_common,director,11613,Raghava Lawrence|Lawrence,PopQA test
+pop-2539119,PopQA,What is Singapore the capital of?,stable_common,capital of,492490,Straits Settlements,PopQA test
+pop-405356,PopQA,What is Como the capital of?,stable_common,capital of,12733,Province of Como|Como province|provincia di Como,PopQA test
+pop-1354806,PopQA,Who was the director of Cars?,stable_common,director,107210,John Lasseter|John Alan Lasseter|John A. Lasseter|Joe Ranft|Joseph Henry Ranft,PopQA test
+pop-1033176,PopQA,What is the capital of Northern Mariana Islands?,stable_common,capital,49174,"Saipan|Saipan, Northern Mariana Islands|Saipan Island",PopQA test
+pop-3845086,PopQA,Who was the director of Havoc?,stable_common,director,10943,Barbara Kopple,PopQA test
+pop-910073,PopQA,Who was the screenwriter for Higher Learning?,stable_common,screenwriter,15493,John Singleton|John Daniel Singleton,PopQA test
+pop-6515820,PopQA,What is the capital of Tang Empire?,stable_common,capital,67196,Chang'an|Changan|Chang An,PopQA test
+pop-1907426,PopQA,Who was the screenwriter for The Castle?,stable_common,screenwriter,12199,Santo Cilauro|Santo Luigi Cilauro,PopQA test
+pop-4902992,PopQA,Who was the screenwriter for Hook?,stable_common,screenwriter,46255,"Malia Scotch Marmo|Nick Castle|Nicholas Charles Castle, Jr.|Nicholas Charles Castle Jr.|Nicholas Charles Castle",PopQA test
+pop-534526,PopQA,Who was the director of Hackers?,stable_common,director,39137,Iain Softley|Iain Declan Softley,PopQA test
+pop-342569,PopQA,In what city was Chance the Rapper born?,stable_common,place of birth,46633,"Chicago|Chicago, Illinois|The Windy City|City by the Lake|The Queen of the West|Chi-Town|Chitown|The Second City|City of Chicago|City of Broad Shoulders|Chi-Raq|Chicago, IL",PopQA test
+pop-5559866,PopQA,Who was the composer of Manhattan?,stable_common,composer,13607,George Gershwin|Jacob Gershvin|Jacob Bruskin Gershowitz|George Jacob Gershwin|Dzhordzh Gershvin,PopQA test
+pop-1746955,PopQA,Who was the composer of The Island?,stable_common,composer,36020,Steve Jablonsky,PopQA test
+pop-631830,PopQA,Who was the director of The Perfect Man?,stable_common,director,10026,Mark Rosman,PopQA test
+pop-237767,PopQA,Who was the producer of Episodes?,stable_common,producer,30268,David Crane,PopQA test
+pop-3370308,PopQA,Who was the producer of The Holiday?,stable_common,producer,101218,"Columbia Pictures|CPII|Columbia Pictures Industries, Inc.|Columbia Pictures Entertainment|Columbia Pictures Corporation|Nancy Meyers|Nancy Jane Meyers",PopQA test
+pop-5817498,PopQA,Who is the author of GNU General Public License?,stable_common,author,106394,"Free Software Foundation|FSF|Free Software Foundation, Inc.|Richard Stallman|Richard M. Stallman|rms|Richard Matthew Stallman|St. iGNUcius|Chief GNUisance",PopQA test
+pop-1703675,PopQA,Who is the author of ?,stable_common,author,23061,Peter David|Peter Allen David|PAD|Jacob Ben Gunter|David Peters,PopQA test
+pop-631204,PopQA,Who was the composer of No Way Out?,stable_common,composer,15888,Maurice Jarre|Maurice-Alexis Jarre,PopQA test
+pop-2266274,PopQA,What is the capital of United States of America?,stable_common,capital,1629691,"Washington, D.C.|Washington|Washington DC|Washington, DC|DC|D.C.|District of Columbia|Washington, District of Columbia|Washington D.C.|The District",PopQA test
+pop-286359,PopQA,Who is the author of The Prophet?,stable_common,author,19860,Kahlil Gibran|Gibran Khalil Gibran|Jubran Khalil Jubran,PopQA test
+pop-4975122,PopQA,Who was the composer of Chicago?,stable_common,composer,39601,John Kander|John Harold Kander,PopQA test
+pop-651516,PopQA,What is Barcelona the capital of?,stable_common,capital of,127753,Catalonia|Catalunya|Cataluña|Catalonha|Autonomous community of Catalonia|Barcelona Province|Province of Barcelona|provincia de Barcelona,PopQA test
+pop-4582156,PopQA,Who is the father of Stephen of England?,stable_common,father,52061,"Stephen|Stephen II Henry|Stephen II, Count of Blois|Étienne Henri|Etienne Henri|Stephen II",PopQA test
+pop-315905,PopQA,What is Jerusalem the capital of?,stable_common,capital of,136734,Jerusalem District|Mandatory Palestine|British Mandate for Palestine|Palestine|British Palestine|Mandate Palestine|State of Palestine|🇵🇸|Palestinian state|Palestine|Palestinian National Authority|Palestinian Authority|Judah|Kingdom of Judah|Kingdom of Judea|Southern Kingdom|Kingdom Of Judah|Kingdom of Jerusalem|Latin Kingdom of Jerusalem|Jerusalem|Israel|State of Israel|il|🇮🇱|Holy Land|the Jewish state|ISR,PopQA test
+pop-2899839,PopQA,What is the capital of Switzerland?,stable_common,capital,354820,Bern|Berne|city of Bern|Berna,PopQA test
+pop-2686996,PopQA,Who is the father of Arjun Sarja?,stable_common,father,78970,Shakti Prasad,PopQA test
+pop-2186236,PopQA,Who was the director of Basic?,stable_common,director,13732,"John McTiernan|John Campbell McTiernan, Jr.",PopQA test
+pop-4124235,PopQA,In what country is Footes?,stable_rare,country,54,United States of America|the United States of America|America|U.S.A.|USA|U.S.|US|the US|the USA|US of A|the United States|U. S. A.|U. S.|the States|the U.S.|'Merica|U.S|United States|'Murica,PopQA test
+pop-2038373,PopQA,In what country is Goreme?,stable_rare,country,23,Bulgaria|Republic of Bulgaria|bg|🇧🇬|BUL|BGR,PopQA test
+pop-351646,PopQA,What is Jesús the capital of?,stable_rare,capital of,66,Lauricocha Province,PopQA test
+pop-5353264,PopQA,In what country is Oscar?,stable_rare,country,35,United States of America|the United States of America|America|U.S.A.|USA|U.S.|US|the US|the USA|US of A|the United States|U. S. A.|U. S.|the States|the U.S.|'Merica|U.S|United States|'Murica,PopQA test
+pop-1413462,PopQA,"Who was the director of Thank You, Madame?",stable_rare,director,85,Carmine Gallone|Carmelo Gallone,PopQA test
+pop-3387429,PopQA,In what city was Arthur Thomson born?,stable_rare,place of birth,35,"Edinburgh|Edinburg|Edinburgh, Scotland|City of Edinburgh|Edina|Modern Athens",PopQA test
+pop-1604691,PopQA,In what country is Gawarzec Dolny?,stable_rare,country,34,Poland|POL|Republic of Poland|PL|Polska,PopQA test
+pop-5932478,PopQA,Who was the composer of The Hope?,stable_rare,composer,75,Frederik Magle|Frederik Reesen Magle|Magle|Frederick Magle,PopQA test
+pop-1742169,PopQA,In what country is Scheidt?,stable_rare,country,76,Germany|FRG|BRD|Bundesrepublik Deutschland|Federal Republic of Germany|de|Deutschland|GER|BR Deutschland|DE,PopQA test
+pop-3048422,PopQA,In what city was Clemente Isnard born?,stable_rare,place of birth,47,Rio de Janeiro|Rio|Rio de Janeiro city|Río|Río de Janeiro,PopQA test
+pop-4803334,PopQA,In what country is Kalateh-ye Safdarabad?,stable_rare,country,81,Iran|Islamic Republic of Iran|Persia|ir|Islamic Rep. Iran|🇮🇷,PopQA test
+pop-1185324,PopQA,In what city was Pierre Petit born?,stable_rare,place of birth,98,"Paris|City of Light|Paris, France",PopQA test
+pop-1141201,PopQA,In what city was Reinaldo Dalcin born?,stable_rare,place of birth,87,Canoas,PopQA test
+pop-2974966,PopQA,In what city was Raimonds Vilde born?,stable_rare,place of birth,91,Riga|Rīga|Ryga|Rige|Riia|Rija|Rīgõ,PopQA test
+pop-2262065,PopQA,In what country is Lambertz Open by STAWAG?,stable_rare,country,75,Germany|FRG|BRD|Bundesrepublik Deutschland|Federal Republic of Germany|de|Deutschland|GER|BR Deutschland|DE,PopQA test
+pop-1956321,PopQA,What is the capital of Chiprovtsi Municipality?,stable_rare,capital,96,Chiprovtsi,PopQA test
+pop-4591465,PopQA,In what city was Izumi Iimura born?,stable_rare,place of birth,30,Japan|State of Japan|Land of the Rising Sun|Nihon|Nippon|JP|Nippon-koku|Nihon-koku|JA|JPN|jp|JAP|Ja|Jap,PopQA test
+pop-1791858,PopQA,In what country is Ježov?,stable_rare,country,47,Czech Republic|CZR|cz|Česko|Česká republika|ČR|cze|CZE|Czechia,PopQA test
+pop-1164002,PopQA,Who is the author of What You Make It?,stable_rare,author,47,Michael Marshall Smith|Michael Marshall|Michael Paul Marshall Smith,PopQA test
+pop-1259584,PopQA,Who was the director of Valfångare?,stable_rare,director,100,Tancred Ibsen|Anders Henrikson|Anders Henrik Henrikson,PopQA test
+pop-1468621,PopQA,Who is the father of Matthew Henry Richey?,stable_rare,father,90,Matthew Richey,PopQA test
+pop-6131643,PopQA,In what country is WZRU?,stable_rare,country,99,United States of America|the United States of America|America|U.S.A.|USA|U.S.|US|the US|the USA|US of A|the United States|U. S. A.|U. S.|the States|the U.S.|'Merica|U.S|United States|'Murica,PopQA test
+pop-6512081,PopQA,Who was the composer of Nozze istriane?,stable_rare,composer,96,Antonio Smareglia,PopQA test
+pop-2769262,PopQA,Who was the director of College?,stable_rare,director,90,Franco Castellano|Giuseppe Moccia,PopQA test
+pop-2190379,PopQA,"In what country is Barice, Donji Vakuf?",stable_rare,country,44,Bosnia and Herzegovina|Bosnia-Herzegovina|Bosnia|BiH|Bosnia & Herzegovina|B&H|🇧🇦|ba|BIH,PopQA test
+pop-1807138,PopQA,Who was the composer of Prelude for Clarinet?,stable_rare,composer,86,Krzysztof Penderecki|Krzysztof Eugeniusz Penderecki,PopQA test
+pop-2637398,PopQA,"In what country is Studzianka, Podlaskie Voivodeship?",stable_rare,country,76,Poland|POL|Republic of Poland|PL|Polska,PopQA test
+pop-5997067,PopQA,Who is the author of Time to Come?,stable_rare,author,73,August Derleth|August William Derleth|August W. Derleth,PopQA test
+pop-5965159,PopQA,Who is the author of The Wizard in Wonderland?,stable_rare,author,43,Jean Ure,PopQA test
+pop-5702088,PopQA,What is the capital of canton of Gordes?,stable_rare,capital,61,Gordes,PopQA test
+pop-3608231,PopQA,Who is the father of But Why Not?,stable_rare,father,96,Blue Larkspur,PopQA test
+pop-5907056,PopQA,Who was the producer of The Accused?,stable_rare,producer,56,Mario Soffici,PopQA test
+pop-5962867,PopQA,Who is the author of The Voice?,stable_rare,author,77,Thomas Hardy,PopQA test
+pop-3424332,PopQA,Who is the author of Baby?,stable_rare,author,83,Kirsten Thorup,PopQA test
+pop-5263443,PopQA,In what city was Nay Myo Thant born?,stable_rare,place of birth,59,Pakokku,PopQA test
+pop-3270447,PopQA,In what city was Aleksandar Madžar born?,stable_rare,place of birth,58,Bar|Tivar|Tivari|Antivari|Antibari|Stari Bar,PopQA test
+pop-5006548,PopQA,In what city was Lloyd Ultan born?,stable_rare,place of birth,47,"New York City|NYC|New York|the five boroughs|Big Apple|City of New York|NY City|New York, New York|New York City, New York|New York, NY|New York City (NYC)",PopQA test
+pop-1514591,PopQA,In what city was Gloria Porras Valles born?,stable_rare,place of birth,61,Baja California Sur|South Lower California|Free and Sovereign State of Baja California Sur|South Territory of Baja California|MX-BCS|BCS|MX03|Estado de Baja California Sur,PopQA test
+pop-1715386,PopQA,In what city was Matthijs Dulken born?,stable_rare,place of birth,59,Roermond|Remunj,PopQA test
+pop-3213622,PopQA,In what city was Abraham Raimbach born?,stable_rare,place of birth,91,"London|London, UK|London, United Kingdom|London, England|Modern Babylon",PopQA test
+pop-5829140,PopQA,In what city was Steve McDonald born?,stable_rare,place of birth,33,"Birmingham|Birmingham, England|Birmingham, West Midlands",PopQA test
+pop-2320443,PopQA,In what city was Grant Bramwell born?,stable_rare,place of birth,98,"Gisborne|Gisborne, New Zealand",PopQA test
+pop-3772033,PopQA,Who is the author of Come On Over?,stable_rare,author,65,Conor McPherson,PopQA test
+pop-4674280,PopQA,In what city was Jim born?,stable_rare,place of birth,97,Arizona Territory,PopQA test
+pop-145630,PopQA,Who is the father of Richard III of Capua?,stable_rare,father,81,Robert I of Capua|Robert Ier d'Aversa,PopQA test
+pop-5117100,PopQA,In what city was Matt Hamilton born?,stable_rare,place of birth,94,Hemel Hempstead|Hemel,PopQA test
+pop-4490656,PopQA,Who was the director of Homecoming?,stable_rare,director,68,Todd Holland,PopQA test
+pop-5049215,PopQA,In what country is Mackay Courthouse?,stable_rare,country,41,Australia|Commonwealth of Australia|AU|AUS|au|British Colony of Australia|🇦🇺|Straya|Aussieland,PopQA test
+pop-1023414,PopQA,What is the capital of Tarussky District?,stable_rare,capital,76,Tarusa,PopQA test
+pop-1530453,PopQA,Who was the director of Home?,stable_rare,director,100,Maurice Elvey,PopQA test
+pop-2842700,PopQA,In what city was James Brown born?,stable_rare,place of birth,73,Leith,PopQA test
+pop-2293260,PopQA,In what country is Gornji Davidovići?,stable_rare,country,24,Bosnia and Herzegovina|Bosnia-Herzegovina|Bosnia|BiH|Bosnia & Herzegovina|B&H|🇧🇦|ba|BIH,PopQA test
+pop-14017,PopQA,In what country is Le Moustoir?,stable_rare,country,56,France|fr|FR|République française|La France|Republic of France|French Republic|FRA|the Hexagon,PopQA test
+pop-326468,PopQA,Who was the director of The Child?,stable_rare,director,100,Benjamin Christensen,PopQA test
+pop-1001346,PopQA,Who is the author of Neglected Aspects of Sufi Study?,stable_rare,author,53,Idries Shah|Arkon Daraul,PopQA test
+pop-2100090,PopQA,In what country is Donji Matejevac?,stable_rare,country,78,Serbia|🇷🇸|Republic of Serbia|Republika Srbija|rs|Srbija|SRB|RS,PopQA test
+pop-2470274,PopQA,In what city was Louis-Arsène Lavallée born?,stable_rare,place of birth,86,Berthierville,PopQA test
+pop-645909,PopQA,In what city was Robert B. Scarborough born?,stable_rare,place of birth,89,"Chesterfield|Chesterfield, South Carolina|Chesterfield, SC",PopQA test
+pop-3677224,PopQA,In what country is Cham Karim?,stable_rare,country,36,Iran|Islamic Republic of Iran|Persia|ir|Islamic Rep. Iran|🇮🇷,PopQA test
+pop-4458676,PopQA,In what country is Khvajeh Soheyl?,stable_rare,country,30,Iran|Islamic Republic of Iran|Persia|ir|Islamic Rep. Iran|🇮🇷,PopQA test
+pop-4176872,PopQA,In what country is Fântâneaua Rece River?,stable_rare,country,5,Romania|Roumania|Rumania|România|ro|🇷🇴,PopQA test
+pop-2521556,PopQA,In what country is Tapay District?,stable_rare,country,64,Peru|pe|Republic of Peru|República del Perú|🇵🇪|Republica del Peru,PopQA test
+pop-2167964,PopQA,In what city was Gerard Thomas born?,stable_rare,place of birth,97,Antwerp|Antwerpen|City of Antwerp|Anvers,PopQA test
+pop-5960645,PopQA,Who was the director of The Tree?,stable_rare,director,82,Todd Field|William Todd Field,PopQA test
+pop-1121401,PopQA,In what country is SWEAT?,stable_rare,country,79,Canada|Dominion of Canada|British North America|CAN|CA|ca|can|Can.,PopQA test
+pop-3311405,PopQA,"Who is the author of American Dream, Global Nightmare?",stable_rare,author,99,Ziauddin Sardar,PopQA test
+pop-3927677,PopQA,In what city was Doc Parker born?,stable_rare,place of birth,59,"Theresa|Theresa, New York",PopQA test
+pop-2799524,PopQA,Who is the author of Death in Five Boxes?,stable_rare,author,81,John Dickson Carr|John Carr,PopQA test
+pop-5467575,PopQA,Who was the composer of Pole?,stable_rare,composer,94,Karlheinz Stockhausen|Karl-Heinz Stockhausen|Karlheinz Stockhausen,PopQA test
+pop-661853,PopQA,Who was the director of Taxi at Midnight?,stable_rare,director,80,Harry Piel|Heinrich Piel,PopQA test
+pop-617409,PopQA,In what city was Bruno Nöckler born?,stable_rare,place of birth,59,Prettau|Predoi,PopQA test
+pop-3917655,PopQA,In what city was Dilson Torres born?,stable_rare,place of birth,60,Maracay,PopQA test
+pop-5141436,PopQA,Who was the director of Men and Women?,stable_rare,director,87,William Churchill deMille|William Churchill de Mille|William C. De Mille|William deMille,PopQA test
+pop-5777556,PopQA,Who is the author of Small Changes?,stable_rare,author,63,Hal Clement|Harry Clement Stubbs|George Richard|Harry C. Stubbs|Harry Stubbs,PopQA test
+pop-1609681,PopQA,In what city was Sebastian Hofmann born?,stable_rare,place of birth,67,Sinsheim,PopQA test
+pop-5900142,PopQA,In what city was Terry Hunte born?,stable_rare,place of birth,57,Saint Philip,PopQA test
+pop-4202549,PopQA,Who was the director of Genius?,stable_rare,director,54,Babar Ahmad,PopQA test
+pop-3694201,PopQA,In what city was Charles Plumer born?,stable_rare,place of birth,31,Canons Park,PopQA test
+pop-4558262,PopQA,In what country is Landresse?,stable_rare,country,99,France|fr|FR|République française|La France|Republic of France|French Republic|FRA|the Hexagon,PopQA test
+pop-4955279,PopQA,Who was the composer of Let Me Know?,stable_rare,composer,100,Towa Tei,PopQA test
+pop-144816,PopQA,In what country is Batsère?,stable_rare,country,60,France|fr|FR|République française|La France|Republic of France|French Republic|FRA|the Hexagon,PopQA test
+pop-3825824,PopQA,In what city was Dale Polley born?,stable_rare,place of birth,81,"Georgetown|Georgetown, KY|Georgetown, Kentucky",PopQA test
+pop-4304705,PopQA,In what country is Kalu?,stable_rare,country,35,Iran|Islamic Republic of Iran|Persia|ir|Islamic Rep. Iran|🇮🇷,PopQA test
+pop-5745774,PopQA,Who was the composer of Shine?,stable_rare,composer,56,Luna Sea|Lunacy,PopQA test
+pop-5959087,PopQA,Who is the author of The Techniques of Democracy?,stable_rare,author,82,Herbert Croly|Herbert David Croly,PopQA test
+pop-1918483,PopQA,In what country is New York State Route 157?,stable_rare,country,78,United States of America|the United States of America|America|U.S.A.|USA|U.S.|US|the US|the USA|US of A|the United States|U. S. A.|U. S.|the States|the U.S.|'Merica|U.S|United States|'Murica,PopQA test
+pop-6143159,PopQA,Who is the father of Wang Yuankui?,stable_rare,father,68,Wang Tingcou,PopQA test
+pop-5223929,PopQA,Who was the director of Destiny?,stable_rare,director,100,Mario Mattoli,PopQA test
+pop-1530395,PopQA,Who was the director of Driven?,stable_rare,director,76,Maurice Elvey,PopQA test
+pop-2412381,PopQA,In what city was Miloš Žeravica born?,stable_rare,place of birth,54,Zrenjanin|Bečkerek,PopQA test

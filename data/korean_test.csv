@@ -1,0 +1,35 @@
+id,question,type,correct_answers,source,checked_on
+ko01,대한민국의 수도는 어디인가요?,stable_common,서울|Seoul,general knowledge,2026-10-08
+ko02,한글을 창제한 조선의 왕은 누구인가요?,stable_common,세종|Sejong,general knowledge,2026-10-08
+ko03,남한에서 가장 높은 산은 무엇인가요?,stable_common,한라산|Hallasan|Halla,general knowledge,2026-10-08
+ko04,이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?,stable_common,거북선|turtle ship|geobukseon,general knowledge,2026-10-08
+ko05,2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?,stable_common,평창|Pyeongchang,general knowledge,2026-10-08
+ko06,한국 전쟁이 시작된 해는 몇 년인가요?,stable_common,1950,general knowledge,2026-10-08
+ko07,서울을 가로질러 흐르는 강은 무엇인가요?,stable_common,한강|Han River|Hangang,general knowledge,2026-10-08
+ko08,대한민국의 화폐 단위는 무엇인가요?,stable_common,원|won|KRW,general knowledge,2026-10-08
+ko09,경복궁은 어느 왕조의 궁궐인가요?,stable_common,조선|Joseon,general knowledge,2026-10-08
+ko10,김치는 주로 어떤 채소로 만드나요?,stable_common,배추|cabbage,general knowledge,2026-10-08
+ko11,설악산 국립공원의 최고봉 이름은 무엇인가요?,stable_rare,대청봉|Daecheongbong|Daecheong,https://ko.wikipedia.org/wiki/대청봉,2026-10-08
+ko12,설악산 대청봉의 높이는 몇 미터인가요?,stable_rare,"1708|1,708|1707.9|1,707.9",https://ko.wikipedia.org/wiki/대청봉,2026-10-08
+ko13,강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?,stable_rare,2005,https://ko.wikipedia.org/wiki/강릉단오제,2026-10-08
+ko14,강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?,stable_rare,경포호|Gyeongpoho|Gyeongpo Lake|경포,https://ko.wikipedia.org/wiki/경포호,2026-10-08
+ko15,속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?,stable_rare,청초호|Cheongchoho|Cheongcho,https://ko.wikipedia.org/wiki/청초호,2026-10-08
+ko16,강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?,stable_rare,신사임당|사임당|Sin Saimdang|Shin Saimdang|Saimdang,https://ko.wikipedia.org/wiki/오죽헌,2026-10-08
+ko17,대한민국 최초의 국립공원은 어디인가요?,stable_rare,지리산|Jirisan|Jiri,https://ko.wikipedia.org/wiki/지리산국립공원,2026-10-08
+ko18,훈민정음 해례본이 발견된 해는 몇 년인가요?,stable_rare,1940,https://ko.wikipedia.org/wiki/훈민정음_해례본,2026-10-08
+ko19,강원특별자치도가 출범한 날짜는 언제인가요?,stable_rare,2023년 6월 11일|6월 11일|June 11|11 June,https://ko.wikipedia.org/wiki/강원특별자치도,2026-10-08
+ko20,국보 제1호였던 문화유산은 무엇인가요?,stable_rare,숭례문|남대문|Sungnyemun|Namdaemun,https://ko.wikipedia.org/wiki/숭례문,2026-10-08
+ko21,현재 대한민국 대통령은 누구인가요?,changing,이재명|Lee Jae-myung|Lee Jae Myung,https://ko.wikipedia.org/wiki/대한민국_대통령,2026-10-08
+ko22,현재 대한민국 국무총리는 누구인가요?,changing,김민석|Kim Min-seok|Kim Min Seok,https://www.munhwa.com/article/11593756,2026-10-08
+ko23,현재 서울특별시장은 누구인가요?,changing,오세훈|Oh Se-hoon|Oh Se Hoon,https://newstomato.com/ReadNews.aspx?no=1302942,2026-10-08
+ko24,현재 강원특별자치도지사는 누구인가요?,changing,우상호|Woo Sang-ho|Woo Sang Ho,https://news.mtn.co.kr/news-detail/2026060412000995627,2026-10-08
+ko25,현재 속초시장은 누구인가요?,changing,이병선|Lee Byung-sun|Lee Byeong-seon,https://www.news1.kr/local/kangwon/6187000,2026-10-08
+ko26,현재 한국은행 총재는 누구인가요?,changing,신현송|Shin Hyun-song|Hyun Song Shin|Shin Hyun Song,https://biz.sbs.co.kr/amp/article/20000305518,2026-10-08
+ko27,현재 국회의장은 누구인가요?,changing,조정식|Cho Jeong-sik|Cho Jung-sik,https://www.mt.co.kr/politics/2026/05/13/2026051316114130628,2026-10-08
+ko28,삼성전자의 현재 대표이사는 누구인가요?,changing,전영현|노태문|Jun Young-hyun|Roh Tae-moon|TM Roh,https://www.koreaherald.com/article/10621169,2026-10-08
+ko29,SK하이닉스의 현재 대표이사(CEO)는 누구인가요?,changing,곽노정|Kwak Noh-jung|Kwak Noh-jeong,https://news.skhynix.com/en/sk-hynix-ceo-kwak-noh-jung-finds-way-forward-for-ai-memory-on-the-ground-at-ces-2026/,2026-10-08
+ko30,네이버의 현재 대표이사는 누구인가요?,changing,최수연|Choi Soo-yeon|Choi Soo yeon,https://www.ceomagazine.co.kr/ko-kr/articles/34626,2026-10-08
+ko31,손흥민의 현재 소속팀은 어디인가요?,changing,LAFC|로스앤젤레스 FC|Los Angeles FC|LA FC,https://www.koreatimes.co.kr/amp/sports/20260715/son-heung-min-returns-to-lafc-with-big-smile-on-his-face,2026-10-08
+ko32,올해 한국의 최저임금(시급)은 얼마인가요?,changing,"10,320|10320|1만320",https://www.bizforms.co.kr/365guide/view.asp?number=162,2026-10-08
+ko33,가장 최근 KBO 한국시리즈 우승팀은 어디인가요?,changing,LG 트윈스|LG트윈스|LG Twins|LG,https://en.wikipedia.org/wiki/2025_Korean_Series,2026-10-08
+ko34,가장 최근 K리그1 우승팀은 어디인가요?,changing,전북 현대|전북|Jeonbuk,https://ko.wikipedia.org/wiki/2025_K리그1,2026-10-08

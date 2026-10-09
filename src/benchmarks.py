@@ -189,8 +189,80 @@ def load() -> list[dict]:
     return list(csv.DictReader(BENCHMARK.open(encoding="utf-8")))
 
 
+# ---------- larger benchmark ----------
+# The first 200 questions stay exactly as they are (so saved answers are reused);
+# new questions are added on top until each group reaches its target.
+LARGE_FRESHQA_PER_TYPE = 80     # never / slow / fast-changing  -> 240
+LARGE_POPQA_PER_TYPE = 130      # famous / rare                  -> 260   (total 500)
+
+
+def more_popqa(rows: list[dict], pages: int) -> list[dict]:
+    """Download extra PopQA pages and add them to the saved sample."""
+    print(f"Downloading {pages} more PopQA pages ...", flush=True)
+    have = {r.get("id") for r in rows}
+    total = json.loads(_fetch(POPQA_URL + "&offset=0&length=1")).get("num_rows_total", 14267)
+    rng = random.Random(SEED + len(rows))
+    for off in sorted(rng.sample(range(0, total - 100, 100), pages)):
+        data = json.loads(_fetch(POPQA_URL + f"&offset={off}&length=100"))
+        rows += [x["row"] for x in data["rows"] if x["row"].get("id") not in have]
+        have |= {x["row"].get("id") for x in data["rows"]}
+        time.sleep(1)
+    (RAW / "popqa_sample.json").write_text(json.dumps(rows, ensure_ascii=False), encoding="utf-8")
+    return rows
+
+
+def extend(fresh_per_type: int = LARGE_FRESHQA_PER_TYPE,
+           pop_per_type: int = LARGE_POPQA_PER_TYPE) -> list[dict]:
+    items = load()                                   # existing questions first, unchanged
+    used = {i["question"] for i in items}
+    rng = random.Random(SEED + 1)
+    fresh_rows = load_freshqa()
+    test = [r for r in fresh_rows if r.get("fact_type") in TIME_GROUP and r["answers"]
+            and r.get("false_premise", "").upper() != "TRUE" and r.get("split", "").upper() == "TEST"]
+    for ft in TIME_GROUP:
+        have = sum(i["fact_type"] == ft for i in items)
+        pool = [r for r in test if r["fact_type"] == ft and r["question"] not in used]
+        for r in rng.sample(pool, max(0, min(fresh_per_type - have, len(pool)))):
+            items.append({"id": f"fqa-{r.get('id', '')}", "source": "FreshQA", "question": r["question"],
+                          "type": "stable_freshqa" if ft == "never-changing" else "changing",
+                          "fact_type": ft, "popularity": "",
+                          "correct_answers": "|".join(r["answers"]), "version": FRESHQA_VERSION})
+            used.add(r["question"])
+
+    pop_rows = load_popqa()
+    kinds = [("stable_common", lambda p: p >= COMMON_MIN_VIEWS),
+             ("stable_rare", lambda p: p <= RARE_MAX_VIEWS)]
+
+    def pool_for(keep):
+        return [r for r in pop_rows if r.get("prop") in POPQA_PROPS and _answers(r)
+                and r["question"] not in used and keep(int(r.get("s_pop") or 0))]
+    # enough candidates for the test AND ~150 spare questions for time-check training
+    while any(len(pool_for(k)) < pop_per_type - sum(i["type"] == t for i in items) + 80
+              for t, k in kinds) and len(pop_rows) < 6000:
+        pop_rows = more_popqa(pop_rows, 10)
+    for t, keep in kinds:
+        have = sum(i["type"] == t for i in items)
+        pool = pool_for(keep)
+        for r in rng.sample(pool, max(0, min(pop_per_type - have, len(pool)))):
+            items.append({"id": f"pop-{r.get('id', '')}", "source": "PopQA", "question": r["question"],
+                          "type": t, "fact_type": r["prop"], "popularity": r.get("s_pop", ""),
+                          "correct_answers": "|".join(_answers(r)), "version": "PopQA test"})
+            used.add(r["question"])
+
+    with BENCHMARK.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(items)
+    with TIME_TRAIN.open("w", newline="", encoding="utf-8") as f:   # never overlaps the test set
+        w = csv.DictWriter(f, fieldnames=["question", "label", "category"])
+        w.writeheader()
+        w.writerows(time_training(fresh_rows, pop_rows, used))
+    return items
+
+
 if __name__ == "__main__":
-    items = build()
+    import sys
+    items = extend() if "--large" in sys.argv else build()
     from collections import Counter
     print(f"Saved {len(items)} questions to {BENCHMARK.relative_to(ROOT)}")
     for (src, t), n in sorted(Counter((i["source"], i["type"]) for i in items).items()):

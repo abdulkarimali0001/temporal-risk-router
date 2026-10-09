@@ -16,12 +16,15 @@ OLLAMA_HOST = "http://localhost:11434"
 
 
 def load_env():
-    env = ROOT / ".env"
-    if env.exists():
-        for line in env.read_text().splitlines():
-            if "=" in line and not line.strip().startswith("#"):
-                k, v = line.split("=", 1)
-                os.environ.setdefault(k.strip(), v.strip())
+    """Settings and keys from .env and keys.txt (both stay on this computer, never uploaded)."""
+    for name in (".env", "keys.txt"):
+        env = ROOT / name
+        if env.exists():
+            for line in env.read_text().splitlines():
+                if "=" in line and not line.strip().startswith("#"):
+                    k, v = line.split("=", 1)
+                    if v.strip():
+                        os.environ.setdefault(k.strip(), v.strip())
 
 
 def backend() -> str:

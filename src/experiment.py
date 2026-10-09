@@ -53,7 +53,18 @@ STALE_AFTER_YEARS = 1.0
 CONFIDENCE_THRESHOLD = 70
 # "search" = first version (plain page text, a few paragraphs);
 # "search_v2" = full pages with infoboxes and tables, merged queries, BM25 passage ranking
-SEARCH_VERSION = "search_v2"
+# "search_v3" = search_v2 + live web search (Tavily), used when a Tavily key is set
+SEARCH_LABELS = {"search": "First search (Wikipedia text)",
+                 "search_v2": "Improved Wikipedia search",
+                 "search_v3": "Wikipedia + live web"}
+
+
+def search_version() -> str:
+    from src import search as _s
+    return "search_v3" if _s.web_enabled() else "search_v2"
+
+
+SEARCH_VERSION = search_version()
 CONF_PROMPT = ("Today's date is {today}. How confident are you that you know the correct, "
                "up-to-date answer to this question, without looking anything up? "
                "Reply with one number from 0 to 100 only.\n\nQuestion: {q}")
@@ -215,6 +226,7 @@ def write_report(rows: list[dict], total: int):
     L = [f"# Experiment: when should the AI search?\n",
          f"Model `{llm.model_name()}` · {date.today()} · {n}/{total} questions from public benchmarks "
          f"(FreshQA {benchmarks.FRESHQA_VERSION}, PopQA)\n",
+         f"Search used by the methods below: **{SEARCH_LABELS[SEARCH_VERSION]}**.\n",
          "## Main result\n",
          "| Method | Correct (95% interval) | Wrong | No guess | Searched |",
          "|---|---|---|---|---|"]
@@ -241,21 +253,19 @@ def write_report(rows: list[dict], total: int):
             L.append(f"| {name} | " + " | ".join(
                 f"{sum(r[f'{m}::searched'] for r in sub) / len(sub):.0%}" for m in METHODS[2:7]) + " |")
 
-    old = [r for r in rows if r.get("search_v1_score")]
-    if old:
-        L += ["", "## Search quality: first version vs. improved search\n",
-              "Accuracy when ALWAYS searching, by question type "
-              "(improved = full pages with infoboxes and tables, merged queries, BM25 ranking).\n",
-              "| Question type | First search | Improved search |", "|---|---|---|"]
-        for t, name in TYPES.items():
-            sub = [r for r in old if r["type"] == t]
+    versions = [v for v in SEARCH_LABELS if any(r.get(f"{v}::score") for r in rows)]
+    if len(versions) > 1:
+        both = [r for r in rows if all(r.get(f"{v}::score") for v in versions)]
+        L += ["", "## Search quality: each version of the search\n",
+              f"Accuracy when ALWAYS searching ({len(both)} questions answered by every version).\n",
+              "| Question type | " + " | ".join(SEARCH_LABELS[v] for v in versions) + " |",
+              "|---|" + "---|" * len(versions)]
+        for t, name in list(TYPES.items()) + [("all", "**All**")]:
+            sub = [r for r in both if t == "all" or r["type"] == t]
             if sub:
-                a = sum(r["search_v1_score"] == "correct" for r in sub) / len(sub)
-                b_ = sum(r["search_score"] == "correct" for r in sub) / len(sub)
-                L.append(f"| {name} | {a:.0%} | {b_:.0%} |")
-        a = sum(r["search_v1_score"] == "correct" for r in old) / len(old)
-        b_ = sum(r["search_score"] == "correct" for r in old) / len(old)
-        L.append(f"| **All** | **{a:.0%}** | **{b_:.0%}** |")
+                L.append(f"| {name} | " + " | ".join(
+                    f"{sum(r[f'{v}::score'] == 'correct' for r in sub) / len(sub):.0%}"
+                    for v in versions) + " |")
 
     fresh = [r for r in rows if r["source"] == "FreshQA"]
     if fresh:
@@ -326,8 +336,8 @@ def main():
                "confidence": c["confidence"], "memory": c["memory"], "memory_score": mem_score,
                "search": srch["answer"], "search_score": srch_score, "query": srch["query"],
                "sources": " ".join(srch["sources"]),
-               "search_v1": c.get("search", ""),
-               "search_v1_score": score(c["search"], aliases) if "search" in c else ""}
+               **{f"{v}::score": score(c[v] if v == "search" else c[v]["answer"], aliases)
+                  for v in SEARCH_LABELS if v in c}}
         for m, searched in decisions(group, kc["knows"], c["confidence"], mem_score == "correct",
                                      stale).items():
             row[f"{m}::searched"] = searched
@@ -337,7 +347,7 @@ def main():
               f"router: {'search' if row['Router (ours)::searched'] else 'memory'}", flush=True)
 
         with out_path(CSV_OUT).open("w", newline="", encoding="utf-8") as f:   # save after every question
-            w = csv.DictWriter(f, fieldnames=list(rows[0]))
+            w = csv.DictWriter(f, fieldnames=list(dict.fromkeys(k for r in rows for k in r)), restval="")
             w.writeheader()
             w.writerows(rows)
         if i % 10 == 0 or i == len(items):

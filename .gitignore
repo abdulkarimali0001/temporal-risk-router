@@ -6,3 +6,4 @@ results/*.log
 .DS_Store
 data/raw/
 results/page_cache.json
+keys.txt

@@ -1,0 +1,1632 @@
+[
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "What is the total height of the tallest building in the world?",
+  "accepted": [
+   "829.8 m",
+   "2,722 ft"
+  ],
+  "answer": "The total height of the tallest building in the world is 828 meters [3].",
+  "auto": "wrong",
+  "id": "r001"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many countries has President Donald Trump visited during his current presidency?",
+  "accepted": [
+   "14",
+   "President Donald Trump has made 9 international trips to 14 countries during his second presidency, which began on January 20, 2025."
+  ],
+  "answer": "President Donald Trump has visited 17 countries during his current presidency [1].",
+  "auto": "wrong",
+  "id": "r002"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "When will the largest marathon in the world start this year?",
+  "accepted": [
+   "Nov 1, 2026",
+   "November 1, 2026",
+   "1 Nov 2026",
+   "1 November 2026",
+   "11/1/2026"
+  ],
+  "answer": "The largest marathon in the world, the Tokyo Marathon, typically takes place in March. This year, it will start on March 19, 2023.",
+  "auto": "wrong",
+  "id": "r003"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "Who was the director of The Changeling?",
+  "accepted": [
+   "Peter Medak"
+  ],
+  "answer": "Peter Medak was the director of The Changeling [1].",
+  "auto": "correct",
+  "id": "r004"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what country is Panaitoliko?",
+  "accepted": [
+   "Greece",
+   "Hellenic Republic",
+   "Hellas",
+   "gr",
+   "el"
+  ],
+  "answer": "Panaitoliko is in Greece [1].",
+  "auto": "correct",
+  "id": "r005"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "Which company developed Overwatch?",
+  "accepted": [
+   "Blizzard Entertainment",
+   "Blizzard"
+  ],
+  "answer": "Blizzard Entertainment developed Overwatch [1].",
+  "auto": "correct",
+  "id": "r006"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "Who was the composer of One More Time?",
+  "accepted": [
+   "James LaBrie",
+   "Kevin James LaBrie",
+   "00219295358 IPI"
+  ],
+  "answer": "\"One More Time\" is a song by Daft Punk, released in 2001, not specifically composed by another artist in 2026.",
+  "auto": "wrong",
+  "id": "r007"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "What was the first episode of The Simpsons to have all female creative leads?",
+  "accepted": [
+   "You Won't Believe What This Episode Is About – Act Three Will Shock You!",
+   "the 14th episode of the 33rd season",
+   "Episode 14 Season 33"
+  ],
+  "answer": "The first episode of The Simpsons to have all female creative leads was \"The Way We Was,\" which aired on February 18, 2018.",
+  "auto": "wrong",
+  "id": "r008"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Leobardo Soto born?",
+  "accepted": [
+   "Puebla",
+   "Free and Sovereign State of Puebla",
+   "Estado de Puebla"
+  ],
+  "answer": "I don't have information on where Leobardo Soto was born.",
+  "auto": "no guess",
+  "id": "r009"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who was the most recent woman to become President of Peru?",
+  "accepted": [
+   "Dina Boluarte",
+   "Dina Ercilia Boluarte Zegarra"
+  ],
+  "answer": "Keiko Fujimori [2].",
+  "auto": "wrong",
+  "id": "r010"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "What is the capital of Bourbon Restoration?",
+  "accepted": [
+   "Paris",
+   "City of Light",
+   "Paris, France"
+  ],
+  "answer": "The capital of the Bourbon Restoration in France was Paris [2].",
+  "auto": "correct",
+  "id": "r011"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who won the latest Ballon D'or?",
+  "accepted": [
+   "Dembélé",
+   "Ousmane Dembélé",
+   "Masour Ousmane Dembélé"
+  ],
+  "answer": "Ousmane Dembélé won the latest Ballon d'Or, which was the 69th edition in 2025 [1].",
+  "auto": "correct",
+  "id": "r012"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "What is the latest highest-grossing movie of the week at the Box office?",
+  "accepted": [
+   "The Super Mario Galaxy Movie"
+  ],
+  "answer": "Bethlehem Kudumba Unit | ₹332 crore [1]",
+  "auto": "wrong",
+  "id": "r013"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "changing",
+  "question": "On what date in North America did the most recent Microsoft's Patch Tuesday come out?",
+  "accepted": [
+   "Apr 14, 2026",
+   "April 14, 2026",
+   "14 Apr 2026",
+   "14 April 2026",
+   "04/14/2026"
+  ],
+  "answer": "To provide an accurate answer, I would need to check the most recent Patch Tuesday for Microsoft that occurred before or on October 4, 2026. Patch Tuesdays typically occur on the second Tuesday of each month.",
+  "auto": "wrong",
+  "id": "r014"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "What was the first episode of The Simpsons to have all female creative leads?",
+  "accepted": [
+   "You Won't Believe What This Episode Is About – Act Three Will Shock You!",
+   "the 14th episode of the 33rd season",
+   "Episode 14 Season 33"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r015"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who is the father of Michael Jackson?",
+  "accepted": [
+   "Joe Jackson",
+   "Joseph Walter Jackson"
+  ],
+  "answer": "The father of Michael Jackson is Joseph Walter Jackson.",
+  "auto": "correct",
+  "id": "r016"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Tsugumi Higasayama born?",
+  "accepted": [
+   "Saitama Prefecture",
+   "Saitama-ken"
+  ],
+  "answer": "Tsugumi Higasayama was born in Tokyo, Japan.",
+  "auto": "wrong",
+  "id": "r017"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who is the father of Sydney Chaplin?",
+  "accepted": [
+   "Charlie Chaplin",
+   "Charles Spencer Chaplin",
+   "Charles Chaplin",
+   "Sir Charles Spencer Chaplin"
+  ],
+  "answer": "The father of Sydney Chaplin is Charlie Chaplin.",
+  "auto": "correct",
+  "id": "r018"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Scott McCuaig born?",
+  "accepted": [
+   "Surrey",
+   "Surrey, British Columbia"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r019"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who posted the most-liked TikTok video?",
+  "accepted": [
+   "Bella Poarch"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r020"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "What class of beer is top-fermenting?",
+  "accepted": [
+   "ales",
+   "ale"
+  ],
+  "answer": "Top-fermenting beers are typically classified as ales. This process involves yeast that ferments at warmer temperatures, usually between 15°C to 20°C.",
+  "auto": "correct",
+  "id": "r021"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Clarence Beck born?",
+  "accepted": [
+   "Harrisburg",
+   "Capital of Pennsylvania",
+   "Harrisburg, Pennsylvania"
+  ],
+  "answer": "Mount Vernon, Washington [2]",
+  "auto": "wrong",
+  "id": "r022"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "How old is David Beckham's oldest son?",
+  "accepted": [
+   "27 years old",
+   "27"
+  ],
+  "answer": "David Beckham's oldest son, Brooklyn Beckham, was born on March 4, 1999, which makes him 27 years old.",
+  "auto": "correct",
+  "id": "r023"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "How far did the United States representative go at the last Miss World?",
+  "accepted": [
+   "Top 20"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r024"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "Who is the father of Melora Hardin?",
+  "accepted": [
+   "Jerry Hardin"
+  ],
+  "answer": "Jerry Hardin [3]",
+  "auto": "correct",
+  "id": "r025"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who was the director of Iron Man?",
+  "accepted": [
+   "Jon Favreau",
+   "Jonathan Favreau",
+   "Jonathan Kolia Favreau"
+  ],
+  "answer": "The director of Iron Man was Jon Favreau.",
+  "auto": "correct",
+  "id": "r026"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Ricardo Sánchez born?",
+  "accepted": [
+   "Guadalajara",
+   "Guadalajara, Jalisco",
+   "Guadalajara, Jalisco, Mexico",
+   "Guadalajara, Mexico",
+   "Guadalajara, México"
+  ],
+  "answer": "Rio Grande City, Texas [2]",
+  "auto": "wrong",
+  "id": "r027"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who was the director of La Haine?",
+  "accepted": [
+   "Mathieu Kassovitz",
+   "Matthieu Kassovitz"
+  ],
+  "answer": "The director of La Haine was Mathieu Kassovitz.",
+  "auto": "correct",
+  "id": "r028"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "Is there a total solar eclipse in the continental US this year?",
+  "accepted": [
+   "No"
+  ],
+  "answer": "There is a total solar eclipse in the continental US this year, on April 8, 2024. [2]",
+  "auto": "wrong",
+  "id": "r029"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "Who won the 2022 Nobel Prize in Chemistry from University of Copenhagen, Denmark?",
+  "accepted": [
+   "Morten Meldal",
+   "Morten Peter Meldal",
+   "Morten Peter Meldal"
+  ],
+  "answer": "The 2022 Nobel Prize in Chemistry was awarded to Carolyn R. Bertozzi, Carolyn R. Bertozzi from the University of California, Berkeley, not the University of Copenhagen, Denmark.",
+  "auto": "wrong",
+  "id": "r030"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "What is the capital of Chile?",
+  "accepted": [
+   "Santiago",
+   "Santiago de Chile",
+   "Santiago, Chile"
+  ],
+  "answer": "The capital of Chile is Santiago.",
+  "auto": "correct",
+  "id": "r031"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "How many Chinese paddlefish are left in the wild?",
+  "accepted": [
+   "zero",
+   "none",
+   "Chinese paddlefish was declared extinct by the International Union for Conservation of Nature in 2022."
+  ],
+  "answer": "Unfortunately, there are no Chinese paddlefish left in the wild; the species is officially extinct.",
+  "auto": "wrong",
+  "id": "r032"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who is the current ATP top-ranked men's singles tennis player?",
+  "accepted": [
+   "Jannik Sinner"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r033"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who was the director of The Collection?",
+  "accepted": [
+   "Marcus Dunstan"
+  ],
+  "answer": "The director of The Collection is John Crowley.",
+  "auto": "wrong",
+  "id": "r034"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was John Edgerton born?",
+  "accepted": [
+   "Johnston County",
+   "Johnston County, North Carolina"
+  ],
+  "answer": "I don't have information on a person named John Edgerton.",
+  "auto": "no guess",
+  "id": "r035"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "Who was the director of Those Who Love?",
+  "accepted": [
+   "Manning Haynes",
+   "Horace Manning Haynes"
+  ],
+  "answer": "Patrice Chéreau [2].",
+  "auto": "wrong",
+  "id": "r036"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was John Edgerton born?",
+  "accepted": [
+   "Johnston County",
+   "Johnston County, North Carolina"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r037"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "changing",
+  "question": "What country does the most recent Time Magazine's Entertainer of the Year come from?",
+  "accepted": [
+   "the USA",
+   "USA",
+   "the United States",
+   "United States",
+   "U.S."
+  ],
+  "answer": "As of 2026-10-08, the most recent Time Magazine's Entertainer of the Year is not yet determined, as the award is given annually and the most recent issue would be for 2026.",
+  "auto": "wrong",
+  "id": "r038"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "When did David Bowie die?",
+  "accepted": [
+   "2016",
+   "Jan 10, 2016",
+   "January 10, 2016",
+   "10 Jan 2016",
+   "10 January 2016"
+  ],
+  "answer": "David Bowie died on January 10, 2016.",
+  "auto": "correct",
+  "id": "r039"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "What is the seating capacity of the largest stadium by capacity in the world?",
+  "accepted": [
+   "132,000",
+   "132K"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r040"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "Who were the finalists in the US Open women's singles last year?",
+  "accepted": [
+   "Aryna Sabalenka and Amanda Anisimova",
+   "Amanda Anisimova and Aryna Sabalenka"
+  ],
+  "answer": "The US Open women's singles took place in 2025. The finalists were Iga Świątek and Ons Jabeur.",
+  "auto": "wrong",
+  "id": "r041"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "What is the total height of the tallest building in the world?",
+  "accepted": [
+   "829.8 m",
+   "2,722 ft"
+  ],
+  "answer": "The total height of the tallest building in the world is 828 m (2,717 ft) for the Burj Khalifa in Dubai, United Arab Emirates. [2]",
+  "auto": "wrong",
+  "id": "r042"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Anders Orvin born?",
+  "accepted": [
+   "Hattfjelldal"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r043"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "What class of beer is top-fermenting?",
+  "accepted": [
+   "ales",
+   "ale"
+  ],
+  "answer": "Top-fermenting beers belong to the ale class.",
+  "auto": "correct",
+  "id": "r044"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many times has The Pokémon World Championships been held in Asia?",
+  "accepted": [
+   "one"
+  ],
+  "answer": "The Pokémon World Championships has been held in Asia twice, once in Japan in 2023 and potentially in Singapore in 2027. [2]",
+  "auto": "wrong",
+  "id": "r045"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "Which was the first country to detect a case of mpox in the most recent outbreak?",
+  "accepted": [
+   "DR Congo",
+   "Democratic Republic of the Congo"
+  ],
+  "answer": "The first country to detect a case of mpox in the 2022 outbreak was Portugal.",
+  "auto": "wrong",
+  "id": "r046"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who was the director of Memories?",
+  "accepted": [
+   "Katsuhiro Otomo",
+   "Katsuhiro Ōtomo",
+   "Tensai Okamura"
+  ],
+  "answer": "I'm sorry, but \"Memories\" could refer to multiple works. Could you please specify which \"Memories\" you are referring to, such as the film or the book?",
+  "auto": "wrong",
+  "id": "r047"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Aarno Maliniemi born?",
+  "accepted": [
+   "Oulu",
+   "Uleåborg",
+   "Uleaborg"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r048"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "When did Elon Musk officially become Twitter's owner?",
+  "accepted": [
+   "Oct 27, 2022",
+   "October 27, 2022",
+   "27 Oct 2022",
+   "27 October 2022",
+   "10/27/2022"
+  ],
+  "answer": "Elon Musk officially became Twitter's owner on October 28, 2022 [1].",
+  "auto": "wrong",
+  "id": "r049"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "Who is the father of Sydney Chaplin?",
+  "accepted": [
+   "Charlie Chaplin",
+   "Charles Spencer Chaplin",
+   "Charles Chaplin",
+   "Sir Charles Spencer Chaplin"
+  ],
+  "answer": "Charlie Chaplin [1] and Charles Chaplin Sr. [2].",
+  "auto": "correct",
+  "id": "r050"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "Who won the 2022 Nobel Prize in Chemistry from University of Copenhagen, Denmark?",
+  "accepted": [
+   "Morten Meldal",
+   "Morten Peter Meldal",
+   "Morten Peter Meldal"
+  ],
+  "answer": "Morten Meldal (1954), Nobel laureate in chemistry (2022) for his invention of Click chemistry [2].",
+  "auto": "correct",
+  "id": "r051"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "Which company developed Overwatch?",
+  "accepted": [
+   "Blizzard Entertainment",
+   "Blizzard"
+  ],
+  "answer": "Overwatch was developed by Blizzard Entertainment.",
+  "auto": "correct",
+  "id": "r052"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "Where is Gil Evans from?",
+  "accepted": [
+   "Toronto, Canada",
+   "Toronto",
+   "Toronto, Ontario, Canada",
+   "Ontario, Canada",
+   "Canada"
+  ],
+  "answer": "Gil Evans was born in Montreal, Canada.",
+  "auto": "correct",
+  "id": "r053"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "What is the latest highest-grossing movie of the week at the Box office?",
+  "accepted": [
+   "The Super Mario Galaxy Movie"
+  ],
+  "answer": "The latest highest-grossing movie of the week at the Box office is Spider-Man: Brand New Day, with an initial gross of $954,994,964 as of 2026 [1].",
+  "auto": "wrong",
+  "id": "r054"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "How many books has Shoshana Zuboff published?",
+  "accepted": [
+   "3",
+   "three"
+  ],
+  "answer": "Shoshana Zuboff has published 2 books: \"The Support Economy\" (2004) and \"The Age of Surveillance Capitalism\" (2019).",
+  "auto": "wrong",
+  "id": "r055"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Billy Carlson born?",
+  "accepted": [
+   "San Diego",
+   "San Diego, California",
+   "SD",
+   "America's Finest City",
+   "Sandi"
+  ],
+  "answer": "I don't have specific information about Billy Carlson's birthplace. Could you provide more context or details about Billy Carlson?",
+  "auto": "no guess",
+  "id": "r056"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "When was the bass player of Miles Davis's first quintet born?",
+  "accepted": [
+   "1935",
+   "Apr 22, 1935",
+   "April 22, 1935",
+   "22 Apr 1935",
+   "22 April 1935"
+  ],
+  "answer": "The bass player of Miles Davis's first quintet was Paul Chambers. He was born on April 22, 1935.",
+  "auto": "correct",
+  "id": "r057"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Nina Dittrich born?",
+  "accepted": [
+   "Vienna",
+   "Wien",
+   "Vienna, Austria",
+   "W"
+  ],
+  "answer": "Nina Dittrich was born in Berlin, Germany.",
+  "auto": "wrong",
+  "id": "r058"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "Who was the composer of One More Time?",
+  "accepted": [
+   "James LaBrie",
+   "Kevin James LaBrie",
+   "00219295358 IPI"
+  ],
+  "answer": "The song \"One More Time\" is by the Swedish pop group ABBA, and it was composed by Benny Andersson and Björn Ulvaeus.",
+  "auto": "wrong",
+  "id": "r059"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "What is the capital of Gmina Czorsztyn?",
+  "accepted": [
+   "Maniowy"
+  ],
+  "answer": "Gmina Czorsztyn is a administrative division, not a city, and thus does not have a capital. The term \"capital\" is typically used for cities, not for administrative divisions like gminas.",
+  "auto": "wrong",
+  "id": "r060"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "What killed the King of Soccer?",
+  "accepted": [
+   "multiple organ failure, a complication of colon cancer",
+   "colon cancer",
+   "cancer"
+  ],
+  "answer": "You're referring to Pelé, the legendary Brazilian soccer player. He passed away on December 29, 2024, at the age of 82, due to complications from colon cancer.",
+  "auto": "correct",
+  "id": "r061"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "Which university did Taylor Swift receive her honorary Doctor of Fine Arts degree from?",
+  "accepted": [
+   "New York University"
+  ],
+  "answer": "Taylor Swift received her honorary Doctor of Fine Arts degree from New York University [3].",
+  "auto": "correct",
+  "id": "r062"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what country is Eslamabad-e Mashayekh?",
+  "accepted": [
+   "Iran",
+   "Islamic Republic of Iran",
+   "Persia",
+   "ir",
+   "Islamic Rep. Iran"
+  ],
+  "answer": "Eslamabad-e Mashayekh is located in Iran. It is a city in the Razavi Khorasan Province.",
+  "auto": "correct",
+  "id": "r063"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "What is the capital of Kansas?",
+  "accepted": [
+   "Topeka",
+   "Topeka, Kansas",
+   "Topeka (Kansas)"
+  ],
+  "answer": "The capital of Kansas is Topeka.",
+  "auto": "correct",
+  "id": "r064"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who is the current Prime Minister of Japan?",
+  "accepted": [
+   "Sanae Takaichi"
+  ],
+  "answer": "The current Prime Minister of Japan is Sanae Takaichi [2].",
+  "auto": "correct",
+  "id": "r065"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "Who is the creator of Super Smash Bros.?",
+  "accepted": [
+   "Masahiro Sakurai",
+   "Sakurai",
+   "Sakurai-san"
+  ],
+  "answer": "Masahiro Sakurai is the creator of Super Smash Bros. [1]",
+  "auto": "correct",
+  "id": "r066"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "Who is the father of James VI and I?",
+  "accepted": [
+   "Henry Stuart, Lord Darnley",
+   "Henry Stuart",
+   "Lord Darnley"
+  ],
+  "answer": "The father of James VI and I is Henry Stuart, Lord Darnley [1].",
+  "auto": "correct",
+  "id": "r067"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "changing",
+  "question": "Who were the finalists in the US Open women's singles last year?",
+  "accepted": [
+   "Aryna Sabalenka and Amanda Anisimova",
+   "Amanda Anisimova and Aryna Sabalenka"
+  ],
+  "answer": "I don't have real-time data access, so I can't provide the specific finalists for the US Open women's singles from last year. For the most accurate information, you can check a reliable sports news source or the official US Open website.",
+  "auto": "no guess",
+  "id": "r068"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "When did this year's Passover start?",
+  "accepted": [
+   "April 1",
+   "Apr 1, 2026",
+   "April 1, 2026",
+   "1 Apr 2026",
+   "1 April 2026"
+  ],
+  "answer": "This year's Passover started at sunset on 1 April 2026 [1].",
+  "auto": "correct",
+  "id": "r069"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "Who was the first player to score a goal at five FIFA Men's World Cup tournaments?",
+  "accepted": [
+   "Cristiano Ronaldo",
+   "Ronaldo",
+   "CR7",
+   "Cristiano Ronaldo dos Santos Aveiro GOIH ComM"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r070"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "How many Chinese paddlefish are left in the wild?",
+  "accepted": [
+   "zero",
+   "none",
+   "Chinese paddlefish was declared extinct by the International Union for Conservation of Nature in 2022."
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r071"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "Who is the father of Melora Hardin?",
+  "accepted": [
+   "Jerry Hardin"
+  ],
+  "answer": "Jerry Hardin [3].",
+  "auto": "correct",
+  "id": "r072"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "How long has it been since the Eiffel Tower's inauguration?",
+  "accepted": [
+   "137",
+   "137 years",
+   "more than 137 years"
+  ],
+  "answer": "Since the inauguration of the Eiffel Tower in 1889, as of 2026, it has been 137 years. [2]",
+  "auto": "correct",
+  "id": "r073"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Leobardo Soto born?",
+  "accepted": [
+   "Puebla",
+   "Free and Sovereign State of Puebla",
+   "Estado de Puebla"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r074"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "Is Apple's stock price above $170 per share?",
+  "accepted": [
+   "Yes"
+  ],
+  "answer": "As of the current market data, Apple's stock price is around $175 per share. It has been fluctuating but has been above $170 for some time now.",
+  "auto": "wrong",
+  "id": "r075"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "changing",
+  "question": "How many member nations exist in the United Nations?",
+  "accepted": [
+   "193",
+   "193 members",
+   "193 member states",
+   "193 sovereign states"
+  ],
+  "answer": "As of 2026, the United Nations has 193 member nations.",
+  "auto": "correct",
+  "id": "r076"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "What is the capital of Gmina Czorsztyn?",
+  "accepted": [
+   "Maniowy"
+  ],
+  "answer": "I'm not sure what you're referring to, as I couldn't find any information about a Gmina Czorsztyn.",
+  "auto": "no guess",
+  "id": "r077"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "What is the capital of Chile?",
+  "accepted": [
+   "Santiago",
+   "Santiago de Chile",
+   "Santiago, Chile"
+  ],
+  "answer": "The capital of Chile is Santiago.",
+  "auto": "correct",
+  "id": "r078"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who was the director of Pulse?",
+  "accepted": [
+   "Kiyoshi Kurosawa"
+  ],
+  "answer": "I don't have specific information about who directed \"Pulse\" without more context, as there could be multiple films with that title. Could you provide more details?",
+  "auto": "no guess",
+  "id": "r079"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "What U.S. state has the highest gross domestic product?",
+  "accepted": [
+   "California"
+  ],
+  "answer": "California has the highest gross domestic product, with a nominal GDP of $3.35 trillion as of 2025 [2].",
+  "auto": "correct",
+  "id": "r080"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many public health emergency of international concern declarations have been made by WHO in the last 5 years?",
+  "accepted": [
+   "2",
+   "two"
+  ],
+  "answer": "Since 2021, there have been the 2020–2023 declaration for the COVID-19 pandemic [3], the 2022–2023 and 2024 mpox outbreaks [2], and the 2026 Ituri Province Ebola epidemic [1]. Therefore, there have been 3 public health emergency of international concern declarations made by WHO in the last 5 years. [1]",
+  "auto": "correct",
+  "id": "r081"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many books has Colleen Hoover published?",
+  "accepted": [
+   "27 books"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r082"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "Which broadcast network was this year's Super Bowl broadcaster?",
+  "accepted": [
+   "NBC and Peacock",
+   "Peacock and NBC"
+  ],
+  "answer": "CBS [1].",
+  "auto": "wrong",
+  "id": "r083"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Robert Crannell Minor born?",
+  "accepted": [
+   "New York City",
+   "NYC",
+   "New York",
+   "the five boroughs",
+   "Big Apple"
+  ],
+  "answer": "Robert Crannell Minor was born in New Haven, Connecticut.",
+  "auto": "wrong",
+  "id": "r084"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what country is Pierce?",
+  "accepted": [
+   "United States of America",
+   "the United States of America",
+   "America",
+   "U.S.A.",
+   "USA"
+  ],
+  "answer": "Pierce County, Washington is located in the United States. [4]",
+  "auto": "correct",
+  "id": "r085"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "Who is the father of Sydney Chaplin?",
+  "accepted": [
+   "Charlie Chaplin",
+   "Charles Spencer Chaplin",
+   "Charles Chaplin",
+   "Sir Charles Spencer Chaplin"
+  ],
+  "answer": "The father of Sydney Chaplin is Charlie Chaplin [3].",
+  "auto": "correct",
+  "id": "r086"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "What organization handles the equivalent of the Nobel prize for computer science?",
+  "accepted": [
+   "Association for Computing Machinery (ACM)"
+  ],
+  "answer": "The Association for Computing Machinery (ACM) handles the equivalent of the Nobel prize for computer science, specifically the ACM Turing Award [1].",
+  "auto": "correct",
+  "id": "r087"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "How many years did it take for the population of the world to reach 8 billion from 7 billion?",
+  "accepted": [
+   "10 years"
+  ],
+  "answer": "It took approximately 11 years for the world's population to reach 8 billion from 7 billion, with the milestone being reached in 2023.",
+  "auto": "wrong",
+  "id": "r088"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "changing",
+  "question": "What is the most recent award that Yann LeCun, Geoffrey Hinton, and Yoshua Bengio received together?",
+  "accepted": [
+   "Queen Elizabeth Prize for Engineering (2025)"
+  ],
+  "answer": "Yann LeCun, Geoffrey Hinton, and Yoshua Bengio received the ACM A.M. Turing Award in 2018 for their pioneering work on deep learning.",
+  "auto": "wrong",
+  "id": "r089"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "Which country has President Joe Biden visited the most during his presidency so far?",
+  "accepted": [
+   "United Kingdom"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r090"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "changing",
+  "question": "How many countries have recognized same-sex marriage?",
+  "accepted": [
+   "38 countries",
+   "38"
+  ],
+  "answer": "As of October 8, 2026, same-sex marriage is recognized in over 30 countries, but the exact number can vary as recognition can change over time.",
+  "auto": "wrong",
+  "id": "r091"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "On what month, day, and year was the Declaration of Independence signed?",
+  "accepted": [
+   "August 2, 1776. It is not July 4, 1776, which is when it was published.",
+   "Aug 2, 1776",
+   "August 2, 1776",
+   "2 Aug 1776",
+   "2 August 1776"
+  ],
+  "answer": "The Declaration of Independence was signed on July 4, 1776.",
+  "auto": "wrong",
+  "id": "r092"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "What country does the most recent Time Magazine's Entertainer of the Year come from?",
+  "accepted": [
+   "the USA",
+   "USA",
+   "the United States",
+   "United States",
+   "U.S."
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r093"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "What country has the most similar flag to that of Romania?",
+  "accepted": [
+   "Chad",
+   "Republic of Chad"
+  ],
+  "answer": "Chad [3].",
+  "auto": "correct",
+  "id": "r094"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who was the winner of The Voice US this year?",
+  "accepted": [
+   "Alexia Jayy"
+  ],
+  "answer": "Michael Huntley, aka Huntley, is the winner of season 24 of the American talent competition The Voice, [1].",
+  "auto": "wrong",
+  "id": "r095"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Anton Lui born?",
+  "accepted": [
+   "Rabaul"
+  ],
+  "answer": "I couldn't find any information on a person named Anton Lui.",
+  "auto": "no guess",
+  "id": "r096"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Andrea di Alessandro born?",
+  "accepted": [
+   "Brescia",
+   "Lioness of Italy"
+  ],
+  "answer": "Andrea di Alessandro was born in Florence, Italy.",
+  "auto": "wrong",
+  "id": "r097"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "On what date did the Patriots last play the Miami Dolphins?",
+  "accepted": [
+   "Jan 4, 2026",
+   "January 4, 2026",
+   "4 Jan 2026",
+   "4 January 2026",
+   "01/4/2026"
+  ],
+  "answer": "I'm not aware of the specific date of the last game between the Patriots and the Dolphins.",
+  "auto": "no guess",
+  "id": "r098"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many presidents has Peru had in the last 5 years?",
+  "accepted": [
+   "4",
+   "four"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r099"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "What is the main character's name in the last novel Jane Austen published while alive?",
+  "accepted": [
+   "Emma",
+   "Emma Woodhouse"
+  ],
+  "answer": "The main character's name in the last novel Jane Austen published while alive is Anne, from the novel Persuasion [2].",
+  "auto": "wrong",
+  "id": "r100"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "Who was the director of The Sea?",
+  "accepted": [
+   "Wanda Jakubowska"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r101"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Christos Mitsis born?",
+  "accepted": [
+   "Marousi"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r102"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many federal crimes has the most recent former president of the United States been convicted of?",
+  "accepted": [
+   "Joe Biden, the most recent former president of the United States, hasn't been convicted of any federal crimes.",
+   "0",
+   "zero",
+   "none"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r103"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "Which countries border the largest lake on Earth?",
+  "accepted": [
+   "Kazakhstan, Turkmenistan, Iran, Azerbaijan, and Russia",
+   "Russia, Iran, Azerbaijan, Kazakhstan, and Turkmenistan",
+   "Iran, Russia, Azerbaijan, Turkmenistan, and Kazakhstan",
+   "Iran, Azerbaijan, Kazakhstan, Turkmenistan, and Russia",
+   "Kazakhstan, Iran, Azerbaijan, Russia, and Turkmenistan"
+  ],
+  "answer": "The largest lake on Earth is the Caspian Sea, which is bordered by five countries: Russia, Iran, Azerbaijan, Kazakhstan, and Turkmenistan.",
+  "auto": "correct",
+  "id": "r104"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "Who is the father of Theodelap of Spoleto?",
+  "accepted": [
+   "Faroald I of Spoleto"
+  ],
+  "answer": "Faroald I [1]",
+  "auto": "wrong",
+  "id": "r105"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "What is the best-selling video game franchise of all time?",
+  "accepted": [
+   "Mario"
+  ],
+  "answer": "The best-selling video game franchise of all time is Mario, with over 907.7 million units sold since its first commercial release in 1983 [1].",
+  "auto": "correct",
+  "id": "r106"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "In what city was Leobardo Soto born?",
+  "accepted": [
+   "Puebla",
+   "Free and Sovereign State of Puebla",
+   "Estado de Puebla"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r107"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Ricardo Sánchez born?",
+  "accepted": [
+   "Guadalajara",
+   "Guadalajara, Jalisco",
+   "Guadalajara, Jalisco, Mexico",
+   "Guadalajara, Mexico",
+   "Guadalajara, México"
+  ],
+  "answer": "I don't have information on a person named Ricardo Sánchez.",
+  "auto": "no guess",
+  "id": "r108"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_common",
+  "question": "Who is the father of Hera?",
+  "accepted": [
+   "Cronus",
+   "Kronos"
+  ],
+  "answer": "The father of Hera is Cronus.",
+  "auto": "correct",
+  "id": "r109"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_freshqa",
+  "question": "Who was the first player to score a goal at five FIFA Men's World Cup tournaments?",
+  "accepted": [
+   "Cristiano Ronaldo",
+   "Ronaldo",
+   "CR7",
+   "Cristiano Ronaldo dos Santos Aveiro GOIH ComM"
+  ],
+  "answer": "Cristiano Ronaldo [3].",
+  "auto": "correct",
+  "id": "r110"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "stable_rare",
+  "question": "Who is the father of Theobald Butler, 1st Viscount Butler of Tulleophelim?",
+  "accepted": [
+   "Sir Edmund Butler of Cloughgrenan",
+   "Sir Edmund Butler"
+  ],
+  "answer": "The father of Theobald Butler, 1st Viscount Butler of Tulleophelim, is Sir Edmund Butler [1].",
+  "auto": "correct",
+  "id": "r111"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "On what date did the Patriots last play the Miami Dolphins?",
+  "accepted": [
+   "Jan 4, 2026",
+   "January 4, 2026",
+   "4 Jan 2026",
+   "4 January 2026",
+   "01/4/2026"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r112"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "Who was the winner of The Voice US this year?",
+  "accepted": [
+   "Alexia Jayy"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r113"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "changing",
+  "question": "How many books has Colleen Hoover published?",
+  "accepted": [
+   "27 books"
+  ],
+  "answer": "I could not find this in the sources I searched, so I won't guess.",
+  "auto": "no guess",
+  "id": "r114"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "Who was the winner of The Voice US this year?",
+  "accepted": [
+   "Alexia Jayy"
+  ],
+  "answer": "The winner of The Voice US this year is not available to me.",
+  "auto": "wrong",
+  "id": "r115"
+ },
+ {
+  "model": "qwen",
+  "kind": "memory",
+  "type": "stable_rare",
+  "question": "In what city was Masaru Inada born?",
+  "accepted": [
+   "Sapporo"
+  ],
+  "answer": "Masaru Inada was born in Tokyo, Japan.",
+  "auto": "wrong",
+  "id": "r116"
+ },
+ {
+  "model": "llama",
+  "kind": "search",
+  "type": "stable_common",
+  "question": "What is the capital of Minnesota?",
+  "accepted": [
+   "Saint Paul",
+   "St. Paul",
+   "Saint Paul, Minnesota",
+   "St. Paul, Minnesota",
+   "St Paul"
+  ],
+  "answer": "Saint Paul has been Minnesota's capital city since 1849, first as capital of the Territory of Minnesota, and then as the state capital since 1858 [2].",
+  "auto": "correct",
+  "id": "r117"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "stable_freshqa",
+  "question": "How many years did it take for the population of the world to reach 8 billion from 7 billion?",
+  "accepted": [
+   "10 years"
+  ],
+  "answer": "The world population reached 8 billion in 2022, so it took 4 years to reach this milestone from 7 billion.",
+  "auto": "wrong",
+  "id": "r118"
+ },
+ {
+  "model": "qwen",
+  "kind": "search",
+  "type": "changing",
+  "question": "Is Apple's stock price above $170 per share?",
+  "accepted": [
+   "Yes"
+  ],
+  "answer": "To determine if Apple's stock price is above $170 per share, we need to look at the most recent information provided in the sources. The most recent stock price mentioned for Apple is from August 19, 2020, where Apple's share price briefly topped $467.77 [1]. Given that this is the most recent price mentioned and it is significantly higher than $170, we can conclude that as of today, Apple's stock price is above $170 per share. Apple's stock price is above $170 per share [1].",
+  "auto": "wrong",
+  "id": "r119"
+ },
+ {
+  "model": "llama",
+  "kind": "memory",
+  "type": "changing",
+  "question": "When is this year's Black Friday?",
+  "accepted": [
+   "November 27",
+   "Nov 27, 2026",
+   "November 27, 2026",
+   "27 Nov 2026",
+   "27 November 2026"
+  ],
+  "answer": "This year's Black Friday is on November 26, 2026. It is the day after Thanksgiving in the United States.",
+  "auto": "wrong",
+  "id": "r120"
+ }
+]

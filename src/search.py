@@ -29,10 +29,30 @@ do does did of in on at to for by with from and or this that these those it its
 first ever currently current now today latest new newest""".split()) - {"first", "current", "latest", "newest"}
 
 
+KO_QUESTION_WORDS = {"현재", "지금", "누구", "무엇", "어디", "언제", "얼마", "몇", "어느", "어떤", "가장"}
+KO_ENDINGS = ("인가요", "입니까", "인가", "에서", "으로", "은", "는", "이", "가", "을", "를", "의", "에", "로", "와", "과")
+
+
+def _ko_word(w: str) -> str:
+    for e in KO_ENDINGS:                      # strip one particle / question ending
+        if w.endswith(e) and len(w) > len(e) + 1:
+            return w[: -len(e)]
+    return w
+
+
 def keywords(question: str) -> str:
     """Turn a question into a short search query (simple fallback)."""
     words = re.findall(r"[\w'-]+", question.lower())
-    return " ".join(w for w in words if w not in STOPWORDS) or question
+    out = []
+    for w in words:
+        if w in STOPWORDS:
+            continue
+        if re.search(r"[\uac00-\ud7a3]", w):
+            w = _ko_word(w)
+            if w in KO_QUESTION_WORDS or any(w.startswith(x) for x in ("누구", "무엇", "어디", "언제", "얼마")):
+                continue
+        out.append(w)
+    return " ".join(out) or question
 
 
 def _get(url: str, tries: int = 5) -> dict:
@@ -273,8 +293,20 @@ def fetch_page(title: str, lang: str = "en") -> dict | None:
     return cache[key]
 
 
+HANGUL = re.compile(r"[\uac00-\ud7a3]")
+
+
 def _tokens(text: str) -> list[str]:
-    return [w for w in re.findall(r"[\w'-]+", text.lower()) if w not in STOPWORDS]
+    """Words; Korean words also as 2-character pieces, because Korean attaches
+    particles to words ("대표이사는" should still match "대표이사")."""
+    out = []
+    for w in re.findall(r"[\w'-]+", text.lower()):
+        if w in STOPWORDS:
+            continue
+        out.append(w)
+        if HANGUL.search(w) and len(w) > 2:
+            out += [w[i:i + 2] for i in range(len(w) - 1)]
+    return out
 
 
 def passages(page: dict) -> list[dict]:
@@ -319,17 +351,21 @@ def rank(question: str, cands: list[dict], k1: float = 1.5, b: float = 0.75) -> 
     return sorted(cands, key=lambda c: -c["score"])
 
 
-def retrieve(question: str, queries: list[str], k: int = 3, lang: str = "en",
-             budget: int = CONTEXT_CHARS) -> list[dict]:
+def retrieve(question: str, queries: list, k: int = 3, lang: str = "en",
+             budget: int = CONTEXT_CHARS, extra_pages: list[dict] | None = None) -> list[dict]:
     """Best passages from all pages found by all queries, grouped per page:
-    [{title, url, text, retrieved}] (same shape as search())."""
-    titles = []
+    [{title, url, text, retrieved}] (same shape as search()).
+    A query can be a string (searched in `lang`) or a (query, lang) pair, e.g. ("설악산", "ko").
+    extra_pages: pages from other sources (web search) ranked together with Wikipedia."""
+    found = []
     for q in queries:
+        q, ql = (q if isinstance(q, (tuple, list)) else (q, lang))
         try:
-            titles += find_titles(q, k, lang)
+            found += [(t, ql) for t in find_titles(q, k, ql)]
         except Exception as e:
             print(f"   (search failed for '{q}': {e})", flush=True)
-    pages = [p for p in (fetch_page(t, lang) for t in dict.fromkeys(titles)) if p and p["text"]]
+    pages = [p for p in (fetch_page(t, ql) for t, ql in dict.fromkeys(found)) if p and p["text"]]
+    pages += [p for p in (extra_pages or []) if p.get("text")]
     chosen, used = [], 0
     for c in rank(question, [x for p in pages for x in passages(p)]):
         if used + len(c["text"]) > budget:
@@ -349,6 +385,67 @@ def retrieve(question: str, queries: list[str], k: int = 3, lang: str = "en",
         g["text"] = "\n...\n".join((f"({c['heading']}) " if c["heading"] else "") + c["text"] for c in parts)
         out.append(g)
     return out
+
+
+# ---------------------------------------------------------------------------
+# Live web search (Tavily, https://tavily.com - free key, 1,000 searches a month)
+# Wikipedia has no fresh data (prices, this season's results, who was appointed
+# last month). When TAVILY_API_KEY is set (keys.txt), web results are added to the
+# Wikipedia pages and ranked together. Every search is cached in
+# results/web_cache.json, so re-runs and the second model cost nothing.
+# ---------------------------------------------------------------------------
+WEB_CACHE_PATH = ROOT / "results" / "web_cache.json"
+TAVILY_URL = "https://api.tavily.com/search"
+
+
+def web_enabled() -> bool:
+    import os
+    from src.llm import load_env
+    load_env()
+    return bool(os.getenv("TAVILY_API_KEY"))
+
+
+def version() -> str:
+    """Name of the current search setup (used as a cache key for answers)."""
+    return "search_v3" if web_enabled() else "search_v2"
+
+
+def web_search(query: str, max_results: int = 5) -> list[dict]:
+    """Tavily web search -> [{title, url, text, retrieved}]. Empty list without a key."""
+    import os
+    import urllib.error
+    if not web_enabled():
+        return []
+    cache = _load(WEB_CACHE_PATH)
+    key = f"tavily::{max_results}::{query}"
+    if key not in cache:
+        limit = int(os.getenv("TAVILY_MAX_CALLS", "900"))
+        used = sum(1 for k in cache if k.startswith("tavily::"))
+        if used >= limit:
+            print(f"   (web search limit of {limit} reached - using Wikipedia only)", flush=True)
+            return []
+        body = json.dumps({"query": query, "max_results": max_results, "search_depth": "basic",
+                           "include_answer": False, "include_raw_content": False}).encode()
+        req = urllib.request.Request(TAVILY_URL, data=body, headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {os.getenv('TAVILY_API_KEY')}"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = json.load(r)
+        except urllib.error.HTTPError as e:
+            print(f"   (web search failed: HTTP {e.code})", flush=True)
+            return []
+        except Exception as e:
+            print(f"   (web search failed: {e})", flush=True)
+            return []
+        cache[key] = [{"title": x.get("title", ""), "url": x.get("url", ""),
+                       "text": (x.get("content") or "")[:2000],
+                       "published": x.get("published_date", ""),
+                       "retrieved": date.today().isoformat()}
+                      for x in data.get("results", [])]
+        WEB_CACHE_PATH.parent.mkdir(exist_ok=True)
+        WEB_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    return [dict(p, url=p["url"], title=p["title"] or p["url"]) for p in cache[key]]
 
 
 if __name__ == "__main__":
