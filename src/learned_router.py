@@ -41,8 +41,9 @@ RESULTS = ROOT / "results"
 MODEL_PATH = RESULTS / "learned_router.joblib"
 REPORT = RESULTS / "learned_router_report.md"
 CHART = RESULTS / "learned_router_chart.png"
-RUNS = {"llama3.1:8b": RESULTS / "experiment_answers.csv",
-        "qwen2.5:7b": RESULTS / "experiment_answers_qwen2.5-7b.csv"}
+def _runs() -> dict:
+    from src.experiment import MODELS, answers_file
+    return {m: RESULTS / answers_file(m) for m in MODELS}
 FEATURES = ["p_low", "p_maybe", "p_high", "agreement", "dont_know", "confidence", "abstained"]
 RULES = ["Never search", "Always search", "Self-consistency only", "Verbal confidence",
          "Router (ours)", "Router + cutoff rule (ours)", "Oracle (best possible)"]
@@ -74,10 +75,12 @@ def load_runs() -> pd.DataFrame:
     tc_model = time_check.load()
     kc_cache = json.loads((RESULTS / "knowledge_check_cache.json").read_text(encoding="utf-8"))
     frames = []
-    for model, path in RUNS.items():
+    for model, path in _runs().items():
         if not path.exists():
             continue
         df = pd.read_csv(path)
+        if len(df) < 100:                   # a run that has only just started
+            continue
         feats = [features(r.question, kc_answers(kc_cache, model, r.question), r.confidence,
                           r.memory, tc_model) for r in df.itertuples()]
         df = df.drop(columns=[c for c in FEATURES if c in df.columns]).reset_index(drop=True)
@@ -215,11 +218,11 @@ def main():
             x, y, p = mcnemar(sub["learned::ok"].values, (sub[f"{rule}::score"] == "correct").values)
             L.append(f"| {m} | {rule} | {x} | {y} | {p:.3f}{' *' if p < 0.05 else ''} |")
 
-    if len(models) == 2:
+    if len(models) >= 2:
         L += ["", "## Does it transfer to another AI model?\n",
-              "Trained on one model's questions, tested on the other model (no retraining).\n",
+              "Trained on one model's questions, tested on another model (no retraining).\n",
               "| Trained on | Tested on | Correct | Searched |", "|---|---|---|---|"]
-        for a, b in [(models[0], models[1]), (models[1], models[0])]:
+        for a, b in [(x, y) for x in models for y in models if x != y]:
             acc, sr = transfer(df, a, b)
             L.append(f"| {a} | {b} | {acc:.0%} | {sr:.0%} |")
 

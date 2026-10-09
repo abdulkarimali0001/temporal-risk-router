@@ -99,6 +99,18 @@ def paired_diff(a, b, mem_ok, srch_ok, boot: int = 500) -> tuple[float, float, f
     return float(d), float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))
 
 
+RATIOS = [1, 2, 3, 5, 10]       # cost of a wrong answer, in searches
+
+
+def best_cost(c: np.ndarray, ratio: float) -> tuple[float, float]:
+    """A cost-aware router: pick the search budget that minimises
+    (share searched) + ratio * (share not correct). Returns (cost, budget)."""
+    k = np.linspace(0, 1, len(c))
+    cost = k + ratio * (1 - c)
+    i = int(np.argmin(cost))
+    return float(cost[i]), float(k[i])
+
+
 def chart(curves_by_model: dict):
     import matplotlib
     matplotlib.use("Agg")
@@ -170,6 +182,25 @@ def main():
                      f"{' *' if lo > 0 else ''} |")
         rnd = cs["Random"].mean()
         L.append(f"| Random | {(cs['Router (ours)'].mean() - rnd) * 100:+.1f} points | |")
+        L += ["", "**Cost model.** Total cost per question = share searched + R x share not correct, "
+              "where R = how many searches one wrong or missing answer is worth. Each method searches "
+              "the budget that is cheapest for that R (its best point on the curve). Cost relative to "
+              "always searching (lower is better); in brackets the share of questions searched.\n",
+              "| Method | " + " | ".join(f"R = {r}" for r in RATIOS) + " |",
+              "|---|" + "---|" * len(RATIOS)]
+        for m in ["Never search", "Always search"] + [x for x in METHODS if x not in ("Oracle",)]:
+            cells = []
+            for r in RATIOS:
+                always = 1 + r * (1 - srch_ok.mean())
+                if m == "Never search":
+                    cost, k = r * (1 - mem_ok.mean()), 0.0
+                elif m == "Always search":
+                    cost, k = always, 1.0
+                else:
+                    cost, k = best_cost(cs[m], r)
+                cells.append(f"{cost / always:.2f} ({k:.0%})")
+            name = f"**{m}**" if "ours" in m else m
+            L.append(f"| {name} | " + " | ".join(cells) + " |")
         L.append("")
     REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
     chart(curves_by_model)

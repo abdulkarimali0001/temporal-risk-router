@@ -15,18 +15,19 @@ Search used by the methods below: **Wikipedia + live web**.
 | Verbal confidence | 65% (61%-69%) | 127 | 45 | 74% |
 | **Router (ours)** | 65% (61%-69%) | 127 | 44 | 68% |
 | **Router + cutoff rule (ours)** | 67% (62%-71%) | 120 | 45 | 75% |
+| **Router, cheap check (ours)** | 66% (62%-70%) | 125 | 44 | 75% |
 | Oracle (best possible) | 72% (67%-75%) | 101 | 40 | 57% |
 
 ![Accuracy vs. searches](experiment_chart.png)
 
 ## Correct answers by question type
 
-| Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Oracle (best possible) |
-|---|---|---|---|---|---|---|---|---|---|
-| Stable, famous (PopQA) | 129 | 67% | 78% | 67% | 78% | 77% | 78% | 78% | 83% |
-| Stable, rare (PopQA) - incomplete | 129 | 22% | 60% | 22% | 59% | 57% | 59% | 59% | 60% |
-| Never-changing (FreshQA) | 77 | 79% | 87% | 79% | 87% | 86% | 87% | 86% | 95% |
-| Changing (FreshQA) - outdated | 160 | 22% | 56% | 35% | 48% | 52% | 50% | 54% | 60% |
+| Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Router, cheap check (ours) | Oracle (best possible) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Stable, famous (PopQA) | 129 | 67% | 78% | 67% | 78% | 77% | 78% | 78% | 79% | 83% |
+| Stable, rare (PopQA) - incomplete | 129 | 22% | 60% | 22% | 59% | 57% | 59% | 59% | 57% | 60% |
+| Never-changing (FreshQA) | 77 | 79% | 87% | 79% | 87% | 86% | 87% | 86% | 87% | 95% |
+| Changing (FreshQA) - outdated | 160 | 22% | 56% | 35% | 48% | 52% | 50% | 54% | 52% | 60% |
 
 ## Share of questions searched, by type
 

@@ -111,3 +111,39 @@ def classify_llm(question: str) -> str:
         cache[key] = next((g for w, g in LLM_GROUPS.items() if w in reply), "AMBIGUOUS")
         LLM_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     return cache[key]
+
+
+# Date-aware version: the AI is told how old its knowledge is and today's date, and asked
+# whether the answer has probably changed SINCE THEN (not just whether it can change).
+DATED_PROMPT = ("Your knowledge comes from training data that ends around {cutoff}. Today is {today}.\n"
+                "Could the correct answer to this question be different today from the answer "
+                "in {cutoff}?\n"
+                "no = it cannot have changed (a fixed fact)\n"
+                "maybe = it may have changed (it changes every few years)\n"
+                "yes = it has probably changed (it changes often, or it asks about recent events)\n"
+                "Reply with one word: no, maybe or yes.\n\nQuestion: {q}")
+DATED_GROUPS = {"no": "LOW", "maybe": "AMBIGUOUS", "yes": "HIGH"}
+
+
+def classify_llm_dated(question: str, cutoff: str) -> str:
+    """Check 1 asked to the AI, knowing its training cutoff and today's date."""
+    import json
+    import re
+    from datetime import date
+    from src import llm
+    key = f"dated::{llm.backend()}::{llm.model_name()}::{cutoff}::{question}"
+    try:
+        cache = json.loads(LLM_CACHE.read_text(encoding="utf-8"))
+    except Exception:
+        cache = {}
+    if key not in cache:
+        reply = llm.generate(DATED_PROMPT.format(q=question, cutoff=cutoff,
+                                                 today=date.today().isoformat()), max_tokens=5).lower()
+        word = re.search(r"\b(no|maybe|yes)\b", reply)
+        cache[key] = DATED_GROUPS[word.group(1)] if word else "AMBIGUOUS"
+        try:                                     # re-read: keep entries other runs added
+            cache = {**json.loads(LLM_CACHE.read_text(encoding="utf-8")), key: cache[key]}
+        except Exception:
+            pass
+        LLM_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    return cache[key]

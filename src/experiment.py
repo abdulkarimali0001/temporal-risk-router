@@ -44,11 +44,24 @@ CSV_OUT = RESULTS / "experiment_answers.csv"
 REPORT = RESULTS / "experiment_report.md"
 CHART = RESULTS / "experiment_chart.png"
 MAIN_MODEL = "llama3.1:8b"   # other models get their own files, e.g. experiment_report_qwen2.5-7b.md
+MODELS = ["llama3.1:8b", "qwen2.5:7b", "qwen2.5:14b"]   # every model that may have a run
+
+
+def answers_file(model: str) -> str:
+    """results/ file with one model's answers to the benchmark."""
+    if model == MAIN_MODEL:
+        return CSV_OUT.name
+    slug = re.sub(r"[^\w.-]+", "-", model)
+    return f"{CSV_OUT.stem}_{slug}{CSV_OUT.suffix}"
+
+
 
 # Training-data cutoff of each model (from the model cards). Used by the cutoff-aware router:
 # if the model's knowledge is more than a year old, "changes sometimes" (MAYBE) is treated
 # as risky too, because a slowly changing answer has probably changed since then.
-MODEL_CUTOFFS = {"llama3.1:8b": "2023-12"}
+MODEL_CUTOFFS = {"llama3.1:8b": "2023-12",
+                 # Qwen does not publish a data cutoff; its release month is an upper bound
+                 "qwen2.5:7b": "2024-09", "qwen2.5:14b": "2024-09"}
 STALE_AFTER_YEARS = 1.0
 
 CONFIDENCE_THRESHOLD = 70
@@ -72,8 +85,10 @@ CONF_PROMPT = ("Today's date is {today}. How confident are you that you know the
 
 METHODS = ["Never search", "Always search", "Time check only", "Self-consistency only",
            "Verbal confidence", "Router (ours)", "Router + cutoff rule (ours)",
-           "Router, AI time check (ours)", "Oracle (best possible)"]
-OURS = ("Router (ours)", "Router + cutoff rule (ours)", "Router, AI time check (ours)")
+           "Router, AI time check (ours)", "Router, dated AI time check (ours)",
+           "Router, cheap check (ours)", "Oracle (best possible)"]
+OURS = ("Router (ours)", "Router + cutoff rule (ours)", "Router, AI time check (ours)",
+        "Router, dated AI time check (ours)", "Router, cheap check (ours)")
 TYPES = {"stable_common": "Stable, famous (PopQA)",
          "stable_rare": "Stable, rare (PopQA) - incomplete",
          "stable_freshqa": "Never-changing (FreshQA)",
@@ -111,6 +126,9 @@ def components(q: str, cache: dict, tag: str) -> dict:
     if "llm_group" not in c:
         t0 = time.time(); c["llm_group"] = time_check.classify_llm(q)
         t["llm_time_check"] = round(time.time() - t0, 2); _save_cache(cache)
+    if "dated_group" not in c:
+        cutoff = MODEL_CUTOFFS.get(llm.model_name(), "2024")
+        c["dated_group"] = time_check.classify_llm_dated(q, cutoff); _save_cache(cache)
     if SEARCH_VERSION not in c:
         t0 = time.time()
         r = pipeline.answer_with_search(q)
@@ -146,7 +164,8 @@ def knowledge_is_stale(model: str) -> bool:
 
 
 def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
-              stale: bool = True, llm_group: str | None = None) -> dict:
+              stale: bool = True, llm_group: str | None = None,
+              knows_cheap: bool | None = None, dated_group: str | None = None) -> dict:
     """Which methods search (True) for this question."""
     return {"Never search": False,
             "Always search": True,
@@ -157,6 +176,11 @@ def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
             "Router + cutoff rule (ours)": (router.decide(group, knows)[0] == "search"
                                             or (stale and group == "AMBIGUOUS")),
             "Router, AI time check (ours)": router.decide(llm_group or group, knows)[0] == "search",
+            # the AI is told its training cutoff and today's date
+            "Router, dated AI time check (ours)": router.decide(dated_group or group, knows)[0] == "search",
+            # Check 2 from the memory answer + ONE sample (1 AI call instead of 3)
+            "Router, cheap check (ours)": router.decide(
+                group, knows if knows_cheap is None else knows_cheap)[0] == "search",
             "Oracle (best possible)": not memory_correct}
 
 
@@ -285,13 +309,15 @@ def write_report(rows: list[dict], total: int):
               f"- Right group (never/slow/fast = LOW/MAYBE/HIGH): {right}/{len(fresh)} ({right / len(fresh):.0%})",
               f"- Fast-changing questions caught as HIGH: "
               f"{sum(r['group'] == 'HIGH' for r in fast)}/{len(fast)}"]
-        llm_rows = [r for r in fresh if r.get("llm_group")]
-        if llm_rows:
-            right_llm = sum(r["llm_group"] == benchmarks.TIME_GROUP[r["fact_type"]] for r in llm_rows)
-            L += ["", f"- Check 1 asked to the AI instead: right group {right_llm}/{len(llm_rows)} "
-                  f"({right_llm / len(llm_rows):.0%}), fast-changing caught as HIGH "
-                  f"{sum(r['llm_group'] == 'HIGH' for r in llm_rows if r['fact_type'] == 'fast-changing')}"
-                  f"/{sum(r['fact_type'] == 'fast-changing' for r in llm_rows)}"]
+        for col, label in [("llm_group", "Check 1 asked to the AI instead"),
+                           ("dated_group", "Check 1 asked to the AI, told its cutoff and today's date")]:
+            llm_rows = [r for r in fresh if r.get(col)]
+            if llm_rows:
+                right_llm = sum(r[col] == benchmarks.TIME_GROUP[r["fact_type"]] for r in llm_rows)
+                L += [f"- {label}: right group {right_llm}/{len(llm_rows)} "
+                      f"({right_llm / len(llm_rows):.0%}), fast-changing caught as HIGH "
+                      f"{sum(r[col] == 'HIGH' for r in llm_rows if r['fact_type'] == 'fast-changing')}"
+                      f"/{sum(r['fact_type'] == 'fast-changing' for r in llm_rows)}"]
 
     L += ["", "## Is the difference real? (paired McNemar test)\n",
           "For each pair: questions only the router got right vs. only the other method got right. "
@@ -345,6 +371,7 @@ def main():
             t0 = time.time()
             kc = knowledge_check.check(q)
             c["seconds"].setdefault("knowledge_check", round(time.time() - t0, 2))
+            kc_cheap = knowledge_check.check_cheap(q, c["memory"])
             group = time_check.classify(q, model)
         except Exception as e:  # keep going if one question fails
             print(f"   ERROR: {e}", flush=True)
@@ -353,15 +380,18 @@ def main():
         srch = c[SEARCH_VERSION]
         mem_score, srch_score = score(c["memory"], aliases), score(srch["answer"], aliases)
         row = {**it, "group": group, "knows": kc["knows"], "agreement": kc["agreement"],
+               "knows_cheap": kc_cheap["knows"],
                "confidence": c["confidence"], "memory": c["memory"], "memory_score": mem_score,
                "search": srch["answer"], "search_score": srch_score, "query": srch["query"],
                "sources": " ".join(srch["sources"]),
                **{f"{v}::score": score(c[v] if v == "search" else c[v]["answer"], aliases)
                   for v in SEARCH_LABELS if v in c}}
         row["llm_group"] = c.get("llm_group", "")
+        row["dated_group"] = c.get("dated_group", "")
         row.update({f"seconds_{k}": v for k, v in c.get("seconds", {}).items()})
         for m, searched in decisions(group, kc["knows"], c["confidence"], mem_score == "correct",
-                                     stale, c.get("llm_group")).items():
+                                     stale, c.get("llm_group"), kc_cheap["knows"],
+                                     c.get("dated_group")).items():
             row[f"{m}::searched"] = searched
             row[f"{m}::score"] = srch_score if searched else mem_score
         rows.append(row)

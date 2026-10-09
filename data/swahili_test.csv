@@ -1,0 +1,33 @@
+id,question,type,correct_answers,source,checked_on
+sw01,Mji mkuu wa Kenya ni upi?,stable_common,Nairobi,general knowledge,2026-10-09
+sw02,Mlima mrefu zaidi barani Afrika ni upi?,stable_common,Kilimanjaro,general knowledge,2026-10-09
+sw03,Ziwa kubwa zaidi barani Afrika ni lipi?,stable_common,Victoria|Viktoria|Nyanza,general knowledge,2026-10-09
+sw04,Rais wa kwanza wa Kenya alikuwa nani?,stable_common,Jomo Kenyatta,general knowledge,2026-10-09
+sw05,Rais wa kwanza wa Tanzania alikuwa nani?,stable_common,Julius Nyerere|Julius Kambarage Nyerere,general knowledge,2026-10-09
+sw06,Kenya ilipata uhuru mwaka gani?,stable_common,1963,general knowledge,2026-10-09
+sw07,Mji mkuu wa Tanzania ni upi?,stable_common,Dodoma,general knowledge,2026-10-09
+sw08,Tanzania hutumia sarafu gani?,stable_common,shilingi|shilling,general knowledge,2026-10-09
+sw09,Kisiwa cha Unguja kinajulikana pia kwa jina gani?,stable_common,Zanzibar,general knowledge,2026-10-09
+sw10,Mto mrefu zaidi duniani ni upi?,stable_common,Nile|Naili,general knowledge,2026-10-09
+sw11,Nani aliandika riwaya ya Kufa Kuzikana?,stable_rare,Ken Walibora,https://sw.wikipedia.org/wiki/Ken_Walibora,2026-10-09
+sw12,Nani aliandika riwaya ya Rosa Mistika?,stable_rare,Euphrase Kezilahabi,https://sw.wikipedia.org/wiki/Rosa_Mistika,2026-10-09
+sw13,Nani aliandika riwaya ya Siku Njema?,stable_rare,Ken Walibora,https://sw.wikipedia.org/wiki/Ken_Walibora,2026-10-09
+sw14,Shaaban Robert alizaliwa mwaka gani?,stable_rare,1909,https://sw.wikipedia.org/wiki/Shaaban_Robert,2026-10-09
+sw15,Nani aliandika riwaya ya Utengano?,stable_rare,Said Ahmed Mohamed|Said Ahmed Mohammed,https://sw.wikipedia.org/wiki/Said_Ahmed_Mohamed,2026-10-09
+sw16,Nani aliandika riwaya ya Kiu?,stable_rare,Mohammed Suleiman Mohammed|Mohamed Suleiman Mohamed,https://sw.wikipedia.org/wiki/Mohammed_Suleiman_Mohammed,2026-10-09
+sw17,Mji wa Kale wa Lamu uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?,stable_rare,2001,https://whc.unesco.org/en/list/1055,2026-10-09
+sw18,Mji Mkongwe wa Zanzibar uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?,stable_rare,2000,https://whc.unesco.org/en/list/173,2026-10-09
+sw19,Nani aliandika riwaya ya Dunia Uwanja wa Fujo?,stable_rare,Euphrase Kezilahabi,https://sw.wikipedia.org/wiki/Euphrase_Kezilahabi,2026-10-09
+sw20,Mlima Kenya una urefu wa mita ngapi?,stable_rare,5199,https://en.wikipedia.org/wiki/Mount_Kenya,2026-10-09
+sw21,Rais wa sasa wa Kenya ni nani?,changing,William Ruto|William Samoei Ruto,https://peopledaily.digital/inside-politics/kindiki-urges-mt-kenya-to-back-ruto-in-2027,2026-10-09
+sw22,Naibu Rais wa sasa wa Kenya ni nani?,changing,Kithure Kindiki|Abraham Kithure Kindiki,https://citizen.digital/article/dp-position-is-not-vacant-fully-occupied-kindiki-says-n388384,2026-10-09
+sw23,Rais wa sasa wa Tanzania ni nani?,changing,Samia Suluhu Hassan|Samia Suluhu|Samia,https://www.thecitizen.co.tz/tanzania/news/national/tanzania-swears-in-new-vice-president-ndejembi-5575356,2026-10-09
+sw24,Makamu wa Rais wa sasa wa Tanzania ni nani?,changing,Deogratius Ndejembi|Deogratius John Ndejembi,https://www.thecitizen.co.tz/tanzania/news/national/tanzania-swears-in-new-vice-president-ndejembi-5575356,2026-10-09
+sw25,Waziri Mkuu wa sasa wa Tanzania ni nani?,changing,Mwigulu Nchemba|Mwigulu Lameck Nchemba,https://en.wikipedia.org/wiki/Mwigulu_Nchemba,2026-10-09
+sw26,Rais wa sasa wa Uganda ni nani?,changing,Yoweri Museveni|Yoweri Kaguta Museveni,https://www.ugandaradionetwork.net/story/president-yoweri-museveni-takes-oath-for-seventh-term,2026-10-09
+sw27,Gavana wa sasa wa Benki Kuu ya Kenya ni nani?,changing,Kamau Thugge,https://thekenyatimes.com/business/central-bank-governor-wins-prestigious-international-award/,2026-10-09
+sw28,Afisa Mkuu Mtendaji (CEO) wa sasa wa Safaricom ni nani?,changing,Peter Ndegwa,https://thekenyatimes.com/business/hefty-salary-and-benefits-safaricom-ceo-peter-ndegwa-took-home-in-2025/,2026-10-09
+sw29,Timu gani ilishinda Ligi Kuu ya Kenya (FKF Premier League) msimu wa 2025/26?,changing,Gor Mahia,https://citizen.digital/article/gor-mahia-crowned-fkf-premier-league-champions-for-a-historic-22nd-time-n383756,2026-10-09
+sw30,Timu gani ilishinda Ligi Kuu ya Tanzania Bara (NBC Premier League) msimu wa 2025/26?,changing,Young Africans|Yanga,https://dailynews.co.tz/nbc-hands-yanga-trophy-pledges-greater-football-investment/,2026-10-09
+sw31,Nchi gani ilishinda Kombe la Dunia la FIFA mwaka 2026?,changing,Spain|Hispania,https://www.virginislandsnewsonline.com/en/news/spain-defeat-argentina-1-0-to-win-2026-fifa-world-cup,2026-10-09
+sw32,Rais wa sasa wa Zanzibar ni nani?,changing,Hussein Ali Mwinyi|Hussein Mwinyi,https://eu-africa-chamber.org/visit-of-president-of-zanzibar-and-chairman-of-the-revolutionary-council-dr-hussein-ali-mwinyi-to-india-july-17-20-2026/,2026-10-09

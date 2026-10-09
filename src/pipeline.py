@@ -23,7 +23,6 @@ NOT_FOUND = "I could not find this in the sources I searched, so I won't guess."
 
 ANSWER_PROMPT = ("Today's date is {today}. Answer the question in one or two short sentences."
                  "{lang}\n\nQuestion: {q}")
-KOREAN = " Answer in Korean."
 QUERY_PROMPT = ("Write a short search query (2 to 6 words) for looking up this question "
                 "on {wiki}. Reply with the query only.\n\nQuestion: {q}")
 SOURCE_PROMPT = """Today's date is {today}. Answer the question using ONLY the sources below.
@@ -51,12 +50,17 @@ def search_query(question: str, wiki: str = "Wikipedia") -> str:
     return search.keywords(question)
 
 
+def _source_lang(question: str) -> str:
+    lang = language.detect(question)
+    return "" if lang == "en" else f"The question is in {language.NAMES[lang]}: answer in {language.NAMES[lang]}.\n"
+
+
 def answer_from_sources(question: str, pages: list[dict]) -> str:
     numbered = "\n\n".join(f"[{i}] {p['title']}: {p['text']}" for i, p in enumerate(pages, 1))
     for _ in range(2):  # retry once if the AI replies with only a citation like "[1]"
         answer = llm.generate(SOURCE_PROMPT.format(
             sources=numbered, q=question, today=date.today().isoformat(),
-            lang="The question is in Korean: answer in Korean.\n" if language.is_korean(question) else ""))
+            lang=_source_lang(question)))
         if "NOT FOUND" in answer.upper():
             return NOT_FOUND
         if len(re.sub(r"\[\d+\]|\W", "", answer)) >= 3:
@@ -66,8 +70,7 @@ def answer_from_sources(question: str, pages: list[dict]) -> str:
 
 def answer_from_memory(question: str) -> str:
     """The AI answers alone, with no search."""
-    return llm.generate(ANSWER_PROMPT.format(q=question, today=date.today().isoformat(),
-                                             lang=KOREAN if language.is_korean(question) else ""))
+    return llm.generate(memory_prompt(question))
 
 
 def gather_sources(question: str, web: bool | None = None) -> list[dict]:
@@ -76,10 +79,11 @@ def gather_sources(question: str, web: bool | None = None) -> list[dict]:
     plus the question itself on the live web."""
     from concurrent.futures import ThreadPoolExecutor
     web = search.web_enabled() if web is None else web
-    queries = [(search.keywords(question), "ko" if language.is_korean(question) else "en")]
+    lang = language.detect(question)
+    queries = [(search.keywords(question), lang)]
     with ThreadPoolExecutor(1) as pool:
         web_job = pool.submit(search.web_search, question) if web else None
-        if language.is_korean(question):
+        if lang != "en":
             queries.append((search.keywords(language.to_english(question)), "en"))
         web_pages = web_job.result() if web_job else []
     return search.retrieve(question, queries, extra_pages=web_pages)
@@ -89,15 +93,17 @@ def source_prompt(question: str, pages: list[dict]) -> str:
     numbered = "\n\n".join(f"[{i}] {p['title']}: {p['text']}" for i, p in enumerate(pages, 1))
     return SOURCE_PROMPT.format(
         sources=numbered, q=question, today=date.today().isoformat(),
-        lang="The question is in Korean: answer in Korean.\n" if language.is_korean(question) else "")
+        lang=_source_lang(question))
 
 
 def memory_prompt(question: str) -> str:
+    lang = language.detect(question)
     return ANSWER_PROMPT.format(q=question, today=date.today().isoformat(),
-                                lang=KOREAN if language.is_korean(question) else "")
+                                lang="" if lang == "en" else f" Answer in {language.NAMES[lang]}.")
 
 
-def answer_with_search(question: str, web: bool | None = None, korean_wiki: bool = True) -> dict:
+def answer_with_search(question: str, web: bool | None = None, korean_wiki: bool = True,
+                       native_wiki: bool | None = None) -> dict:
     """Search, keep the best passages from all sources, and answer only from them.
       - English Wikipedia: the AI's search words + simple keywords
       - Korean question: also Korean Wikipedia, and the English translation on English Wikipedia
@@ -107,12 +113,15 @@ def answer_with_search(question: str, web: bool | None = None, korean_wiki: bool
     with ThreadPoolExecutor(1) as pool:
         web_job = pool.submit(search.web_search, question) if web else None   # runs meanwhile
         queries = [(search_query(question), "en"), (search.keywords(question), "en")]
-        if language.is_korean(question):
-            english = language.to_english(question)
+        lang = language.detect(question)
+        native = korean_wiki if native_wiki is None else native_wiki
+        if lang != "en":     # Korean or Swahili: English Wikipedia via the translation,
+            english = language.to_english(question)          # and that language's Wikipedia
             queries = [(search.keywords(english), "en"), (search_query(english), "en")]
-            if korean_wiki:
-                queries += [(search_query(question, "Korean Wikipedia (in Korean)"), "ko"),
-                            (search.keywords(question), "ko")]
+            if native:
+                queries += [(search_query(question, f"{language.NAMES[lang]} Wikipedia "
+                                                    f"(in {language.NAMES[lang]})"), lang),
+                            (search.keywords(question), lang)]
         queries = list(dict.fromkeys(queries))
         web_pages = web_job.result() if web_job else []
     pages = search.retrieve(question, queries, extra_pages=web_pages)

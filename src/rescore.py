@@ -11,11 +11,10 @@ from __future__ import annotations
 import csv
 import os
 
-from src import benchmarks
+from src import benchmarks, knowledge_check, router
 from src.evaluate_answers import score
 from src.llm import ROOT
 
-RUNS = {"llama3.1:8b": "experiment_answers.csv", "qwen2.5:7b": "experiment_answers_qwen2.5-7b.csv"}
 
 
 def rescore(model: str, filename: str) -> list[dict]:
@@ -31,8 +30,11 @@ def rescore(model: str, filename: str) -> list[dict]:
     experiment.SEARCH_VERSION = "search_v3" if "search_v3::score" in header else "search_v2"
     # leave out methods added after this run (they need a new run on the Mac)
     all_methods = list(experiment.METHODS)
+    cheap = "Router, cheap check (ours)"
+    computable = {cheap}                     # can be worked out from saved answers
     experiment.METHODS[:] = [m for m in all_methods
-                             if m.startswith("Oracle") or f"{m}::searched" in header]
+                             if m.startswith("Oracle") or f"{m}::searched" in header
+                             or m in computable]
     experiment.OURS = tuple(m for m in experiment.OURS if m in experiment.METHODS)
     rows = []
     for r in csv.DictReader(path.open(encoding="utf-8")):
@@ -41,6 +43,15 @@ def rescore(model: str, filename: str) -> list[dict]:
         r["correct_answers"] = gold[r["id"]]["correct_answers"]
         aliases = r["correct_answers"].split("|")
         r["memory_score"], r["search_score"] = score(r["memory"], aliases), score(r["search"], aliases)
+        if r.get("knows_cheap", "") == "":
+            if r["group"] == "HIGH":
+                r["knows_cheap"] = ""                  # searched anyway, no check needed
+            else:
+                s = knowledge_check.cached(r["question"], model)
+                r["knows_cheap"] = knowledge_check.judge([r["memory"]] + s[:1])["knows"] if s else ""
+        if f"{cheap}::searched" not in header:
+            knows = r["knows_cheap"] in ("True", True)
+            r[f"{cheap}::searched"] = router.decide(r["group"], knows)[0] == "search"
         for m in experiment.METHODS:
             searched = r[f"{m}::searched"] in ("True", "true", "1", True)
             if m.startswith("Oracle"):
@@ -58,6 +69,8 @@ def rescore(model: str, filename: str) -> list[dict]:
 
 
 if __name__ == "__main__":
-    for model, filename in RUNS.items():
+    from src.experiment import MODELS, answers_file
+    for model, filename in ((m, answers_file(m)) for m in MODELS):
         rows = rescore(model, filename)
-        print(f"{model}: {len(rows)} answers re-scored")
+        if rows:
+            print(f"{model}: {len(rows)} answers re-scored")

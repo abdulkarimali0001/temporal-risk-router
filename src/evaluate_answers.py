@@ -39,7 +39,8 @@ TYPES = {"stable_common": "Stable, well known",
 NO_GUESS = ["i don't know", "i do not know", "not sure", "could not find", "couldn't find",
             "no information", "not able to", "unable to", "don't have", "do not have",
             "not aware", "unknown", "i cannot", "i can't",
-            "모르", "알 수 없", "찾을 수 없", "정보가 없", "확인할 수 없"]
+            "모르", "알 수 없", "찾을 수 없", "정보가 없", "확인할 수 없",
+            "sijui", "sina uhakika", "sikuweza kupata", "hakuna taarifa", "sina taarifa"]
 
 
 # ---------- scoring ----------

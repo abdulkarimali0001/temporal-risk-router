@@ -40,12 +40,18 @@ def _ko_word(w: str) -> str:
     return w
 
 
+SW_STOPWORDS = set("""nani nini gani wapi lini ngapi je yupi ipi upi kipi lipi ni ya wa za la cha
+kwa katika huu hii hiyo sasa alikuwa ilikuwa iko""".split())
+
+
 def keywords(question: str) -> str:
     """Turn a question into a short search query (simple fallback)."""
+    from src import language
     words = re.findall(r"[\w'-]+", question.lower())
+    swahili = language.detect(question) == "sw"
     out = []
     for w in words:
-        if w in STOPWORDS:
+        if w in STOPWORDS or (swahili and w in SW_STOPWORDS):
             continue
         if re.search(r"[\uac00-\ud7a3]", w):
             w = _ko_word(w)

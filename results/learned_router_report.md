@@ -28,7 +28,7 @@ A logistic-regression model predicts whether the memory answer will be wrong, fr
 
 ## Does it transfer to another AI model?
 
-Trained on one model's questions, tested on the other model (no retraining).
+Trained on one model's questions, tested on another model (no retraining).
 
 | Trained on | Tested on | Correct | Searched |
 |---|---|---|---|

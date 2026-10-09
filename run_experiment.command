@@ -1,13 +1,16 @@
 #!/bin/zsh
 # Double-click in Finder: runs every experiment, for both AI models.
 #   - 500 benchmark questions (FreshQA + PopQA), all methods     -> results/experiment_report*.md
+#     (incl. the AI-judged time check and the cheaper knowledge check)
 #   - 31 hand-checked questions                                    -> results/answer_evaluation.md
-#   - 34 Korean questions                                          -> results/korean_evaluation*.md
-#   - learned router (trained on the saved results)                -> results/learned_router_report.md
-#   - accuracy at every search budget, and cost per question       -> results/curves_report.md, results/cost_report.md
+#   - 49 Korean and 32 Swahili questions                           -> results/korean_evaluation*.md, results/swahili_evaluation*.md
+#   - measured seconds per step, no caches (30 questions)          -> results/timing_report.md
+#   - learned router, accuracy at every search budget, cost model  -> results/learned_router_report.md,
+#                                                                     results/curves_report.md, results/cost_report.md
 # Search: Wikipedia + live web (Tavily) when keys.txt has a key.
-# Takes many hours the first time; leave the Mac plugged in. Everything is cached:
-# if it stops, double-click again and it continues.     Log: results/experiment.log
+# Most answers are already saved, so this takes about 1-2 hours. Leave the Mac plugged in.
+# If it stops, double-click again and it continues.     Log: results/experiment.log
+# A bigger model (qwen2.5:14b) is a separate, overnight run: run_bigger_model.command
 source ~/.zprofile 2>/dev/null; source ~/.zshrc 2>/dev/null
 cd "$(dirname "$0")"
 mkdir -p results
@@ -26,12 +29,13 @@ for MODEL in llama3.1:8b qwen2.5:7b; do
   export OLLAMA_MODEL=$MODEL
   caffeinate -i python -m src.experiment
   caffeinate -i python -m src.evaluate_korean
+  caffeinate -i python -m src.evaluate_korean data/swahili_test.csv
   [ "$MODEL" = "llama3.1:8b" ] && caffeinate -i python -m src.evaluate_answers > /dev/null
+  # timing: only once per model (delete results/timing.csv to measure again)
+  python -c "import csv,os,sys;sys.exit(0 if os.path.exists('results/timing.csv') and any(r['model']=='$MODEL' for r in csv.DictReader(open('results/timing.csv'))) else 1)" \
+    || caffeinate -i python -m src.timing
 done
 
-echo "=== Learned router, curves, cost ==="
-python -m src.rescore
-python -m src.learned_router
-python -m src.curves
-python -m src.cost
+echo "=== Learned router, curves, cost, timing ==="
+./run_reports.command
 echo; read "?DONE. Press Enter to close"

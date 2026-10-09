@@ -35,7 +35,8 @@ PROMPT = ("Answer the question in at most 8 words. No explanation. "
           "If you do not know, reply exactly: I don't know.\n\nQuestion: {q}")
 
 IDK = re.compile(r"\b(i don'?t know|not sure|unknown|cannot (determine|answer)|no information)\b"
-                 r"|모르|알 수 없|정보가 없|확실하지 않", re.I)
+                 r"|모르|알 수 없|정보가 없|확실하지 않"
+                 r"|\bsijui\b|sina uhakika|sina taarifa|haijulikani", re.I)
 
 NUMBER_WORDS = {w: str(i) for i, w in enumerate(
     "zero one two three four five six seven eight nine ten eleven twelve thirteen "
@@ -81,23 +82,49 @@ def _save_cache(cache: dict):
     CACHE_PATH.write_text(json.dumps(cache, indent=2, ensure_ascii=False))
 
 
-def check(question: str) -> dict:
-    """Ask the model SAMPLES times and decide whether it knows the answer."""
+def cached(question: str, model: str | None = None) -> list[str]:
+    """Saved samples only (no AI call); [] if none."""
+    backend, model = llm.backend(), model or llm.model_name()
+    cache = _load_cache()
+    for key in (f"{backend}::{model}::{question}",
+                f"{backend}::{question}" if model == "llama3.1:8b" else None):
+        if key and key in cache:
+            return cache[key]
+    return []
+
+
+def samples(question: str, n: int = SAMPLES) -> list[str]:
+    """At least n sampled answers to the question (cached; only missing ones are generated)."""
     backend, model = llm.backend(), llm.model_name()
     cache = _load_cache()
     key = f"{backend}::{model}::{question}"
     old_key = f"{backend}::{question}"   # older cache entries (all made with llama3.1:8b)
     if key not in cache and old_key in cache and model == "llama3.1:8b":
         key = old_key
-    if key not in cache:
+    have = cache.get(key, [])
+    if len(have) < n:
         from concurrent.futures import ThreadPoolExecutor
-        with ThreadPoolExecutor(SAMPLES) as pool:   # Ollama answers them in parallel
-            cache[key] = list(pool.map(lambda _: llm.generate(PROMPT.format(q=question),
-                                                              temperature=1.0, max_tokens=40),
-                                       range(SAMPLES)))
-        cache.update({k: v for k, v in _load_cache().items() if k not in cache})
+        missing = n - len(have)
+        with ThreadPoolExecutor(missing) as pool:   # Ollama answers them in parallel
+            new = list(pool.map(lambda _: llm.generate(PROMPT.format(q=question),
+                                                       temperature=1.0, max_tokens=40),
+                                range(missing)))
+        cache = _load_cache()
+        cache[key] = cache.get(key, have)[:len(have)] + new
         _save_cache(cache)
-    return judge(cache[key])
+        have = cache[key]
+    return have[:n]
+
+
+def check(question: str) -> dict:
+    """Ask the model SAMPLES times and decide whether it knows the answer."""
+    return judge(samples(question, SAMPLES))
+
+
+def check_cheap(question: str, memory_answer: str) -> dict:
+    """Cheaper Check 2: compare the memory answer (which is needed anyway) with ONE sample.
+    2 answers instead of 3 samples + the memory answer: one AI call instead of three."""
+    return judge([memory_answer] + samples(question, 1))
 
 
 if __name__ == "__main__":

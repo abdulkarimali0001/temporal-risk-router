@@ -52,6 +52,7 @@ PopQA (260 facts about famous and very obscure entities). Search: Wikipedia + li
 | Model's own stated confidence | 65% | 127 | 74% | 54% | 189 | 49% |
 | **Router (ours)** | **65%** | **127** | **68%** | **66%** | **120** | **76%** |
 | **Router + cutoff rule (ours)** | **67%** | **120** | **75%** | **66%** | **118** | **80%** |
+| Router, cheap check (ours) | 66% | 125 | 75% | 65% | 126 | 78% |
 | Learned router (ours, out-of-fold) | 67% | 114 | 91% | 68% | 109 | 91% |
 | Oracle (best possible) | 72% | 101 | 57% | 71% | 100 | 65% |
 
@@ -74,13 +75,18 @@ Findings:
   so it uses about 4 AI calls per question against 2 for always searching
   ([`results/cost_report.md`](results/cost_report.md)). It pays off when searches are expensive,
   slow, rate-limited or private. In the demo app the checks run while the answer is written, so they
-  add no waiting.
+  add no waiting. A **cheaper knowledge check** (the memory answer + one sample instead of three
+  samples) keeps the accuracy (66% / 65%) with 3.2-3.3 AI calls.
+- **When is it worth it? A cost model.** If one wrong or missing answer costs R searches, each
+  method searches the cheapest share of questions for that R. From R = 3 on, the router is the
+  cheapest rule-based method on both models, 5-15% cheaper than always searching; below R = 2,
+  not searching at all is cheapest ([`results/curves_report.md`](results/curves_report.md)).
 
 Full reports: [`results/experiment_report.md`](results/experiment_report.md) (llama),
 [`results/experiment_report_qwen2.5-7b.md`](results/experiment_report_qwen2.5-7b.md),
 [`results/learned_router_report.md`](results/learned_router_report.md).
 
-### Korean questions (34, answers verified 2026-10-08)
+### Korean questions (first 34, answers verified 2026-10-08)
 
 General knowledge, local Gangwon / Sokcho facts, and facts that change (officeholders after the
 June 2026 local elections, CEOs, sports champions).
@@ -93,7 +99,10 @@ June 2026 local elections, CEOs, sports champions).
 | **Router** | **85%** | **82%** |
 
 Searching Korean sources nearly doubles accuracy over English-only search
-([`results/korean_evaluation.md`](results/korean_evaluation.md)).
+([`results/korean_evaluation.md`](results/korean_evaluation.md)). The set now has 49 questions,
+and a **Swahili set** of 32 questions (Swahili literature, East African places and leaders,
+answers verified 2026-10-09) is searched on Swahili Wikipedia in the same way
+([`results/swahili_evaluation.md`](results/swahili_evaluation.md)).
 
 ### Our own test sets
 
@@ -123,25 +132,27 @@ temporal-risk-router/
 │   ├── benchmark.csv          500 questions from FreshQA and PopQA
 │   ├── gold_updates.csv       benchmark answers re-checked in October 2026, with sources
 │   ├── excluded_questions.csv broken benchmark questions left out
-│   ├── korean_test.csv        34 Korean questions with verified answers and sources
+│   ├── korean_test.csv        49 Korean questions with verified answers and sources
+│   ├── swahili_test.csv       32 Swahili questions with verified answers and sources
 │   └── human_review_sample.json 120 answers for the group's hand check
 ├── src/
-│   ├── time_check.py          Check 1 (classifier, and the AI-judged variant)
-│   ├── knowledge_check.py     Check 2: self-consistency
+│   ├── time_check.py          Check 1 (classifier, and two AI-judged variants)
+│   ├── knowledge_check.py     Check 2: self-consistency (full, and the cheaper check)
 │   ├── router.py              combines both checks into a decision
 │   ├── learned_router.py      the decision learned from all signals
 │   ├── search.py              Wikipedia (EN/KO) + live web search, BM25 passage ranking
 │   ├── pipeline.py            router -> search -> answer with sources
-│   ├── language.py            Korean questions
+│   ├── language.py            Korean and Swahili questions
 │   ├── llm.py                 the language model (Ollama, or Claude)
 │   ├── benchmarks.py          downloads and samples FreshQA + PopQA
 │   ├── experiment.py          main experiment: every method on the benchmark
 │   ├── rescore.py             re-scores saved answers (no AI needed)
 │   ├── curves.py              accuracy at every search budget
 │   ├── cost.py                AI calls and searches per question
+│   ├── timing.py              measured seconds per step and per method
 │   ├── evaluate.py            Check 1 and router decisions on our own sets
 │   ├── evaluate_answers.py    answer correctness on 31 verified questions; the scoring rules
-│   ├── evaluate_korean.py     the Korean questions
+│   ├── evaluate_korean.py     the Korean and Swahili questions
 │   ├── human_review.py        agreement between the group's hand check and the scoring
 │   ├── app.py                 the demo app server
 │   ├── demo.py                command-line demo
@@ -149,6 +160,8 @@ temporal-risk-router/
 │   └── claude_answer.py       optional: answer with Claude's web search
 ├── results/                   reports, charts, answers, caches
 ├── run_experiment.command     double-click: every experiment, both models
+├── run_bigger_model.command   double-click (overnight): the same with qwen2.5:14b
+├── run_reports.command        double-click: rebuild every report from saved answers
 ├── run_app.command            double-click: the demo app
 ├── run_app_fast.command       double-click: the demo app with a smaller model
 ├── run_demo.command / run_evaluation.command
@@ -182,7 +195,7 @@ python -m src.rescore && python -m src.curves && python -m src.cost    # reports
 
 ## Limitations
 
-- Two small local models (8B and 7B); larger models know more rare facts and may need fewer searches.
+- Two small local models (8B and 7B); a 14B model can be added with `run_bigger_model.command`.
 - 500 benchmark questions: differences of 1-2 points between the best methods are within noise.
 - Automatic scoring by answer matching; a hand check of 120 answers by the group is in progress.
 - Benchmark answers for fast-changing questions go out of date; we re-checked the ones our system

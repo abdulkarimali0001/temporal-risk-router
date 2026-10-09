@@ -13,6 +13,7 @@ AI calls and web searches each method needs per question, with its accuracy. Few
 | Verbal confidence | 65% | 2.7 | 0.74 |
 | **Router (ours)** | 65% | 4.2 | 0.68 |
 | **Router + cutoff rule (ours)** | 67% | 4.3 | 0.75 |
+| **Router, cheap check (ours)** | 66% | 3.2 | 0.75 |
 
 ## qwen2.5:7b (499 questions)
 
@@ -25,5 +26,6 @@ AI calls and web searches each method needs per question, with its accuracy. Few
 | Verbal confidence | 54% | 2.5 | 0.49 |
 | **Router (ours)** | 66% | 4.3 | 0.76 |
 | **Router + cutoff rule (ours)** | 66% | 4.4 | 0.80 |
+| **Router, cheap check (ours)** | 65% | 3.3 | 0.78 |
 
 The router skips the knowledge check for fast-changing questions, which are searched anyway. Measured seconds per question are added to the experiment from the next run on (`results/experiment_answers*.csv`, columns `seconds_*`).

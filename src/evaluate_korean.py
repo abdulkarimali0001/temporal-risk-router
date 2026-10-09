@@ -1,17 +1,21 @@
-"""Korean questions: does the router also work in Korean?
+"""Non-English questions: does the router also work in Korean and Swahili?
 
-data/korean_test.csv has 34 Korean questions with verified answers (checked 2026-10-08):
-general knowledge, local/rare facts (Gangwon, Sokcho, Seoraksan) and facts that change
-(officeholders after the June 2026 local elections, CEOs, sports champions).
+data/korean_test.csv  - 49 Korean questions with verified answers: general knowledge,
+                        local/rare facts (Gangwon, Sokcho, Seoraksan) and facts that change
+                        (officeholders after the June 2026 local elections, CEOs, champions)
+data/swahili_test.csv - 32 Swahili questions: general knowledge, Swahili literature and
+                        East African places, and facts that change (East African leaders,
+                        league champions)
 
 Compared:
   Memory only                   the AI answers alone
   Search: English Wikipedia     the English translation searched on English Wikipedia
-  Search: Korean + English      also Korean Wikipedia (and live web if a Tavily key is set)
-  Router (both checks)          decides per question, using the Korean+English search
+  Search: own language + English  also Korean / Swahili Wikipedia (and live web if a Tavily key is set)
+  Router (both checks)          decides per question, using the own-language + English search
 
-    python -m src.evaluate_korean
-Output: results/korean_evaluation.md, results/korean_evaluation.csv
+    python -m src.evaluate_korean                          (Korean)
+    python -m src.evaluate_korean data/swahili_test.csv    (Swahili)
+Output: results/korean_evaluation*.md / results/swahili_evaluation*.md, and .csv
 """
 from __future__ import annotations
 
@@ -23,10 +27,13 @@ from src import llm, pipeline, router, search, time_check
 from src.evaluate_answers import _cached, _load_cache, score
 from src.llm import ROOT
 
-DATA = ROOT / "data" / "korean_test.csv"
+import sys
+
+DATA = ROOT / (sys.argv[1] if len(sys.argv) > 1 and sys.argv[1].endswith(".csv") else "data/korean_test.csv")
 RESULTS = ROOT / "results"
-CSV_OUT = RESULTS / "korean_evaluation.csv"
-REPORT = RESULTS / "korean_evaluation.md"
+SET = DATA.stem.replace("_test", "")                  # "korean" or "swahili"
+CSV_OUT = RESULTS / f"{SET}_evaluation.csv"
+REPORT = RESULTS / f"{SET}_evaluation.md"
 
 
 def out(path):
@@ -34,7 +41,7 @@ def out(path):
     from src.experiment import out_path
     return out_path(path)
 METHODS = {"memory": "Memory only", "search_en": "Search: English Wikipedia only",
-           "search_ko": "Search: Korean + English", "router": "Router (both checks)"}
+           "search_ko": "Search: own language + English", "router": "Router (both checks)"}
 TYPES = {"stable_common": "General knowledge", "stable_rare": "Local / rare facts",
          "changing": "Changes over time"}
 
@@ -78,8 +85,8 @@ def main():
             w.writerows(rows)
 
     n = len(rows) or 1
-    L = ["# Korean questions\n",
-         f"Model `{llm.model_name()}` · {date.today()} · {len(rows)} Korean questions "
+    L = [f"# {SET.capitalize()} questions\n",
+         f"Model `{llm.model_name()}` · {date.today()} · {len(rows)} {SET.capitalize()} questions "
          f"(answers verified {questions[0]['checked_on']}). Search: "
          f"{'Wikipedia + live web' if search.web_enabled() else 'Wikipedia'}.\n",
          "| Method | Correct | Wrong | No guess | Searched |", "|---|---|---|---|---|"]

@@ -15,18 +15,19 @@ Search used by the methods below: **Wikipedia + live web**.
 | Verbal confidence | 54% (49%-58%) | 189 | 43 | 49% |
 | **Router (ours)** | 66% (62%-70%) | 120 | 49 | 76% |
 | **Router + cutoff rule (ours)** | 66% (62%-70%) | 118 | 50 | 80% |
+| **Router, cheap check (ours)** | 65% (61%-69%) | 126 | 47 | 78% |
 | Oracle (best possible) | 71% (67%-75%) | 100 | 43 | 65% |
 
 ![Accuracy vs. searches](experiment_chart_qwen2.5-7b.png)
 
 ## Correct answers by question type
 
-| Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Oracle (best possible) |
-|---|---|---|---|---|---|---|---|---|---|
-| Stable, famous (PopQA) | 129 | 57% | 77% | 57% | 78% | 69% | 78% | 78% | 80% |
-| Stable, rare (PopQA) - incomplete | 130 | 25% | 60% | 25% | 58% | 54% | 58% | 58% | 62% |
-| Never-changing (FreshQA) | 80 | 57% | 86% | 60% | 80% | 71% | 80% | 80% | 91% |
-| Changing (FreshQA) - outdated | 160 | 16% | 57% | 34% | 51% | 32% | 56% | 56% | 62% |
+| Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Router, cheap check (ours) | Oracle (best possible) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Stable, famous (PopQA) | 129 | 57% | 77% | 57% | 78% | 69% | 78% | 78% | 77% | 80% |
+| Stable, rare (PopQA) - incomplete | 130 | 25% | 60% | 25% | 58% | 54% | 58% | 58% | 57% | 62% |
+| Never-changing (FreshQA) | 80 | 57% | 86% | 60% | 80% | 71% | 80% | 80% | 82% | 91% |
+| Changing (FreshQA) - outdated | 160 | 16% | 57% | 34% | 51% | 32% | 56% | 56% | 54% | 62% |
 
 ## Share of questions searched, by type
 
@@ -70,7 +71,7 @@ For each pair: questions only the router got right vs. only the other method got
 
 ## Cutoff rule
 
-Model training cutoff: unknown. With the cutoff rule, questions whose answers change *sometimes* (MAYBE) are also searched when the model's knowledge is more than a year old.
+Model training cutoff: 2024-09 (2.1 years before the test date). With the cutoff rule, questions whose answers change *sometimes* (MAYBE) are also searched when the model's knowledge is more than a year old.
 
 ## How to read this
 

@@ -17,7 +17,6 @@ import csv
 
 from src.llm import ROOT
 
-RUNS = {"llama3.1:8b": "experiment_answers.csv", "qwen2.5:7b": "experiment_answers_qwen2.5-7b.csv"}
 REPORT = ROOT / "results" / "cost_report.md"
 SEARCH_CALLS, MEMORY_CALLS, CHECK_CALLS, CONF_CALLS = 2, 1, 3, 1
 
@@ -31,8 +30,14 @@ def calls(method: str, r: dict) -> int:
         return CHECK_CALLS + answer
     if method == "Verbal confidence":
         return CONF_CALLS + answer
+    if method.startswith("Router, cheap"):   # memory answer (made anyway) + ONE sample
+        if r["group"] == "HIGH":
+            return answer
+        return MEMORY_CALLS + 1 + (SEARCH_CALLS if searched else 0)
     if method.startswith("Router, AI"):
         return 1 + (0 if r.get("llm_group") == "HIGH" else CHECK_CALLS) + answer
+    if method.startswith("Router, dated"):
+        return 1 + (0 if r.get("dated_group") == "HIGH" else CHECK_CALLS) + answer
     if method.startswith("Router"):
         return (0 if r["group"] == "HIGH" else CHECK_CALLS) + answer
     return answer
@@ -43,7 +48,10 @@ def main():
     L = ["# Cost per question\n",
          "AI calls and web searches each method needs per question, with its accuracy. "
          "Fewer calls and searches = faster and cheaper.\n"]
-    for model, name in RUNS.items():
+    from src.experiment import MODELS, answers_file
+    for model, name in ((m, answers_file(m)) for m in MODELS):
+        if not (ROOT / "results" / name).exists():
+            continue
         rows = list(csv.DictReader((ROOT / "results" / name).open(encoding="utf-8")))
         if not rows:
             continue
@@ -60,8 +68,9 @@ def main():
             L.append(f"| {name_md} | {acc:.0%} | {c:.1f} | {s:.2f} |")
         L.append("")
     L += ["The router skips the knowledge check for fast-changing questions, which are searched "
-          "anyway. Measured seconds per question are added to the experiment from the next run "
-          "on (`results/experiment_answers*.csv`, columns `seconds_*`)."]
+          "anyway. AI calls differ in size (a knowledge-check sample is 8 words; an answer from "
+          "sources reads ~5,000 characters), so measured seconds are in `results/timing_report.md`, "
+          "and the trade-off between a search and a wrong answer in `results/curves_report.md`."]
     REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
     print("\n".join(L))
 
