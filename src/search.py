@@ -60,8 +60,10 @@ def _get(url: str, tries: int = 5) -> dict:
     Wikipedia says "429 Too Many Requests"."""
     import time
     import urllib.error
+    import os
+    pause = 0.2 if os.getenv("TRR_FAST") else 1.0   # the demo app waits less between requests
     for attempt in range(tries):
-        time.sleep(1.0)
+        time.sleep(pause)
         try:
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=30) as r:
@@ -270,11 +272,18 @@ def find_titles(query: str, k: int = 3, lang: str = "en") -> list[str]:
     return cache[key]
 
 
+import threading
+_CACHE_LOCK = threading.Lock()
+
+
 def fetch_page(title: str, lang: str = "en") -> dict | None:
     """Full page text, including infobox and tables. Cached in results/page_cache.json."""
-    cache = _load(PAGE_CACHE_PATH)
     key = f"{lang}::{title}"
-    if key not in cache:
+    with _CACHE_LOCK:
+        cache = _load(PAGE_CACHE_PATH)
+        if key in cache:
+            return cache[key]
+    if True:
         params = {"action": "parse", "page": title, "prop": "text", "redirects": 1,
                   "disableeditsection": 1, "format": "json", "formatversion": 2}
         try:
@@ -284,13 +293,16 @@ def fetch_page(title: str, lang: str = "en") -> dict | None:
             return None
         parsed = data.get("parse") or {}
         real = parsed.get("title", title)
-        cache[key] = {"title": real,
-                      "url": f"https://{lang}.wikipedia.org/wiki/{urllib.parse.quote(real.replace(' ', '_'))}",
-                      "text": html_to_text(parsed.get("text", ""))[:MAX_PAGE_CHARS],
-                      "retrieved": date.today().isoformat()}
-        PAGE_CACHE_PATH.parent.mkdir(exist_ok=True)
-        PAGE_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
-    return cache[key]
+        page = {"title": real,
+                "url": f"https://{lang}.wikipedia.org/wiki/{urllib.parse.quote(real.replace(' ', '_'))}",
+                "text": html_to_text(parsed.get("text", ""))[:MAX_PAGE_CHARS],
+                "retrieved": date.today().isoformat()}
+        with _CACHE_LOCK:                    # re-read: another thread may have added pages
+            cache = _load(PAGE_CACHE_PATH)
+            cache[key] = page
+            PAGE_CACHE_PATH.parent.mkdir(exist_ok=True)
+            PAGE_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+        return page
 
 
 HANGUL = re.compile(r"[\uac00-\ud7a3]")
@@ -364,7 +376,10 @@ def retrieve(question: str, queries: list, k: int = 3, lang: str = "en",
             found += [(t, ql) for t in find_titles(q, k, ql)]
         except Exception as e:
             print(f"   (search failed for '{q}': {e})", flush=True)
-    pages = [p for p in (fetch_page(t, ql) for t, ql in dict.fromkeys(found)) if p and p["text"]]
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(4) as pool:          # read up to 4 pages at the same time
+        fetched = list(pool.map(lambda tl: fetch_page(*tl), dict.fromkeys(found)))
+    pages = [p for p in fetched if p and p["text"]]
     pages += [p for p in (extra_pages or []) if p.get("text")]
     chosen, used = [], 0
     for c in rank(question, [x for p in pages for x in passages(p)]):

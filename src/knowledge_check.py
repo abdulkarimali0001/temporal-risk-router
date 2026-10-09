@@ -90,8 +90,12 @@ def check(question: str) -> dict:
     if key not in cache and old_key in cache and model == "llama3.1:8b":
         key = old_key
     if key not in cache:
-        cache[key] = [llm.generate(PROMPT.format(q=question), temperature=1.0, max_tokens=40)
-                      for _ in range(SAMPLES)]
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(SAMPLES) as pool:   # Ollama answers them in parallel
+            cache[key] = list(pool.map(lambda _: llm.generate(PROMPT.format(q=question),
+                                                              temperature=1.0, max_tokens=40),
+                                       range(SAMPLES)))
+        cache.update({k: v for k, v in _load_cache().items() if k not in cache})
         _save_cache(cache)
     return judge(cache[key])
 

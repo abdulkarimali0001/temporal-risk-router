@@ -5373,5 +5373,10 @@
     "Two.",
     "Two.",
     "Two."
+  ],
+  "ollama::llama3.1:8b::what is 1+1": [
+    "One plus one is two.",
+    "The answer is 2.",
+    "Two."
   ]
 }

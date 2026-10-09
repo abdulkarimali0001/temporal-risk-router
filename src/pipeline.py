@@ -70,21 +70,51 @@ def answer_from_memory(question: str) -> str:
                                              lang=KOREAN if language.is_korean(question) else ""))
 
 
+def gather_sources(question: str, web: bool | None = None) -> list[dict]:
+    """Fast source search for the demo app: no AI calls, so it can run while the AI is
+    busy answering. Keywords on Wikipedia (Korean Wikipedia too for Korean questions)
+    plus the question itself on the live web."""
+    from concurrent.futures import ThreadPoolExecutor
+    web = search.web_enabled() if web is None else web
+    queries = [(search.keywords(question), "ko" if language.is_korean(question) else "en")]
+    with ThreadPoolExecutor(1) as pool:
+        web_job = pool.submit(search.web_search, question) if web else None
+        if language.is_korean(question):
+            queries.append((search.keywords(language.to_english(question)), "en"))
+        web_pages = web_job.result() if web_job else []
+    return search.retrieve(question, queries, extra_pages=web_pages)
+
+
+def source_prompt(question: str, pages: list[dict]) -> str:
+    numbered = "\n\n".join(f"[{i}] {p['title']}: {p['text']}" for i, p in enumerate(pages, 1))
+    return SOURCE_PROMPT.format(
+        sources=numbered, q=question, today=date.today().isoformat(),
+        lang="The question is in Korean: answer in Korean.\n" if language.is_korean(question) else "")
+
+
+def memory_prompt(question: str) -> str:
+    return ANSWER_PROMPT.format(q=question, today=date.today().isoformat(),
+                                lang=KOREAN if language.is_korean(question) else "")
+
+
 def answer_with_search(question: str, web: bool | None = None, korean_wiki: bool = True) -> dict:
     """Search, keep the best passages from all sources, and answer only from them.
       - English Wikipedia: the AI's search words + simple keywords
       - Korean question: also Korean Wikipedia, and the English translation on English Wikipedia
       - web=True (default when a Tavily key is set): live web results ranked together with Wikipedia"""
-    queries = [(search_query(question), "en"), (search.keywords(question), "en")]
-    if language.is_korean(question):
-        english = language.to_english(question)
-        queries = [(search.keywords(english), "en"), (search_query(english), "en")]
-        if korean_wiki:
-            queries += [(search_query(question, "Korean Wikipedia (in Korean)"), "ko"),
-                        (search.keywords(question), "ko")]
-    queries = list(dict.fromkeys(queries))
+    from concurrent.futures import ThreadPoolExecutor
     web = search.web_enabled() if web is None else web
-    web_pages = search.web_search(question) if web else []
+    with ThreadPoolExecutor(1) as pool:
+        web_job = pool.submit(search.web_search, question) if web else None   # runs meanwhile
+        queries = [(search_query(question), "en"), (search.keywords(question), "en")]
+        if language.is_korean(question):
+            english = language.to_english(question)
+            queries = [(search.keywords(english), "en"), (search_query(english), "en")]
+            if korean_wiki:
+                queries += [(search_query(question, "Korean Wikipedia (in Korean)"), "ko"),
+                            (search.keywords(question), "ko")]
+        queries = list(dict.fromkeys(queries))
+        web_pages = web_job.result() if web_job else []
     pages = search.retrieve(question, queries, extra_pages=web_pages)
     answer = answer_from_sources(question, pages) if pages else NOT_FOUND
     return {"answer": answer, "query": " / ".join(f"{q} ({l})" for q, l in queries)

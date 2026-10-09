@@ -6,7 +6,7 @@
 <title>Temporal-Risk Router</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: question bar on top, then the decision path as three linked stages, then the answer with its sources */
+/* Layout: question bar, then the answer (it appears first), then the decision path that explains it */
 :root{
   --bg:#f4f5f7; --panel:#ffffff; --ink:#151a24; --muted:#5f6878; --line:#dde1e8; --accent:#2f5bd3;
   --low:#1d7a4a; --maybe:#b7791f; --high:#c0392b; --low-bg:#e3f3ea; --maybe-bg:#fbf0dc; --high-bg:#f9e2df;
@@ -21,10 +21,10 @@
   color-scheme:dark}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);padding-inline:16px;padding-block:28px 48px}
-.wrap{max-width:860px;margin:0 auto;display:grid;gap:22px}
+.wrap{max-width:860px;margin:0 auto;display:grid;gap:20px}
 header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
 h1{font:700 clamp(28px,5vw,40px)/1.05 var(--display);margin:0;letter-spacing:-.01em}
-.sub{color:var(--muted);margin:6px 0 0;max-width:60ch}
+.sub{color:var(--muted);margin:6px 0 0;max-width:62ch}
 .chip{font:500 12px var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:var(--panel)}
 form{display:flex;gap:8px;flex-wrap:wrap}
 input{flex:1 1 320px;min-width:0;font:17px var(--body);padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
@@ -33,6 +33,18 @@ button.go{font:600 16px var(--body);padding:12px 22px;border:0;border-radius:10p
 button.go:disabled{opacity:.6;cursor:wait}
 .examples{display:flex;flex-wrap:wrap;gap:6px}
 .examples button{font:14px var(--body);border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.answer{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:12px}
+.badge{justify-self:start;font:600 12px var(--mono);letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:4px 10px;background:var(--bg);color:var(--muted)}
+.badge.ok{background:var(--low-bg);color:var(--low)}
+.badge.warn{background:var(--maybe-bg);color:var(--maybe)}
+.badge.risk{background:var(--high-bg);color:var(--high)}
+.text{font-size:19px;line-height:1.5;margin:0;max-width:65ch;white-space:pre-wrap}
+.text.notfound{color:var(--maybe)}
+.draft-old{margin:0;font-size:14px;color:var(--muted);max-width:65ch}
+.draft-old s{text-decoration-thickness:1px}
+.sources{margin:0;padding-left:20px;font-size:14px;display:grid;gap:4px}
+.sources a{color:var(--accent);overflow-wrap:anywhere}
+.meta{font:12px var(--mono);color:var(--muted)}
 .path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 @media (max-width:700px){.path{grid-template-columns:1fr}}
 .stage{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;align-content:start;min-width:0}
@@ -48,13 +60,7 @@ button.go:disabled{opacity:.6;cursor:wait}
 .samples{margin:0;padding-left:18px;font-size:14px;color:var(--muted);display:grid;gap:2px}
 .verdict{font:700 20px var(--display)}
 .note{font-size:14px;color:var(--muted);margin:0}
-.answer{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:12px}
-.answer p.text{font-size:19px;line-height:1.5;margin:0;max-width:65ch}
-.answer.notfound p.text{color:var(--maybe)}
-.sources{margin:0;padding-left:20px;font-size:14px;display:grid;gap:4px}
-.sources a{color:var(--accent);overflow-wrap:anywhere}
-.meta{font:12px var(--mono);color:var(--muted)}
-.status{font:14px var(--mono);color:var(--muted);min-height:1.5em}
+.wait{color:var(--muted);font:13px var(--mono)}
 .error{color:var(--high)}
 .empty{color:var(--muted);border:1.5px dashed var(--line);border-radius:12px;padding:22px;text-align:center}
 @media (prefers-reduced-motion:reduce){.meter i{transition:none}}
@@ -65,7 +71,7 @@ button.go:disabled{opacity:.6;cursor:wait}
   <header>
     <div>
       <h1>Temporal-Risk Router</h1>
-      <p class="sub">Before answering, two checks decide whether the AI can trust its memory or must look the answer up first.</p>
+      <p class="sub">The AI answers at once. Two checks run at the same time, and a risky answer is replaced by one checked against sources.</p>
     </div>
     <span class="chip" id="info">loading…</span>
   </header>
@@ -76,46 +82,49 @@ button.go:disabled{opacity:.6;cursor:wait}
     <button class="go" id="go" type="submit">Ask</button>
   </form>
   <div class="examples" id="examples">
-    <button type="button">Who wrote the Swahili novel Kufa Kuzikana?</button>
-    <button type="button">Who is the prime minister of Japan?</button>
     <button type="button">What is the capital of Australia?</button>
+    <button type="button">Who is the prime minister of Japan?</button>
+    <button type="button">Who wrote the Swahili novel Kufa Kuzikana?</button>
     <button type="button">현재 속초시장은 누구인가요?</button>
     <button type="button">설악산 대청봉의 높이는 몇 미터인가요?</button>
   </div>
-  <p class="status" id="status" aria-live="polite"></p>
+  <p class="error" id="error" hidden></p>
 
-  <div class="empty" id="empty">Pick an example or type a question. You'll see each check, the decision, and the answer with its sources.</div>
+  <div class="empty" id="empty">Pick an example or type a question. The answer starts at once; the checks below decide whether to keep it or replace it with a sourced one.</div>
+
+  <section class="answer" id="answer" hidden>
+    <span class="badge" id="badge">Quick answer · checking…</span>
+    <p class="text" id="text"></p>
+    <p class="draft-old" id="old" hidden></p>
+    <ol class="sources" id="sources"></ol>
+    <span class="meta" id="meta"></span>
+  </section>
 
   <section class="path" id="path" hidden>
     <div class="stage">
       <h2>Check 1 · time</h2>
       <p class="q">Does the answer change over time?</p>
       <div class="scale"><span data-g="LOW">LOW</span><span data-g="MAYBE">MAYBE</span><span data-g="HIGH">HIGH</span></div>
-      <p class="note" id="c1note"></p>
+      <p class="note" id="c1note"><span class="wait">checking…</span></p>
     </div>
     <div class="stage">
       <h2>Check 2 · knowledge</h2>
       <p class="q">Does the AI actually know it?</p>
       <div class="meter" aria-hidden="true"><i id="agree"></i></div>
-      <p class="note" id="c2note"></p>
+      <p class="note" id="c2note"><span class="wait">asking the AI 3 times…</span></p>
       <ol class="samples" id="samples"></ol>
     </div>
     <div class="stage">
       <h2>Decision</h2>
-      <span class="verdict" id="verdict"></span>
+      <span class="verdict" id="verdict">…</span>
       <p class="note" id="reason"></p>
     </div>
-  </section>
-
-  <section class="answer" id="answer" hidden>
-    <p class="text" id="text"></p>
-    <ol class="sources" id="sources"></ol>
-    <span class="meta" id="meta"></span>
   </section>
 </div>
 <script>
 const $ = id => document.getElementById(id);
 const C1 = {LOW:"Stable fact: it does not change.", MAYBE:"Changes sometimes.", HIGH:"Changes often: memory may be outdated."};
+let draft = "", verified = "", times = {};
 
 fetch("/info").then(r=>r.json()).then(i=>{
   $("info").textContent = i.model + (i.web ? " · Wikipedia + web" : " · Wikipedia");
@@ -124,50 +133,92 @@ fetch("/info").then(r=>r.json()).then(i=>{
 document.querySelectorAll("#examples button").forEach(b=>b.onclick=()=>{$("q").value=b.textContent; ask()});
 $("form").addEventListener("submit", e=>{e.preventDefault(); ask()});
 
-let timer=null;
-function progress(on){
-  clearInterval(timer);
-  if(!on){$("status").textContent="";return}
-  const steps=["Check 1: does the answer change over time?","Check 2: asking the AI three times…","Deciding…","Searching and reading sources…","Writing the answer…"];
-  let i=0, t0=Date.now();
-  const tick=()=>{$("status").textContent=steps[Math.min(i,steps.length-1)]+"  "+Math.round((Date.now()-t0)/1000)+"s"};
-  tick(); timer=setInterval(()=>{ if((Date.now()-t0)/1000 > (i+1)*4) i++; tick(); },500);
+function reset(){
+  draft=""; verified=""; times={};
+  $("empty").hidden=true; $("error").hidden=true; $("answer").hidden=false; $("path").hidden=false;
+  setBadge("Quick answer · checking…", "");
+  $("text").textContent=""; $("text").classList.remove("notfound");
+  $("old").hidden=true; $("sources").innerHTML=""; $("meta").textContent="";
+  document.querySelectorAll(".scale span").forEach(s=>s.classList.remove("on"));
+  $("c1note").innerHTML='<span class="wait">checking…</span>';
+  $("c2note").innerHTML='<span class="wait">asking the AI 3 times…</span>';
+  $("agree").style.width="0"; $("samples").innerHTML=""; $("verdict").textContent="…"; $("reason").textContent="";
 }
+function setBadge(text, kind){ const b=$("badge"); b.textContent=text; b.className="badge"+(kind?" "+kind:""); }
 
 async function ask(){
   const q=$("q").value.trim(); if(!q) return;
-  $("go").disabled=true; progress(true);
+  $("go").disabled=true; reset();
   try{
-    const r=await fetch("/ask",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:q})});
-    const d=await r.json();
-    if(!r.ok) throw new Error(d.error||"Request failed");
-    render(d);
-  }catch(e){ progress(false); $("status").innerHTML=""; const s=document.createElement("span"); s.className="error"; s.textContent=e.message; $("status").appendChild(s); }
-  finally{ $("go").disabled=false; clearInterval(timer); }
+    const r = await fetch("/ask",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:q})});
+    if(!r.ok){ const d=await r.json(); throw new Error(d.error||"Request failed"); }
+    const reader = r.body.getReader(), dec = new TextDecoder(); let buf = "";
+    while(true){
+      const {value, done} = await reader.read(); if(done) break;
+      buf += dec.decode(value, {stream:true});
+      let i; while((i = buf.indexOf("\n\n")) >= 0){
+        const block = buf.slice(0, i); buf = buf.slice(i + 2);
+        const kind = (block.match(/^event: (.*)$/m)||[])[1], data = (block.match(/^data: (.*)$/m)||[])[1];
+        if(kind && data) handle(kind, JSON.parse(data));
+      }
+    }
+  }catch(e){ $("error").hidden=false; $("error").textContent=e.message; }
+  finally{ $("go").disabled=false; }
 }
 
-function render(d){
-  progress(false);
-  $("empty").hidden=true; $("path").hidden=false; $("answer").hidden=false;
-  document.querySelectorAll(".scale span").forEach(s=>s.classList.toggle("on", s.dataset.g===d.group));
-  $("c1note").textContent = C1[d.group]||"";
+function handle(kind, d){
+  if(kind==="draft"){ draft += d.text; $("text").textContent = draft; }
+  else if(kind==="draft_done"){ times.draft = d.seconds; meta(); }
+  else if(kind==="check1"){ showGroup(d.group); }
+  else if(kind==="checks"){ showChecks(d); }
+  else if(kind==="sources"){ showSources(d.sources); setBadge("Risky · writing an answer from sources…", "risk"); }
+  else if(kind==="verified"){
+    if(!verified){ $("old").hidden=false; $("old").innerHTML=""; const s=document.createElement("s"); s.textContent=draft.trim();
+      $("old").append("Quick answer from memory: "); $("old").appendChild(s); }
+    verified += d.text; $("text").textContent = verified;
+  }
+  else if(kind==="final"){ finish(d); }
+  else if(kind==="error"){ $("error").hidden=false; $("error").textContent=d.error; }
+}
+
+function showGroup(g){
+  document.querySelectorAll(".scale span").forEach(s=>s.classList.toggle("on", s.dataset.g===g));
+  $("c1note").textContent = C1[g]||"";
+}
+function showChecks(d){
+  showGroup(d.group);
   const samples=$("samples"); samples.innerHTML="";
-  if(d.knows===null){
-    $("agree").style.width="0"; $("c2note").textContent="Skipped: the answer changes often, so it searches anyway.";
-  }else{
+  if(d.knows===null){ $("c2note").textContent="Skipped: the answer changes often, so it searches anyway."; }
+  else{
     $("agree").style.width=Math.round((d.agreement||0)*100)+"%";
     $("c2note").textContent=(d.knows?"Knows it":"Unsure")+" · answers agree "+Math.round((d.agreement||0)*100)+"%";
     d.samples.forEach(a=>{const li=document.createElement("li"); li.textContent=a; samples.appendChild(li)});
   }
   $("verdict").textContent = d.action_text.charAt(0).toUpperCase()+d.action_text.slice(1);
   $("reason").textContent = "Because "+d.reason+".";
-  $("text").textContent = d.answer;
-  $("answer").classList.toggle("notfound", d.not_found);
+  times.checks = d.seconds; meta();
+  if(d.action==="search") setBadge("Risky · searching sources…", "risk");
+}
+function showSources(list){
   const src=$("sources"); src.innerHTML="";
-  d.sources.forEach(s=>{const li=document.createElement("li"); const a=document.createElement("a");
+  list.forEach(s=>{const li=document.createElement("li"); const a=document.createElement("a");
     a.href=s.url; a.target="_blank"; a.rel="noopener"; a.textContent=s.title; li.appendChild(a);
     if(s.retrieved){li.append(" · retrieved "+s.retrieved)} src.appendChild(li)});
-  $("meta").textContent = d.model+" · "+d.seconds+"s"+(d.query?" · searched: "+d.query:"");
+}
+function finish(d){
+  times.total = d.seconds; meta();
+  if(d.mode==="kept"){ setBadge("Checked · answered from memory", "ok"); }
+  else if(d.mode==="warn"){ setBadge("Checked · may change over time", "warn"); $("text").textContent = draft.trim()+" "+d.warning; }
+  else if(d.mode==="verified"){ setBadge("Verified · answered from sources", "ok"); $("text").textContent = d.text; }
+  else if(d.mode==="not_found"){ setBadge("Not found in sources", "warn"); $("text").textContent = d.text; $("text").classList.add("notfound");
+    if(draft && $("old").hidden){ $("old").hidden=false; $("old").innerHTML=""; const s=document.createElement("s"); s.textContent=draft.trim(); $("old").append("Quick answer from memory: "); $("old").appendChild(s); } }
+}
+function meta(){
+  const parts=[];
+  if(times.draft!=null) parts.push("quick answer "+times.draft+"s");
+  if(times.checks!=null) parts.push("checks "+times.checks+"s");
+  if(times.total!=null) parts.push("done "+times.total+"s");
+  $("meta").textContent = parts.join(" · ");
 }
 </script>
 </body>

@@ -43,12 +43,18 @@ NO_GUESS = ["i don't know", "i do not know", "not sure", "could not find", "coul
 
 
 # ---------- scoring ----------
+MONTHS = {m: m[:3] for m in ["january", "february", "march", "april", "june", "july", "august",
+                               "september", "october", "november", "december"]}
+MONTHS["sept"] = "sep"
+
+
 def _spaced(text: str) -> str:
-    return " ".join(re.sub(r"[^\w]+", " ", text.lower()).split())
+    words = re.sub(r"[^\w]+", " ", text.lower()).split()
+    return " ".join(MONTHS.get(w, w) for w in words)       # "November 27" = "Nov. 27"
 
 
 def _compact(text: str) -> str:
-    return re.sub(r"[^\w]+", "", text.lower())
+    return re.sub(r"[^\w]+", "", _spaced(text))
 
 
 GENERIC = set("""city county state states river university united kingdom republic island islands

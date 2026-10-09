@@ -183,10 +183,32 @@ def build() -> list[dict]:
     return items
 
 
+GOLD_UPDATES = ROOT / "data" / "gold_updates.csv"
+EXCLUDED = ROOT / "data" / "excluded_questions.csv"
+
+
+def apply_updates(items: list[dict]) -> list[dict]:
+    """Answers re-checked on a later date (data/gold_updates.csv: add an accepted answer, or
+    replace it when the benchmark's answer has changed since its release) and broken
+    questions left out (data/excluded_questions.csv)."""
+    if EXCLUDED.exists():
+        skip = {r["id"] for r in csv.DictReader(EXCLUDED.open(encoding="utf-8"))}
+        items = [i for i in items if i["id"] not in skip]
+    if GOLD_UPDATES.exists():
+        upd = {r["id"]: r for r in csv.DictReader(GOLD_UPDATES.open(encoding="utf-8"))}
+        for i in items:
+            u = upd.get(i["id"])
+            if u:
+                i["correct_answers"] = (u["answers"] if u["action"] == "replace"
+                                        else i["correct_answers"] + "|" + u["answers"])
+                i["answer_checked_on"] = u["checked_on"]
+    return items
+
+
 def load() -> list[dict]:
     if not BENCHMARK.exists():
         build()
-    return list(csv.DictReader(BENCHMARK.open(encoding="utf-8")))
+    return apply_updates(list(csv.DictReader(BENCHMARK.open(encoding="utf-8"))))
 
 
 # ---------- larger benchmark ----------

@@ -81,3 +81,33 @@ if __name__ == "__main__":
     for q in ["Who runs Samsung Electronics?", "What is photosynthesis?",
               "Is Naver hiring?", "What is the dorm fee?"]:
         print(f"{classify(q, m):<10} {q}")
+
+
+# ---------------------------------------------------------------------------
+# Check 1 by the AI itself (compared with the classifier above in src/experiment.py)
+# The classifier only sees words; the AI knows what kind of fact is being asked
+# ("Who runs Samsung?" = a role that changes hands). One short AI call, cached.
+# ---------------------------------------------------------------------------
+LLM_PROMPT = ("How often does the correct answer to this question change?\n"
+              "never = a fixed fact (history, science, geography, a book's author)\n"
+              "sometimes = changes every few years (a CEO, a leader, a record, a population)\n"
+              "often = changes within months or weeks (prices, rankings, recent events, ages, 'latest')\n"
+              "Reply with one word: never, sometimes or often.\n\nQuestion: {q}")
+LLM_GROUPS = {"never": "LOW", "sometimes": "AMBIGUOUS", "often": "HIGH"}
+LLM_CACHE = ROOT / "results" / "llm_time_cache.json"
+
+
+def classify_llm(question: str) -> str:
+    """Check 1 asked to the AI: LOW / AMBIGUOUS / HIGH."""
+    import json
+    from src import llm
+    key = f"{llm.backend()}::{llm.model_name()}::{question}"
+    try:
+        cache = json.loads(LLM_CACHE.read_text(encoding="utf-8"))
+    except Exception:
+        cache = {}
+    if key not in cache:
+        reply = llm.generate(LLM_PROMPT.format(q=question), max_tokens=5).lower()
+        cache[key] = next((g for w, g in LLM_GROUPS.items() if w in reply), "AMBIGUOUS")
+        LLM_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    return cache[key]

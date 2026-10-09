@@ -30,6 +30,7 @@ import csv
 import json
 import random
 import re
+import time
 from collections import Counter
 from datetime import date
 
@@ -71,8 +72,8 @@ CONF_PROMPT = ("Today's date is {today}. How confident are you that you know the
 
 METHODS = ["Never search", "Always search", "Time check only", "Self-consistency only",
            "Verbal confidence", "Router (ours)", "Router + cutoff rule (ours)",
-           "Oracle (best possible)"]
-OURS = ("Router (ours)", "Router + cutoff rule (ours)")
+           "Router, AI time check (ours)", "Oracle (best possible)"]
+OURS = ("Router (ours)", "Router + cutoff rule (ours)", "Router, AI time check (ours)")
 TYPES = {"stable_common": "Stable, famous (PopQA)",
          "stable_rare": "Stable, rare (PopQA) - incomplete",
          "stable_freshqa": "Never-changing (FreshQA)",
@@ -100,12 +101,20 @@ def confidence(question: str) -> int:
 def components(q: str, cache: dict, tag: str) -> dict:
     key = f"{tag}::{q}"
     c = cache.setdefault(key, {})
+    t = c.setdefault("seconds", {})
     if "memory" not in c:
-        c["memory"] = pipeline.answer_from_memory(q); _save_cache(cache)
+        t0 = time.time(); c["memory"] = pipeline.answer_from_memory(q)
+        t["memory"] = round(time.time() - t0, 2); _save_cache(cache)
     if "confidence" not in c:
-        c["confidence"] = confidence(q); _save_cache(cache)
+        t0 = time.time(); c["confidence"] = confidence(q)
+        t["confidence"] = round(time.time() - t0, 2); _save_cache(cache)
+    if "llm_group" not in c:
+        t0 = time.time(); c["llm_group"] = time_check.classify_llm(q)
+        t["llm_time_check"] = round(time.time() - t0, 2); _save_cache(cache)
     if SEARCH_VERSION not in c:
+        t0 = time.time()
         r = pipeline.answer_with_search(q)
+        t["search"] = round(time.time() - t0, 2)
         c[SEARCH_VERSION] = {"answer": r["answer"], "query": r["query"],
                              "sources": [p["url"] for p in r["sources"]]}
         _save_cache(cache)
@@ -137,7 +146,7 @@ def knowledge_is_stale(model: str) -> bool:
 
 
 def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
-              stale: bool = True) -> dict:
+              stale: bool = True, llm_group: str | None = None) -> dict:
     """Which methods search (True) for this question."""
     return {"Never search": False,
             "Always search": True,
@@ -147,6 +156,7 @@ def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
             "Router (ours)": router.decide(group, knows)[0] == "search",
             "Router + cutoff rule (ours)": (router.decide(group, knows)[0] == "search"
                                             or (stale and group == "AMBIGUOUS")),
+            "Router, AI time check (ours)": router.decide(llm_group or group, knows)[0] == "search",
             "Oracle (best possible)": not memory_correct}
 
 
@@ -275,6 +285,13 @@ def write_report(rows: list[dict], total: int):
               f"- Right group (never/slow/fast = LOW/MAYBE/HIGH): {right}/{len(fresh)} ({right / len(fresh):.0%})",
               f"- Fast-changing questions caught as HIGH: "
               f"{sum(r['group'] == 'HIGH' for r in fast)}/{len(fast)}"]
+        llm_rows = [r for r in fresh if r.get("llm_group")]
+        if llm_rows:
+            right_llm = sum(r["llm_group"] == benchmarks.TIME_GROUP[r["fact_type"]] for r in llm_rows)
+            L += ["", f"- Check 1 asked to the AI instead: right group {right_llm}/{len(llm_rows)} "
+                  f"({right_llm / len(llm_rows):.0%}), fast-changing caught as HIGH "
+                  f"{sum(r['llm_group'] == 'HIGH' for r in llm_rows if r['fact_type'] == 'fast-changing')}"
+                  f"/{sum(r['fact_type'] == 'fast-changing' for r in llm_rows)}"]
 
     L += ["", "## Is the difference real? (paired McNemar test)\n",
           "For each pair: questions only the router got right vs. only the other method got right. "
@@ -303,8 +320,9 @@ def write_report(rows: list[dict], total: int):
           "", "## Notes\n",
           "- Scoring: an answer is correct if it contains one of the benchmark's accepted answers "
           "(automatic matching; see `experiment_answers.csv` to check by hand).",
-          f"- FreshQA answers are as of {benchmarks.FRESHQA_VERSION}; a few fast-changing answers may have "
-          "changed since.",
+          f"- FreshQA answers are as of {benchmarks.FRESHQA_VERSION}. Answers that changed since then were "
+          "re-checked with sources (`data/gold_updates.csv`); broken questions are left out "
+          "(`data/excluded_questions.csv`).",
           "- Questions with a false premise were left out."]
     out_path(REPORT).write_text("\n".join(L) + "\n", encoding="utf-8")
     chart(s, n)
@@ -324,7 +342,9 @@ def main():
         print(f"[{i}/{len(items)}] {q}", flush=True)
         try:
             c = components(q, cache, tag)
+            t0 = time.time()
             kc = knowledge_check.check(q)
+            c["seconds"].setdefault("knowledge_check", round(time.time() - t0, 2))
             group = time_check.classify(q, model)
         except Exception as e:  # keep going if one question fails
             print(f"   ERROR: {e}", flush=True)
@@ -338,8 +358,10 @@ def main():
                "sources": " ".join(srch["sources"]),
                **{f"{v}::score": score(c[v] if v == "search" else c[v]["answer"], aliases)
                   for v in SEARCH_LABELS if v in c}}
+        row["llm_group"] = c.get("llm_group", "")
+        row.update({f"seconds_{k}": v for k, v in c.get("seconds", {}).items()})
         for m, searched in decisions(group, kc["knows"], c["confidence"], mem_score == "correct",
-                                     stale).items():
+                                     stale, c.get("llm_group")).items():
             row[f"{m}::searched"] = searched
             row[f"{m}::score"] = srch_score if searched else mem_score
         rows.append(row)

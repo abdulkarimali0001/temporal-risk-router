@@ -1,6 +1,6 @@
 # Experiment: when should the AI search?
 
-Model `qwen2.5:7b` · 2026-10-09 · 500/500 questions from public benchmarks (FreshQA 2026-04-21, PopQA)
+Model `qwen2.5:7b` · 2026-10-09 · 499/499 questions from public benchmarks (FreshQA 2026-04-21, PopQA)
 
 Search used by the methods below: **Wikipedia + live web**.
 
@@ -8,14 +8,14 @@ Search used by the methods below: **Wikipedia + live web**.
 
 | Method | Correct (95% interval) | Wrong | No guess | Searched |
 |---|---|---|---|---|
-| Never search | 35% (31%-40%) | 282 | 41 | 0% |
-| Always search | 65% (60%-69%) | 123 | 54 | 100% |
-| Time check only | 41% (36%-45%) | 262 | 35 | 15% |
-| Self-consistency only | 62% (58%-66%) | 137 | 51 | 73% |
-| Verbal confidence | 52% (47%-56%) | 196 | 44 | 49% |
-| **Router (ours)** | 63% (59%-67%) | 133 | 50 | 76% |
-| **Router + cutoff rule (ours)** | 63% (59%-67%) | 133 | 51 | 80% |
-| Oracle (best possible) | 68% (64%-72%) | 114 | 44 | 65% |
+| Never search | 35% (31%-40%) | 281 | 41 | 0% |
+| Always search | 68% (64%-72%) | 108 | 53 | 100% |
+| Time check only | 42% (37%-46%) | 256 | 35 | 15% |
+| Self-consistency only | 65% (61%-69%) | 126 | 50 | 73% |
+| Verbal confidence | 54% (49%-58%) | 189 | 43 | 49% |
+| **Router (ours)** | 66% (62%-70%) | 120 | 49 | 76% |
+| **Router + cutoff rule (ours)** | 66% (62%-70%) | 118 | 50 | 80% |
+| Oracle (best possible) | 71% (67%-75%) | 100 | 43 | 65% |
 
 ![Accuracy vs. searches](experiment_chart_qwen2.5-7b.png)
 
@@ -23,10 +23,10 @@ Search used by the methods below: **Wikipedia + live web**.
 
 | Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Oracle (best possible) |
 |---|---|---|---|---|---|---|---|---|---|
-| Stable, famous (PopQA) | 130 | 56% | 76% | 56% | 78% | 68% | 78% | 78% | 79% |
+| Stable, famous (PopQA) | 129 | 57% | 77% | 57% | 78% | 69% | 78% | 78% | 80% |
 | Stable, rare (PopQA) - incomplete | 130 | 25% | 60% | 25% | 58% | 54% | 58% | 58% | 62% |
 | Never-changing (FreshQA) | 80 | 57% | 86% | 60% | 80% | 71% | 80% | 80% | 91% |
-| Changing (FreshQA) - outdated | 160 | 16% | 48% | 31% | 44% | 28% | 48% | 47% | 53% |
+| Changing (FreshQA) - outdated | 160 | 16% | 57% | 34% | 51% | 32% | 56% | 56% | 62% |
 
 ## Share of questions searched, by type
 
@@ -60,13 +60,13 @@ For each pair: questions only the router got right vs. only the other method got
 
 | Router vs. | Only router right | Only other right | p-value |
 |---|---|---|---|
-| Never search | 150 | 10 | 0.000 * |
-| Always search | 9 | 15 | 0.307 |
-| Time check only | 121 | 7 | 0.000 * |
-| Self-consistency only | 5 | 0 | 0.062 |
-| Verbal confidence | 66 | 9 | 0.000 * |
+| Never search | 168 | 14 | 0.000 * |
+| Always search | 4 | 11 | 0.118 |
+| Time check only | 134 | 11 | 0.000 * |
+| Self-consistency only | 12 | 4 | 0.077 |
+| Verbal confidence | 75 | 11 | 0.000 * |
 
-(Compared using: Router (ours).)
+(Compared using: Router + cutoff rule (ours).)
 
 ## Cutoff rule
 
@@ -82,5 +82,5 @@ Model training cutoff: unknown. With the cutoff rule, questions whose answers ch
 ## Notes
 
 - Scoring: an answer is correct if it contains one of the benchmark's accepted answers (automatic matching; see `experiment_answers.csv` to check by hand).
-- FreshQA answers are as of 2026-04-21; a few fast-changing answers may have changed since.
+- FreshQA answers are as of 2026-04-21. Answers that changed since then were re-checked with sources (`data/gold_updates.csv`); broken questions are left out (`data/excluded_questions.csv`).
 - Questions with a false premise were left out.
