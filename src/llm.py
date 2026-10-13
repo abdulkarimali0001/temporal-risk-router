@@ -81,6 +81,29 @@ def stream(prompt: str, temperature: float = 0.0, max_tokens: int = 300):
                     break
 
 
+def generate_with_probs(prompt: str, max_tokens: int = 300) -> tuple[str, list[float] | None]:
+    """Greedy answer plus the probability of each generated token (Ollama logprobs).
+    Returns (text, None) when this Ollama version or backend does not give token probabilities."""
+    import math
+    if backend() != "ollama":
+        return generate(prompt, 0.0, max_tokens), None
+    host = os.getenv("OLLAMA_HOST", OLLAMA_HOST)
+    body = json.dumps({"model": ollama_model(), "prompt": prompt, "stream": False, "logprobs": True,
+                       "keep_alive": os.getenv("OLLAMA_KEEP_ALIVE", "30m"),
+                       "options": {"temperature": 0.0, "num_predict": max_tokens,
+                                   "num_ctx": int(os.getenv("OLLAMA_NUM_CTX", "8192"))}}).encode()
+    req = urllib.request.Request(f"{host}/api/generate", data=body,
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        out = json.load(r)
+    lp = out.get("logprobs")
+    probs = None
+    if isinstance(lp, list) and lp:
+        vals = [x.get("logprob") if isinstance(x, dict) else x for x in lp]
+        probs = [math.exp(v) for v in vals if isinstance(v, (int, float))] or None
+    return out.get("response", "").strip(), probs
+
+
 def generate(prompt: str, temperature: float = 0.0, max_tokens: int = 300) -> str:
     """One call to the language model; returns its text reply."""
     if backend() == "ollama":

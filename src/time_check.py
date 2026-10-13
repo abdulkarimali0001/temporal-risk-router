@@ -29,6 +29,18 @@ TRAIN_DATA = ROOT / "data" / "time_check_train.csv"
 # fast their answer changes, plus stable PopQA questions - none of them in the benchmark test set
 EXTRA_DATA = ROOT / "data" / "time_check_extra.csv"
 MODEL_PATH = ROOT / "results" / "time_check_model.joblib"
+
+
+def _paths() -> tuple[Path, Path]:
+    """(extra training data, saved model) for the question set being tested.
+    TRR_SET=heldout: the held-out test set gets its own classifier, trained WITHOUT its
+    questions (it may use the development questions instead) - so no test question is
+    ever seen in training."""
+    import os
+    if os.getenv("TRR_SET") == "heldout":
+        return (ROOT / "data" / "time_check_extra_heldout.csv",
+                ROOT / "results" / "time_check_model_heldout.joblib")
+    return EXTRA_DATA, MODEL_PATH
 LABELS = ["LOW", "AMBIGUOUS", "HIGH"]
 
 
@@ -44,7 +56,7 @@ def build_pipeline() -> Pipeline:
 
 
 def training_files() -> list[Path]:
-    return [p for p in (TRAIN_DATA, EXTRA_DATA) if p.exists()]
+    return [p for p in (TRAIN_DATA, _paths()[0]) if p.exists()]
 
 
 OWN_WEIGHT = 3   # our own hand-labelled questions count 3x the outside data
@@ -55,16 +67,18 @@ def train() -> Pipeline:
     df = pd.concat(frames, ignore_index=True)
     weights = [OWN_WEIGHT] * len(frames[0]) + [1] * (len(df) - len(frames[0]))
     model = build_pipeline().fit(df["question"], df["label"], clf__sample_weight=weights)
-    MODEL_PATH.parent.mkdir(exist_ok=True)
-    joblib.dump(model, MODEL_PATH)
+    path = _paths()[1]
+    path.parent.mkdir(exist_ok=True)
+    joblib.dump(model, path)
     return model
 
 
 def load() -> Pipeline:
     newest_data = max(p.stat().st_mtime for p in training_files())
-    if MODEL_PATH.exists() and MODEL_PATH.stat().st_mtime >= newest_data:
+    path = _paths()[1]
+    if path.exists() and path.stat().st_mtime >= newest_data:
         try:
-            return joblib.load(MODEL_PATH)
+            return joblib.load(path)
         except Exception:  # saved with another scikit-learn version: retrain
             pass
     return train()
@@ -77,7 +91,7 @@ def classify(question: str, model: Pipeline | None = None) -> str:
 
 if __name__ == "__main__":
     m = train()
-    print(f"Trained on {', '.join(p.name for p in training_files())}, saved to {MODEL_PATH.relative_to(ROOT)}")
+    print(f"Trained on {', '.join(p.name for p in training_files())}, saved to {_paths()[1].relative_to(ROOT)}")
     for q in ["Who runs Samsung Electronics?", "What is photosynthesis?",
               "Is Naver hiring?", "What is the dorm fee?"]:
         print(f"{classify(q, m):<10} {q}")

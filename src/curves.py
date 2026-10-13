@@ -25,13 +25,14 @@ import pandas as pd
 from sklearn.model_selection import StratifiedKFold
 
 from src import learned_router as lr
+from src import benchmarks
 from src.llm import ROOT
 
 REPORT = ROOT / "results" / "curves_report.md"
 CHART = ROOT / "results" / "curves_chart.png"
 BUDGETS = [0.25, 0.50, 0.75]
-METHODS = ["Time check", "Self-consistency", "Verbal confidence", "Router (ours)",
-           "Learned router (ours)", "Random", "Oracle"]
+METHODS = ["Time check", "Self-consistency", "Verbal confidence", "Token probability",
+           "Router (ours)", "Router, strict check (ours)", "Learned router (ours)", "Random", "Oracle"]
 
 
 def oof_probability(df: pd.DataFrame, folds: int = 5, repeats: int = 5) -> np.ndarray:
@@ -49,7 +50,12 @@ def scores(df: pd.DataFrame) -> dict[str, np.ndarray]:
     time_risk = (df["p_high"] + 0.5 * df["p_maybe"]).to_numpy()
     know_risk = np.clip((1 - df["agreement"]) + df["dont_know"], 0, 1).to_numpy()
     gain = df["srch_ok"].to_numpy() - df["mem_ok"].to_numpy()        # +1 helps, -1 hurts
-    return {"Time check": time_risk,
+    out = {}
+    if "mem_prob" in df and df["mem_prob"].notna().mean() > 0.9:      # only if Ollama gave token probabilities
+        out["Token probability"] = 1 - df["mem_prob"].fillna(df["mem_prob"].mean()).to_numpy()
+    if "strict_risk" in df:
+        out["Router, strict check (ours)"] = np.maximum(time_risk, df["strict_risk"].to_numpy())
+    return out | {"Time check": time_risk,
             "Self-consistency": know_risk,
             "Verbal confidence": 1 - df["confidence"].to_numpy(),
             "Router (ours)": np.maximum(time_risk, know_risk),
@@ -122,11 +128,13 @@ def chart(curves_by_model: dict):
              "Verbal confidence": dict(color="#6B7280", lw=1.4, ls=":"),
              "Time check": dict(color=muted, lw=1.2, ls="-."),
              "Random": dict(color=muted, lw=1.0, ls=(0, (1, 3))),
-             "Oracle": dict(color="#111827", lw=1.0, ls="--")}
+             "Oracle": dict(color="#111827", lw=1.0, ls="--"),
+             "Router, strict check (ours)": dict(color="#1E3A8A", lw=2.0),
+             "Token probability": dict(color="#6B7280", lw=1.2, ls=(0, (5, 2, 1, 2)))}
     fig, axes = plt.subplots(1, len(curves_by_model), figsize=(6.4 * len(curves_by_model), 4.8),
                              dpi=200, squeeze=False)
     for ax, (model, cs) in zip(axes[0], curves_by_model.items()):
-        for m in METHODS:
+        for m in [x for x in METHODS if x in cs]:
             c = cs[m]
             x = np.linspace(0, 100, len(c))
             ax.plot(x, c * 100, label=m, **style[m])
@@ -141,7 +149,7 @@ def chart(curves_by_model: dict):
     fig.suptitle("Accuracy at every search budget (higher is better)", x=0.01, ha="left",
                  color=ink, fontsize=13)
     fig.tight_layout()
-    fig.savefig(CHART)
+    fig.savefig(benchmarks.suffixed(CHART))
     plt.close(fig)
 
 
@@ -153,7 +161,7 @@ def main():
          "k% gives accuracy at that budget. **Area** = mean accuracy over all budgets from 0% "
          "to 100% (higher is better), with a 95% bootstrap interval. The learned router uses "
          "out-of-fold probabilities (never tested on a question it trained on).\n",
-         "![Curves](curves_chart.png)\n"]
+         f"![Curves]({benchmarks.suffixed(CHART).name})\n"]
     curves_by_model = {}
     for model in df["model"].unique():
         sub = df[df["model"] == model].reset_index(drop=True)
@@ -166,7 +174,7 @@ def main():
               f"Never search {mem_ok.mean():.0%} · always search {srch_ok.mean():.0%}\n",
               "| Method | Area (95% interval) | at 25% searched | at 50% | at 75% |",
               "|---|---|---|---|---|"]
-        for m in METHODS:
+        for m in [x for x in METHODS if x in cs]:
             c = cs[m]
             ci = "" if m in ("Random", "Oracle") else \
                 " ({:.1%}-{:.1%})".format(*auc_ci(sc[m], mem_ok, srch_ok))
@@ -175,11 +183,13 @@ def main():
                      " | ".join(f"{at(c, b):.0%}" for b in BUDGETS) + " |")
         L += ["", "Paired comparison of areas (same questions resampled; an interval above zero "
               "means the router is reliably better):\n",
-              "| Router (ours) vs. | Difference in area | 95% interval |", "|---|---|---|"]
-        for m in ["Time check", "Self-consistency", "Verbal confidence"]:
-            d, lo, hi = paired_diff(sc["Router (ours)"], sc[m], mem_ok, srch_ok)
-            L.append(f"| {m} | {d * 100:+.1f} points | {lo * 100:+.1f} to {hi * 100:+.1f}"
-                     f"{' *' if lo > 0 else ''} |")
+              "| Router | vs. | Difference in area | 95% interval |", "|---|---|---|---|"]
+        for ours in [x for x in ["Router (ours)", "Router, strict check (ours)"] if x in sc]:
+            for m in [x for x in ["Time check", "Self-consistency", "Verbal confidence", "Token probability"]
+                      if x in sc]:
+                d, lo, hi = paired_diff(sc[ours], sc[m], mem_ok, srch_ok)
+                L.append(f"| {ours} | {m} | {d * 100:+.1f} points | {lo * 100:+.1f} to {hi * 100:+.1f}"
+                         f"{' *' if lo > 0 else ''} |")
         rnd = cs["Random"].mean()
         L.append(f"| Random | {(cs['Router (ours)'].mean() - rnd) * 100:+.1f} points | |")
         L += ["", "**Cost model.** Total cost per question = share searched + R x share not correct, "
@@ -188,7 +198,7 @@ def main():
               "always searching (lower is better); in brackets the share of questions searched.\n",
               "| Method | " + " | ".join(f"R = {r}" for r in RATIOS) + " |",
               "|---|" + "---|" * len(RATIOS)]
-        for m in ["Never search", "Always search"] + [x for x in METHODS if x not in ("Oracle",)]:
+        for m in ["Never search", "Always search"] + [x for x in METHODS if x not in ("Oracle",) and x in cs]:
             cells = []
             for r in RATIOS:
                 always = 1 + r * (1 - srch_ok.mean())
@@ -202,7 +212,7 @@ def main():
             name = f"**{m}**" if "ours" in m else m
             L.append(f"| {name} | " + " | ".join(cells) + " |")
         L.append("")
-    REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
+    benchmarks.suffixed(REPORT).write_text("\n".join(L) + "\n", encoding="utf-8")
     chart(curves_by_model)
     print("\n".join(L))
 

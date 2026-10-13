@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import csv
 
+from src import benchmarks
 from src.llm import ROOT
 
 REPORT = ROOT / "results" / "cost_report.md"
@@ -28,7 +29,7 @@ def calls(method: str, r: dict) -> int:
         return answer
     if method == "Self-consistency only":
         return CHECK_CALLS + answer
-    if method == "Verbal confidence":
+    if method in ("Verbal confidence", "Ask the AI"):
         return CONF_CALLS + answer
     if method.startswith("Router, strict"):   # + the memory answer, also when it searches
         if r["group"] == "HIGH":
@@ -75,7 +76,7 @@ def main():
           "anyway. AI calls differ in size (a knowledge-check sample is 8 words; an answer from "
           "sources reads ~5,000 characters), so measured seconds are in `results/timing_report.md`, "
           "and the trade-off between a search and a wrong answer in `results/curves_report.md`."]
-    REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
+    benchmarks.suffixed(REPORT).write_text("\n".join(L) + "\n", encoding="utf-8")
     print("\n".join(L))
 
 

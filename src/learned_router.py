@@ -35,6 +35,7 @@ from sklearn.preprocessing import StandardScaler
 
 from src import knowledge_check, time_check
 from src.evaluate_answers import NO_GUESS
+from src import benchmarks
 from src.llm import ROOT
 
 RESULTS = ROOT / "results"
@@ -64,8 +65,11 @@ def kc_answers(cache: dict, model: str, question: str) -> list[str]:
 
 def features(question: str, kc: list[str], confidence: float, memory: str, tc_model) -> dict:
     probs = dict(zip(tc_model.classes_, tc_model.predict_proba([question])[0]))
-    j = knowledge_check.judge(kc) if kc else {"agreement": 0.0, "said_dont_know": 3}
-    return {"p_low": probs.get("LOW", 0), "p_maybe": probs.get("AMBIGUOUS", 0),
+    j = knowledge_check.judge(kc[:3]) if kc else {"agreement": 0.0, "said_dont_know": 3}
+    s = knowledge_check.judge_strict([str(memory)] + kc[:3], question) if kc else None
+    # strict check as a score: share of contradicting answer pairs + share of "I don't know"
+    strict_risk = 1.0 if s is None else min(1.0, (1 - s["agreement"]) + s["said_dont_know"] / 4)
+    return {"strict_risk": strict_risk,"p_low": probs.get("LOW", 0), "p_maybe": probs.get("AMBIGUOUS", 0),
             "p_high": probs.get("HIGH", 0), "agreement": j["agreement"],
             "dont_know": j["said_dont_know"] / 3, "confidence": float(confidence) / 100,
             "abstained": abstained(memory)}
@@ -172,7 +176,7 @@ def chart(df: pd.DataFrame, cv_search: np.ndarray, models: list[str]):
             ax.spines[side].set_color(grid)
         ax.tick_params(colors=muted)
     fig.tight_layout()
-    fig.savefig(CHART)
+    fig.savefig(benchmarks.suffixed(CHART))
     plt.close(fig)
 
 
@@ -226,6 +230,23 @@ def main():
             acc, sr = transfer(df, a, b)
             L.append(f"| {a} | {b} | {acc:.0%} | {sr:.0%} |")
 
+    if benchmarks.current_set() == "heldout":
+        # the cleanest test: trained ONLY on the development questions, decided on the held-out ones
+        import os
+        os.environ["TRR_SET"] = "dev"
+        dev = load_runs()
+        os.environ["TRR_SET"] = "heldout"
+        L += ["", "## Trained on the development set, tested on the held-out set\n",
+              "| Model | Correct | Searched | Always search |", "|---|---|---|---|"]
+        for m in models:
+            tr, te = dev[dev["model"] == m], df[df["model"] == m]
+            if len(tr) < 100:
+                continue
+            fit = make_model().fit(tr[FEATURES], tr["y"])
+            thr = pick_threshold(tr, fit.predict_proba(tr[FEATURES])[:, 1])
+            s = fit.predict_proba(te[FEATURES])[:, 1] >= thr
+            L.append(f"| {m} | {policy_accuracy(te, s):.0%} | {s.mean():.0%} | {te['srch_ok'].mean():.0%} |")
+
     final = make_model().fit(df[FEATURES], df["y"])
     coefs = final[-1].coef_[0]
     L += ["", "## What the model learned\n",
@@ -235,8 +256,8 @@ def main():
     L += ["", "![Learned router](learned_router_chart.png)"]
 
     threshold = pick_threshold(df, final.predict_proba(df[FEATURES])[:, 1])
-    joblib.dump({"model": final, "threshold": threshold, "features": FEATURES}, MODEL_PATH)
-    REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
+    joblib.dump({"model": final, "threshold": threshold, "features": FEATURES}, benchmarks.suffixed(MODEL_PATH))
+    benchmarks.suffixed(REPORT).write_text("\n".join(L) + "\n", encoding="utf-8")
     chart(df, cv_search, models)
     print("\n".join(L))
 

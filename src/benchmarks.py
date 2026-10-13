@@ -22,6 +22,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import os
 import random
 import time
 import urllib.parse
@@ -41,6 +42,12 @@ DEV_LABELS = ROOT / "data" / "freshqa_dev_labels.csv"
 # and unused PopQA questions (stable facts): extra training data for the time check
 TIME_TRAIN = ROOT / "data" / "time_check_extra.csv"
 EXTRA_POPQA = 150
+# Held-out test set: questions never looked at while the method was designed
+# (the 500 in benchmark.csv are the development set). TRR_SET=heldout selects it.
+HELDOUT = ROOT / "data" / "heldout.csv"
+TIME_TRAIN_HELDOUT = ROOT / "data" / "time_check_extra_heldout.csv"
+HELDOUT_POPQA_PER_TYPE = 100
+MID_VIEWS = (1000, 10000)  # PopQA: moderately known entities, a third group in the held-out set
 
 SEED = 42
 PER_FRESHQA_TYPE = 40      # never / slow / fast-changing
@@ -205,10 +212,76 @@ def apply_updates(items: list[dict]) -> list[dict]:
     return items
 
 
+def current_set() -> str:
+    """'dev' (the 500 questions used while building the method) or 'heldout'."""
+    return "heldout" if os.getenv("TRR_SET") == "heldout" else "dev"
+
+
 def load() -> list[dict]:
+    if current_set() == "heldout":
+        if not HELDOUT.exists():
+            build_heldout()
+        return apply_updates(list(csv.DictReader(HELDOUT.open(encoding="utf-8"))))
     if not BENCHMARK.exists():
         build()
     return apply_updates(list(csv.DictReader(BENCHMARK.open(encoding="utf-8"))))
+
+
+def suffixed(path):
+    """results/curves_report.md -> results/curves_report_heldout.md on the held-out set."""
+    return path.with_name(f"{path.stem}_heldout{path.suffix}") if current_set() == "heldout" else path
+
+
+def build_heldout() -> list[dict]:
+    """Every remaining usable FreshQA question (TEST and DEV splits, no false premise) and
+    100 famous / 100 moderately known / 100 rare PopQA questions, none of them in the
+    development set or in the development time check's training data."""
+    dev = list(csv.DictReader(BENCHMARK.open(encoding="utf-8")))
+    used = {i["question"] for i in dev}
+    if TIME_TRAIN.exists():
+        used |= {r["question"] for r in csv.DictReader(TIME_TRAIN.open(encoding="utf-8"))
+                 if r.get("category") == "popqa"}
+    fresh_rows = load_freshqa()
+    items = []
+    for r in fresh_rows:
+        if (r.get("fact_type") in TIME_GROUP and r["answers"] and r["question"] not in used
+                and r.get("false_premise", "").upper() != "TRUE"):
+            ft = r["fact_type"]
+            items.append({"id": f"fqa-{r.get('id', '')}", "source": "FreshQA", "question": r["question"],
+                          "type": "stable_freshqa" if ft == "never-changing" else "changing",
+                          "fact_type": ft, "popularity": "", "correct_answers": "|".join(r["answers"]),
+                          "version": FRESHQA_VERSION})
+    fresh_q = {i["question"] for i in items}
+    pop_rows = load_popqa()
+    kinds = [("stable_common", lambda p: p >= COMMON_MIN_VIEWS),
+             ("stable_mid", lambda p: MID_VIEWS[0] <= p < MID_VIEWS[1]),
+             ("stable_rare", lambda p: p <= RARE_MAX_VIEWS)]
+
+    def pool_for(keep):
+        return [r for r in pop_rows if r.get("prop") in POPQA_PROPS and _answers(r)
+                and r["question"] not in used and keep(int(r.get("s_pop") or 0))]
+    # enough candidates, plus ~150 spare stable questions for the held-out time check's training
+    while any(len(pool_for(k)) < HELDOUT_POPQA_PER_TYPE + 60 for _, k in kinds) and len(pop_rows) < 9000:
+        pop_rows = more_popqa(pop_rows, 10)
+    rng = random.Random(SEED + 7)
+    for t, keep in kinds:
+        pool = pool_for(keep)
+        for r in rng.sample(pool, min(HELDOUT_POPQA_PER_TYPE, len(pool))):
+            items.append({"id": f"pop-{r.get('id', '')}", "source": "PopQA", "question": r["question"],
+                          "type": t, "fact_type": r["prop"], "popularity": r.get("s_pop", ""),
+                          "correct_answers": "|".join(_answers(r)), "version": "PopQA test"})
+    with HELDOUT.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(items)
+    # the held-out time check: may learn from the development questions, never from held-out ones
+    test_q = {i["question"] for i in items}
+    with TIME_TRAIN_HELDOUT.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["question", "label", "category"])
+        w.writeheader()
+        w.writerows(time_training(fresh_rows, pop_rows, test_q))
+    assert not fresh_q & used
+    return items
 
 
 # ---------- larger benchmark ----------
@@ -284,6 +357,13 @@ def extend(fresh_per_type: int = LARGE_FRESHQA_PER_TYPE,
 
 if __name__ == "__main__":
     import sys
+    if "--heldout" in sys.argv:
+        items = build_heldout()
+        from collections import Counter
+        print(f"Saved {len(items)} held-out questions to {HELDOUT.relative_to(ROOT)}")
+        for (src, t), n in sorted(Counter((i["source"], i["type"]) for i in items).items()):
+            print(f"  {src:8} {t:15} {n}")
+        raise SystemExit
     items = extend() if "--large" in sys.argv else build()
     from collections import Counter
     print(f"Saved {len(items)} questions to {BENCHMARK.relative_to(ROOT)}")

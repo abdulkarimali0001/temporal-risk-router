@@ -49,10 +49,11 @@ MODELS = ["llama3.1:8b", "qwen2.5:7b", "qwen2.5:14b"]   # every model that may h
 
 def answers_file(model: str) -> str:
     """results/ file with one model's answers to the benchmark."""
+    held = "_heldout" if benchmarks.current_set() == "heldout" else ""
     if model == MAIN_MODEL:
-        return CSV_OUT.name
+        return f"{CSV_OUT.stem}{held}{CSV_OUT.suffix}"
     slug = re.sub(r"[^\w.-]+", "-", model)
-    return f"{CSV_OUT.stem}_{slug}{CSV_OUT.suffix}"
+    return f"{CSV_OUT.stem}{held}_{slug}{CSV_OUT.suffix}"
 
 
 
@@ -79,13 +80,17 @@ def search_version() -> str:
 
 
 SEARCH_VERSION = search_version()
+# "Ask the AI" baseline (self-knowledge prompting, as in SKR / Wang et al. 2023)
+NEED_PROMPT = ("Today's date is {today}. Can you answer the following question correctly and up to "
+               "date from your own knowledge, without looking anything up? Reply with one word: "
+               "yes or no.\n\nQuestion: {q}")
 CONF_PROMPT = ("Today's date is {today}. How confident are you that you know the correct, "
                "up-to-date answer to this question, without looking anything up? "
                "Reply with one number from 0 to 100 only.\n\nQuestion: {q}")
 
 METHODS = ["Never search", "Always search", "Time check only", "Self-consistency only",
            "Verbal confidence", "Router (ours)", "Router + cutoff rule (ours)",
-           "Router, AI time check (ours)", "Router, dated AI time check (ours)",
+           "Ask the AI", "Router, AI time check (ours)", "Router, dated AI time check (ours)",
            "Router, cheap check (ours)", "Router, strict check (ours)", "Oracle (best possible)"]
 OURS = ("Router (ours)", "Router + cutoff rule (ours)", "Router, AI time check (ours)",
         "Router, dated AI time check (ours)", "Router, cheap check (ours)", "Router, strict check (ours)")
@@ -126,6 +131,16 @@ def components(q: str, cache: dict, tag: str) -> dict:
     if "llm_group" not in c:
         t0 = time.time(); c["llm_group"] = time_check.classify_llm(q)
         t["llm_time_check"] = round(time.time() - t0, 2); _save_cache(cache)
+    if "self_knows" not in c:                       # baseline: ask the AI whether it needs a search
+        reply = llm.generate(NEED_PROMPT.format(q=q, today=date.today().isoformat()), max_tokens=5).lower()
+        c["self_knows"] = not reply.strip().startswith("no"); _save_cache(cache)
+    if "mem_prob" not in c:                         # baseline: token probability of the memory answer
+        try:
+            _, probs = llm.generate_with_probs(pipeline.memory_prompt(q))
+            c["mem_prob"] = round(sum(probs) / len(probs), 4) if probs else None
+        except Exception:
+            c["mem_prob"] = None
+        _save_cache(cache)
     if "dated_group" not in c:
         cutoff = MODEL_CUTOFFS.get(llm.model_name(), "2024")
         c["dated_group"] = time_check.classify_llm_dated(q, cutoff); _save_cache(cache)
@@ -140,12 +155,14 @@ def components(q: str, cache: dict, tag: str) -> dict:
 
 
 def out_path(path):
-    """Main model -> results/experiment_report.md; other models get a suffix."""
+    """Main model -> results/experiment_report.md; other models get a suffix, and the
+    held-out test set (TRR_SET=heldout) adds _heldout, e.g. experiment_report_heldout_qwen2.5-7b.md."""
+    held = "_heldout" if benchmarks.current_set() == "heldout" else ""
     name = llm.model_name()
     if name == MAIN_MODEL:
-        return path
+        return path.with_name(f"{path.stem}{held}{path.suffix}")
     slug = re.sub(r"[^\w.-]+", "-", name)
-    return path.with_name(f"{path.stem}_{slug}{path.suffix}")
+    return path.with_name(f"{path.stem}{held}_{slug}{path.suffix}")
 
 
 def knowledge_age_years(model: str) -> float | None:
@@ -166,13 +183,14 @@ def knowledge_is_stale(model: str) -> bool:
 def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
               stale: bool = True, llm_group: str | None = None,
               knows_cheap: bool | None = None, dated_group: str | None = None,
-              knows_strict: bool | None = None) -> dict:
+              knows_strict: bool | None = None, self_knows: bool | None = None) -> dict:
     """Which methods search (True) for this question."""
     return {"Never search": False,
             "Always search": True,
             "Time check only": group == "HIGH",
             "Self-consistency only": not knows,
             "Verbal confidence": conf < CONFIDENCE_THRESHOLD,
+            "Ask the AI": not self_knows if self_knows is not None else True,
             "Router (ours)": router.decide(group, knows)[0] == "search",
             "Router + cutoff rule (ours)": (router.decide(group, knows)[0] == "search"
                                             or (stale and group == "AMBIGUOUS")),
@@ -377,6 +395,7 @@ def main():
             c["seconds"].setdefault("knowledge_check", round(time.time() - t0, 2))
             kc_cheap = knowledge_check.check_cheap(q, c["memory"])
             kc_strict = knowledge_check.check_strict(q, c["memory"])
+            knowledge_check.samples(q, 5)          # 5 samples, for the sample-count ablation
             group = time_check.classify(q, model)
         except Exception as e:  # keep going if one question fails
             print(f"   ERROR: {e}", flush=True)
@@ -393,10 +412,13 @@ def main():
                   for v in SEARCH_LABELS if v in c}}
         row["llm_group"] = c.get("llm_group", "")
         row["dated_group"] = c.get("dated_group", "")
+        row["self_knows"] = c.get("self_knows", "")
+        row["mem_prob"] = "" if c.get("mem_prob") is None else c["mem_prob"]
         row.update({f"seconds_{k}": v for k, v in c.get("seconds", {}).items()})
         for m, searched in decisions(group, kc["knows"], c["confidence"], mem_score == "correct",
                                      stale, c.get("llm_group"), kc_cheap["knows"],
-                                     c.get("dated_group"), kc_strict["knows"]).items():
+                                     c.get("dated_group"), kc_strict["knows"],
+                                     c.get("self_knows")).items():
             row[f"{m}::searched"] = searched
             row[f"{m}::score"] = srch_score if searched else mem_score
         rows.append(row)

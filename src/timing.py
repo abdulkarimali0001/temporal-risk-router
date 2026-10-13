@@ -107,7 +107,7 @@ def seconds(method: str, r: dict, t: dict) -> float:
         return t["time_check"] + answer
     if method == "Self-consistency only":
         return t["samples_x3"] + answer
-    if method == "Verbal confidence":
+    if method in ("Verbal confidence", "Ask the AI"):
         return t["confidence"] + answer
     if method == "Router, strict check (ours)":
         return t["time_check"] + (answer if high else t["memory"] + t["samples_x3"]

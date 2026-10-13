@@ -443,6 +443,8 @@ def web_search(query: str, max_results: int = 5) -> list[dict]:
         limit = int(os.getenv("TAVILY_MAX_CALLS", "900"))
         used = sum(1 for k in cache if k.startswith("tavily::"))
         if used >= limit:
+            if os.getenv("TRR_REQUIRE_WEB"):     # experiments: never mix answers with and without web
+                raise RuntimeError(f"web search limit of {limit} reached (TAVILY_MAX_CALLS)")
             print(f"   (web search limit of {limit} reached - using Wikipedia only)", flush=True)
             return []
         body = json.dumps({"query": query, "max_results": max_results, "search_depth": "basic",
@@ -454,9 +456,13 @@ def web_search(query: str, max_results: int = 5) -> list[dict]:
             with urllib.request.urlopen(req, timeout=30) as r:
                 data = json.load(r)
         except urllib.error.HTTPError as e:
+            if os.getenv("TRR_REQUIRE_WEB"):
+                raise RuntimeError(f"web search failed: HTTP {e.code} (out of Tavily credits?)")
             print(f"   (web search failed: HTTP {e.code})", flush=True)
             return []
         except Exception as e:
+            if os.getenv("TRR_REQUIRE_WEB"):
+                raise RuntimeError(f"web search failed: {e}")
             print(f"   (web search failed: {e})", flush=True)
             return []
         cache[key] = [{"title": x.get("title", ""), "url": x.get("url", ""),
