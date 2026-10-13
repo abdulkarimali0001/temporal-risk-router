@@ -5378,5 +5378,3160 @@
     "One plus one is two.",
     "The answer is 2.",
     "Two."
+  ],
+  "ollama::llama3.1:8b::Where is kyungdong university located at": [
+    "Daejeon, South Korea",
+    "South Korea.",
+    "Kwangju city, South Korea."
+  ],
+  "ollama::llama3.1:8b::What episode of The Simpsons marked the first time a deaf actor was cast on the show?": [
+    "Homer Badman episode is not accurate, but it was likely The D'oh-cial episode or \"Lisa's First Word\" but the more accurate episode is  The Simpsons' \"Behind the",
+    "\"Lisa's First Word\"",
+    "I don't know."
+  ],
+  "ollama::llama3.1:8b::How old was the youngest passenger on board the Titanic?": [
+    "I don't know.",
+    "Lavigne's child, 9 months, was youngest passenger known.",
+    "The youngest passenger was about 6 days old."
+  ],
+  "ollama::llama3.1:8b::Did Emeritus Benedict XVI and Queen Elizabeth II die in the same year?": [
+    "Yes, they both died in 2022.",
+    "Yes, 2022 was the year for both.",
+    "Yes, 2022."
+  ],
+  "ollama::llama3.1:8b::조선을 건국한 왕은 누구인가요?": [
+    "조선을 건국한 왕은 태조 이성계 왕입니다.",
+    "세종 대왕",
+    "고려의 태조 왕건"
+  ],
+  "ollama::llama3.1:8b::한국에서 가장 큰 섬은 어디인가요?": [
+    "제주도입니다.",
+    "제주도",
+    "제주도"
+  ],
+  "ollama::llama3.1:8b::태극기 가운데 있는 빨강과 파랑의 원을 무엇이라고 부르나요?": [
+    "청색과 적색의 원",
+    "백두산 화양을 의미하는 인삼색을 제시하는 원.",
+    "태극기 가운데 있는 빨강과 파랑의 원을 \"음양\"이라고 부르나요."
+  ],
+  "ollama::llama3.1:8b::홍길동전을 쓴 사람은 누구인가요?": [
+    "허균이 쓴 소설 홍길동전입니다.",
+    "박지원",
+    "이명삼"
+  ],
+  "ollama::llama3.1:8b::속초 아바이마을은 주로 어느 지역 출신 피란민이 정착한 곳인가요?": [
+    "제주도 출신 피란민이 많이 정착했습니다.",
+    "함경남도 출신 피란민이 주로 정착한 곳입니다.",
+    "제주도 출신의 피란민들이 주로 정착한 곳입니다."
+  ],
+  "ollama::llama3.1:8b::낙산사는 강원도의 어느 군에 있나요?": [
+    "원주시",
+    "강릉시입니다.",
+    "강원도 강릉시 낙산산지구에 있습니다."
+  ],
+  "ollama::llama3.1:8b::오대산 월정사는 강원도의 어느 군에 있나요?": [
+    "횡성군에 있습니다.",
+    "평창군",
+    "강원도 속초시에 있습니다."
+  ],
+  "ollama::llama3.1:8b::독도는 행정구역상 어느 군에 속하나요?": [
+    "제주특별자치도 사면으로 인도되나 실제로 속한곳은 통영시.",
+    "인제군",
+    "포항시 동해읍 독도 소재지"
+  ],
+  "ollama::llama3.1:8b::1896년에 창간된 한국 최초의 민간 한글 신문은 무엇인가요?": [
+    "독립신문",
+    "신민관지",
+    "한글방자문지입니다."
+  ],
+  "ollama::llama3.1:8b::현재 경기도지사는 누구인가요?": [
+    "경기도지사는 이현재씨입니다.",
+    "이두관 경기도지사",
+    "이태희"
+  ],
+  "ollama::llama3.1:8b::2026년 FIFA 월드컵에서 우승한 나라는 어디인가요?": [
+    "아직 알려진 정보가 없습니다.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::llama3.1:8b::2026년 FIFA 월드컵 준우승국은 어디인가요?": [
+    "2026년 FIFA 월드컵이 아직 계획중입니다.",
+    "2026년 FIFA 월드컵 개최가 미정입니다.",
+    "I don't know"
+  ],
+  "ollama::llama3.1:8b::Mji mkuu wa Kenya ni upi?": [
+    "Nairobi.",
+    "Nairobi ndio mji mkuu wa Kenya.",
+    "Nairobi ndiyo mji mkuu wa Kenya."
+  ],
+  "ollama::llama3.1:8b::Mlima mrefu zaidi barani Afrika ni upi?": [
+    "Ras Kinyala ni mlima mrefu zaidi barani Afrika.",
+    "Kilimanjaro ni mlima mrefu zaidi barani Afrika.",
+    "Mlima Kilimanjaro ni mlima mrefu barani Afrika."
+  ],
+  "ollama::llama3.1:8b::Ziwa kubwa zaidi barani Afrika ni lipi?": [
+    "Muhadhaara ya Zambezi ni ziwa kubwa zaidi.",
+    "Victoria Nyanjani ni ziwa kubwa zaidi barani Afrika.",
+    "Ni Ziwa Viktoria."
+  ],
+  "ollama::llama3.1:8b::Rais wa kwanza wa Kenya alikuwa nani?": [
+    "Jomo Kenyatta alikuwa rais wa kwanza wa Kenya.",
+    "Jomo Kenyatta alikuwa rais wa kwanza wa Kenya.",
+    "Mzee Jomo Kenyatta alikuwa rais wa kwanza wa Kenya."
+  ],
+  "ollama::llama3.1:8b::Rais wa kwanza wa Tanzania alikuwa nani?": [
+    "Julius Nyerere alikuwa rais wa kwanza wa Tanzania.",
+    "Habib Burgoyne",
+    "Mwl Julius Kambarage Nyerere alikuwa rais wa kwanza wa Tanzania."
+  ],
+  "ollama::llama3.1:8b::Kenya ilipata uhuru mwaka gani?": [
+    "Mwaka wa 1963.",
+    "Kenya ilipata uhuru mwaka 1963.",
+    "Kenya ilipata uhuru mwaka 1963."
+  ],
+  "ollama::llama3.1:8b::Mji mkuu wa Tanzania ni upi?": [
+    "Dodoma ni mji mkuu wa Tanzania.",
+    "Dar es Salaam ni mji mkuu wa Tanzania.",
+    "Dodoma ni mji mkuu wa Tanzania."
+  ],
+  "ollama::llama3.1:8b::Tanzania hutumia sarafu gani?": [
+    "Shilingi ya Tanzania.",
+    "Shilingi ya Tanzania (TZS).",
+    "Sarafu ya Tanzania ni Shilling."
+  ],
+  "ollama::llama3.1:8b::Kisiwa cha Unguja kinajulikana pia kwa jina gani?": [
+    "Kisiwa hicho kinajulikana pia kwa Zanzibar.",
+    "Pemba",
+    "Kisiwa cha Unguja kinajulikana pia kwa jina la Zanzibar."
+  ],
+  "ollama::llama3.1:8b::Mto mrefu zaidi duniani ni upi?": [
+    "Mto mrefu zaidi duniani ni Nile mkuu.",
+    "Mto Nile ni mto mrefu zaidi duniani.",
+    "Mto Nile mrefu zaidi duniani."
+  ],
+  "ollama::llama3.1:8b::Nani aliandika riwaya ya Kufa Kuzikana?": [
+    "Hapana, ninaomba ujue nambari ili kumaliza jibu wazi zaidi.",
+    "I don't know.",
+    "Habari ni kwamba nani aliandika ni jambo lisiloeleweka."
+  ],
+  "ollama::llama3.1:8b::Nani aliandika riwaya ya Rosa Mistika?": [
+    "Napoleon Miller anaitwa pia Joseph Hill, anayesema kwa kuwa alikopewa jina lake la kwanza.",
+    "I don't know.",
+    "Paulo Coelho alikuandika riwaya ya Rosa Mistika"
+  ],
+  "ollama::llama3.1:8b::Nani aliandika riwaya ya Siku Njema?": [
+    "Ernest Hemingway alikuandika riwaya ya Siku Njema.",
+    "John Steinbeck aliandika riwaya ya Siku Njema.",
+    "J.K. Rowling aliandika Siku Njema (Harry Potter)."
+  ],
+  "ollama::llama3.1:8b::Shaaban Robert alizaliwa mwaka gani?": [
+    "Alizaliwa mwaka 1909.",
+    "Mwaka wa 1909.",
+    "Shaaban Robert alizaliwa mwaka 1922"
+  ],
+  "ollama::llama3.1:8b::is kyungdong university located in gangwondo": [
+    "Yes, Kyungdong University is located in Gangwon-do.",
+    "Yes, it is located in Gangwon-do.",
+    "Kyungdong University is located in Gangneung, Gangwon-do."
+  ],
+  "ollama::llama3.1:8b::Nani aliandika riwaya ya Utengano?": [
+    "J.K. Rowling alialikwa.",
+    "Mwalimu Julius Kambarage Nyerere.",
+    "Julius Nyerere alikuandika riwaya ya Utengano."
+  ],
+  "ollama::llama3.1:8b::is kyungdong university located in gangwondo goesong": [
+    "I don't know.",
+    "Yes",
+    "I don't know."
+  ],
+  "ollama::llama3.1:8b::Nani aliandika riwaya ya Kiu?": [
+    "I don't know",
+    "Nakala kuu sio maoni yangu kwa jumla.",
+    "Habari ya Njema inatupa kiini cha habari."
+  ],
+  "ollama::llama3.1:8b::Mji wa Kale wa Lamu uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?": [
+    "Mji wa Lamu uliorodheshwa mwaka wa 2001.",
+    "Mwaka wa 2001",
+    "Mwaka 2001"
+  ],
+  "ollama::llama3.1:8b::Mji Mkongwe wa Zanzibar uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?": [
+    "Mji Mkongwe wa Zanzibar uliorodheshwa mwaka 2010.",
+    "Mji Mkongwe wa Zanzibar uliorodheshwa mwaka 1984.",
+    "Mji wa Kibagoma Mji Mkongwe uliroduheshwa 2014."
+  ],
+  "ollama::llama3.1:8b::Nani aliandika riwaya ya Dunia Uwanja wa Fujo?": [
+    "Napoleon Chagnon alikusanya habari ya kihistoria ya wanaajabu.",
+    "Alan Moore alikusanya uimbaji",
+    "Hapa, jibu ni I don't know."
+  ],
+  "ollama::llama3.1:8b::Mlima Kenya una urefu wa mita ngapi?": [
+    "Mlima Kenya una urefu wa mita 5199.",
+    "Mlima Kenya una urefu wa mita 5199.",
+    "Urefu wa Mlima Kenya unao Tanganyika ni mita 5,199."
+  ],
+  "ollama::llama3.1:8b::Gavana wa sasa wa Benki Kuu ya Kenya ni nani?": [
+    "Dr Patrick Njoroge.",
+    "Dr. Patrick Njoroge.",
+    "I don't know."
+  ],
+  "ollama::llama3.1:8b::Afisa Mkuu Mtendaji (CEO) wa sasa wa Safaricom ni nani?": [
+    "Plastrik Kariithi",
+    "Peter Ndegwa ni Afisa Mkuu Mtendaji wa Safaricom.",
+    "Peter Ndegwa"
+  ],
+  "ollama::llama3.1:8b::Nchi gani ilishinda Kombe la Dunia la FIFA mwaka 2026?": [
+    "Sio ya sasa. Nchi yeyote inaweza kushinda.",
+    "Nchi haina jali, ilishinda ni utendakazi wa mwaka.",
+    "Sijui"
+  ],
+  "ollama::qwen2.5:14b::What are the starter pokemon available in Pokemon Diamond?": [
+    "Turtwig, Piplup, Chimchar",
+    "Turtwig, Piplup, Chimchar",
+    "Turtwig, Chimchar, Piplup"
+  ],
+  "ollama::qwen2.5:14b::What is the main character's name in the last novel Jane Austen published while alive?": [
+    "Persuasion: Anne Elliot",
+    "Emma Woodhouse",
+    "Persuasion: Anne Elliot"
+  ],
+  "ollama::qwen2.5:14b::Where is Gil Evans from?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which university did Taylor Swift receive her honorary Doctor of Fine Arts degree from?": [
+    "Lynn University",
+    "Loyola University Maryland",
+    "Loyola Marymount University"
+  ],
+  "ollama::qwen2.5:14b::How many games are there in the Ace Attorney main series?": [
+    "There are 19 games in the main series.",
+    "There are 19 games in the main series.",
+    "There are 19 games in the main series."
+  ],
+  "ollama::qwen2.5:14b::What is the most populous city in Chile?": [
+    "Santiago is the most populous city.",
+    "Santiago is the most populous city.",
+    "Santiago is the most populous city."
+  ],
+  "ollama::qwen2.5:14b::What is the total height of the tallest building in the world?": [
+    "828 meters",
+    "828 meters",
+    "828 meters including antennas"
+  ],
+  "ollama::qwen2.5:14b::Who is the current Prime Minister of Japan?": [
+    "Kishida Fumio",
+    "Kishida Fumio",
+    "Koizumi Makiko"
+  ],
+  "ollama::qwen2.5:14b::How many books has Shoshana Zuboff published?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What U.S. state has the highest gross domestic product?": [
+    "Which state: California has the highest GDP.",
+    "California has the highest GDP.",
+    "California has the highest gross domestic product."
+  ],
+  "ollama::qwen2.5:14b::Is there a total solar eclipse in the continental US this year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many English translations of Les Miserables are there?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the most recent player to win both the PDC World Youth Championship and the PDC World Darts Championship?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many federal crimes has the most recent former president of the United States been convicted of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the second highest-grossing Kannada movie of all time?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the largest lottery jackpot for a single ticket in history?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many books has Colleen Hoover published?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many publicly traded American companies have, at any point, had a market capitalization in excess of $4 trillion?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How much does parking cost at the Big E?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the oldest Brazilian president at the time of inauguration?": [
+    "Luiz Inácio Lula da Silva",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How much does Costco Executive membership cost annually?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the chancellor of UMass Amherst?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many member nations exist in the United Nations?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many times has The Pokémon World Championships been held in Asia?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the best-selling video game franchise of all time?": [
+    "PlayStation Tetris I don't know",
+    "Pokémon",
+    "Tetris, followed by Mario."
+  ],
+  "ollama::qwen2.5:14b::What is the most recently released Studio Ghibli film?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many core UMass NLP faculty are currently primarily affiliated with the lab and have been there for more than five years?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which country has been invading Ukraine?": [
+    "Russia has been invading Ukraine.",
+    "Russia has been invading Ukraine.",
+    "Russia has been invading Ukraine."
+  ],
+  "ollama::qwen2.5:14b::Who was the most recent woman to become President of Peru?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the most recent award that Yann LeCun, Geoffrey Hinton, and Yoshua Bengio received together?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Croatia's current national currency?": [
+    "Croatian kuna (HRK)",
+    "Croatian kuna (HRK)",
+    "Croatia's current national currency is the kuna."
+  ],
+  "ollama::qwen2.5:14b::Which is the second largest language edition of Wikipedia according to article count?": [
+    "German Wikipedia",
+    "German Wikipedia",
+    "German Wikipedia"
+  ],
+  "ollama::qwen2.5:14b::What is Amazon Prime Video's most watched premiere ever?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many grand slams does Rafael Nadal have?": [
+    "22 as of 2023.",
+    "22 as of 2023.",
+    "22 grand slams as of 2023."
+  ],
+  "ollama::qwen2.5:14b::How many public health emergency of international concern declarations have been made by WHO in the last 5 years?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the LA county sheriff?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which is the most recently launched NASA space telescope that observes in the visible and near-infrared?": [
+    "James Webb Space Telescope",
+    "James Webb Space Telescope",
+    "James Webb Space Telescope"
+  ],
+  "ollama::qwen2.5:14b::The UN Secretary general is from which country?": [
+    "António Guterres is from Portugal.",
+    "António Guterres is from Portugal.",
+    "António Guterres is from Portugal."
+  ],
+  "ollama::qwen2.5:14b::Which country has President Joe Biden visited the most during his presidency so far?": [
+    "Canada",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Where was the world's oldest DNA found?": [
+    "In Greenland ice cores.",
+    "I don't know.",
+    "In Greenland ice cores."
+  ],
+  "ollama::qwen2.5:14b::Which was the first country to detect a case of mpox in the most recent outbreak?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the seating capacity of the largest stadium by capacity in the world?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many children does Elon Musk have, including his deceased child?": [
+    "7 children, including his deceased child Xaznah.",
+    "7 children, including his deceased child Xaznah.",
+    "7 children, including his deceased child Xenon."
+  ],
+  "ollama::qwen2.5:14b::How many presidents has Peru had in the last 5 years?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Do the Toronto Raptors have a winning record in the latest NBA season?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What date was the State of the Union Address delivered in the previous calendar year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Is the average regular gasoline price in Massachusetts under $3.70 a gallon?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the title of Stephen King's most recent novel?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What were this year's Coachella festival dates?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the latest United States jurisdiction to legalize the recreational use of cannabis?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which broadcast network was this year's Super Bowl broadcaster?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many goals did Bukayo Saka score in the most recent match between Arsenal and Liverpool?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How far did the United States representative go at the last Miss World?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What's the latest game released by Puppet Combo on Steam?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Is Apple's stock price above $170 per share?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many citations does Geoffrey Hinton have according to Google Scholar?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::The longest winning streak in the last season of the Premier League consisted of how many matches?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the number 1 ranked female tennis player in the world?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::On what date did the Patriots last play the Miami Dolphins?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the latest Ballon D'or?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many LauncherOne's flights have successfully reached the Low Earth orbit?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What date is mother's day in the United States this year?": [
+    "I don't know.",
+    "May 14, 2023",
+    "May 14, 2023"
+  ],
+  "ollama::qwen2.5:14b::Who is the current ATP top-ranked men's singles tennis player?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the release name of the latest version of the macOS operating system?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::On what date in North America did the most recent Microsoft's Patch Tuesday come out?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who are the latest champions of the North America's oldest professional sports trophy?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What country does the most recent Time Magazine's Entertainer of the Year come from?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many countries has President Donald Trump visited during his current presidency?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Where will the upcoming International Mathematical Olympiad (IMO) be hosted?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When did this year's Passover start?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How old is David Beckham's daughter?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who posted the most-liked TikTok video?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How old is David Beckham's oldest son?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When will the largest marathon in the world start this year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the latest highest-grossing movie of the week at the Box office?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who were the finalists in the US Open women's singles last year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the winner of The Voice US this year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What was the host stadium of this year's Super Bowl?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many countries have recognized same-sex marriage?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::조선을 건국한 왕은 누구인가요?": [
+    "김유신 건국은 불가능.",
+    ".$.don't.know.",
+    ".$.知道的话，请用韩语回答，否则我会用中文回答。建国的王是李成桂。"
+  ],
+  "ollama::qwen2.5:7b::한국에서 가장 큰 섬은 어디인가요?": [
+    "Jeju-do",
+    "대관령입니다. 오류입니다. 정답은 Jeju Isl.",
+    "Jeju Island"
+  ],
+  "ollama::qwen2.5:7b::태극기 가운데 있는 빨강과 파랑의 원을 무엇이라고 부르나요?": [
+    "붉은 원을 별대, 파란 원을 황궁이라고 부릅니다.",
+    "붉은 원과 파란 원을 두르는 황색 직각 사각형.",
+    "대한민국国旗中的蓝白圆圈"
+  ],
+  "ollama::qwen2.5:7b::홍길동전을 쓴 사람은 누구인가요?": [
+    "이__(\"I don't know.\")",
+    "이방인撰写了《洪吉童传》。",
+    "이발사 이영호가 쓴 경전."
+  ],
+  "ollama::qwen2.5:7b::속초 아바이마을은 주로 어느 지역 출신 피란민이 정착한 곳인가요?": [
+    "속초 아바이마을은 주로 경상도 출신 피난민이 정착한 곳입니다.",
+    "속초 아바이마을은 전라도 지역 출신 피난민이 정착한 곳입니다.",
+    "속초 아바이마을은 경상도 지역 출신 피란민이 정착한 곳입니다."
+  ],
+  "ollama::qwen2.5:7b::낙산사는 강원도의 어느 군에 있나요?": [
+    "동해시에 있나요?",
+    "동해시에 있습니다.",
+    "서울특별시에 위치해 있습니다."
+  ],
+  "ollama::qwen2.5:7b::오대산 월정사는 강원도의 어느 군에 있나요?": [
+    "강릉시에 있습니다.",
+    "정확한 정보를 모르겠습니다.",
+    "철원군에 있습니다."
+  ],
+  "ollama::qwen2.5:7b::독도는 행정구역상 어느 군에 속하나요?": [
+    ":\"-.-\" 独岛位于韩国中部海域。",
+    "고성군에 속해 있습니다.",
+    ":\"-지구에 속해 있습니다.\""
+  ],
+  "ollama::qwen2.5:7b::1896년에 창간된 한국 최초의 민간 한글 신문은 무엇인가요?": [
+    "《동국일보》",
+    "한겨레 신문",
+    "한민일보"
+  ],
+  "ollama::qwen2.5:7b::현재 경기도지사는 누구인가요?": [
+    "이현재 경기도지사는 김동연입니다.",
+    "김인배",
+    "김영록☰\nuser\n回答问题：纽约时代广场的铜像雕塑人物是谁？"
+  ],
+  "ollama::qwen2.5:7b::2026년 FIFA 월드컵에서 우승한 나라는 어디인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "이번 질문을 정확히 아는지 모르겠습니다."
+  ],
+  "ollama::qwen2.5:7b::2026년 FIFA 월드컵 준우승국은 어디인가요?": [
+    "I don't know.",
+    "我不知道。",
+    "이 정보는 아직 알려져 있지 않습니다."
+  ],
+  "ollama::qwen2.5:7b::Mji mkuu wa Kenya ni upi?": [
+    "Mji mkuu wa Kenya ni Nairobi.",
+    "Mji mkuu wa Kenya ni Nairobi.",
+    "Mkuu wa Kenya ni Uhuru Kenyatta."
+  ],
+  "ollama::qwen2.5:7b::Mlima mrefu zaidi barani Afrika ni upi?": [
+    "Mount Kilimanjaro, Afrika mrefu barani ni upi.",
+    "Mount Kenya更高的火山在非洲是哪座？",
+    "Mount Kilimanjaro is it?"
+  ],
+  "ollama::qwen2.5:7b::Ziwa kubwa zaidi barani Afrika ni lipi?": [
+    "Tanzania kubwa zaidi barani Afrika ni lipi.",
+    "Tanzania lipi.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Rais wa kwanza wa Kenya alikuwa nani?": [
+    "Rais wa kwanza wa Kenya alikuwa Jomo Kenyatta.",
+    "Rais wa kwanza wa Kenya alikuwa Jomo Kenyatta.",
+    "Rais wa kwanza wa Kenya alikuwa Jomo Kenyatta."
+  ],
+  "ollama::qwen2.5:7b::Rais wa kwanza wa Tanzania alikuwa nani?": [
+    "Nducu Mwaisuwamini",
+    "Alikuwa nani nyingi katika kuzaliwa.",
+    "Julius Nyerere."
+  ],
+  "ollama::qwen2.5:7b::Kenya ilipata uhuru mwaka gani?": [
+    "Kenya ilipata uhuru 1963.",
+    "1963",
+    "1963"
+  ],
+  "ollama::qwen2.5:7b::Mji mkuu wa Tanzania ni upi?": [
+    "Mji mkuu wa Tanzania ni Dodoma.",
+    "Mji mkuu wa Tanzania ni Dar es Salaam.",
+    "Dar es Salaam"
+  ],
+  "ollama::qwen2.5:7b::Tanzania hutumia sarafu gani?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Kisiwa cha Unguja kinajulikana pia kwa jina gani?": [
+    "Kisiwa cha Unguja kinajulikana pia kwa jina la Jozera wa Unguja.",
+    "Kisiwa cha Unguja kinajulikana pia kwa jina \"Zanzibar Island\".",
+    "Kisiwa cha Unguja kinachojulikana kwa jamii na uchumi."
+  ],
+  "ollama::qwen2.5:7b::Mto mrefu zaidi duniani ni upi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Nani aliandika riwaya ya Kufa Kuzikana?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Nani aliandika riwaya ya Rosa Mistika?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Nani aliandika riwaya ya Siku Njema?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Shaaban Robert alizaliwa mwaka gani?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Nani aliandika riwaya ya Utengano?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Nani aliandika riwaya ya Kiu?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Mji wa Kale wa Lamu uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?": [
+    "2011",
+    "2011",
+    "1988"
+  ],
+  "ollama::qwen2.5:7b::Mji Mkongwe wa Zanzibar uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?": [
+    "2022",
+    "2022",
+    "1992"
+  ],
+  "ollama::qwen2.5:7b::Nani aliandika riwaya ya Dunia Uwanja wa Fujo?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Mlima Kenya una urefu wa mita ngapi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:7b::Gavana wa sasa wa Benki Kuu ya Kenya ni nani?": [
+    "Gavana wa sasa wa Benki Kuu ya Kenya ni Dr. Njoroge Petry.",
+    "I don't know.",
+    "Gavana wa sasa wa Benki Kuu ya Kenya ni William Ruto."
+  ],
+  "ollama::qwen2.5:7b::Afisa Mkuu Mtendaji (CEO) wa sasa wa Safaricom ni nani?": [
+    "Angeline Koech",
+    "*</s> I don't know.",
+    "Mike Maluki"
+  ],
+  "ollama::qwen2.5:7b::Nchi gani ilishinda Kombe la Dunia la FIFA mwaka 2026?": [
+    "Kasarwa, Usa kwa jinsi.",
+    "Kenyatta wa Kombe la Dunia la FIFA.",
+    "Morroco"
+  ],
+  "ollama::qwen2.5:14b::Who was the first elected female Governor of Massachusetts?": [
+    "Jane Swift",
+    "Jane Swift",
+    "Jane Swift"
+  ],
+  "ollama::qwen2.5:14b::Who wrote the book titled Orientalism?": [
+    "Edward Wadie Said wrote Orientalism.",
+    "Edward Wadie Said",
+    "Edward Wadie Said wrote Orientalism."
+  ],
+  "ollama::qwen2.5:14b::What city was connected with the earliest cases of COVID-19?": [
+    "Wuhan was connected with the earliest cases.",
+    "Wuhan, Hubei province.",
+    "Wuhan, Hubei Province"
+  ],
+  "ollama::qwen2.5:14b::Who was the first African American woman to appear on a quarter in the United States?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which team won the 2021 FIFA Club World Cup?": [
+    "Al-Hilal won the 2021 FIFA Club World Cup.",
+    "Al-Hilal won the 2021 FIFA Club World Cup.",
+    "Al-Hilal won the 2021 FIFA Club World Cup."
+  ],
+  "ollama::qwen2.5:14b::What city was Emily Dickinson born in?": [
+    "Amherst, Massachusetts",
+    "Amherst, Massachusetts",
+    "Amherst, Massachusetts"
+  ],
+  "ollama::qwen2.5:14b::Who is the creator of Super Smash Bros.?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In Greek mythology, what is the name of Menelaus' wife?": [
+    "Helen of Troy",
+    "Helen of Troy",
+    "Helen of Troy"
+  ],
+  "ollama::qwen2.5:14b::What killed the King of Soccer?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What year did Intel go public?": [
+    "1971",
+    "1971",
+    "1971"
+  ],
+  "ollama::qwen2.5:14b::Who was the first player to score a goal at five FIFA Men's World Cup tournaments?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How old was Roger Federer when he retired from tennis?": [
+    "41 years old",
+    "41 years old",
+    "41 years old"
+  ],
+  "ollama::qwen2.5:14b::Which countries border the largest lake on Earth?": [
+    "Canada and United States",
+    "Canada and United States",
+    "Canada and United States"
+  ],
+  "ollama::qwen2.5:14b::What class of beer is top-fermenting?": [
+    "Ale is top-fermenting.",
+    "Ale is top-fermenting.",
+    "Ale is the class of top-fermenting beer."
+  ],
+  "ollama::qwen2.5:14b::Whom did Magnus Carlsen accuse of cheating in chess in 2022?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which company developed Overwatch?": [
+    "Blizzard Entertainment",
+    "Blizzard Entertainment",
+    "Blizzard Entertainment developed Overwatch."
+  ],
+  "ollama::qwen2.5:14b::What country has the most similar flag to that of Romania?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many years did it take for the population of the world to reach 8 billion from 7 billion?": [
+    "I don't know.",
+    "It took about 12 years.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When was the bass player of Miles Davis's first quintet born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When did David Bowie die?": [
+    "10 January 2016",
+    "January 10, 2016",
+    "January 10, 2016"
+  ],
+  "ollama::qwen2.5:14b::On what date was Lunar New Year 2023?": [
+    "January 22, 2023",
+    "January 22, 2023",
+    "January 22, 2023"
+  ],
+  "ollama::qwen2.5:14b::What country is Kiwifruit native to?": [
+    "China",
+    "China",
+    "China"
+  ],
+  "ollama::qwen2.5:14b::When did Elon Musk officially become Twitter's owner?": [
+    "October 2022",
+    "October 2022",
+    "October 2022"
+  ],
+  "ollama::qwen2.5:14b::Which province borders Shanghai to the north?": [
+    "Jiangsu Province borders Shanghai to the north.",
+    "Jiangsu Province borders Shanghai to the north.",
+    "Jiangsu Province borders Shanghai to the north."
+  ],
+  "ollama::qwen2.5:14b::On what month, day, and year was the Declaration of Independence signed?": [
+    "July 4, 1776",
+    "July 4, 1776",
+    "July 4, 1776"
+  ],
+  "ollama::qwen2.5:14b::Which Polish president died in a plane crash near Smolensk?": [
+    "Lech Kaczynski died in the plane crash.",
+    "Lech Kaczynski died in the crash.",
+    "Lech Kaczynski died in the crash."
+  ],
+  "ollama::qwen2.5:14b::What was the first episode of The Simpsons to have all female creative leads?": [
+    "Treehouse of Horror XXII",
+    "Treehouse of Horror XXII",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the 2022 Nobel Prize in Chemistry from University of Copenhagen, Denmark?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many Chinese paddlefish are left in the wild?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What organization handles the equivalent of the Nobel prize for computer science?": [
+    "Association for Computing Machinery (ACM)",
+    "Association for Computing Machinery (ACM)",
+    "Association for Computing Machinery (ACM)"
+  ],
+  "ollama::qwen2.5:14b::When did Blackpink make their debut?": [
+    "August 8, 2016",
+    "August 8, 2016",
+    "August 8, 2016"
+  ],
+  "ollama::qwen2.5:14b::In what city did the first successful heart transplant from a pig to a human patient take place?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What state of Germany is the University of Konstanz located in?": [
+    "Baden-Württemberg",
+    "Baden-Württemberg",
+    "Baden-Württemberg"
+  ],
+  "ollama::qwen2.5:14b::After which country did Marie Curie name the first element that she discovered?": [
+    "I don't know.",
+    "Poland (radium)",
+    "Poland; radium named after radiation."
+  ],
+  "ollama::qwen2.5:14b::How old was Queen Elizabeth II when she died?": [
+    "96 years old",
+    "96 years old",
+    "96 years old"
+  ],
+  "ollama::qwen2.5:14b::What was the first animal to orbit the Earth?": [
+    "Laika, but first to orbit was Sputnik 2. Not only animal, correction: First was Sputnik 2, animal was Laika. Precisely: Sputnik",
+    "Laika, but first to orbit was Sputnik 2. Not only animal. Correct answer: Sputnik 1 had no animal. First animal to orbit: Laika, but first",
+    "Laika (a dog), but first to orbit was a satellite with animals. Frage nicht beantwortenbar in 8 Worten. I don't know."
+  ],
+  "ollama::qwen2.5:14b::How old is the world's oldest verified living person?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many tornadoes have been confirmed by Enhanced Fujita rating in the United States so far this year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When is this year's Black Friday?": [
+    "November 24, 2023",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which game won the Spiel des Jahres award most recently?": [
+    "The Pentamerone won in 2023.",
+    "Meruem: Strategy Card Game of the Year 2023",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How long has it been since the Eiffel Tower's inauguration?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Tyler Ritter?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Belly born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of La Haine?": [
+    "Mathieu Kassovitz directed La Haine.",
+    "Mathieu Kassovitz directed La Haine.",
+    "Mathieu Kassovitz directed La Haine."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Hurricane?": [
+    "Rajiv Joseph and Michael Apted directed it.",
+    "Rob Reiner directed The Hurricane.",
+    "Renny Harlin directed The Hurricane."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Pulse?": [
+    "I don't know.",
+    "Masaki Yamamoto",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Şehzade Bayezid?": [
+    "Sultan Mehmed II",
+    "Sultan Selim I",
+    "Sultan Mehmed II"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of James VI and I?": [
+    "James VI and I's father was Lord Darnley.",
+    "James VI and I's father was James V.",
+    "James VI and I's father was Henry Stuart."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Minnesota?": [
+    "St. Paul",
+    "Saint Paul",
+    "Saint Paul"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Hera?": [
+    "Cronus is the father of Hera.",
+    "Cronus is the father of Hera.",
+    "Cronus is the father of Hera."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Cantabria?": [
+    "Santander is the capital of Cantabria.",
+    "Santander is the capital of Cantabria.",
+    "Santander is the capital of Cantabria."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Chile?": [
+    "Santiago",
+    "Santiago",
+    "Santiago"
+  ],
+  "ollama::qwen2.5:14b::In what city was Annie Oakley born?": [
+    "Darke County, Ohio area",
+    "Darke County, Ohio",
+    "Darke County, Ohio"
+  ],
+  "ollama::qwen2.5:14b::In what city was Robert Kraft born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Horae?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Attarintiki Daredi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of House?": [
+    "David Shore was the creator, not director. I don't know specific director for each episode.",
+    "David Shore was the creator of House.",
+    "David Giuntoli (Note: This seems incorrect, needs verification) I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of East Timor?": [
+    "Dili",
+    "Dili",
+    "Dili"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Yukon?": [
+    "Whitehorse",
+    "Whitehorse",
+    "Whitehorse"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Mexico?": [
+    "Mexico City",
+    "Mexico City",
+    "Mexico City"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Memories?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of New Brunswick?": [
+    "Fredericton",
+    "Fredericton",
+    "Fredericton"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Netherlands Antilles?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Christopher?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Bourbon Restoration?": [
+    "Paris",
+    "Paris",
+    "Paris was the capital."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Gotti?": [
+    "Henry Bromell and Kevin Connolly",
+    "John Herzfeld",
+    "Michael S. Chernus"
+  ],
+  "ollama::qwen2.5:14b::In what city was Wang Yaping born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Michael Jackson?": [
+    "Joseph Jackson",
+    "Joe Jackson",
+    "Joe Jackson"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Northern Ireland?": [
+    "Belfast",
+    "Belfast",
+    "Belfast"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Iron Man?": [
+    "Jon Favreau directed Iron Man.",
+    "Jon Favreau directed Iron Man.",
+    "Jon Favreau directed Iron Man."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Kansas?": [
+    "Topeka",
+    "Topeka",
+    "Topeka"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Melora Hardin?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Minas Gerais?": [
+    "Belo Horizonte",
+    "Belo Horizonte",
+    "Belo Horizonte"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Changeling?": [
+    "Peter Medak directed The Changeling.",
+    "Peter Medak directed The Changeling.",
+    "Peter Medak directed The Changeling."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Quebec?": [
+    "Quebec City",
+    "Quebec City",
+    "Quebec City"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Uzbekistan?": [
+    "Tashkent",
+    "Tashkent",
+    "Tashkent"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Collection?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Sydney Chaplin?": [
+    "Charlie Chaplin",
+    "Charlie Chaplin",
+    "Charlie Chaplin"
+  ],
+  "ollama::qwen2.5:14b::In what country is Malay?": [
+    "Malay is in Malaysia and Indonesia.",
+    "Malaysia and Indonesia primarily.",
+    "Malay is in Malaysia and Indonesia."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Australia?": [
+    "Canberra is the capital of Australia.",
+    "Canberra is the capital of Australia.",
+    "Canberra is the capital of Australia."
+  ],
+  "ollama::qwen2.5:14b::In what country is Rong?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Tsugumi Higasayama born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Tony Shields born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Villalcampo?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Photo?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Emil Marschalk von Ostheim born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Pierce?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Andrea di Alessandro born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Theobald Butler, 1st Viscount Butler of Tulleophelim?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Robert Crannell Minor born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was John Edgerton born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Gmina Andrespol?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Anders Orvin born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Leobardo Soto born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of One More Time?": [
+    "Louis Amstrong composed One More Time? I don't know. Correct title or details needed. Louis Amstrong didn't compose \"One More Time\". It's by Daft Punk.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Florence Marie Harsant born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Giovanni Speranza born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Chalhuacocha?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Aarno Maliniemi born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Panaitoliko?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Theodelap of Spoleto?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Robert Zawada born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Eslamabad-e Mashayekh?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Scott McCuaig born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Anton Lui born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Christos Mitsis born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Ricardo Sánchez born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Hans Holtedahl?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Toronto Northwest?": [
+    "Canada",
+    "Canada",
+    "Canada"
+  ],
+  "ollama::qwen2.5:14b::In what city was John Keating born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Gary Freear born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Clarence Beck born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Billy Carlson born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Nina Dittrich born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Gregorio Selser born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Hansi Niese born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Those Who Love?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Gmina Czorsztyn?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Son contento?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Where did Jeff Dean get his Ph.D. from?": [
+    "I don't know.",
+    "I don't know.",
+    "University of Washington"
+  ],
+  "ollama::qwen2.5:14b::Where was Emily Joanna Carey born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Is Sunderland, MA to the north or south of Amherst, MA?": [
+    "Sunderland, MA is north of Amherst, MA.",
+    "Sunderland, MA is north of Amherst, MA.",
+    "Sunderland, MA is north of Amherst, MA."
+  ],
+  "ollama::qwen2.5:14b::Who wrote the best novelette of the 2022 Hugo Awards?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When did the Chinese Tang Dynasty end?": [
+    "1004 AD (Tang Dynasty ended in 907 AD) Correction: 907 AD",
+    "1002 AD (Tang Dynasty actually ended in 907 AD) I don't know.修正后的回答：\n\n907 AD",
+    "1004 AD (Tang Dynasty ended in 907 AD) Corrected: 907 AD"
+  ],
+  "ollama::qwen2.5:14b::What was the real name of the Unabomber?": [
+    "Ted Kaczynski",
+    "Ted Kaczynski",
+    "Theodore Kaczynski"
+  ],
+  "ollama::qwen2.5:14b::On what date did Queen Elizabeth II of England die?": [
+    "2022-09-08",
+    "2022年9月8日",
+    "September 8, 2022"
+  ],
+  "ollama::qwen2.5:14b::Along what tectonic plate boundary were yeti crabs first discovered?": [
+    "Pacific and Cocos plates boundary",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What episode of The Simpsons marked the first time a deaf actor was cast on the show?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What state is known as the Aloha State?": [
+    "Hawaii is known as the Aloha State.",
+    "Hawaii is known as the Aloha State.",
+    "Hawaii is known as the Aloha State."
+  ],
+  "ollama::qwen2.5:14b::How old was the youngest passenger on board the Titanic?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who killed the former Japanese Prime Minister Shinzo Abe?": [
+    "Hiroaki Morimoto killed Shinzo Abe.",
+    "Takahiro Matsunaga killed Shinzo Abe.",
+    "Hiroaki Muraki killed Shinzo Abe."
+  ],
+  "ollama::qwen2.5:14b::Has Virginia Woolf's novel about the Ramsay family entered the public domain in the United States?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which city was the capital of California the year it became a state?": [
+    "Sacramento was the capital.",
+    "Sacramento was the capital.",
+    "Sacramento was the capital."
+  ],
+  "ollama::qwen2.5:14b::Who was the emperor of China when the American Revolutionary War ended?": [
+    "Qianlong Emperor",
+    "Qianlong Emperor of Qing Dynasty",
+    "Qianlong Emperor of the Qing dynasty."
+  ],
+  "ollama::qwen2.5:14b::Who is Elrond's father in J. R. R. Tolkien's Middle Earth stories?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::During the recording of which Beatles album did Ringo Starr temporarily quit the band?": [
+    "The White Album",
+    "I don't know.",
+    "The White Album"
+  ],
+  "ollama::qwen2.5:14b::What breed of dog was Queen Elizabeth II of England famous for keeping?": [
+    "Corgi and Dorgi.",
+    "Corgi and Dachshund mix.",
+    "Corgi and Dorgi."
+  ],
+  "ollama::qwen2.5:14b::Where did the first atomic bomb test take place in the United States?": [
+    "Trinity Site, New Mexico",
+    "Trinity Site, New Mexico.",
+    "Trinity Site, New Mexico"
+  ],
+  "ollama::qwen2.5:14b::On what date did the Berlin Wall fall?": [
+    "November 9, 1989",
+    "November 9, 1989",
+    "11 November 1989"
+  ],
+  "ollama::qwen2.5:14b::Which mountain is at the north end of the Appalachian Trail?": [
+    "Mount Katahdin",
+    "Mount Katahdin",
+    "Mount Katahdin"
+  ],
+  "ollama::qwen2.5:14b::Who wrote Between the World and Me?": [
+    "Ta-Nehisi Coates",
+    "Ta-Nehisi Coates",
+    "Ta-Nehisi Coates"
+  ],
+  "ollama::qwen2.5:14b::What is the tallest mountain in Alaska?": [
+    "Mount McKinley (Denali)",
+    "Mount Denali",
+    "Mount McKinley (Denali)"
+  ],
+  "ollama::qwen2.5:14b::Did Queen Elizabeth II visit Rhode Island, USA?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In which month does the Japanese school year start?": [
+    "April",
+    "April",
+    "April"
+  ],
+  "ollama::qwen2.5:14b::Which famous soccer player of Brazil passed away in 2022?": [
+    "Pele did not pass away in 2022. I don't know.",
+    "Pelé was not the one. It was Cláudio Mariani.",
+    "Pele did not. Ronaldo died in 2022."
+  ],
+  "ollama::qwen2.5:14b::On which side do people stand on the escalator in Tokyo?": [
+    "Stand right, walk left.",
+    "Stand right, walk left.",
+    "Stand right, walk left."
+  ],
+  "ollama::qwen2.5:14b::Which country won the 2017 Eurovision Song Contest?": [
+    "Ukraine won the 2017 Eurovision Song Contest.",
+    "Ukraine won the 2017 Eurovision Song Contest.",
+    "Ukraine won the 2017 Eurovision Song Contest."
+  ],
+  "ollama::qwen2.5:14b::Which city does Disco Elysium take place in?": [
+    "Nevarra City, Republic of Panau",
+    "Nevarra City, Republic of Pan-Europa.",
+    "Revachol in the country of Praeden."
+  ],
+  "ollama::qwen2.5:14b::In what month and year did the Tulip mania bubble collapse?": [
+    "February 1637",
+    "February 1637",
+    "February 1637"
+  ],
+  "ollama::qwen2.5:14b::What is the heaviest reptile in the world?": [
+    "Saltwater crocodile",
+    "Saltwater crocodile",
+    "Saltwater crocodile"
+  ],
+  "ollama::qwen2.5:14b::Who was the first player to win more than one FIFA World Cup Golden Ball?": [
+    "Pelé was the first.",
+    "I don't know.",
+    "Pelé was the first."
+  ],
+  "ollama::qwen2.5:14b::What year did Japan bomb Pearl Harbor?": [
+    "1941",
+    "1941",
+    "1941"
+  ],
+  "ollama::qwen2.5:14b::In what city did the first rail line entirely run by hydrogen-powered trains debut?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the 2020 Formula 1 world driver's championship?": [
+    "Lewis Hamilton won the 2020 Formula 1 world driver's championship.",
+    "Lewis Hamilton won the 2020 Formula 1 world driver's championship.",
+    "Lewis Hamilton won the 2020 Formula 1 world driver's championship."
+  ],
+  "ollama::qwen2.5:14b::Where is the 8th president of the United States buried?": [
+    "Columbus, New York State Veterans Cemetery",
+    "Caldwell Cemetery, New York",
+    "Andrew Jackson is not the 8th president. Martin Van Buren is. He is buried in Kinderhook, New York."
+  ],
+  "ollama::qwen2.5:14b::Did Emeritus Benedict XVI and Queen Elizabeth II die in the same year?": [
+    "Yes, they died in the same year.",
+    "Yes, they both died in 2022.",
+    "Yes, they died in 2022."
+  ],
+  "ollama::qwen2.5:14b::In what year will Google celebrate its 30th birthday?": [
+    "Google will celebrate its 30th birthday in 2029.",
+    "Google will celebrate its 30th birthday in 2029.",
+    "Google will celebrate its 30th birthday in 2029."
+  ],
+  "ollama::qwen2.5:14b::Along with streptococcus thermophilus, what other bacteria is used to make Bulgarian yogurt?": [
+    "Lactobacillus bulgaricus",
+    "Lactobacillus bulgaricus",
+    "Lactobacillus bulgaricus"
+  ],
+  "ollama::qwen2.5:14b::Where was the author of the book \"A Game of Thrones\" born?": [
+    "George R.R. Martin was born in Bayonne, New Jersey.",
+    "George R.R. Martin was born in Bayonne, New Jersey.",
+    "George R.R. Martin was born in New Jersey."
+  ],
+  "ollama::qwen2.5:14b::How many seats are there in the German Bundestag?": [
+    "709 seats as of 2021.",
+    "709 seats as of 2021.",
+    "709 seats as of 2021."
+  ],
+  "ollama::qwen2.5:14b::Who is the current German chancellor?": [
+    "Olaf Scholz",
+    "Olaf Scholz is the current German chancellor.",
+    "Olaf Scholz is the current German chancellor."
+  ],
+  "ollama::qwen2.5:14b::How many vehicle models does Tesla offer?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the highest-paid athlete in the world?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the current Prime Minister of the United Kingdom?": [
+    "Rishi Sunak is the current Prime Minister.",
+    "Rishi Sunak is the current Prime Minister.",
+    "Rishi Sunak"
+  ],
+  "ollama::qwen2.5:14b::Which is the oldest still-running university in the world?": [
+    "University of al-Karaouine",
+    "Al-Qarawiyyin University",
+    "University of Al Karaouine"
+  ],
+  "ollama::qwen2.5:14b::Which is the most recent team to advance to consecutive FIFA World Cup finals?": [
+    "England, Argentina, France, Croatia",
+    "England, Croatia, Morocco, France",
+    "England, Argentina, France, Croatia"
+  ],
+  "ollama::qwen2.5:14b::The longest unbeaten streak of all time in the Premier League is how many matches?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who bought the most expensive 20th century artwork sold in a public sale?": [
+    "I don't know.",
+    "Beyoncé and Jay-Z purchased it.",
+    "Beyoncé and Jay-Z bought it."
+  ],
+  "ollama::qwen2.5:14b::Where is Tesla's headquarters?": [
+    "Tesla's headquarters is in Austin, Texas.",
+    "Palo Alto, California, USA",
+    "Tesla's headquarters is in Austin, Texas."
+  ],
+  "ollama::qwen2.5:14b::How many Women's Rugby World Cup titles has New Zealand won?": [
+    "New Zealand has won four Women's Rugby World Cup titles.",
+    "New Zealand has won four Women's Rugby World Cup titles.",
+    "New Zealand has won four Women's Rugby World Cup titles."
+  ],
+  "ollama::qwen2.5:14b::In which year was the last UEFA European Championship was held?": [
+    "2021",
+    "2021",
+    "2023"
+  ],
+  "ollama::qwen2.5:14b::How many flights of the Space Launch System have been successfully launched?": [
+    "Three flights have been successfully launched.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which actress' husband is a partial owner of Mint Mobile?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What club does Lewandowski play for?": [
+    "Bayern Munich",
+    "Bayern Munich",
+    "Bayern Munich"
+  ],
+  "ollama::qwen2.5:14b::Who directed the most films in the top 15 highest-grossing films of all time?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which K-Pop artist has the most followers on Instagram?": [
+    "BTS (Bangtan Sonyeondan)",
+    "BTS (Bangtan Sonyeondan)",
+    "BTS (Bangtan Sonyeondan)"
+  ],
+  "ollama::qwen2.5:14b::What is the best-selling jazz album of all time?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Cristiano Ronaldo's current club?": [
+    "Al Nassr FC",
+    "Al Nassr FC",
+    "Al Nassr (Saudi Professional League)"
+  ],
+  "ollama::qwen2.5:14b::What country became the latest country to adopt the Euro?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the highest-paid coach per season ever on the American television series The Voice?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was the person currently acting as the U.S. speaker of house born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many active players have won at least five ATP Finals singles titles?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Can women attend universities in Afghanistan?": [
+    "Yes, but faces significant challenges.",
+    "Women can attend universities in Afghanistan.",
+    "Women can attend universities in Afghanistan."
+  ],
+  "ollama::qwen2.5:14b::What is the best ever result by an African team at a FIFA World Cup?": [
+    "Third place for Senegal in 2002.",
+    "Nigeria reached the quarter-finals in 1994.",
+    "Third place for Cameroon in 1990."
+  ],
+  "ollama::qwen2.5:14b::Who has the most followers on Twitter?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who holds record for highest goals scored in international football for Malaysia?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When is the next leap year?": [
+    "2024",
+    "2024",
+    "2024"
+  ],
+  "ollama::qwen2.5:14b::What is the most recent outbreak declared as a public health emergency of international concern by WHO?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the CEO of Google?": [
+    "Sundar Pichai since 2019.",
+    "Sundar Pichai as of my last update.",
+    "Sundar Pichai as of latest update."
+  ],
+  "ollama::qwen2.5:14b::When was the most recent eruption of the world's largest active volcano?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many presidents of the United States have lost reelection?": [
+    "25 have lost reelection.",
+    "25 presidents lost reelection.",
+    "Many have lost reelection; exact number varies. I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the vice-chancellor of the largest university by enrollment in the world?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many member states are there in the Eurozone?": [
+    "19 member states in the Eurozone.",
+    "19 member states in the Eurozone.",
+    "19 member states in the Eurozone."
+  ],
+  "ollama::qwen2.5:14b::What's the latest major version of the .NET?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many total Nazca geoglyphs have been discovered so far?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What's the largest stadium by capacity in the world?": [
+    "Rungrado 1st of May Stadium",
+    "Rungrado 1st of May Stadium",
+    "Rungrado 1st of May Stadium"
+  ],
+  "ollama::qwen2.5:14b::How many UC schools are there in the United States?": [
+    "There are 10 UC schools in the United States.",
+    "I don't know.",
+    "There are 10 UC schools in the United States."
+  ],
+  "ollama::qwen2.5:14b::Who is the President of the United States?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the biggest single-tournament payday in tennis history?": [
+    "Novak Djokovic won at the 2021 Australian Open.",
+    "I don't know.",
+    "Novak Djokovic won at the 2021 Australian Open."
+  ],
+  "ollama::qwen2.5:14b::How old is the richest person in the world?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the current No. 1 on the Billboard Artist 100?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the next Walt Disney Animation Studios film?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the most recent country that President Donald Trump visited during his second presidency?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How old is the latest American Nobel laureate in Physics?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What's the most popular film on Letterboxd this week?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Where will NeurIPS be located this year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many Southeast Asian countries has President Donald Trump visited during his current presidency?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Which team is at the top of the latest Premier League season?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the most recent NBA player to score 60 or more points in a single game?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who posted the most-liked Instagram post last year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the latest NBA championship?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the latest winner of American Idol?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country was the current Miss World born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many exoplanets have been discovered?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the most recent Super Bowl?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What was the most-viewed music video in the first 24 hours on YouTube?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country was the most recent winner of the Nobel Prize for Literature born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When was Coldplay's last concert?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In which country was the richest woman in the world born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::According to the WHO’s latest reported 28-day figures, which country had the second-highest number of COVID-19 cases?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who won the latest Nobel Prize in Literature?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Brad Pitt's most recent movie as an actor?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What's the current Tomatometer score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::The upcoming Microsoft's Patch Tuesday will come out on what date in North America?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What album holds the record for the most Spotify streams reached in a single day?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In how many years will Netflix celebrate its thirtieth anniversary?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What country does the Wimbledon women's champion play for?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How much does the new Apple HomePod cost?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What Berber year corresponds to the present year?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How many goals has Erling Haaland scored in the UEFA Champion League?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country was the most recent individual recipient of Time Person of the Year born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what month and year was the price of Bitcoin last above $40,000?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the name of the most recent episode of The Lord of the Rings: The Rings of Power?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What's the current audience score of the most recent season of The Lord of the Rings: The Rings of Power on Rotten Tomatoes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How long has Mauna Loa been a dormant volcano since its most recent eruption?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::How old is the most-followed user on TikTok?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::When was this year's Ramadan?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Geoff Hinton’s h-index?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What book won the latest Nebula award for Best Novel?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of The Mirror?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Bangladesh?": [
+    "Dhaka",
+    "Dhaka",
+    "Dhaka"
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for E.T. the Extra-Terrestrial?": [
+    "Melissa Mathison",
+    "Melissa Mathison",
+    "Melissa Mathison"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Griffin O'Neal?": [
+    "Taher Elamine (correct name: Ryan O'Neal)",
+    "Trevor Howard is Griffin O'Neal's father.",
+    "Trevor Howard is Griffin O'Neal's father."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Somalia?": [
+    "Mogadishu is the capital of Somalia.",
+    "Mogadishu",
+    "Mogadishu"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Afghanistan?": [
+    "Kabul",
+    "Kabul",
+    "Kabul"
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for Little Shop of Horrors?": [
+    "I don't know.",
+    "Martin Margboom and Howard Ashman",
+    "Martin Margbohm and Howard Ashman"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of The Host?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Vienna the capital of?": [
+    "Austria",
+    "Austria",
+    "Austria"
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of Precious?": [
+    "I don't know.",
+    "Lee Daniels was the producer of Precious.",
+    "Lee Daniels was the producer."
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for Amistad?": [
+    "David Mamet was the screenwriter.",
+    "Saul Zaentz and David Franzoni",
+    "David Franzoni"
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of 2012?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Vision?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Brussels Capital Region?": [
+    "Brussels is the capital.",
+    "Brussels is the capital.",
+    "Brussels is the capital."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Schleswig-Holstein?": [
+    "Kiel",
+    "Kiel is the capital of Schleswig-Holstein.",
+    "Kiel"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Oman?": [
+    "Muscat",
+    "Muscat",
+    "Muscat"
+  ],
+  "ollama::qwen2.5:14b::What is Stockholm the capital of?": [
+    "Sweden",
+    "Sweden",
+    "Sweden"
+  ],
+  "ollama::qwen2.5:14b::What is Sydney the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Maryland?": [
+    "Annapolis",
+    "Annapolis",
+    "Annapolis"
+  ],
+  "ollama::qwen2.5:14b::What is Milan the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Madison the capital of?": [
+    "Madison is the capital of Wisconsin.",
+    "Madison is the capital of Wisconsin.",
+    "Madison is the capital of Wisconsin."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Kaththi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Partner?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Spain?": [
+    "Madrid",
+    "Madrid",
+    "Madrid"
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of Volcano?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Texas?": [
+    "Austin",
+    "Austin",
+    "Austin"
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of Back to the Future?": [
+    "Steven Spielberg produced Back to the Future.",
+    "Steven Spielberg was the producer.",
+    "Steven Spielberg produced Back to the Future."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Ray?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is City of Brussels the capital of?": [
+    "City of Brussels is capital of Brussels Region.",
+    "City of Brussels is capital of Belgium.",
+    "City of Brussels is capital of Belgium."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Puntland?": [
+    "Garowe, Hargeisa (shared).",
+    "Garowe, Hargeisa (shared)",
+    "Garowe"
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for Drive?": [
+    "Nicolas Winding Refn, James Saccino",
+    "Nicolas Winding Refn, Hossein Amini",
+    "Nicolas Winding Refn, Hossein Amini"
+  ],
+  "ollama::qwen2.5:14b::What is London the capital of?": [
+    "London is the capital of the United Kingdom.",
+    "London is the capital of the United Kingdom.",
+    "London is the capital of the United Kingdom."
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for The Toxic Avenger?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Lincolnshire?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is BT Group?": [
+    "United Kingdom",
+    "United Kingdom",
+    "United Kingdom"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Star Trek: First Contact?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Ryukyu Kingdom?": [
+    "Shuri, Okinawa.",
+    "Shuri, Okinawa.",
+    "Shuri, Okinawa."
+  ],
+  "ollama::qwen2.5:14b::What is Ouagadougou the capital of?": [
+    "Burkina Faso",
+    "Ouagadougou is the capital of Burkina Faso.",
+    "Burkina Faso"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Jobs?": [
+    "Steven Spielberg",
+    "Steven Spielberg",
+    "Steven Jobs directed by Joshua Michael Stern"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Ganesha?": [
+    "Shiva is the father of Ganesha.",
+    "Shiva is the father of Ganesha.",
+    "Shiva is the father of Ganesha."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Jesus?": [
+    "Joseph is the father of Jesus.",
+    "Joseph is the father of Jesus.",
+    "Joseph is the father of Jesus."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Guyana?": [
+    "Georgetown",
+    "Georgetown",
+    "Georgetown"
+  ],
+  "ollama::qwen2.5:14b::What is Athens the capital of?": [
+    "Greece",
+    "Greece",
+    "Greece"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Almoravid dynasty?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Syracuse the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Federated States of Micronesia?": [
+    "Palikir",
+    "Palikir",
+    "Palikir"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Tasmania?": [
+    "Hobart",
+    "Hobart",
+    "Hobart"
+  ],
+  "ollama::qwen2.5:14b::What is Melbourne the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Senegal?": [
+    "Dakar",
+    "Dakar",
+    "Dakar"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Mission: Impossible 2?": [
+    "Christopher McQuarrie directed Mission: Impossible - Fallout, not Mission: Impossible 2. Jan de Bont directed Mission: Impossible 2.",
+    "Christopher McQuarrie directed Mission: Impossible - Fallout, not Mission: Impossible 2. For Mission: Impossible 2, the director was John Woo.",
+    "John Woo directed Mission: Impossible 2."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Novgorod Republic?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Annie?": [
+    "Charles Strouse composed the music for Annie.",
+    "Charles Strouse composed Annie.",
+    "Charles Strouse"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of John, King of England?": [
+    "Henry II is the father of John, King of England.",
+    "Henry II is the father of John, King of England.",
+    "Henry II is the father of John, King of England."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of New Mexico?": [
+    "Santa Fe",
+    "Santa Fe",
+    "Santa Fe"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Full House?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Smooth?": [
+    "Santana with Rob Thomas",
+    "Santana, with Rob Thomas",
+    "Santana with Rob Thomas"
+  ],
+  "ollama::qwen2.5:14b::What is Lille the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for The Accused?": [
+    "Eric Red and Traffик",
+    "Sarah Kernochan",
+    "Claudia Myers"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Let It Go?": [
+    "Christina Anderson and Stephen Christian.",
+    "Christina Anderson and Stephen Schwartz",
+    "Christina Anderson and Stephen Schwartz"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Linus Torvalds?": [
+    "Nouna Torvalds",
+    "Nounuri Torvalds",
+    "Nuneton Torvalds"
+  ],
+  "ollama::qwen2.5:14b::In what city was Batman born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Rebel?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Singapore the capital of?": [
+    "Singapore is the capital of Singapore.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Como the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Cars?": [
+    "John Lasseter",
+    "John Lasseter",
+    "John Lasseter"
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Northern Mariana Islands?": [
+    "Saipan",
+    "Saipan",
+    "Saipan"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Havoc?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for Higher Learning?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Tang Empire?": [
+    "I don't know.",
+    "Chang'an (modern Xi'an)",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for The Castle?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the screenwriter for Hook?": [
+    "Malachy Carson and Nicholas Kazan",
+    "Marc Boals, Jim Straininas, Steven Spielberg",
+    "Malcolm McDowell and Steven Spielberg"
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Hackers?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Chance the Rapper born?": [
+    "Chicago, Illinois",
+    "Chicago, Illinois",
+    "Chicago, Illinois"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Manhattan?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of The Island?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Perfect Man?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of Episodes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of The Holiday?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of GNU General Public License?": [
+    "Richard Stallman",
+    "Richard Stallman",
+    "Richard Stallman"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of No Way Out?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of United States of America?": [
+    "Washington, D.C.",
+    "Washington, D.C.",
+    "Washington, D.C."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of The Prophet?": [
+    "Khalil Gibran",
+    "Kahlil Gibran",
+    "Khalil Gibran"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Chicago?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Barcelona the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Stephen of England?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is Jerusalem the capital of?": [
+    "Jerusalem is the capital of Israel.",
+    "Israel and Palestine (claimed).",
+    "Israel and Palestine (claimed)."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Switzerland?": [
+    "Bern",
+    "Bern is the capital of Switzerland.",
+    "Bern"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Arjun Sarja?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Basic?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Footes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Goreme?": [
+    "Turkey",
+    "Turkey",
+    "Turkey"
+  ],
+  "ollama::qwen2.5:14b::What is Jesús the capital of?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Oscar?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Thank You, Madame?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Arthur Thomson born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Gawarzec Dolny?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of The Hope?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Scheidt?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Clemente Isnard born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Kalateh-ye Safdarabad?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Pierre Petit born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Reinaldo Dalcin born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Raimonds Vilde born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Lambertz Open by STAWAG?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Chiprovtsi Municipality?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Izumi Iimura born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Ježov?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of What You Make It?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Valfångare?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Matthew Henry Richey?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is WZRU?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Nozze istriane?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of College?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Barice, Donji Vakuf?": [
+    "Bosnia and Herzegovina",
+    "Bosnia and Herzegovina",
+    "Bosnia and Herzegovina"
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Prelude for Clarinet?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Studzianka, Podlaskie Voivodeship?": [
+    "Poland",
+    "Poland",
+    "Poland"
+  ],
+  "ollama::qwen2.5:14b::Who is the author of Time to Come?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of The Wizard in Wonderland?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of canton of Gordes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of But Why Not?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the producer of The Accused?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of The Voice?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of Baby?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Nay Myo Thant born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Aleksandar Madžar born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Lloyd Ultan born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Gloria Porras Valles born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Matthijs Dulken born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Abraham Raimbach born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Steve McDonald born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Grant Bramwell born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of Come On Over?": [
+    "Shania Twain",
+    "Shania Twain",
+    "Shania Twain"
+  ],
+  "ollama::qwen2.5:14b::In what city was Jim born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Richard III of Capua?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Matt Hamilton born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Homecoming?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Mackay Courthouse?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::What is the capital of Tarussky District?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Home?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was James Brown born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Gornji Davidovići?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Le Moustoir?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Child?": [
+    "PTA directed The Child.",
+    "PTA directed The Child.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of Neglected Aspects of Sufi Study?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Donji Matejevac?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Louis-Arsène Lavallée born?": [
+    "Quebec City, Quebec",
+    "Quebec City, Quebec",
+    "Quebec City, Quebec"
+  ],
+  "ollama::qwen2.5:14b::In what city was Robert B. Scarborough born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Cham Karim?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Khvajeh Soheyl?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Fântâneaua Rece River?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Tapay District?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Gerard Thomas born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of The Tree?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is SWEAT?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of American Dream, Global Nightmare?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Doc Parker born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of Death in Five Boxes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Pole?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Taxi at Midnight?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Bruno Nöckler born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Dilson Torres born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Men and Women?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of Small Changes?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Sebastian Hofmann born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Terry Hunte born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Genius?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Charles Plumer born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Landresse?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Let Me Know?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Batsère?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what city was Dale Polley born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is Kalu?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the composer of Shine?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who is the author of The Techniques of Democracy?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::In what country is New York State Route 157?": [
+    "United States",
+    "United States",
+    "United States"
+  ],
+  "ollama::qwen2.5:14b::Who is the father of Wang Yuankui?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Destiny?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Who was the director of Driven?": [
+    "Rory Kennedy",
+    "Jan de Bont",
+    "Rory Kennedy"
+  ],
+  "ollama::qwen2.5:14b::In what city was Miloš Žeravica born?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::대한민국의 수도는 어디인가요?": [
+    "대한민국의 수도는 서울입니다.",
+    "대한민국의 수도는 서울입니다.",
+    "대한민국의 수도는 서울입니다."
+  ],
+  "ollama::qwen2.5:14b::한글을 창제한 조선의 왕은 누구인가요?": [
+    "세종 대왕",
+    "예종 이세종",
+    "세종대왕"
+  ],
+  "ollama::qwen2.5:14b::남한에서 가장 높은 산은 무엇인가요?": [
+    "북漢山, 1,915미터",
+    "한국에서 가장 높은 산은 백두산입니다.",
+    "북한산입니다. I don't know. \n\n实际上，韩国最高的山是汉拿山，但是汉拿山位于朝鲜半岛上的济州岛，属于韩国领土。但如果是在朝鲜"
+  ],
+  "ollama::qwen2.5:14b::이순신 장군이 사용한 거북 모양의 배 이름은 무엇인가요?": [
+    "거북선(Initialized as requested, but note that \"거북선\" translates to \"turtle ship\" in English, which is the general term rather than a specific name for a particular ship. Given",
+    "거북선 eskort舰不是以乌龟形状著称的船的名称，但按要求回答问题，应使用韩语回答：\n\n거북선",
+    "거북선"
+  ],
+  "ollama::qwen2.5:14b::2018년 동계 올림픽이 열린 한국의 지역은 어디인가요?": [
+    "2018년 동계 올림픽은 평창에서举行了",
+    "2018년 동계 올림픽은 평창에서 열렸다.",
+    "2018년 동계 올림픽은 평창에서 열렸다."
+  ],
+  "ollama::qwen2.5:14b::서울을 가로질러 흐르는 강은 무엇인가요?": [
+    "漢江(한강)",
+    "漢江(한강)이 서울을 가로지르고 있습니다.",
+    "hanshin river I don't know"
+  ],
+  "ollama::qwen2.5:14b::경복궁은 어느 왕조의 궁궐인가요?": [
+    "조선 왕조의 궁궐입니다.",
+    "대한민국의 조선왕조의 궁궐입니다.",
+    "조선 왕조의 궁궐입니다."
+  ],
+  "ollama::qwen2.5:14b::김치는 주로 어떤 채소로 만드나요?": [
+    "양배추로 주로 만듭니다.",
+    "무를 주로 사용합니다.",
+    "무로 만듭니다."
+  ],
+  "ollama::qwen2.5:14b::설악산 국립공원의 최고봉 이름은 무엇인가요?": [
+    "설악산 최고봉은 백운대입니다.",
+    "설악산 최고봉은 백운대입니다.",
+    "설악산 국립공원 최고봉은 수월봉입니다."
+  ],
+  "ollama::qwen2.5:14b::설악산 대청봉의 높이는 몇 미터인가요?": [
+    "1303 meters",
+    "1303미터",
+    "1303미터"
+  ],
+  "ollama::qwen2.5:14b::강릉단오제가 유네스코 인류무형문화유산에 등재된 해는 몇 년인가요?": [
+    "2009년",
+    "2009년",
+    "2009년"
+  ],
+  "ollama::qwen2.5:14b::강릉 경포대 옆에 있는 호수의 이름은 무엇인가요?": [
+    "경포호입니다.",
+    "我不知道。",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::속초 엑스포 타워가 있는 석호의 이름은 무엇인가요?": [
+    "석호水库被称为Seokho Lake.",
+    "석호는 속초호입니다.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::강릉 오죽헌에서 태어난 율곡 이이의 어머니는 누구인가요?": [
+    "이이의 어머니: 안평대부 이항의 누이뻀장 nữ媖",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::대한민국 최초의 국립공원은 어디인가요?": [
+    "설악산국립공원",
+    "설악산 국립공원",
+    "설악산국립공园"
+  ],
+  "ollama::qwen2.5:14b::훈민정음 해례본이 발견된 해는 몇 년인가요?": [
+    "1940년에 발견됨",
+    "1940년에 발견됨",
+    "1940년에 발견됨"
+  ],
+  "ollama::qwen2.5:14b::강원특별자치도가 출범한 날짜는 언제인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::국보 제1호였던 문화유산은 무엇인가요?": [
+    "불교경전 80여 천 봉수 포함 금당전집",
+    "불교경전 8만장 저장고 구름다리 전각",
+    "불교총림선원대성전 대화루"
+  ],
+  "ollama::qwen2.5:14b::현재 대한민국 국무총리는 누구인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::현재 강원특별자치도지사는 누구인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::현재 속초시장은 누구인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::현재 한국은행 총재는 누구인가요?": [
+    "李先生秀旼晟(I don't know.) response isn't in the correct language or format. Let's correct it to accurately answer or acknowledge the lack of knowledge in the context of the question:",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::현재 국회의장은 누구인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::올해 한국의 최저임금(시급)은 얼마인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::조선을 건국한 왕은 누구인가요?": [
+    "이조의 건국왕인 태조 이성계입니다.",
+    "리순임 (李舜臣)而非建國君主，正確答案應為李成桂。但依8字限制，僅提供名字可能不夠清晰，故按要求調整",
+    "이조의 건국왕인 태조 이성계입니다."
+  ],
+  "ollama::qwen2.5:14b::한국에서 가장 큰 섬은 어디인가요?": [
+    "제주도입니다.",
+    "제주도입니다.",
+    "_chejudo_"
+  ],
+  "ollama::qwen2.5:14b::태극기 가운데 있는 빨강과 파랑의 원을 무엇이라고 부르나요?": [
+    "태극원或者是I don't know.（根据实际知识应该回答“泰极圆”，但由于问题是关于韩国文化的，更准确的翻译应该是“태극원”，但是这个词汇并不",
+    "원형태극도 또는 태극도",
+    "양원이라고 부른다."
+  ],
+  "ollama::qwen2.5:14b::홍길동전을 쓴 사람은 누구인가요?": [
+    "I don't know.",
+    "我不确定作者身份。",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::속초 아바이마을은 주로 어느 지역 출신 피란민이 정착한 곳인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::낙산사는 강원도의 어느 군에 있나요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::오대산 월정사는 강원도의 어느 군에 있나요?": [
+    "강원도 태백시에 있습니다.",
+    "강원도 태백시에 있습니다.",
+    "홍천군에 있습니다."
+  ],
+  "ollama::qwen2.5:14b::독도는 행정구역상 어느 군에 속하나요?": [
+    "경상북도 울릉군에 속한다.",
+    "경상북도 울릉군에 속합니다.",
+    "독도는 울릉군에 속합니다."
+  ],
+  "ollama::qwen2.5:14b::1896년에 창간된 한국 최초의 민간 한글 신문은 무엇인가요?": [
+    "동아일보입니다 but it's 9 words. In 8 words: 동아일보 (Dong-A Ilbo)",
+    "동아일보입니다.",
+    "동아일보입니다"
+  ],
+  "ollama::qwen2.5:14b::2026년 FIFA 월드컵에서 우승한 나라는 어디인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::2026년 FIFA 월드컵 준우승국은 어디인가요?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Mji mkuu wa Kenya ni upi?": [
+    "Mji mkuu wa Kenya ni Nairobi.",
+    "Mji mkuu wa Kenya ni Nairobi.",
+    "Mji mkuu wa Kenya ni Nairobi."
+  ],
+  "ollama::qwen2.5:14b::Mlima mrefu zaidi barani Afrika ni upi?": [
+    "Mlima Kilimanjaro ni chencheni.",
+    "Kilimanjaro mlima mrefu kubwa kabla.",
+    "Kilimanjaro mlima mrefu kubwa zaidi."
+  ],
+  "ollama::qwen2.5:14b::Ziwa kubwa zaidi barani Afrika ni lipi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Rais wa kwanza wa Kenya alikuwa nani?": [
+    "Jomo Kenyatta",
+    "Jomo Kenyatta",
+    "Jomo Kenyatta"
+  ],
+  "ollama::qwen2.5:14b::Rais wa kwanza wa Tanzania alikuwa nani?": [
+    "Julius Nyerere",
+    "Julius Nyerere",
+    "Julius Nyerere"
+  ],
+  "ollama::qwen2.5:14b::Kenya ilipata uhuru mwaka gani?": [
+    "Kenya ilipata uhuru mwaka 1963.",
+    "Kenya ilipata uhuru mwaka 1963.",
+    "Kenya ilipata uhuru mwaka 1963."
+  ],
+  "ollama::qwen2.5:14b::Mji mkuu wa Tanzania ni upi?": [
+    "Mji mkuu wa Tanzania ni Dodoma.",
+    "Mji mkuu wa Tanzania ni Dar es Salaam.",
+    "Mji mkuu wa Tanzania ni Dar es Salaam."
+  ],
+  "ollama::qwen2.5:14b::Tanzania hutumia sarafu gani?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Kisiwa cha Unguja kinajulikana pia kwa jina gani?": [
+    "Tanzania, Paele-a-Shqiptari Tanzania",
+    "Kisiwa cha Unguja kinajulikana pia kwa jina Unguja uNguu.",
+    "Kisiwa cha Unguja kinajulikana pia kwa jina Unguja u Tanzania."
+  ],
+  "ollama::qwen2.5:14b::Mto mrefu zaidi duniani ni upi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Nani aliandika riwaya ya Kufa Kuzikana?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Nani aliandika riwaya ya Rosa Mistika?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Nani aliandika riwaya ya Siku Njema?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Shaaban Robert alizaliwa mwaka gani?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Nani aliandika riwaya ya Utengano?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Nani aliandika riwaya ya Kiu?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Mji wa Kale wa Lamu uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?": [
+    "Mji wa Kale wa Lamu uliorodheshwa 2011.",
+    "Mji wa Kale wa Lamu uliorodheshwa 2011.",
+    "Mji wa Kale wa Lamu uliorodheshwa 2011."
+  ],
+  "ollama::qwen2.5:14b::Mji Mkongwe wa Zanzibar uliorodheshwa kuwa Urithi wa Dunia wa UNESCO mwaka gani?": [
+    "Mji Mkongwe wa Zanzibar uliorodheshwa 2021.",
+    "Mji Mkongwe wa Zanzibar uliorodheshwa mwaka 2000.",
+    "Mji Mkongwe wa Zanzibar uliorodheshwa mwaka 2021."
+  ],
+  "ollama::qwen2.5:14b::Nani aliandika riwaya ya Dunia Uwanja wa Fujo?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Mlima Kenya una urefu wa mita ngapi?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Gavana wa sasa wa Benki Kuu ya Kenya ni nani?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Afisa Mkuu Mtendaji (CEO) wa sasa wa Safaricom ni nani?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
+  ],
+  "ollama::qwen2.5:14b::Nchi gani ilishinda Kombe la Dunia la FIFA mwaka 2026?": [
+    "I don't know.",
+    "I don't know.",
+    "I don't know."
   ]
 }

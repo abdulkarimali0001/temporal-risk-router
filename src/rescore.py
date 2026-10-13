@@ -31,7 +31,8 @@ def rescore(model: str, filename: str) -> list[dict]:
     # leave out methods added after this run (they need a new run on the Mac)
     all_methods = list(experiment.METHODS)
     cheap = "Router, cheap check (ours)"
-    computable = {cheap}                     # can be worked out from saved answers
+    strict = "Router, strict check (ours)"
+    computable = {cheap, strict}             # can be worked out from saved answers
     experiment.METHODS[:] = [m for m in all_methods
                              if m.startswith("Oracle") or f"{m}::searched" in header
                              or m in computable]
@@ -49,6 +50,11 @@ def rescore(model: str, filename: str) -> list[dict]:
             else:
                 s = knowledge_check.cached(r["question"], model)
                 r["knows_cheap"] = knowledge_check.judge([r["memory"]] + s[:1])["knows"] if s else ""
+        if r.get("knows_strict", "") == "" and r["group"] != "HIGH":
+            s = knowledge_check.cached(r["question"], model)
+            r["knows_strict"] = knowledge_check.judge_strict([r["memory"]] + s, r["question"])["knows"] if s else ""
+        if f"{strict}::searched" not in header:
+            r[f"{strict}::searched"] = router.decide(r["group"], r.get("knows_strict") in ("True", True))[0] == "search"
         if f"{cheap}::searched" not in header:
             knows = r["knows_cheap"] in ("True", True)
             r[f"{cheap}::searched"] = router.decide(r["group"], knows)[0] == "search"

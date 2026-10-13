@@ -30,6 +30,10 @@ def calls(method: str, r: dict) -> int:
         return CHECK_CALLS + answer
     if method == "Verbal confidence":
         return CONF_CALLS + answer
+    if method.startswith("Router, strict"):   # + the memory answer, also when it searches
+        if r["group"] == "HIGH":
+            return answer
+        return CHECK_CALLS + MEMORY_CALLS + (SEARCH_CALLS if searched else 0)
     if method.startswith("Router, cheap"):   # memory answer (made anyway) + ONE sample
         if r["group"] == "HIGH":
             return answer

@@ -23,11 +23,12 @@ import webbrowser
 from concurrent.futures import ThreadPoolExecutor
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-from src import language, llm, pipeline, router, search, time_check
+from src import knowledge_check, language, llm, pipeline, router, search, time_check
 from src.llm import ROOT
 
 PORT = 8765
 PAGE = ROOT / "app" / "index.html"
+LOG = ROOT / "results" / "app_log.jsonl"     # every question asked in the app, for checking later
 MODEL = None
 
 
@@ -55,6 +56,15 @@ def run(question: str, emit):
         emit("draft_done", {"seconds": since()})
 
         r = route_job.result()
+        if r["group"] != "HIGH" and r.get("answers"):
+            # strict check: the quick answer itself must not contradict the AI's other answers
+            # (e.g. "in Yangyang" vs "in Gangneung" = the AI is guessing the city)
+            strict = knowledge_check.judge_strict([draft] + r["answers"], question)
+            r["agreement"] = strict["agreement"]
+            if r["knows"] and not strict["knows"]:
+                r["knows"] = False
+                r["action"], _ = router.decide(r["group"], False)
+                r["reason"] = "the quick answer contradicts the AI's other answers, so it is guessing"
         emit("checks", {"group": router.GROUP_NAMES[r["group"]], "knows": r["knows"],
                         "agreement": r["agreement"], "samples": r.get("answers", []),
                         "action": r["action"], "action_text": router.ACTIONS[r["action"]],
@@ -116,11 +126,26 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         events = queue.Queue()
 
+        log = {"time": time.strftime("%Y-%m-%d %H:%M:%S"), "question": q, "model": llm.model_name(),
+               "draft": "", "verified": ""}
+
+        def emit(kind, payload):
+            if kind in ("draft", "verified"):
+                log[kind] += payload["text"]
+            elif kind != "draft_done":
+                log[kind] = payload
+            events.put((kind, payload))
+
         def work():
             try:
-                run(q, lambda kind, payload: events.put((kind, payload)))
+                run(q, emit)
             except Exception as e:
-                events.put(("error", {"error": f"Something went wrong: {e}. Is Ollama running?"}))
+                emit("error", {"error": f"Something went wrong: {e}. Is Ollama running?"})
+            try:   # every question is saved, so wrong answers can be looked into later
+                with LOG.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps(log, ensure_ascii=False) + "\n")
+            except OSError:
+                pass
             events.put(("end", {}))
 
         threading.Thread(target=work, daemon=True).start()

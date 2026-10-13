@@ -109,6 +109,9 @@ def seconds(method: str, r: dict, t: dict) -> float:
         return t["samples_x3"] + answer
     if method == "Verbal confidence":
         return t["confidence"] + answer
+    if method == "Router, strict check (ours)":
+        return t["time_check"] + (answer if high else t["memory"] + t["samples_x3"]
+                                  + (t["search"] if searched else 0))
     if method == "Router, cheap check (ours)":   # memory answer is made anyway, + 1 sample
         return t["time_check"] + (answer if high else t["memory"] + t["sample_x1"]
                                   + (t["search"] if searched else 0))

@@ -73,6 +73,48 @@ def judge(answers: list[str]) -> dict:
             "knows": said_idk == 0 and score >= AGREEMENT_NEEDED}
 
 
+# ---------- strict version: no contradictions allowed ----------
+# The similarity rule above says "located in Gangneung, Gangwon-do" and "located in Yangyang,
+# Gangwon-do" are the same answer, because most words match. The strict rule compares only
+# the specific words of each answer (not filler, not words from the question): two answers
+# CONTRADICT when each names something the other does not (Gangneung vs Yangyang). A less
+# specific answer ("in Gangwon-do") does not contradict a more specific one.
+FILLER = set("""yes no not the a an is was are were be been it its this that these those of in on at
+to for by with from and or but as also actually located situated called known named which who what
+where when i think believe am sure answer correct currently current now still there here has have had
+he she they his her their s based found lies part""".split())
+
+
+def _key(text: str, question: str = "") -> set[str]:
+    q = set(_normalise(question).split())
+    return {w for w in _normalise(text).split() if w not in FILLER and w not in q}
+
+
+def _tok_eq(a: str, b: str) -> bool:
+    return a == b or (len(a) >= 4 and len(b) >= 4 and SequenceMatcher(None, a, b).ratio() >= 0.85)
+
+
+def contradicts(a: str, b: str, question: str = "") -> bool:
+    ka, kb = _key(a, question), _key(b, question)
+    if not ka or not kb:
+        return not _same(a, b)
+    extra_a = {w for w in ka if not any(_tok_eq(w, x) for x in kb)}
+    extra_b = {w for w in kb if not any(_tok_eq(w, x) for x in ka)}
+    return bool(extra_a and extra_b)
+
+
+def judge_strict(answers: list[str], question: str = "") -> dict:
+    """KNOWS only if no answer says "I don't know" and no two answers contradict.
+    Used with the memory answer + the samples, so the answer the user would get is
+    itself checked against the samples."""
+    said_idk = sum(bool(IDK.search(a)) for a in answers)
+    pairs = list(combinations(answers, 2))
+    clashes = [(a, b) for a, b in pairs if contradicts(a, b, question)]
+    return {"answers": answers, "agreement": round(1 - len(clashes) / len(pairs), 2),
+            "said_dont_know": said_idk, "contradictions": len(clashes),
+            "knows": said_idk == 0 and not clashes}
+
+
 def _load_cache() -> dict:
     return json.loads(CACHE_PATH.read_text()) if CACHE_PATH.exists() else {}
 
@@ -119,6 +161,11 @@ def samples(question: str, n: int = SAMPLES) -> list[str]:
 def check(question: str) -> dict:
     """Ask the model SAMPLES times and decide whether it knows the answer."""
     return judge(samples(question, SAMPLES))
+
+
+def check_strict(question: str, memory_answer: str) -> dict:
+    """The memory answer + SAMPLES samples, no contradictions allowed."""
+    return judge_strict([memory_answer] + samples(question, SAMPLES), question)
 
 
 def check_cheap(question: str, memory_answer: str) -> dict:

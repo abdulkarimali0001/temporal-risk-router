@@ -86,9 +86,9 @@ CONF_PROMPT = ("Today's date is {today}. How confident are you that you know the
 METHODS = ["Never search", "Always search", "Time check only", "Self-consistency only",
            "Verbal confidence", "Router (ours)", "Router + cutoff rule (ours)",
            "Router, AI time check (ours)", "Router, dated AI time check (ours)",
-           "Router, cheap check (ours)", "Oracle (best possible)"]
+           "Router, cheap check (ours)", "Router, strict check (ours)", "Oracle (best possible)"]
 OURS = ("Router (ours)", "Router + cutoff rule (ours)", "Router, AI time check (ours)",
-        "Router, dated AI time check (ours)", "Router, cheap check (ours)")
+        "Router, dated AI time check (ours)", "Router, cheap check (ours)", "Router, strict check (ours)")
 TYPES = {"stable_common": "Stable, famous (PopQA)",
          "stable_rare": "Stable, rare (PopQA) - incomplete",
          "stable_freshqa": "Never-changing (FreshQA)",
@@ -165,7 +165,8 @@ def knowledge_is_stale(model: str) -> bool:
 
 def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
               stale: bool = True, llm_group: str | None = None,
-              knows_cheap: bool | None = None, dated_group: str | None = None) -> dict:
+              knows_cheap: bool | None = None, dated_group: str | None = None,
+              knows_strict: bool | None = None) -> dict:
     """Which methods search (True) for this question."""
     return {"Never search": False,
             "Always search": True,
@@ -179,6 +180,9 @@ def decisions(group: str, knows: bool, conf: int, memory_correct: bool,
             # the AI is told its training cutoff and today's date
             "Router, dated AI time check (ours)": router.decide(dated_group or group, knows)[0] == "search",
             # Check 2 from the memory answer + ONE sample (1 AI call instead of 3)
+            # memory answer + 3 samples, no two of them may contradict each other
+            "Router, strict check (ours)": router.decide(
+                group, knows if knows_strict is None else knows_strict)[0] == "search",
             "Router, cheap check (ours)": router.decide(
                 group, knows if knows_cheap is None else knows_cheap)[0] == "search",
             "Oracle (best possible)": not memory_correct}
@@ -372,6 +376,7 @@ def main():
             kc = knowledge_check.check(q)
             c["seconds"].setdefault("knowledge_check", round(time.time() - t0, 2))
             kc_cheap = knowledge_check.check_cheap(q, c["memory"])
+            kc_strict = knowledge_check.check_strict(q, c["memory"])
             group = time_check.classify(q, model)
         except Exception as e:  # keep going if one question fails
             print(f"   ERROR: {e}", flush=True)
@@ -380,7 +385,7 @@ def main():
         srch = c[SEARCH_VERSION]
         mem_score, srch_score = score(c["memory"], aliases), score(srch["answer"], aliases)
         row = {**it, "group": group, "knows": kc["knows"], "agreement": kc["agreement"],
-               "knows_cheap": kc_cheap["knows"],
+               "knows_cheap": kc_cheap["knows"], "knows_strict": kc_strict["knows"],
                "confidence": c["confidence"], "memory": c["memory"], "memory_score": mem_score,
                "search": srch["answer"], "search_score": srch_score, "query": srch["query"],
                "sources": " ".join(srch["sources"]),
@@ -391,7 +396,7 @@ def main():
         row.update({f"seconds_{k}": v for k, v in c.get("seconds", {}).items()})
         for m, searched in decisions(group, kc["knows"], c["confidence"], mem_score == "correct",
                                      stale, c.get("llm_group"), kc_cheap["knows"],
-                                     c.get("dated_group")).items():
+                                     c.get("dated_group"), kc_strict["knows"]).items():
             row[f"{m}::searched"] = searched
             row[f"{m}::score"] = srch_score if searched else mem_score
         rows.append(row)

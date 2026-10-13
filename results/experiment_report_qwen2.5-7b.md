@@ -1,6 +1,6 @@
 # Experiment: when should the AI search?
 
-Model `qwen2.5:7b` · 2026-10-09 · 499/499 questions from public benchmarks (FreshQA 2026-04-21, PopQA)
+Model `qwen2.5:7b` · 2026-10-12 · 499/499 questions from public benchmarks (FreshQA 2026-04-21, PopQA)
 
 Search used by the methods below: **Wikipedia + live web**.
 
@@ -15,19 +15,22 @@ Search used by the methods below: **Wikipedia + live web**.
 | Verbal confidence | 54% (49%-58%) | 189 | 43 | 49% |
 | **Router (ours)** | 66% (62%-70%) | 120 | 49 | 76% |
 | **Router + cutoff rule (ours)** | 66% (62%-70%) | 118 | 50 | 80% |
+| **Router, AI time check (ours)** | 66% (62%-70%) | 122 | 50 | 77% |
+| **Router, dated AI time check (ours)** | 65% (60%-69%) | 127 | 50 | 74% |
 | **Router, cheap check (ours)** | 65% (61%-69%) | 126 | 47 | 78% |
+| **Router, strict check (ours)** | 67% (63%-71%) | 114 | 49 | 82% |
 | Oracle (best possible) | 71% (67%-75%) | 100 | 43 | 65% |
 
 ![Accuracy vs. searches](experiment_chart_qwen2.5-7b.png)
 
 ## Correct answers by question type
 
-| Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Router, cheap check (ours) | Oracle (best possible) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Stable, famous (PopQA) | 129 | 57% | 77% | 57% | 78% | 69% | 78% | 78% | 77% | 80% |
-| Stable, rare (PopQA) - incomplete | 130 | 25% | 60% | 25% | 58% | 54% | 58% | 58% | 57% | 62% |
-| Never-changing (FreshQA) | 80 | 57% | 86% | 60% | 80% | 71% | 80% | 80% | 82% | 91% |
-| Changing (FreshQA) - outdated | 160 | 16% | 57% | 34% | 51% | 32% | 56% | 56% | 54% | 62% |
+| Question type | n | Never search | Always search | Time check only | Self-consistency only | Verbal confidence | Router (ours) | Router + cutoff rule (ours) | Router, AI time check (ours) | Router, dated AI time check (ours) | Router, cheap check (ours) | Router, strict check (ours) | Oracle (best possible) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Stable, famous (PopQA) | 129 | 57% | 77% | 57% | 78% | 69% | 78% | 78% | 78% | 78% | 77% | 78% | 80% |
+| Stable, rare (PopQA) - incomplete | 130 | 25% | 60% | 25% | 58% | 54% | 58% | 58% | 58% | 58% | 57% | 59% | 62% |
+| Never-changing (FreshQA) | 80 | 57% | 86% | 60% | 80% | 71% | 80% | 80% | 80% | 80% | 82% | 86% | 91% |
+| Changing (FreshQA) - outdated | 160 | 16% | 57% | 34% | 51% | 32% | 56% | 56% | 54% | 51% | 54% | 56% | 62% |
 
 ## Share of questions searched, by type
 
@@ -47,13 +50,15 @@ Accuracy when ALWAYS searching (200 questions answered by every version).
 | Stable, famous (PopQA) | 62% | 72% |
 | Stable, rare (PopQA) - incomplete | 30% | 62% |
 | Never-changing (FreshQA) | 65% | 80% |
-| Changing (FreshQA) - outdated | 25% | 49% |
-| **All** | 42% | 62% |
+| Changing (FreshQA) - outdated | 28% | 55% |
+| **All** | 42% | 65% |
 
 ## Check 1 on FreshQA (outside data, not used for training)
 
 - Right group (never/slow/fast = LOW/MAYBE/HIGH): 145/240 (60%)
 - Fast-changing questions caught as HIGH: 49/80
+- Check 1 asked to the AI instead: right group 147/240 (61%), fast-changing caught as HIGH 69/80
+- Check 1 asked to the AI, told its cutoff and today's date: right group 147/240 (61%), fast-changing caught as HIGH 28/80
 
 ## Is the difference real? (paired McNemar test)
 
@@ -61,13 +66,13 @@ For each pair: questions only the router got right vs. only the other method got
 
 | Router vs. | Only router right | Only other right | p-value |
 |---|---|---|---|
-| Never search | 168 | 14 | 0.000 * |
-| Always search | 4 | 11 | 0.118 |
-| Time check only | 134 | 11 | 0.000 * |
-| Self-consistency only | 12 | 4 | 0.077 |
-| Verbal confidence | 75 | 11 | 0.000 * |
+| Never search | 172 | 13 | 0.000 * |
+| Always search | 5 | 7 | 0.774 |
+| Time check only | 138 | 10 | 0.000 * |
+| Self-consistency only | 16 | 3 | 0.004 * |
+| Verbal confidence | 78 | 9 | 0.000 * |
 
-(Compared using: Router + cutoff rule (ours).)
+(Compared using: Router, strict check (ours).)
 
 ## Cutoff rule
 

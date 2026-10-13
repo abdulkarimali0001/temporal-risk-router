@@ -1,6 +1,6 @@
 # Answer correctness evaluation
 
-Model: `llama3.1:8b`   Date: 2026-10-09   Questions: 31/31
+Model: `llama3.1:8b`   Date: 2026-10-10   Questions: 31/31
 
 Correct answers were checked by hand against the sources in `data/answer_test.csv`.
 
